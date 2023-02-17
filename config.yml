@@ -1,0 +1,28 @@
+baseURL: ""
+languageCode: en-us
+title: eddy lu site 
+theme: PaperMod
+
+params:
+  homeInfoParams:
+    Title: '写一些给自己看的内容，然后觉得做一个网站比较屌而已'
+
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 10
