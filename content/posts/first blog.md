@@ -1,5 +1,5 @@
 ---
-title: "First"
+title: "First blog la try"
 date: 2022-01-13T14:08:56+08:00
 draft: false
 ---
