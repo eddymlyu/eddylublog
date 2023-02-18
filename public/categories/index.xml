@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on eddylu</title>
+    <link>https://eddy.lu/categories/</link>
+    <description>Recent content in Categories on eddylu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Sep 2022 14:08:56 +0800</lastBuildDate><atom:link href="https://eddy.lu/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blockchain</title>
+      <link>https://eddy.lu/categories/blockchain/</link>
+      <pubDate>Thu, 29 Sep 2022 14:08:56 +0800</pubDate>
+      
+      <guid>https://eddy.lu/categories/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>book club</title>
+      <link>https://eddy.lu/categories/book-club/</link>
+      <pubDate>Sun, 13 Feb 2022 14:08:56 +0800</pubDate>
+      
+      <guid>https://eddy.lu/categories/book-club/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work</title>
+      <link>https://eddy.lu/categories/work/</link>
+      <pubDate>Sat, 27 Mar 2021 14:08:56 +0800</pubDate>
+      
+      <guid>https://eddy.lu/categories/work/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
