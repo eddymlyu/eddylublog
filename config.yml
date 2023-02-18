@@ -1,6 +1,6 @@
 baseURL: "https://eddy.lu"
 languageCode: en-us
-title: eddy lu site 
+title: eddylu 
 theme: PaperMod
 
 params:
@@ -26,3 +26,10 @@ menu:
       name: Archives
       url: /archives/
       weight: 10
+
+
+outputs:
+home:
+    - HTML
+    - RSS
+    - JSON # is necessary
