@@ -5,7 +5,15 @@ theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: '写一些给自己看的内容，然后觉得做一个网站比较屌而已'
+    Title: '学习、探索和思考的地方'
+    Content: '写一些给自己看的内容，然后觉得做一个网站比较屌而已'
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON 
 
 
 menu:
@@ -13,17 +21,21 @@ menu:
     - identifier: categories
       name: Categories
       url: /categories/
-      weight: 10
+      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 10
+      weight: 20
     - identifier: about
       name: About
       url: /about/
-      weight: 10
+      weight: 20
     - identifier: archives
       name: Archives
       url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
       weight: 10
 
