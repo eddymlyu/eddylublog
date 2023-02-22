@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 
 tags: ["papermod","hugo","建站","静态网站"]
-categories: ["work"]
+categories: ["lifestyle"]
 ---
 
 
@@ -19,22 +19,24 @@ categories: ["work"]
 
 ## 前言
 
-谈不上个人品牌的打造，也谈不上被动收入的项目，但我的确是收到近几年的FIRE运动浪潮和创作者经济的影响，不断的捏造这个个人博客的小泥人，不断的重新思考如果我做一个自己的网站，对自己和他人能有什么积极的意义。
+谈不上个人品牌的打造，也谈不上被动收入的项目，但我的确是受到近几年的FIRE运动浪潮和创作者经济的影响，不断的捏造这个个人博客的小泥人，不断的重新思考如果我做一个自己的网站，对自己和他人能有什么积极的意义。
 
 想到就去做，做事情我喜欢start small。执行的过程中，现实这只手会慢慢推动你去往另外一个地方。况且，输出文字帮助我mental clarity，减压不少，单单是这一点，就已经是写作的动力了；而如果还能结交到同好两三，更是我的荣幸。
 
-因为工作的原因一开始用wordpress建站，YouTube的算法把我带到林猫先生的频道，又开启了一扇门…经过疫情的催化，以及区块链技术的萌芽，更让我相信辛苦工作之余，必须抽出时间skin in the game，做一些更个人化、去中心化的项目以此反脆弱，给这个世界留下一点微不足道的声音，而通过做个人网站，这个声音可以很自由，很独立。
+因为工作的原因一开始用wordpress建站，YouTube的算法把我带到[林猫先生的频道](https://www.youtube.com/watch?v=gm6zdoL1r0Y)，又开启了一扇门…经过疫情的催化，以及区块链技术的萌芽，更让我相信辛苦工作之余，必须抽出时间skin in the game，做一些更个人化、去中心化的项目以此反脆弱，给这个世界留下一点微不足道的声音，而通过做个人网站，这个声音可以很自由，很独立。
 
 所以，why Hugo?
 
 - 速度超快，之前的wordpress我习惯把主机架设在国外，国内用户访问速度受限；而Hugo是html静态网站不涉及后台运行；
 - 维护简单，不存在wordpress整天在更新插件；
 - 主题极简，例如目前使用的PaperMod，非常纯粹；
-- 几乎免费，除了购买域名，搭建Hugo网站的服务如Github和Netlify都是免费的。
+- 几乎免费，除了购买域名，搭建Hugo网站的服务如Github和Netlify都是免费的。  
+
 
 
 ## 建站
-### 环境建设
+### 环境建设  
+
 
 由于我使用的是Mac，以下的操作适用于macOS。
 
@@ -43,13 +45,13 @@ categories: ["work"]
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-需要注意的是如上code可能会被更新，请根据最新的安装代码执行；另，如果安装极度缓慢，可以执行如下国内镜像源备选（我就是执行第一个成功）。
+需要注意的是如上code可能会被更新，请根据最新的安装代码执行；另，如果安装极度缓慢，可以执行如下国内镜像源备选（我就是执行第一个镜像源成功）。
 
 ```
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 ```
 
-可以通过如下检查Homebrew是否安装成功。
+可以通过如下检查版本验证Homebrew是否安装成功。
 
 `brew -v`
 
@@ -57,7 +59,7 @@ categories: ["work"]
 
 `brew install git`
 
-可以通过如下检查git是否安装成功。
+可以通过如下检查版本验证git是否安装成功。
 
 `git -v`
 
@@ -88,7 +90,7 @@ git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth
 
 
 
-用VS Code打开demo-blog，配置config.yml，增加theme命令以此连结主题PaperMod。
+用[VS Code](https://code.visualstudio.com/)打开demo-blog，配置config.yml，增加theme命令以此连结主题PaperMod。
 ```
 baseURL: "" # 网址这个地方可以先放空
 languageCode: en-us
@@ -102,7 +104,8 @@ theme: PaperMod # 主要是增加这个配对主题
 
 `hugo server`
 
-打开浏览器，输入http://localhost:1313，如果成功即可以看到个人网站的雏形。
+终端运行出网站服务器，打开浏览器，输入http://localhost:1313，如果成功即可以看到个人网站的雏形。  
+![](/img/hugoserver.png)
 
 
 ### 写篇文章试试！
@@ -123,7 +126,7 @@ posts指代的是content下的一个文件夹，我把所有文章都放在posts
 ```
 ---
 title: "frist" # 此处修改文章名
-date: 2022-11-16T14:08:56+08:00 # 日期可改
+date: 2023-02-20T14:08:56+08:00 # 日期可改
 draft: false # 是否为草稿
 ---
 你好，我是第一篇博客。
@@ -136,7 +139,7 @@ draft: false # 是否为草稿
 
 有了网站的基础框架当然还不着急发布，因为还有一些连膝盖想都必须有的基础模块还未被加入。如下一些模块仅供参考，未来持续加入更多…
 
-### 给目录加个分类和标签吧
+### 添加分类和标签
 
 在config.yml里加入
 
@@ -174,7 +177,7 @@ categories: ["blockchain"]
 ---
 ```
 
-### 给目录加个时间轴吧
+### 添加时间轴
 
 在config.yml里加入
 ```
@@ -197,12 +200,42 @@ summary: "archives"
 ---
 ```
 
+### 添加搜索功能
+
+在config.yml里加入
+```
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON 
+```
+```
+menu:
+  main:
+  - identifier: search
+    name: Search
+    url: /search/
+    weight: 10
+```
+
+在content下面新建一个search.md。
+
+```
+---
+title: "Search" 
+layout: "search" 
+summary: "search"
+placeholder: "search"
+---
+```
+
 ### 建立layouts的html模版以覆盖系统模版
 
 在layouts下建立一个新文件夹_default，再在底下建立一个archives.html；将themes/PaperMod下吗的layouts/_default的archives文件的html内容复制到刚才新建的archives.html里，则可以在里面做随心所欲的模版修改。
 
 ### 常用params参数
-在config.yml配置一些基础的params。
+在config.yml配置一些基础的params，更多的配置可以见Github的[PaperMod模版](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/)
 
 ```
 params:
@@ -210,7 +243,7 @@ params:
     Title: '学习、思考和思考的地方' # 主题
     Content: '写一些给自己看的内容，然后觉得做一个网站比较屌而已' # 描述
   SocialIcons:
-      -name: facebook
+      -name: facebook # 可选
        url: 'www.facebook.com'
  
 ```
@@ -226,7 +259,16 @@ params:
 
 ## 常用Markdown语法syntax
 
+自定义url，在front matter增加：
+```
+url: "whateveryouwant” # 直接在域名后面的url
+```
 
+增加TOC (Table of Content)文章导航，在front matter增加：
+```
+ShowToc: true 
+TocOpen: true # 默认展开
+```
 
 标题：
 ```
@@ -241,7 +283,7 @@ params:
 1. 列表项目
 ```
 
-粗体、斜体和删除线：
+粗体、斜体和~~删除线~~：
 ```
 *我是斜体超屌*   # 或_斜体_
 **粗体才是真的屌**
@@ -265,7 +307,7 @@ params:
 `行内代码块`
 ```
 
-插入代码块：用```包住头尾
+插入代码块：用```包住头尾，并指定一种语言（也可以不指定）
 ```
 我是代码块
 ```
@@ -285,12 +327,24 @@ params:
 <br>
 ```
 
+制作表格：`|`分隔不同的单元格，`-`分隔表头和其他行
+```
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+```
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+
 插入注解footnote
 ```
 xxx[^1]
 [^1]: 注解内容
 ```
-
+更多的syntax可以见[这里](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)。
 ## 部署
 
 Mac终端执行Hugo，则内部开始建立网站，此时本地public文件夹会多出许多文件。
@@ -299,7 +353,7 @@ Mac终端执行Hugo，则内部开始建立网站，此时本地public文件夹�
 
 ### Github
 
-注册一个Github账号并创建一个仓库repository。
+注册一个[Github](https://github.com/)账号并创建一个仓库repository。
 ![](/img/repository.png)
 
 
@@ -325,10 +379,11 @@ Mac终端执行Hugo，则内部开始建立网站，此时本地public文件夹�
 `git commit -m "first commit"`
 
 创建分支。
+```
+touch git brach -M main
 
-`touch git brach -M main`
-
-`git remote add origin https://github.com/...git`
+git remote add origin https://github.com/...git
+```
 
 推送至远程仓库。
 
@@ -336,7 +391,7 @@ Mac终端执行Hugo，则内部开始建立网站，此时本地public文件夹�
 
 ### Netlify
 
-注册一个Netlify账号，串街到刚才github账号，完成设置，见[Adipurdila的第41分钟教学视频](https://www.youtube.com/watch?v=hjD9jTi_DQ4&t=733s)。
+注册一个[Netlify](https://www.netlify.com/)账号，串街到刚才github账号，完成设置，见[Adipurdila的第41分钟教学视频](https://www.youtube.com/watch?v=hjD9jTi_DQ4&t=733s)。
 
 完成后Netlify会跑几分钟的设置，生成一个https://...netlify.app/的网址，意味着已经成功部署到Netlify。
 
@@ -360,3 +415,5 @@ git add .
 git commit -m "add"
 git push
 ```
+
+Have fun!!
