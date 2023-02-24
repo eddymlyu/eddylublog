@@ -2,7 +2,7 @@
 title: "影响我的书 Pt. 1"
 date: 2022-02-13T14:08:56+08:00
 draft: false
-url: "bookpt1"
+url: "posts/bookpt1"
 
 tags: ["reading","book"]
 categories: ["book club"]
@@ -18,7 +18,7 @@ hahaahahah
 
 
 1. Rework 重生 by Jason Fried / David Heinemeier Hansso
-![](/img/rework.jpg#right)
+![](/img/rework.jpg)
 这是一本很适合创业者看的书。我们受的常规教育并不适用于商业和现实，学术上的理论虽然头头是道，但是在现实生活和工作中可能一文不值，唯有带着自己的初心，想办法给客户带来真正的长期的价值，才有办法在商业战场中立足，想个60%就可以立即出发去试探市场，现实会一步一步的纠正你。并且，公司的规格也不必做“大”，小公司也可以是一种目标，只要能够持续发展，保持盈利，保持灵活，何必壮大？
 
 2. Atomic Habits 原子习惯 by James Clear

@@ -4,6 +4,7 @@ draft: false
 
 ---
 
+![](/img/Eddy-Clear.png)
 
 International trader.
 
