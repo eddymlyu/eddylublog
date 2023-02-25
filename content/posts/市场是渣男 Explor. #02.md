@@ -7,7 +7,7 @@ url: "posts/explor02"
 ShowToc: true
 TocOpen: true
 
-tags: ["blockchain",“blockchain",”"币安","伊朗","西班牙"]
+tags: ["blockchain",“crypto",”"币安","伊朗","西班牙"]
 categories: ["blockchain"]
 ---
 
