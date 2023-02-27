@@ -77,6 +77,20 @@ categories: ["lifestyle"]
 
 `hugo new site demo-blog -f -yml`
 
+网站建立成功，则在文件夹生成如下文件
+```
+
+├── archetypes # 存放front matter
+├── assets
+├── content # 存放网页的Markdown文件
+├── data # 存放数据文件，通常是json/yaml/toml 文件
+├── layouts # 存放HTML模板
+├── static # 存放静态文件比如图片img，会被复制到public目录下
+├── themes # 存放现有的主题模板
+└── config.yml # 全局配置文件
+
+```
+
 ### 安装主题
 
 进入刚创建好的文件地址中（已进入Documents）。
@@ -229,6 +243,25 @@ summary: "search"
 placeholder: "search"
 ---
 ```
+
+### 添加评论功能
+
+在[cusdis.com](cusdis.com)注册一个账号，并取得自己的Embed code。
+
+把如下代码贴进去自己的footer模版里，新建一个single页面模版在`layouts/_default/single.html`
+
+```
+  <!-- Comments by Cusdis -->
+      <h4>Comments:</h4>
+      <div id="cusdis_thread" data-host="https://cusdis.com"
+        data-app-id="See your dashbord on Cusdis" # 把自己的Embed code贴进这里！
+        data-page-id="{{ .File.UniqueID }}" data-page-url="{{ .Permalink }}"
+        data-page-title="{{ .Title }}"></div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+
+```
+
 
 ### 建立layouts的html模版以覆盖系统模版
 

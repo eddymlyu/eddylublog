@@ -4,7 +4,7 @@ date: 2022-08-16T14:08:56+08:00
 draft: false
 url: "posts/howtolivept2"
 
-tags: ["reading","book"]
+tags: ["reading","book","读书笔记"]
 categories: ["book club"]
 ---
 ![](/img/howtolive.jpg)
