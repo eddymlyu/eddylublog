@@ -24,7 +24,13 @@ by Derek Sivers
 
 ### Building a second brain 
 by Tiago Forte
+
+<div style="zoom:0.2%;">
+
 ![](/img/secbrainbook.jpg)
+
+</div>
+
 
 大脑是用来产生想法的，而不是用来储存信息的。利用一个App软件作为我的第二大脑，也许是2022年我到的最重要的概念之一了。
 

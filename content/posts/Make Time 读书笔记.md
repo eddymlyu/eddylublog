@@ -138,7 +138,7 @@ iPhone第一页清空没有任何App，只留下漂亮的桌面，有助于你�
 - 第五页：Setting, Weather, lot of them (其他的App全丢这里), Deutsch德语学习App；
 - 第六页：讨厌的App Library，希望下个版本可以取消；
 
-![](/img/iphonescreen.jpg)
+![](/img/iphonescreen.jpeg)
 
 13. 冥想
 
