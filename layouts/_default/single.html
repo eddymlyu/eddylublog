@@ -49,13 +49,14 @@
     {{- partial "share_icons.html" . -}}
     {{- end }}
     
-    
+    <div style="margin: 50px 0;"> 
     <h4>Comments:</h4>
       <div id="cusdis_thread" data-host="https://cusdis.com"
         data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
         data-page-id="{{ .File.UniqueID }}" data-page-url="{{ .Permalink }}"
         data-page-title="{{ .Title }}"></div>
       <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
 
   </footer>
 

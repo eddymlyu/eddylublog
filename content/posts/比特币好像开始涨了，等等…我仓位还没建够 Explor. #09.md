@@ -7,7 +7,7 @@ url: "posts/explor09"
 ShowToc: true
 TocOpen: true
 
-tags: ["blockchain","NFT","以色列","币安","SEC"]
+tags: ["blockchain","NFT","以色列","币安","SEC","Jack Dorsey"]
 categories: ["blockchain"]
 ---
 
@@ -36,3 +36,10 @@ categories: ["blockchain"]
 
 音乐类的NFT已经不是新闻，但是这个领域还是太新，有太多值得探索的东西。这次Spotify做的东西，希望他们能摸索一些门道出来，特定NFT持有者可以有权收听特定的podcast或音乐，相信这对未来可以以某种形式保护创作者。
 
+### Yuga Lab的比特币NFT [TwelveFold](https://twelvefold.io/)（共288个）采用竞标方式
+
+NFT头部项目出的比特币NFT肯定…一般老百姓玩不了。但是用这么传统的方式竞标真的很像scam，目前第1名用了7颗比特币，而第288名用了2颗比特币，这家价格相差有点悬殊。
+
+### Jack Dorsey 去中心化社交平台 Bluesky 开始测试；加密货币支付公司 Block （前Square）提供比特币闪电网络的流动性
+
+持续关注中，和twitter相比，不知道所谓的用户在去中心化平台更有权力怎么体现。

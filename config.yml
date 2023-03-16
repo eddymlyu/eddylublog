@@ -5,8 +5,8 @@ theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: '🏄‍♂️探索 & 🧠重新思考'
-    Content: '写一些给自己看的内容，然后觉得做一个网站比较屌而已'
+    Title: '🏄‍♂️生活方式探索 & 🧠重新思考'
+    Content: '记录一些探索，然后觉得做一个网站比较屌而已'
 
 
 outputs:
