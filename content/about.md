@@ -20,4 +20,4 @@ Exploring Web3.
 
 Sometimes I cook.
 
-Contact me if you want eddyluamoy@gmail.com
+Contact me hi@eddy.lu
