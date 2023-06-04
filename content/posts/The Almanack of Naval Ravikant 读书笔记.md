@@ -5,7 +5,7 @@ draft: false
 url: "posts/naval"
 
 tags: ["reading","book","读书笔记","naval"]
-categories: ["book club"]
+categories: ["book notes"]
 ---
 
 ![](/img/almanacknaval.jpeg)

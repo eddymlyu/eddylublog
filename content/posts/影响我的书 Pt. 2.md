@@ -10,7 +10,7 @@ TocOpen: true
 
 
 tags: ["reading","book","读书笔记"]
-categories: ["book club"]
+categories: ["book notes"]
 ---
 
 ### Soft skills: The software Developer’s life manual 软技能: 代码之外的生产指南 

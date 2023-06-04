@@ -5,7 +5,7 @@ draft: false
 url: "posts/companyofone"
 
 tags: ["reading","book","读书笔记","movie"]
-categories: ["book club","lifestyle"]
+categories: ["book notes","lifestyle"]
 ---
 
 最喜欢的还是小长假前的那几天，那种即将要放假的心情。如果假期不是去旅行，而是停留在原地，那么在假期开启之后，马上会感觉无聊，无聊到很痛苦。与父老乡亲周旋，无法学习，浪费时间…大概也就成了假期主旋律。好在我发现了三个好借口，可以逃离现实。

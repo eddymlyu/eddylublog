@@ -5,7 +5,7 @@ draft: false
 url: "posts/secondbrain"
 
 tags: ["reading","book","second brain","第二大脑"]
-categories: ["book club"]
+categories: ["book notes"]
 ---
 
 ![](/img/secbrain.jpg)

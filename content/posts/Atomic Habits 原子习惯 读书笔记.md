@@ -5,7 +5,7 @@ draft: false
 url: "posts/atomichabits"
 
 tags: ["reading","book","读书笔记"]
-categories: ["book club"]
+categories: ["book notes"]
 ---
 
 ![](/img/atomichabits.jpg)

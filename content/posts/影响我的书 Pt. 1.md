@@ -10,7 +10,7 @@ TocOpen: true
 
 
 tags: ["reading","book","读书笔记"]
-categories: ["book club"]
+categories: ["book notes"]
 ---
 
 

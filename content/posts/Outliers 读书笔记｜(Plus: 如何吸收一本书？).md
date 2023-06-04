@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 
 tags: ["第二大脑","卡片盒笔记法","渐进式写作"]
-categories: ["book club"]
+categories: ["book notes"]
 ---
 
 
