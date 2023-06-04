@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 
 tags: ["blockchain","crypto","proxifier","ledger"]
-categories: ["blockchain"]
+categories: ["blockchain","indie"]
 ---
 
 

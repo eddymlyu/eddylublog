@@ -35,3 +35,5 @@ draft: false
 - 我的读书笔记模版和如何吸收一本书 [Outliers 读书笔记｜(Plus: 如何吸收一本书？)](https://eddy.lu/posts/outliers/)
 - 旅行是一种投资 [找出自己的 IKIGAI｜澳洲10天旅行](https://eddy.lu/posts/austravel/)
 - 投资小白学习通货膨胀的历史 [春节我在山姆会员店买了10000元](https://eddy.lu/posts/fed/)
+- 再怎么样也要自己持币！[解决境内Ledger Live连接超时问题](https://eddy.lu/posts/ledgerlive/)
+- 在德国被同事邀请去家里用餐 [洗礼](https://eddy.lu/posts/baptism/)
