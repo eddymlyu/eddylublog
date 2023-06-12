@@ -21,10 +21,10 @@ draft: false
 > Read What You Love Until You Love to Read. — Naval
 
 
-我读 [一些特定领域的书](https://eddy.lu/categories/book-notes/) 并逐渐上瘾，涉及个人提升、效率、金融投资、历史地理、人文、创造者经济…和这个网站的主题相契合。
+我读 [一些书](https://eddy.lu/categories/book-notes/) 并逐渐上瘾，涉及个人提升、效率、金融投资、历史地理、人文、创造者经济…和这个网站的主题相契合。
 
 
-2022年我因为想要拥有一个属于自己 PFP (Picture for Proof) 头像开始接触 NFT，即使亏了钱但是着迷于区块链的技术以及未来它能带来的 [更多可能性](https://eddy.lu/posts/creatoreconomic/) 。进而在一堆噪音早深入了解比特币，成为 Bitcoin Maximalist，持续 DCA (Dollar Cost Averaging) 比特币。我期待未来区块链和创作者经济的结合以及在个人金融上的创新。
+2022年我因为想要拥有一个属于自己 PFP (Picture for Proof) 头像开始接触 NFT，即使亏了钱但是着迷于区块链的技术以及未来它能带来的 [更多可能性](https://eddy.lu/posts/creatoreconomic/) 。进而在一堆噪音中深入了解比特币并持续 DCA (Dollar Cost Averaging) 比特币。我期待未来区块链和创作者经济的结合以及在个人金融上的创新。
 
 联系方式：hi@eddy.lu
 
@@ -37,3 +37,4 @@ draft: false
 - 投资小白学习通货膨胀的历史 [春节我在山姆会员店买了10000元](https://eddy.lu/posts/fed/)
 - 再怎么样也要自己持币！[解决境内Ledger Live连接超时问题](https://eddy.lu/posts/ledgerlive/)
 - 在德国被同事邀请去家里用餐 [洗礼](https://eddy.lu/posts/baptism/)
+- 在乎写作的文体，尽管别人可能根本注意不到 [不入流的文体｜关于「盘古之白」和「直角引号」](https://eddy.lu/posts/pangu/)
