@@ -1,5 +1,5 @@
 ---
-title: "搭建Hugo个人网站｜PaperMod主题"
+title: "搭建 Hugo 个人网站｜PaperMod 主题"
 date: 2023-02-21T14:08:56+08:00
 draft: false
 url: "posts/hugo"

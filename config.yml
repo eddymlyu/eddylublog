@@ -38,4 +38,9 @@ menu:
       name: Search
       url: /search/
       weight: 10
+    - identifier: now
+      name: Now
+      url: /now/
+      weight: 30
+      
 

@@ -1,5 +1,5 @@
 ---
-title: "解决境内Ledger Live连接超时问题"
+title: "解决境内 Ledger Live 连接超时问题"
 date: 2022-12-23T14:08:56+08:00
 draft: false
 url: "posts/ledgerlive"
