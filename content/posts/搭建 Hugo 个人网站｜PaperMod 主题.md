@@ -399,7 +399,7 @@ Mac终端执行Hugo，则内部开始建立网站，此时本地public文件夹�
 
 `touch .gitmodules`
 
-在VS Code输入git模块内容。
+在 VS Code 的 .gitmodules 里面输入 git 模块内容。
 
 ```
 [submodule "themes/PaperMod"]
@@ -410,6 +410,14 @@ Mac终端执行Hugo，则内部开始建立网站，此时本地public文件夹�
 提交版本库。
 
 `git commit -m "first commit"`
+
+注：如果这里没有成功，可以在 VS Code 里的 Source Control 里输入「first commit」,然后点击打勾试试，如果跳出来需要 user name 和 user email，可以再终端输入
+
+```
+git config --global user.name "firstname lastname"
+
+git config --global user.email 你的邮箱
+```
 
 创建分支。
 ```
