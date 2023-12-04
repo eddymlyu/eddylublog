@@ -47,7 +47,7 @@ categories: ["book notes"]
 
 大多伟大的公司都是在熊市的萧条时期建立，时势造英雄，因为他们解决了一个（小）痛点，而后逐渐壮大变成了后来的样子，导致很多后来人看到的是商业帝国而不了解他们一开始的样子。我喜欢熊市，这个期间人心惶惶，市场低迷，但也恰恰是学习的好时机，建立好的心态，别让消极的大环境影响你。
 
-比如 Derek 就是熊市创立了 区块链日报 的频道，积累了很多优质的粉丝（包括我…)。活在当下，在每个时代都可以做出伟大的事情，一般来讲，这个事情在另个时代的人的角度看来都很荒谬和不可思议。
+比如 Derek 就是熊市创立了 [区块链日报](https://www.youtube.com/@blockchaindailynews) 的频道，积累了很多优质的粉丝（包括我…)。活在当下，在每个时代都可以做出伟大的事情，一般来讲，这个事情在另个时代的人的角度看来都很荒谬和不可思议。
 
 「Beware the calm before the storm. Hope for the best, prepare for the worst. The worst is yet to come. It gets worse before it gets better.」
 
