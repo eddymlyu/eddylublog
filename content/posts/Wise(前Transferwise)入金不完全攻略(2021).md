@@ -5,7 +5,7 @@ draft: false
 url: "posts/wise"
 
 tags: ["投资","美股","invest"]
-categories: ["lifestyle"]
+categories: ["lifestyle","personal finance"]
 ---
 
 

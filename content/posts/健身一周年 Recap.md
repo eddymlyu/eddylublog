@@ -1,5 +1,5 @@
 ---
-title: "健身一周年Recap"
+title: "健身一周年 Recap"
 date: 2021-06-23T14:08:56+08:00
 draft: false
 url: "posts/gym1y"

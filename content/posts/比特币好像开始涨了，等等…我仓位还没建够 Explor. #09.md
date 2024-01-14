@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 
 tags: ["blockchain","NFT","以色列","币安","SEC","Jack Dorsey"]
-categories: ["blockchain"]
+categories: ["blockchain","personal finance"]
 ---
 
 
