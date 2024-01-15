@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 
 tags: ["papermod","hugo","建站","静态网站"]
-categories: ["indie"]
+categories: ["tech"]
 ---
 
 

@@ -4,7 +4,7 @@ date: 2022-08-15T14:08:56+08:00
 draft: false
 
 tags: ["crypto","blockchain","NFT"]
-categories: ["blockchain"]
+categories: ["blockchain","personal finance"]
 ---
 
 

@@ -6,7 +6,7 @@ url: "posts/wordpress"
 
 
 tags: ["建站","wordpress"]
-categories: ["work","indie"]
+categories: ["tech"]
 ---
 
 

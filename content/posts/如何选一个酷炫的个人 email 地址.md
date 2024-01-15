@@ -6,7 +6,7 @@ url: "posts/emailadd"
 
 
 tags: ["email"]
-categories: ["lifestyle","indie"]
+categories: ["lifestyle"]
 ---
 
 最近在网上搜寻怎么创立一个好的 email address 用于个人用途。发现在中文世界很少人聊这件事，也许是因为真的太无聊了。亦有大国掌权者下辣眼睛的 qq 邮箱。

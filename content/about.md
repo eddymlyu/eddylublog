@@ -26,7 +26,7 @@ draft: false
 
 ### 我喜欢独立
 
-「Indie」是一个很有意思的词。在这个网站里，「Indie」包含了网络世界摆脱中心化大公司的意志和对个人财务的自由的追求，比如吸收新兴的 FIRE (Financial Independence Retire Early) 的投资概念和所处的实际情况相结合。虽然把 Tech indie 和个人财务的 indie 归在一类有点牵强...
+「Indie」是一个很有意思的词。「Indie」包含了网络世界摆脱中心化大公司的意志和对个人财务的自由的追求，比如吸收新兴的 FIRE (Financial Independence Retire Early) 的投资概念和所处的实际情况相结合。虽然把 Tech indie 和个人财务的 indie 归在一类有点牵强...
 
 
 
