@@ -43,9 +43,15 @@ Naval信奉长期主义（我也是，不然我也不会读这书），认为每
 
 我承认探索这个专业知识（特殊技能）很难，但能在现实工作和生活中改变我的思维 — 到底我在做的每个事情，哪一些是我的热情所在？我做这个事情是为了（短期的）金钱，还是为了提升自己？
 
+问以下的问题也许有助于探索你的特殊技能：
+- 周末你都做什么，别人看起来是工作你却像是在玩
+- 你在做什么的时候感觉时光飞逝
+- 你有兴趣的事情或题目，看起来是不相关的
+- 你朋友总是在问你建议的东西
+
 #### 2. 拥有资产
 
-拥有你自己的资产（Asset）才是通往财富自由的道路，比如持有公司的股份（Equity）或者是以类似的形式去经营一个Business，以你个人名义去承担风险，去公诸于世，去享受收益。
+拥有你自己的资产（Asset）才是通往财富自由的道路，比如持有公司的股份（Equity）或者是以类似的形式去经营一个Business，以你个人名义（Accountability）去承担风险 take the risk，去公诸于世，去享受收益。
 
 传统的工作比如医生或律师，当然会让你赚很多钱，但只会让你有钱（Rich），但并不会让你拥有财富（Wealthy）。
 ![](/img/earnwithmind.png)
@@ -165,3 +171,15 @@ Naval信奉“Rational Buddhism”，合理的佛理？这是什么鬼？
 > 
 
 Rational的部分，就是其深信科学和进化。通过对于现实的不断试错和体验，调整和形成自己的理念，包括信仰、幸福感、财富观、人生观等。
+
+#### 14. 耐心
+
+成功需要时间，需要耐心，it just takes time. 
+
+>There is an indeterminate amount of time you have to put in. If you are counting, you’ll run out of patience before success actually arrives. 
+
+如果你做起来像是玩乐，那么你就不会去算时间，就不会是煎熬。
+
+> Immediate don’t work. You do have to put in the time. You do have to put in the hours, and so I think you have to put yourself in the position with the specific knowledge, with accountability, with leverage, with the authentic skill set you have, to be the best in the world at what you do.
+
+> You have to enjoy it and keep doing it, keep doing it, and keep doing it. Don’t keep track, and don’t keep count because if you do, you will run out of time.
