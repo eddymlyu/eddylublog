@@ -11,9 +11,9 @@ categories: ["lifestyle"]
 
 ![](/img/kobecityview.jpeg)
 
-春节期间，不免俗地又要应付父老乡亲。和他们讨论今年生意又有多困难，市场又有多不好之外，不如躲进车里，听一期 Morgan Housel 的博客。老家虽无聊，但秉承 Obstacle is the way 的理念，地处深山，刚好是另外一个契机可以脑力激荡。
+春节期间，不免俗地又要应付父老乡亲。和他们讨论今年生意又有多困难，市场又有多不好之外，不如躲进车里，听一期 Morgan Housel 的博客。老家虽无聊，但秉承 [Obstacle is the way](https://eddy.lu/posts/obstacle/) 的理念，地处深山，刚好是另外一个契机可以脑力激荡。
 
-从 [The Psychology of Money](https://eddy.lu/posts/psychologyofmoney/) 被 Housel 圈粉后，再到后来的 [Same as Ever](https://eddy.lu/posts/sameasever/) 永恒不变的智慧，无意刷到和 [Andrew Huberman](https://www.youtube.com/watch?v=z5W74QC3v2I) 和 [Steven Bartlett](https://www.youtube.com/watch?v=vOvLFT4v4LQ) 的这两期博客，简单记录关于 Housel 关于金钱、财富、生活的「更多」。
+从 [The Psychology of Money](https://eddy.lu/posts/psychologyofmoney/) 被 Housel 圈粉后，再到后来的 [Same as Ever](https://eddy.lu/posts/sameasever/) 永恒不变的智慧，无意刷到和 [Andrew Huberman](https://www.youtube.com/watch?v=z5W74QC3v2I) 和 [Steven Bartlett](https://www.youtube.com/watch?v=vOvLFT4v4LQ) 的这两期博客，简单记录关于 Housel 关于金钱、财富、工作、生活、自由的「更多」。
 
 
 「I view it in a negative sense of the people who work to get money so hard that it takes a physical toll on their body. 」
@@ -53,7 +53,7 @@ Housel 称他的写作是 Selfish writing，因为他只为一个人而写——
 
 这里的 rich 其实指的是 wealthy 更多点。如果你有种去拒绝金钱，抵制诱惑，说明你很明白自己想要的是什么。
 
-「The world is split evenly between people don’t know how to start making money and people don’t know when to stop.」
+>The world is split evenly between people don’t know how to start making money and people don’t know when to stop. -- Nassim Nicholas Taleb
 
 后者的人越来越多，人性贪婪，永无止尽地想要更多。大家都想如果我的净值达到这个程度，我就能怎么样怎么样，其实是一个死循环，如果你的期望永远比你的收入更高，那你就永远不会更快乐。
 
@@ -88,7 +88,7 @@ Housel 的净资产是一个房子，现金，指数基金和一些 [Markel](htt
 
 发现 Housel 超爱 Quote Charlie Munger。他认为 Munger 说的也许太非黑即白了，但有 70～80% 的成份是很有道理的。有点佩服他每说几句就能有一个 quote，知识储备超足。
 
-Why you should take the risk to be failed. Netflix 有一个时期出的片都很成功，CEO 反而很不满意，因为那代表公司没有承担足够的风险。就如同一家酒店总是房间订满的情况——不是最好的情况，说明没有上调到最适合的价格。
+Why you should take the risk to get the failure. Netflix 有一个时期出的片都很成功，CEO 反而很不满意，因为那代表公司没有承担足够的风险。就如同一家酒店总是房间订满的情况——不是最好的情况，说明没有上调到最适合的价格。
 
 每一个人，程度或多或少，都需要一些压力（这是有益的）。讽刺的是，人们却下意识地拼命想要摆脱这些他们需要的压力。等到真的没压力了，反而不自在了，然后自己创造一些假的压力给自己。
 
