@@ -2,8 +2,9 @@
 title: "More Morgan Housel"
 date: 2025-02-05T14:08:56+08:00
 draft: false
+url: "posts/moremh"
 
-tags: [""]
+tags: ["Morgan Housel"]
 categories: ["lifestyle"]
 ---
 
