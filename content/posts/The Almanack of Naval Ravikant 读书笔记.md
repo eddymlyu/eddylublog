@@ -183,3 +183,92 @@ Rational的部分，就是其深信科学和进化。通过对于现实的不断
 > Immediate don’t work. You do have to put in the time. You do have to put in the hours, and so I think you have to put yourself in the position with the specific knowledge, with accountability, with leverage, with the authentic skill set you have, to be the best in the world at what you do.
 
 > You have to enjoy it and keep doing it, keep doing it, and keep doing it. Don’t keep track, and don’t keep count because if you do, you will run out of time.
+
+### 更新 2025-03-30
+
+这不只是教人致富的一本书，还是教人如何幸福的一本书。这本书的前身是 How to get rich [这期播客](https://www.youtube.com/watch?v=1-TZqOsVCNM)，在 Naval 的个人网站也有这期播客的[文字稿](https://nav.al/rich)。播客的内容和书当然有重叠，但仍然有很多细节很值得品味。
+
+运气 Luck 有 4 种
+- 狗屎运 Blind luck
+- 拼命而来的运气 Hustle luck，越努力越幸运
+- 准备而来的运气 Luck from preparation，需要运用你自己的独特技能
+- 独特性带来的运气 Luck from your unique character，开发出独特的自己，Luck 会自己来找你
+
+做生意 reputation 很重要，你的 character 很重要，长期主义很重要，很多人甚至愿意给你 cut，或者希望通过你做生意，因为你提供的价值，因为你卖的这张脸。
+
+Play stupid games you get stupid prize. 比如在社交媒体狂晒朋友圈，得到陌生人的赞你都觉得很爽，是愚蠢无意义的。
+
+If you can’t earn nonlinearly 就不是最佳的生意模式。比如医生和律师，虽然是高薪工作，但是你必须去付出你的时间才有收入。在你睡觉的时候还有收入才是拥有财富。
+
+
+你想要的一个生意，是 where your input don’t matter your output. 
+
+现今这个时代，网络能够能你的 niche obsession 最大化，找到你的追随者，实现你的现金流。
+
+Escape competition through authenticity. 别做和别人一样的事，而应该做自己的事情，打造独特的自己，别人就无法跟你竞争。
+
+长期的游戏是正和游戏，大家一起把蛋糕做大。短期的游戏，大家在争着切蛋糕，会激发人黑暗的一面。
+
+Specific knowledge 也包含你的软技能。不只是一个技能，也可以代表一整个技能集。你要开发出并利用你的 specific knowledge 去 scale 你的收入。给这个社会所需要的东西，这件事不一定是你很喜欢的，但一定是你擅长的。
+
+Specific knowledge 更多的是追求你的 innate talent 你与生俱来的东西，而不是被训练得来的。
+
+Find where your skills are most valued. Find your unfair bet. 
+
+
+现在的教育系统把孩子的好奇心磨灭，取而代之的是培养顺从、听话的孩子。如果好奇心消灭殆尽，小孩的创造力也会大幅降低。
+
+
+
+Naval 虽然自己有做播客，但是自己不喜欢从播客中学习，因为他擅长快速阅读，如果听播客提速到 2x 或 3x 倍速，语音听起来像是个 Chipmunk，而且很难去回放，很难去做笔记，很难去划重点。
+
+
+
+Entrepreneurs bleed everyday, 和打工的心态很不同。创业者遭受很多压力，每天都在流血，做生意也许不是每一单都有利润，生意也不稳定，短期如履薄冰，但是只要做有意义的事情，能看到终点的曙光，最后就会赢，而且会大赢一把。
+
+拒绝无效社交和无聊的会议，职业前期也许找人喝喝咖啡建立联系很好，但是一旦找到自己真正想做的事情，也许不需要喝这一杯咖啡了。时间有限，你知道应该专注在哪些事情。
+
+A calm mind, a fit body, a house full of love. 很多有钱人不一定拥有这些。
+
+Relationship 也有复利的效果。不管是工作还是家庭。如果你有价值理念契合的工作伙伴，如果你有持续支持你与在乎对方的家人，长期就会为你带来更多快乐。任何关系都是要一步一步 build 出来的。
+
+
+财富可以给你带来更多的金钱和自由，而金钱则要看你如何使用。如果反而让你失去自由，那你就会变成金钱的奴隶。
+
+追求财富是正和游戏，不是零和游戏。比如每个人都可以拥有房子，而你拥有房子，并不能剥夺我拥有房子的能力。
+
+人生要玩正和游戏，才是踏在富有和快乐的道路上。
+
+
+
+赚钱不是你做的一件事，而是你学会的一种技能。如果把你丢在一个陌生的国家，5～10 年如果能重新致富，因为你已经学会了这一个技能。想想自己的外贸/供应链开放/市场开发技能，如果去任何一个国家，都能利用这个技能赚钱吗？
+
+赚钱要知道自己想要做什么，找到合适的伙伴，把握正确的时机。
+
+财富是善用独特的知识创造杠杆。这个东西，别人看起来是费力的工作，但对你而言像是在玩乐。
+
+可以用资金，人力，零边际成本的产品去做杠杆。零边际成本就是每增加一个使用者，不会增加额外的成本，比如做内容创作。资金和人力则是比较传统的方式。
+
+
+快乐和正向想法或负向想法无关，和欲望的消失有关。我们越能接受事情的现况，心智波动就会越小，内心就更平静，也便更快乐。
+
+
+
+
+
+我们这一代往往高估了努力的重要性，而低估了判断力 Judgement 的重要性。判断力需要经过长年累月的经验才能习来，工作和生活的每个决策，经历过后你才能获得更好的判断力。
+
+把自己产品化 productize yourself。只和自己比，只有自己能超越自己，在比自己还强的这件事上，没人比得过你。
+
+
+毋以善小而不为，勿以恶小而为之。不要做小的违背道德的事情，那可能是原则崩坏的开始。千里之行，始于足下。成功没有捷径。一点点好的积累，后面的人生才能享受复利效应。
+
+当你找到喜欢的工作之后，你也不觉得是在工作，因为已经成为生活的一部分。
+
+Naval 对于「退休」的定义——不会为了想象的明天，牺牲今天。当你内心充盈的过好每天的时候，你其实就进入了「退休」的状态了。幸福，就是不需要主动作为的状态，就是安在。习得「自在」和「安在」并不简单。可以的话，你不需要去取悦别人。取悦是由人不由己；喜悦是由己不由人。
+
+
+
+
+
+> It’s actually really important to have empty space. If you don’t have a day or two every week in your calendar where you’re not always in meetings, and you’re not always busy, then you’re not going to be able to think. You’re not going to be able to have good ideas for your business. You’re not going to be able to make good judgments. I also encourage taking at least one day a week (preferably two, because if you budget two, you’ll end up with one) where you just have time to think. It’s only after you’re bored you have the great ideas. It’s never going to be when you’re stressed, or busy, running around or rushed. Make the time. 
