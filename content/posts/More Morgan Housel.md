@@ -70,7 +70,7 @@ Charlie Munger says that when explaining financial matters to young people, they
 
 > Risk is what’s left over when you think you’ve thought of everything. -- Carl Richards
 
-「Risk is what you don’t see. 」
+> Risk is what you don’t see. 
 
 听起来很可怕，但是风险往往就是无法预测的，没有任何人可以预测的。所以别活在 Excel 试算表里，时刻做好准备反脆弱，任何事情都可能发生，比如 911 和 Covid，没人知道他们（什么时候）会来。
 
@@ -81,7 +81,7 @@ Charlie Munger says that when explaining financial matters to young people, they
 
 还是反脆弱。Housel 手头存有大量现金，觉得太多的那种。周遭人问他干嘛拿住这么多现金——他也不知道。这个看似保守的心态给了他安全感和自由。
 
-Housel 的净资产是一个房子，现金，指数基金和一些 [Markel](https://www.mklgroup.com/what-we-do) 公司的股份。他的资产配置极为简单。
+Housel 的净资产是一个房子，现金，指数基金和一些 [Markel](https://www.mklgroup.com/what-we-do) 公司的股份。他的资产配置极其简单。
 
 成功的投资是你忘了你投资账户的密码。长期投资不需要关注市场，定期买入即可。
 
@@ -93,8 +93,24 @@ Why you should take the risk to get the failure. Netflix 有一个时期出的�
 
 每一个人，程度或多或少，都需要一些压力（这是有益的）。讽刺的是，人们却下意识地拼命想要摆脱这些他们需要的压力。等到真的没压力了，反而不自在了，然后自己创造一些假的压力给自己。
 
-「Our minds are just not good at exponential thinking because it is counterintuitive.」 
+> Our minds are just not good at exponential thinking because it is counterintuitive.
 
 简单的加法容易，但是指数级别的计算人脑很难快速反应，所以大多数人无法体会复利的威力，大到难以想象。
 
 Being laid off is the hardest thing in that moment, and in hindsight 后见之明 it is going to be the best thing that ever happened to their career. 远赴东南亚去做生意也是，待最初的新鲜感消耗殆尽，开始觉得人生非常艰难，撑过去之后回过头看，一切又都是值得的。Bad times often change us for good. 
+
+
+Housel 在写他的第一本书之前，他写了 3500 个 blog 并持续写了 17 年。也许那 3500 个 blog sucks，但是没有相当的一段累积，没有办法成就现在的他。
+
+He is a worst case scenario thinker.
+
+The world is fragile and unpredictable. 那我们一般人要怎么去应对呢？以及要专注什么？我们倒不如去看那些 [never change](https://eddy.lu/posts/sameasever/) 的东西——人们怎么去应对风险、贪婪、恐惧和机会等等。
+
+现代社会，人会很容易去追逐社会地位，玩地位游戏，而不是追求幸福和定义自己的成功。特别是年纪轻，没有社会阅历，没有责任感在身上的时候。所以看到别人开好车也会去追逐和攀比，争先恐后地想拿上等护照被焦虑操控，这是很危险的。其实这些幸福没什么屌关系。
+
+当作家和运动员一样，不可能 30 年都在顶峰。 Housel 准备好了随时写作生涯会下滑，至少在心理上已经准备好了。倘若真的下滑了，对他和他的家庭几乎没啥影响。
+
+
+出书成为畅销书作家变得有名的时候，Housel 的老婆说他还是和五年前一样。而有的人呢？赚了几个钱，也许就飞上了天。
+
+有的作品，有的电影...不再出续集给人留下遗憾反而是最棒的。如果像辛普森到这个年头了还在更新，反而越做越烂，倒不如在他辉煌的时候就停掉，定格在光辉的那一刻。Housel 说很有可能他再写一本书就退役，没有很在乎名和利，在他的 prime 期间退役，有何不可？他认真当好一个 father, husband 和 friend，仅此而已。
