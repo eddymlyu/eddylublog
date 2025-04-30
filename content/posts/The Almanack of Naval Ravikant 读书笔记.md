@@ -185,6 +185,8 @@ Rational 的部分，就是其深信科学和进化。通过对于现实的不�
 
 ### 更新 2025-04-03
 
+![](/img/navalbook.jpeg)
+
 这不只是教人致富的一本书，还是教人如何幸福的一本书。这本书的前身是 How to get rich [这期播客](https://www.youtube.com/watch?v=1-TZqOsVCNM)，在 Naval 的个人网站也有这期播客的 [文字稿](https://nav.al/rich)。播客的内容和书当然有重叠，但仍然有很多细节很值得品味。
 
 运气 Luck 有 4 种
