@@ -26,6 +26,9 @@ Collins 主张极简投资，分享的几个投资大道至简的道理，也是
 
 6. 每次的市场倒塌，都是另一个绝佳的买入机会。
 
+
+> Simple is good. Simple is easier. Simple is more profitable.
+
 这本书站在普通人的角度，主打一个 Simple，投资要很简单，很无脑。Collins 根据他自己的切身经验给出投资建议，算是讲真话，说人话的 [博主](https://jlcollinsnh.com/)。关于指数基金，他直言不讳地只推荐 1 个 VTSAX[^1] 和 1 个 VBTLX[^2]，没了。
 
 
