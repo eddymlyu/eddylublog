@@ -77,7 +77,7 @@ by Austin Kleon
 利用仅有的现有资源去发挥自己的创造力，不必要去要求别人成功所利用的一模一样的资源。比如我有网站主机host服务，我有elementor插件，马上就可以搭建出一个像样的wordpress网站，业余时间在那里进行文字创作。
 
 
-### 4 Hour Work Week 
+### The 4-Hour Workweek 
 by Tim Ferriss
 ![](/img/4hworkweek.jpg)
 很难想象这本书是在07年出版的，这那个时代就已经有这种思想产生了，影响了digital nomad一代人的书。书里的New rich定义也深刻影响了我，摒弃了传统了拼命工作到老，然后退休生活的概念，转而拥抱mini retirement的生活方式，是的，其实出国旅行或者休上1个月的假期，成本比想象中要小的多，而且越年轻去做越有意义，因为等到你老了退休了，即使有钱你也玩不动了。
