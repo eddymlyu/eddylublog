@@ -5,6 +5,34 @@ draft: false
 ---
 
 
+
+### Update 2025-09-09
+
+
+Why renounce your citizenship. 放弃
+
+Everyone’s muscles atrophy with age. 萎缩
+
+Actually delaying gratification is helpful only to a point.
+
+How I approach the saving threshold? 要存多少钱这个阀值
+
+The threshold is based on avoiding the worst case scenario. 
+
+Once you did it, you can never quit on a bad day. So we can only quit if we were having the best day. 如果能在公司好的时候潇洒离开，才是最屌的。
+
+It runs countercurrent to my nature. 做生意如果做不符合道德的事情，不符合我的天性。
+
+生啤酒（生ビール，nama bi-ru) 就是指英文的「draft beer」，日本人开喝时「总之先來杯生啤
+(とりあえず、生で，toriaezu, nama de) 」，通常会毫不犹豫第一杯先点生啤酒。
+
+
+This is out of our usual business practice. 这并不是公司正常会做的行为。
+
+Too foreign for home, too foreign for here, and not enough for both. 夹心饼干。
+
+
+
 ### Update 2025-05-02
 
 They can fudge the numbers... 捏造
