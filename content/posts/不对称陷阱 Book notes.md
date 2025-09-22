@@ -7,7 +7,7 @@ url: "posts/skininthegame"
 tags: ["reading","book","读书"]
 categories: ["book notes"]
 ---
-![](/img/rg.jpeg)
+![](/img/skininthegame.jpeg)
 
 
 
