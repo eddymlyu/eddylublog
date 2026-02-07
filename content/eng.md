@@ -4,7 +4,25 @@ draft: false
 
 ---
 
+### Update 2026-02-07
 
+
+You can still win without being a sociopathic narcissistic fuckboy.
+
+Wanting everyone to like you is a form of narcissiam.
+
+You feel very picturesque when you are with white people, you know. 自成一种画面。
+
+We spend heavily for the education of our offsprings.
+
+I think it is possible that coffee is causing my acne.
+
+"I can endorse" means you can publicly show support, approval, or recommend someone or something, like a product, idea, or person, often by saying you agree with them or appearing in an ad, or it can mean signing the back of a check to cash it. 
+Rayan 说要介绍我认识 DTI 的，或者引荐，或者帮我背书的意思，意思比 introduce 更具信任感，更强烈。
+
+Not gonna lie. For most people on the internet, you have to be a little bit narcissisic to kind of film yourself, and edit and put it out there.
+
+There is a lot of high cogntitive demand. This is a long podcast.
 
 ### Update 2025-09-09
 
