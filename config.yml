@@ -5,7 +5,7 @@ theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: '🏄‍♂️ 我聊一些关于「独立」的话题'
+    Title: '🏄‍♂️ Eddy 的 Blog'
     Content: '记录一些探索，然后觉得做一个网站比较屌而已'
 
 

@@ -1,5 +1,14 @@
 {{- define "main" }}
 
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei", Arial, sans-serif;
+}
+</style>
+
+
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -50,6 +59,13 @@
     {{- end }}
     
     <div style="margin: 50px 0;"> 
+        <style>
+  #cusdis_thread iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+  </style>
     <h4>Comments:</h4>
       <div id="cusdis_thread" data-host="https://cusdis.com"
         data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
