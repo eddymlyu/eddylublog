@@ -23,7 +23,7 @@ I’ve done 3 international travel since China reopening —— 2 in Manila, the
 
 I’m planning more trips to other countries in the next half of 2023. Germany is on the list for sure.
 
-## 🏋️ Trainning 
+## 🏋️ Training 
 
 I feel like I’m kind of incapable of lifting the same weight that I could after getting Covid, let alone increasing muscle from 35 kg and reducing my body fat percentage from 19.5%.
 
