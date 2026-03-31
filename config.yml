@@ -37,13 +37,13 @@ menu:
     - identifier: 搜索
       name: 搜索
       url: /search/
-      weight: 10
+      weight: 35
     - identifier: 文章
       name: 文章
       url: /posts/
       weight: 9
-    - identifier: now
-      name: Now
+    - identifier: 近况
+      name: 近况
       url: /now/
       weight: 30
     - identifier: 1
