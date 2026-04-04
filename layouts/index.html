@@ -7,24 +7,57 @@
     width:100%;
     padding:40px;
     border-radius:16px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-    background:#fff;
+    background:#000;
+    color:#fff;
     text-align:center;
   ">
 
     <h1 style="font-size:28px;margin-bottom:10px;">
-      eddy 的博客
+      eddy 的慢思考
     </h1>
 
-    <p style="color:#666;margin-bottom:30px;">
+    <p style="color:rgba(255,255,255,0.6);margin-bottom:40px;">
       不入流的人生解决方案
     </p>
 
-    <iframe src="https://eddylyu.substack.com/embed"
-            width="100%"
-            height="320"
-            style="border:none;">
-    </iframe>
+    <form
+      action="https://eddylyu.substack.com/api/v1/free"
+      method="post"
+      target="_blank"
+      style="
+        display:flex;
+        border-bottom:1px solid rgba(255,255,255,0.3);
+        padding-bottom:10px;
+      "
+    >
+      <input
+        type="email"
+        name="email"
+        placeholder="输入邮箱"
+        required
+        style="
+          flex:1;
+          border:none;
+          outline:none;
+          font-size:16px;
+          background:transparent;
+          color:#fff;
+        "
+      />
+
+      <button
+        type="submit"
+        style="
+          border:none;
+          background:none;
+          font-size:16px;
+          cursor:pointer;
+          color:#fff;
+        "
+      >
+        Join
+      </button>
+    </form>
 
   </div>
 
