@@ -5,7 +5,7 @@ draft: false
 url: "posts/happyprescription"
 
 tags: ["reading","book","读书笔记"]
-categories: ["book notes"]
+categories: ["book notes","wellness"]
 ---
 
 ![](/img/happyprescription.jpeg)

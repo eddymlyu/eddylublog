@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 
 tags: ["发炎","读书笔记","inflammatory","中医","湿寒"]
-categories: ["book notes"]
+categories: ["book notes","wellness"]
 ---
 
 ![](/img/inflammationbook.png)
