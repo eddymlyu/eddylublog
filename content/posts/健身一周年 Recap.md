@@ -5,7 +5,7 @@ draft: false
 url: "posts/gym1y"
 
 tags: ["gym","健身"]
-categories: ["fitness"]
+categories: ["wellness"]
 ---
 
 在2020年6月底一个夜黑风高的晚上，一时兴起（其实蓄谋已久）走进了楼下那家健身房咨询，随后顺理成章被销售成功。转眼已经一年，度过了健身的最初适应期，学了很多，本篇稍微给他recap一下。

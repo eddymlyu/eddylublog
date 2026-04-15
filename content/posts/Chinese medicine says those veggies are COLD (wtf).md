@@ -4,7 +4,7 @@ date: 2022-07-30T14:08:56+08:00
 draft: false
 
 tags: ["diet","health"]
-categories: ["fitness"]
+categories: ["wellness"]
 ---
 
 We were told to eat more greens to stay healthy, whilst there was this kind-of-famous supervisor in Chinese medicine sector states that some veggies are actually cold side, which would impact adversely on people are deficiency-cold syndrome.

@@ -1,5 +1,5 @@
 ---
-title: "我买了Zombieclub token的NFT"
+title: "我买了 Zombieclub token 的 NFT"
 date: 2022-08-02T14:08:56+08:00
 draft: false
 url: "posts/zct"

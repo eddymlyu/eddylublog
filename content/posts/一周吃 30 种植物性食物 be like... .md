@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 
 tags: ["植物基","plant based"]
-categories: ["fitness"]
+categories: ["wellness"]
 ---
 
 ![](/img/hkbreakfast.jpeg)

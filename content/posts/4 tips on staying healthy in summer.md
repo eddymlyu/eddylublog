@@ -4,7 +4,7 @@ date: 2022-07-29T14:08:56+08:00
 draft: false
 
 tags: ["diet","health"]
-categories: ["fitness"]
+categories: ["wellness"]
 ---
 
 ![](/img/chinesecold.png)

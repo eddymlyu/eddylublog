@@ -5,7 +5,7 @@ draft: false
 url: "posts/gym3y"
 
 tags: ["gym","健身"]
-categories: ["fitness"]
+categories: ["wellness"]
 ---
 
 

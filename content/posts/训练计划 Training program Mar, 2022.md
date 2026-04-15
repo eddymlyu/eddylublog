@@ -5,7 +5,7 @@ draft: false
 url: "posts/training202203"
 
 tags: ["gym","健身"]
-categories: ["fitness"]
+categories: ["wellness"]
 ---
 
 背景：增肌减脂同时，假设我TDEE 2400，则每日控制在2200-2450摄入。

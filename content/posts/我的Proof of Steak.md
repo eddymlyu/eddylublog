@@ -1,11 +1,11 @@
 ---
-title: "我的Proof of Steak"
+title: "我的 Proof of Steak"
 date: 2022-08-09T14:08:56+08:00
 draft: false
 url: "posts/steak"
 
 tags: ["diet","health","健身","营养"]
-categories: ["fitness"]
+categories: ["wellness"]
 ---
 
 ![](/img/steak1.jpeg)

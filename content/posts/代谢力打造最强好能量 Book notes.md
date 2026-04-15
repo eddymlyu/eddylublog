@@ -5,7 +5,7 @@ draft: false
 url: "posts/ge"
 
 tags: ["reading","health","读书笔记","好能量","代谢","metabolism"]
-categories: ["book notes","fitness"]
+categories: ["book notes","wellness"]
 ---
 
 ![](/img/ge.jpeg)
