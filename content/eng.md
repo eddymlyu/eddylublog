@@ -4,6 +4,8 @@ draft: false
 
 ---
 
+
+
 ### Update 2026-02-07
 
 
@@ -23,6 +25,14 @@ Rayan 说要介绍我认识 DTI 的，或者引荐，或者帮我背书的意思
 Not gonna lie. For most people on the internet, you have to be a little bit narcissisic to kind of film yourself, and edit and put it out there.
 
 There is a lot of high cogntitive demand. This is a long podcast.
+
+He was born in Germany but ethnicity wise I am Vietnamese.
+
+Hawkish 鹰派
+偏向升息、紧缩，重点是打通膨；
+
+Dovish 鸽派
+偏向降息、宽松，重点是撑经济。
 
 ### Update 2025-09-09
 
