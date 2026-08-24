@@ -9,9 +9,8 @@ params:
     Content: '记录一些东西，感觉做一个网站比较屌而已'
 
   socialIcons:
-  - name: youtube
-    url: "https://www.youtube.com/@eddylyu"
-    title: "YouTube"
+    - name: youtube
+      url: "https://www.youtube.com/@eddylyu"  
 
 
 
