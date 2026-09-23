@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Blockchain | ed</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tags/blockchain/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/blockchain/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/blockchain/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Blockchain
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">伤脑筋，现在签证办理真复杂 Explor. #04
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>✍️ Quotes 有意愿有能力做出主动的选择，才是真正的活着。 — 李笑来
+區塊鏈讓在的各種國際衝突裡面完全沒轍的人民跟社群稍微還有根稻草可以抓著。沒轍的窮國家陸續使用比特幣而不是美金當儲備變成 Network State 來吸引有資產族移民和脫離幫美國買單。或許不可串改的特性還給我們真正的歷史數據（更接近事實&#43; 可以追溯的新聞）；讓我們的下一代擁有獨立思考的能力。又或者在健保醫療/犯罪判決紀錄/資產擁有權上避免詐騙/吃案？” — Ned (disco.eth)
+一线城市的房产，很像托尔金笔下的那枚魔戒，戴上去很容易，摘下来却很难，并大概率会演变成控制我们的心魔。一个人一旦有了短期内无力偿还的债务，也就失去了跟别人说fuck you的权利。” — Jarod 数字游民部落
+Freedom is not letting you do whatever you want but teaching you not to do the things you don’t wanna do. — Immanuel Kant
+The worst thing to do is buy an asset when it’s in the news and sell it when it’s in the news. — Balaji Srinivasan
+Network state is a social network with a moral innovation, a sense of national consciousness, a recognized founder, a capacity for collective action, an in-person level of stability, an integrated cryptocurrency, an archipelago of crowdfunded physical territories, a virtual capital and an on-chain census that proves a large enough population income and real estate footprint to attain a measure of diplomatic recognition. — Balaji Srinivasan
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-26 14:08:56 +0800 CST'>August 26, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 伤脑筋，现在签证办理真复杂 Explor. #04" href="http://localhost:1313/posts/explor04/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">市场总是比你聪明
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>FED加息如期而至 美国出台CPI指数9.1%，比预期的更高了一些。实质上已经进入了经济衰退，虽然Powell并不承认。 美联储宣布加息75个基点，而美股和币圈反而迎来一波涨幅。 理论上，加息是为了抵抗通胀，所以美股和币圈资金入场量减少，按理应该更往下行。然而，加息动作早在预期，市场早就已经消化price in了。
+所以，千万别看着新闻再去做投资。
+对贸易的影响 美联储加息之后，市场上的美元会变“少”，因此加息会使美元升值。
+RMB走弱，兑美元6.76，有利于国内外贸的出口； 然而全球经济下行，国外需求下降很多，国内工厂的订单骤减； 欧洲采购商则苦不堪言，欧元几乎达到和美元1:1了，在近几年前为首次； 欧洲采购商在寻求欧元或者离岸人民币和中国出口商进行结算的方案。 注：加息是改变美元的价格，但是货币的总量是不变的；而缩表，则是改变货币的数量，例如美国也在把市场的美金抽出来，把balance sheet资产负债表缩小，进而控制住通货膨胀的失控。
+以太坊的涨幅 ETH也像做了过山车，从4月底的3000，一路走熊去泡沫到谷底的800多，现在涨到了1600了，这也是对ETH 2.0的一个price in。然而预计在9/19的merge如果顺利完成，主要是PoW（Proof of Work) 机制向PoS（Proof of Stake）的转换，也很有可能币值反而会回落，拭目以待。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-17 14:08:56 +0800 CST'>August 17, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 市场总是比你聪明" href="http://localhost:1313/posts/marketissmart/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Crypto investment portfolio update Aug 2022
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>NFT跌麻了，从一开始入场的$3100价值的eth，到谷底$800&#43;，再到现在的$2000，以太坊还在云霄飞车；
+NFT的价值和赋予每个人的意义仍然还在快速变化着。我想做的很简单，也只是用有限的资金体验这波浪潮。
+NFT ETH Date BBRC Ivy boys #6982 0.186 2022-06-22 Alpacadabra #9382 0.26 2022-05-06 Alpacadabra 3D #14979 0.161 2022-04-26 Zoofrenz 2.0 #7007 0.299 2022-04-21 0.906 Total 虽然都在关注着行情走势，但一般情况下，只用零用钱$400/月去支持自己喜欢的项目而已，目前是第三个月，将之前的金额凑个整数；
+我的Ledger Nano S Plus终于在路上，实在不容易；
+新增ADA项目，投资的初心不变。
+BTC (USD value) ETH (USD value) ADA (USD value) Date 30 70 2022-06-13 77 2022-06-17 100 2022-06-18 100 2022-07-01 200 100 2022-07-12 373 150 2022-08-15 880 170 150 Total </p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-15 14:08:56 +0800 CST'>August 15, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Crypto investment portfolio update Aug 2022" href="http://localhost:1313/posts/crypto-investment-portfolio-update-aug-2022/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">市场是渣男 Explor. #02
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>币安在欧洲发行Crypto卡，目前可以支持14种加密货币 此次新增支持的加密货币包括AVAX，XRP和SHIB等。
+个人观点：可能因为欧洲对于加密货币的法规比较松，币安加速扩展欧洲区的业务；加密货币对于那些被制裁的地区、较落后的地区、战乱地区的实用性意义我相信潜力相较于稳定/发达地区来得更大，据悉不久也将扩展业务到乌克兰；币安和mastercard合作在阿根廷推出crypto信用卡，用户可以避免持有阿根廷的货币而承受每个月50%左右的通膨。
+西班牙高达7%的国民都持有加密货币 全球其他地区平均持有加密货币大概1%而已，且调查显示西班牙约40%的人认为加密货币有法律监管。
+个人观点：其实没有监管…所以西班牙的朋友们对crypto的认识应该还不是很全面，可能大部分的持有者只是投机者吧。
+伊朗近日首次次通过加密货币进口了价值1千万美元的货 个人观点：这显示了Crypto在这些被制裁国家的威力。优点是别人不知道他买了什么货物，也不知道他从哪个国家采购，这个transaction没有任何银行的交易记录，因为这是用去中心化的加密货币进行支付的。有在做伊朗外贸生意的朋友们，是否也是一种未来可考虑的交易方式（跟传统出口退税说掰掰）？
+“Poor people spend, normal people save, rich people invest” 1971年美元和黄金脱钩，美国股票大概45度角一路飙升（黄金走势比S&amp;P500指数走的还好些），而美金的购买力却一路下坡。哪怕100美元，现在就应该开始投资，最好的投资时间就是现在，至于投美股还是Crypto则取决于个人认知。 别爱上你买的Crypto 之前买的NFT，晚上都会做梦这个项目会to the moon；2年前因为Elon随便喊了句而买的狗狗币，也感觉他会飙升。放心，不会的。
+市场是一个渣男，你要做的就是比他更渣就行了。任何加密货币（或NFT项目，只要基本面出问题了（哪怕是BTC），5分钟内就要清理干净。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-12 14:08:56 +0800 CST'>August 12, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 市场是渣男 Explor. #02" href="http://localhost:1313/posts/explor02/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">6个要素简单评估一个Project
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>经常有人片面的提问btc或者其他山寨币好不好，能不能投资。现在网络如此便利，结果以下6点可以简单的评估各加密货币项目的基本面，然后DYOR，相信对于要不要投资这个事情能有一个自己的判断。以下拿6个project举例，个人主观愚见，非投资建议。
+Project 1. 解决什么问题 Bitcoin 人与人之间Peer to Peer转账，不管在世界任何一个角落 Ethereum 交易的信任问题 Cardano 各L1主链上普遍存在Gas过高，交易速度过慢，能耗过高的问题 Polkadot 各区块链间不能互相通信以及L1主链拓展性差 Sonala 各L1主链上传统的吞吐量限制问题 Apecoin Yuga Lab系游戏产品/服务的货币 Project 2. 怎么解决问题 Bitcoin 区块链技术 Ethereum 通过部署智能合约，实现区块链上交易的自动化 Cardano 应用PoS机制，高TPS，低Gas，同时又不损害安全性 Polkadot 打造一种网络协议，让全区块链互相通信 Sonala 应用Proof of History机制，不需要庞大算力就可以验证一连串的交易，TPS高达65000，高拓展性，并且交易费极低 Apecoin 发行APE代币，用于游戏，治理，激励和Yuga系的未来计划 Project 3. 首脑是谁/团队 Bitcoin Satoshi Nakamoto 区块链创始人 Ethereum Vitalik Buterin Cardano Charles Hoskinson 以太坊的联合创始人之一 Polkadot Gavin Wood 以太坊的联合创始人之一 Sonala Anatoly Yakovenko 前高通，Dropbox工程师 Apecoin Yuga Lab Project 4. 技术（是否安全可靠或其应用） Bitcoin 09年发布至今没有出现过重大安全事件，技术纯粹，基本面从没改变过 Ethereum Dapp开发，Defi应用，主流NFT生态应用；一直在去中心化和安全性方面做的很好 Cardano 17年发布至今没有错过一个block，从未断链，目前还是100% secure Polkadot 区块链中的区块链，定义了平行链（Parachain）和中继链（Relaychain） Sonala 区块链多次断链，停止出块，稳定性差，节点超少只有700个（ETH有10000个），去中心化程度低；有Defi生态和NFT生态应用 Apecoin ERC20格式，由Horizon Lab协助开发，目前应用于NFT（以太坊上）的头部项目 Project 5. 市值 (2022-09-10) USD Bitcoin 445B Ethereum 210B Cardano 18B Polkadot 10B Sonala 15B Apecoin 2B Project 6. Roadmap 发展路线 Bitcoin 无 Ethereum 2022-09-19进行merge, 分片sharding（标志eth2.0完成）在2024年中，由PoW迁移到PoS机制 Cardano 目前在Basho主要提升网络和优化拓展性和互操作性；下一步Voltaire，链上自治 Polkadot Post-launch updates Sonala 完整的主网即将正式发布，之前的还是Beta阶段 Apecoin Yuga Lab的Metaverse </p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-10 14:08:56 +0800 CST'>August 10, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 6个要素简单评估一个Project" href="http://localhost:1313/posts/6factors/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">什么是Cardano艾达币
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+区块链3.0 区块链1.0代表：比特币BTC 解决的问题：我想给千里之外的德国的一位朋友转账100欧元帮我代购，传统方法复杂而且困难，目前可以通过公司名义在银行申请结汇欧元填一大堆申请表，几个工作日才能完成转账，并且银行收取手续费；但如果使用BTC，只需要用网络，输入对方钱包地址即可通过闪电网络，几分钟完成转账。
+区块链2.0代表：以太坊ETH 解决的问题：交易往往需要很多条件，比如德国朋友完成代购我才肯给他转账，比如公司买卖是否需要定金？多少定金？是否分批发货等等？这个时候就需要合约，而在区块链世界中，即智能合约Smart contract，通过部署编程语言，实现买卖的自动化。
+区块链3.0代表：Cardano 解决的问题：2.0的主链（如ETH）很难扩展到成千上万的用户，并且有TPS每秒交易量不够高（15tps）以及网络拥堵造成Gas fee高等问题；Cardono通过三个方面，从scalability可拓展性，interoperability可操作性和sustainability可持续性解决这些问题。
+Cardano的创立 创始人Charles Hoskinson，在2013年读了Vitalik（ETH创始人）的文章后觉得他超屌然后决定帮助他一起创建区块链这个未来科技。以太坊在2015年首次发布。
+然后，双方在以太坊运营上出现分歧，V神认为应该无盈利模式而Hoskinson觉得应该按公司模式运营，所以Hoskinson走人了自己创立了Cardano，并在2017年发布了Cardano。
+发行的代币是ADA艾达币，总量450亿个，目前流通大概340亿个。拥有三个组织，一个Cardano Foundation，一个IOG（前IOHK），一个日本的Emurgo。
+Cardano的三大支柱 Scalability可拓展性 运用Ouroboro为共识机制，是一种PoS（Proof of Stake)协议，而ETH和BTC是采用PoW机制（ETH2.0会从PoW转为PoS）；
+目前Cardano的TPS（Transaction Per Second）是250tps，而BTC是4.6tps，ETH是15tps，SOL是65000tps，未来Cardano会上升到1 million tps；
+Cardano网络会选举出一些节点Slot在纪元Epoch上，这些Slot有产生区块的权利。Ouroboro可处理无上限条Epoch链，每条Epoch上的Slot，就像是BTC区块链上挖矿一样，但是来的更便宜以及消化更低的算力；
+1 Epoch= 5天，21,000 slots, 1 slot= 20s。
+Interoperability可操作性 区块链和传统金融之间存在三个问题，元数据Metadata，归属问题Attribution，合规性Compliance；
+在web2，一些平台如twitter和FB，如果你发推，则在FB平台并不能看到信息，各平台项目独立，而在web3，Cardano可以通过侧链互通，即你在“区块链twitter”发推，则在“区块链FB”上也能看到推文；
+Crypto是区块链密码和凭证的工厂，他提供了信任之网web of trust，让我们不需要像web2那样再去需要账号和密码；
+由于数据过于庞大，很多时候大多数人并不是获取全部信息，Cardano运用修剪（Purning），订阅（Subscription）和压缩（Compression）等技术，使得每个用户大体上都只需要保存他们需要的一个块（Chunk）的数据。
+Sustainability可持续性 两方面，如何做支付以及如何技术持续发展；
+Cardano也在探索加密货币是机器能够自主学习，能够自动识别一些钱包信息等。
+关于Roadmap，团队目前在Basho的拓展阶段，最后一个阶段是Voltaire — 链上自治，让网络成为一个自我维持的系统。
+Cardano的非洲计划 Cardano在帮助埃塞尔比亚政府完善他们的教育系统，比如储存超过500w学生的数据，提供防串改记录，学生成绩验证，增加监控的功能和最安全的方法取得奖学金等；
+在非洲提供更安全，更快，费用更低的转账服务和技术（挑战中心化机构；
+帮助非洲本地开发者开发项目；
+帮助非洲小额贷款更安全更可靠，财务系统更有效率的运作；
+帮助非洲医疗机构更好的传输健康数据；
+帮助非洲本地的制造业。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-05 14:08:56 +0800 CST'>August 5, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 什么是Cardano艾达币" href="http://localhost:1313/posts/cardano/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">迟早成为一个whole coiner Explor. #01
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Solana热钱包被黑丢失800万美金 各散户各韭菜的Phantom钱包被黑客盗走，虽然币价没有因此大跌，但是让人怀疑基本面出了问题，各大交易所如Binance和OKX的CEO趁机都跑出来让用户把钱转到他们的交易所里。
+个人观点：Solana之前就出过断链的问题（Cardano从来没断过），现在又出了这个幺蛾子，在security方面做的很差，币圈动荡，我非micro investment选手，尤其基本面有问题的敬而远之；前几个月Terra Luna （USDT）脱钩死亡螺旋，很多人就是micro invest了100，因为Terra如果真的回钩，便可以轻松捞一把，然而基本面出问题的公司，怎么可能会恢复正常呢？
+交易所的钱包也是热钱包，安全性和Solana的Phantom钱包也没高到哪去，最安全的还是冷钱包（不知道我什么时候能拿到我的Ledger）。
+Michael Saylor辞去Micro Strategy的CEO职务 Saylor是BTC拥护者，也是首个把BTC放到公司资产负债表的企业家。目前辞去CEO职务，职位是Executive Chairman，专心发展和BTC相关的软件系统。
+个人观点：Twitter的Jack Dorsey也是一样，之前辞了Twitter的CEO也去发展软件了。早期这批BTC的用户者都还在用自己的方式壮大BTC的社区和建造加密货币的未来，尽管这个熊市让Micro Strategy亏损很多，但是BTC还是那个BTC，基本面一点都没有改变，仍然bullish。
+Michael Saylor和V神打嘴炮 Saylor认为eth应该被归类为security，而不是像btc被归类为commodity（目前加密货币只有BTC归类为commodity），但是V神包括Hoskinson认为eth/ada应该也是commodity，所以在吵架。
+个人观点：Saylor因为他在金融市场从业25年以上，比较清楚市场的法律法规，虽然V神是外星人，但法规方面不一定有Saylor清楚，说他是一个total crown会不会太言重了😂。
+美国银行Bank of America指出BTC等加密货币是有内在价值(Intrinsic value)的 2022年截止今日eth产生3.9 billion交易费，而btc产生了93 million交易费，BOA认为货币有内在价值的重要特点即是会产生交易费用。
+个人观点：巴菲特此前还表达了加密货币和NFT就是一坨屎，但对于加密货币本身就有人支持有人反对本来就很正常，DYOR，做出自己的判断。
+Whole coiner增加了四万个用户 Whole coiner指的是持有一整颗BTC的用户。
+个人观点：原来还有这么有意思的概念，确实熊市是一个布局的好时机，2w一颗的BTC现在不囤更待何时；而地球上的whole coiner也不是大部分人（即使是千万富豪）想有就有的，因为数量也就21,000,000颗。
+Gucci成为第一个接受Apecoin的大牌 个人观点：Apecoin前几个月Yuga Lab在发otherdeed土地的时候，币价一路飙到过25左右，做为新韭菜的我，在猴子地发售完后无脑杀入，然后Apecoin币价一路跌到3…
+但Yuga Lab手握NFT头部项目，Apecoin作为生态系统的一部分，应该长期看好，只是去Hodl一个山寨币，倒不如去好好dca btc呢。
+Tiffany发布NFT (feat Cryptopunk) NFTiff Cryptopunk的holder可以定制一款Tiffany的吊坠，吊坠本人即为其所拥有的Punk头，售价30eth。
+个人观点：Tiffany的现任CEO Alexandre Arnault本身也是NFT玩家，twitter头像就是一只Punk，之前自己show off就已经定制1个吊坠在显摆，现在可以说是小玩一把，估计发售名额的时候也是一场gas war，会玩，但普通人真的就是看看就好。
+特斯拉卖掉75%的BTC 特斯拉称内部资金以及上海工厂运营等原因，抛售了75%的BTC套现（大概卖在29000的价格左右），网上骂声一遍。
+个人观点：这有什么好骂的？虽然Elon是加密货币的支持者，但是投资买卖的操作是别人的自由，卖掉套现并不代表Elon（或特斯拉）不看好BTC了。很多散户的心态很脆弱，跟风投资，一旦哪个influencer做了点不如意的小动作，就开始fud而没有保持学习和独立思考。 PS：但是狗狗币我还是不懂啦。。
+一韩国家庭投资Crypto的悲伤故事 几个月前Terra Luna死亡螺旋，一个韩国家庭重仓了USDT血本无归后，父母把小孩带进车里，全家人开往湖里和世界告别；现在尤其大城市的韩国年轻人躺平，靠着加密货币投资梦想有一天咸鱼翻身。
+个人观点：过去读过几个韩国和crypto的文章，新闻半信半疑就好，但是也初见倪端，永远不要投资你不能承受的资金进入市场，投资和赌博是两码事。
+克罗地亚的Konzum超市接受加密货币支付 Konzum超市在克罗地亚超过700家，自2021年的12月起就陆续接受btc，eth，usdc，usdt等加密货币支付。
+个人观点：希望今年下半年能有机会去克罗地亚走走，体验一下这个Konzum超市。
+萨尔瓦多的旅游业兴起 自萨尔瓦多公布BTC为本国合法货币以来，旅游观光增长了82%。
+个人观点：BTC对一个国家/地区而言，都在直接或间接的积极影响，特别对于非洲和美洲的一些小国家，本身基础设施比较薄弱的，加密货币的生态环境及其应用说不定是一个弯道超车的机会，亦是一股不容小觑的力量。
+预计在2026年元宇宙的市场会超过50 billion美金 个人观点：其实我个人真没那么看好元宇宙，就像前几年的VR眼镜一样，刚出来很炫酷，但是炒概念远远大于实际用途，如果不够practical，不够实用的话，是无卵用的。
+目前元宇宙比较热门的还是在游戏GameFi这个区块，但是很多人比如我并不喜欢玩游戏，一个成年人去泡在虚拟世界干嘛？当然对于游戏人群是有意义的，比如之前买的Alpaca NFT，可以进入Sandbox里面游玩，但如果认知是现在这个阶段，当初我就不会跟风去买这个NFT，真韭菜就是我。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-05 14:08:56 +0800 CST'>August 5, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 迟早成为一个whole coiner Explor. #01" href="http://localhost:1313/posts/explor01/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我买了 Zombieclub token 的 NFT
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+手机里放了5月3日Zombieclub的AMA音频，我花了2天通勤在地铁上的时间听完了。今天我花了1个eth买了一只undead，嗯，带橙色beanie的。
+玩NFT才1个多月，从来不会想到会花这个钱去投资一个小图像，哪怕4月底的reveal直播看了几分钟也没打动我。研究NFT花了很多时间，大部分也是短期套利的环境下的驱动，虽然被坑被套，但也深深入迷…
+NFT起初买是想做一个PFP（微信头像），后面发现他也是一个art，也是一个投资品可以长期hodl，更是作为一个社区通证来凝聚天南地北的朋友。这个月以来，我对NFT的认知差不多每天都在刷新。但今天对zombie的投资行为算是这一段时间的一个小结 — 我（和大部分普通人）并没有太多时间和精力盯着大盘/地板价和一些短线项目，所以和投资股票一样，应该选优质的公司，然后长期持有。
+而Ned和Derek一遍遍的阐述中，不管是web3还是元宇宙，我们都在很早期的阶段，但我们进去了并且准备好和zombie fam一起去探索。
+其实inside out（乐哥油管）的第一季，不管是日本的craftmanship，NFT，camping的主题都很打中我，很合我心水，乐哥对于NFT或者任何想做的事情都会非常专注，艺人里可能不会有第二个人有这种曝光度并且敢以身作则，既然到了这一步，我也希望这个NFT项目能和做电影，做madness一样，能够做的很屌。
+此外，Ned 在 AMA 中解释道，他们四个创始人每个人投资了200eth，保证至少这个项目可以持续 5 年或更长时间。对于我们这种小韭菜，5 年后可能会烧掉2000 美金，但投身web3一起探索和遨游，则充当学费吧。
+我相信 Zombie 的愿景是超越亚洲和西方之间的联系。 我经常在 Discord 中看到很多人FUD Asian 项目。 诚然，亚洲项目很弱，但亚洲项目离现在只有6个月而已。慢慢build，该离开zombie的人慢慢也会被时间淘汰，留下的人就是（赚大钱）对的人。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-02 14:08:56 +0800 CST'>August 2, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 我买了 Zombieclub token 的 NFT" href="http://localhost:1313/posts/zct/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">3 months I still don’t get my cold wallet and still counting
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What a journey for my cold wallet.
+Decided to play the game so why not to get a cold wallet for my NFTs and cryptos? Two major manufacturers in the markets are Trezor and Ledger.
+May 6, I placed an order on Ledger’s site, with RMB 1251, for Ledger X. They said it is gonna take around 1 month to China Mainland.
+June 17, I had to pay a few hundred RMB tariff to get my Ledger customs clearance. Then it proceeded with EMS shipping to my place and it turnt out crap packing and obviously someone opened it up. Maybe during the process, Customs guys checked that up… anyway, how can you use it if it was “used”? That is the whole point of a cold wallet, a security drive for your digital asset.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-07-29 14:08:56 +0800 CST'>July 29, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 3 months I still don’t get my cold wallet and still counting" href="http://localhost:1313/posts/3-months-i-still-dont-get-my-cold-wallet-and-still-counting/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Web3 investment portfolio update
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>It was hype, I was hooked. I got in NFT world. No regret, but just experiment and most importantly, exploring Web3 (kind of).
+Documenting and sharing what I bought for this.
+NFT ETH Date BBRC Ivy boys #6982 0.186 2022-06-22 Alpacadabra #9382 0.26 2022-05-06 Alpacadabra 3D #14979 0.161 2022-04-26 Zoofrenz 2.0 #7007 0.299 2022-04-21 0.906 Remarks:
+ETH value was like 3100 USD end of April (holy shit); Gas fee was not calculated in above chart; Other stupid purchases were not listed in above chart, which is not considered as building projects. CPI statistics showed that the inflation rate in US days ago was 9.1%, still high, one of the reasons that I decided to DCA (dollar cost averaging) on BTC and ETH. A little pocket money USD 300 per month to start, I shoot that every 15th, ratio on BTC and ETH depends, but they have to go.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-07-19 14:08:56 +0800 CST'>July 19, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Web3 investment portfolio update" href="http://localhost:1313/posts/web3-investment-portfolio-update/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/tags/blockchain/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/tags/blockchain/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

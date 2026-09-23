@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tailscale on ed</title>
+    <link>http://localhost:1313/tags/tailscale/</link>
+    <description>Recent content in Tailscale on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2026 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tailscale/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VPS &#43; Tailscale 搭建 VPN</title>
+      <link>http://localhost:1313/posts/vps/</link>
+      <pubDate>Mon, 23 Mar 2026 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vps/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;VPS + Tailscale 搭建 VPN 使用说明书（小白版）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所需设备&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一台 Mac 💻&lt;/li&gt;
+&lt;li&gt;一双手 👋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1-购买-vps&#34;&gt;1. 购买 VPS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;注册 VPS 服务商（如 UltaHost、Vultr、Hetzner、Linode、DigitalOcean 等），我用的是 Vultr&lt;/li&gt;
+&lt;li&gt;选择合适的套餐：一般选 &lt;a href=&#34;https://eddy.lu/posts/host/&#34;&gt;shared CPU&lt;/a&gt; 足够。1 vCPU / 1 GB 内存 / 25 GB SSD，USD 5/month&lt;/li&gt;
+&lt;li&gt;选定节点（如日本 / 新加坡，取决于你想要的出口 IP）&lt;/li&gt;
+&lt;li&gt;操作系统建议选：&lt;strong&gt;Ubuntu 22.04 LTS (64-bit)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;购买后，你会得到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;公网 IP（例如 45.xx.xxx.xxx）&lt;/li&gt;
+&lt;li&gt;root 用户名和初始密码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/vpsip.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-连接-vps&#34;&gt;2. 连接 VPS&lt;/h3&gt;
+&lt;p&gt;在 Mac 终端机输入：&lt;/p&gt;
+&lt;p&gt;ssh root@&amp;lt;你的VPS_IP&amp;gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh root@45.xx.xxx.xxx
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;首次登录会提示&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Are you sure you want to continue connecting (yes/no)? → 输入 yes。&lt;/strong&gt;&lt;br&gt;
+然后输入服务商提供的 root 密码。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

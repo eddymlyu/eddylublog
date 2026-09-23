@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>搭建 Hugo 个人网站｜PaperMod 主题 | ed</title>
+<meta name="keywords" content="papermod, hugo, 建站, 静态网站">
+<meta name="description" content="前言
+谈不上个人品牌的打造，也谈不上被动收入的项目，但我的确是受到近几年的FIRE运动浪潮和创作者经济的影响，不断的捏造这个个人博客的小泥人，不断的重新思考如果我做一个自己的网站，对自己和他人能有什么积极的意义。
+想到就去做，做事情我喜欢start small。执行的过程中，现实这只手会慢慢推动你去往另外一个地方。况且，输出文字帮助我mental clarity，减压不少，单单是这一点，就已经是写作的动力了；而如果还能结交到同好两三，更是我的荣幸。
+因为工作的原因一开始用wordpress建站，YouTube的算法把我带到林猫先生的频道，又开启了一扇门…经过疫情的催化，以及区块链技术的萌芽，更让我相信辛苦工作之余，必须抽出时间skin in the game，做一些更个人化、去中心化的项目以此反脆弱，给这个世界留下一点微不足道的声音，而通过做个人网站，这个声音可以很自由，很独立。
+所以，why Hugo?
+
+速度超快，之前的wordpress我习惯把主机架设在国外，国内用户访问速度受限；而Hugo是html静态网站不涉及后台运行；
+维护简单，不存在wordpress整天在更新插件；
+主题极简，例如目前使用的PaperMod，非常纯粹；
+几乎免费，除了购买域名，搭建Hugo网站的服务如Github和Netlify都是免费的。
+
+建站
+环境建设
+由于我使用的是Mac，以下的操作适用于macOS。
+安装Homebrew。
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+需要注意的是如上code可能会被更新，请根据最新的安装代码执行；另，如果安装极度缓慢，可以执行如下国内镜像源备选（我就是执行第一个镜像源成功）。
+/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34;
+可以通过如下检查版本验证Homebrew是否安装成功。
+brew -v
+安装git。
+brew install git
+可以通过如下检查版本验证git是否安装成功。
+git -v
+安装hugo。
+brew install hugo
+建立网站
+可以选择你的网站资料所存放位置，比如文稿Documents，则先进入Documents。
+cd Documents
+例如新建一个名为demo-blog的网站；配置成Yaml是可选项，系统默认是Toml，选择成Yaml是因为语言比较简单（听说啦）；常见的语言有Yaml，Toml和Json。
+hugo new site demo-blog -f -yml
+网站建立成功，则在文件夹生成如下文件
+
+├── archetypes # 存放front matter
+├── assets
+├── content # 存放网页的Markdown文件
+├── data # 存放数据文件，通常是json/yaml/toml 文件
+├── layouts # 存放HTML模板
+├── static # 存放静态文件比如图片img，会被复制到public目录下
+├── themes # 存放现有的主题模板
+└── config.yml # 全局配置文件
+安装主题
+进入刚创建好的文件地址中（已进入Documents）。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/hugo/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/hugo/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei", Arial, sans-serif;
+}
+</style>
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      搭建 Hugo 个人网站｜PaperMod 主题
+    </h1>
+    <div class="post-meta">
+
+<span title='2023-02-21 14:08:56 +0800 CST'>February 21, 2023</span>
+
+</div>
+  </header> <details class="toc"  open>
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
+            <li>
+                <a href="#%e5%bb%ba%e7%ab%99" aria-label="建站">建站</a><ul>
+                    
+            <li>
+                <a href="#%e7%8e%af%e5%a2%83%e5%bb%ba%e8%ae%be" aria-label="环境建设">环境建设</a></li>
+            <li>
+                <a href="#%e5%bb%ba%e7%ab%8b%e7%bd%91%e7%ab%99" aria-label="建立网站">建立网站</a></li>
+            <li>
+                <a href="#%e5%ae%89%e8%a3%85%e4%b8%bb%e9%a2%98" aria-label="安装主题">安装主题</a></li>
+            <li>
+                <a href="#%e5%86%99%e7%af%87%e6%96%87%e7%ab%a0%e8%af%95%e8%af%95" aria-label="写篇文章试试！">写篇文章试试！</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%9f%ba%e7%a1%80%e9%85%8d%e7%bd%ae" aria-label="基础配置">基础配置</a><ul>
+                    
+            <li>
+                <a href="#%e6%b7%bb%e5%8a%a0%e5%88%86%e7%b1%bb%e5%92%8c%e6%a0%87%e7%ad%be" aria-label="添加分类和标签">添加分类和标签</a></li>
+            <li>
+                <a href="#%e6%b7%bb%e5%8a%a0%e6%97%b6%e9%97%b4%e8%bd%b4" aria-label="添加时间轴">添加时间轴</a></li>
+            <li>
+                <a href="#%e6%b7%bb%e5%8a%a0%e6%90%9c%e7%b4%a2%e5%8a%9f%e8%83%bd" aria-label="添加搜索功能">添加搜索功能</a></li>
+            <li>
+                <a href="#%e6%b7%bb%e5%8a%a0%e8%af%84%e8%ae%ba%e5%8a%9f%e8%83%bd" aria-label="添加评论功能">添加评论功能</a></li>
+            <li>
+                <a href="#%e5%bb%ba%e7%ab%8blayouts%e7%9a%84html%e6%a8%a1%e7%89%88%e4%bb%a5%e8%a6%86%e7%9b%96%e7%b3%bb%e7%bb%9f%e6%a8%a1%e7%89%88" aria-label="建立layouts的html模版以覆盖系统模版">建立layouts的html模版以覆盖系统模版</a></li>
+            <li>
+                <a href="#%e5%b8%b8%e7%94%a8params%e5%8f%82%e6%95%b0" aria-label="常用params参数">常用params参数</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%b8%b8%e7%94%a8markdown%e8%af%ad%e6%b3%95syntax" aria-label="常用Markdown语法syntax">常用Markdown语法syntax</a></li>
+            <li>
+                <a href="#%e9%83%a8%e7%bd%b2" aria-label="部署">部署</a><ul>
+                    
+            <li>
+                <a href="#github" aria-label="Github">Github</a></li>
+            <li>
+                <a href="#netlify" aria-label="Netlify">Netlify</a>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content"><h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
+<p>谈不上个人品牌的打造，也谈不上被动收入的项目，但我的确是受到近几年的FIRE运动浪潮和创作者经济的影响，不断的捏造这个个人博客的小泥人，不断的重新思考如果我做一个自己的网站，对自己和他人能有什么积极的意义。</p>
+<p>想到就去做，做事情我喜欢start small。执行的过程中，现实这只手会慢慢推动你去往另外一个地方。况且，输出文字帮助我mental clarity，减压不少，单单是这一点，就已经是写作的动力了；而如果还能结交到同好两三，更是我的荣幸。</p>
+<p>因为工作的原因一开始用wordpress建站，YouTube的算法把我带到<a href="https://www.youtube.com/watch?v=gm6zdoL1r0Y">林猫先生的频道</a>，又开启了一扇门…经过疫情的催化，以及区块链技术的萌芽，更让我相信辛苦工作之余，必须抽出时间skin in the game，做一些更个人化、去中心化的项目以此反脆弱，给这个世界留下一点微不足道的声音，而通过做个人网站，这个声音可以很自由，很独立。</p>
+<p>所以，why Hugo?</p>
+<ul>
+<li>速度超快，之前的wordpress我习惯把主机架设在国外，国内用户访问速度受限；而Hugo是html静态网站不涉及后台运行；</li>
+<li>维护简单，不存在wordpress整天在更新插件；</li>
+<li>主题极简，例如目前使用的PaperMod，非常纯粹；</li>
+<li>几乎免费，除了购买域名，搭建Hugo网站的服务如Github和Netlify都是免费的。</li>
+</ul>
+<h2 id="建站">建站<a hidden class="anchor" aria-hidden="true" href="#建站">#</a></h2>
+<h3 id="环境建设">环境建设<a hidden class="anchor" aria-hidden="true" href="#环境建设">#</a></h3>
+<p>由于我使用的是Mac，以下的操作适用于macOS。</p>
+<p>安装Homebrew。</p>
+<pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+</code></pre><p>需要注意的是如上code可能会被更新，请根据最新的安装代码执行；另，如果安装极度缓慢，可以执行如下国内镜像源备选（我就是执行第一个镜像源成功）。</p>
+<pre tabindex="0"><code>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34;
+</code></pre><p>可以通过如下检查版本验证Homebrew是否安装成功。</p>
+<p><code>brew -v</code></p>
+<p>安装git。</p>
+<p><code>brew install git</code></p>
+<p>可以通过如下检查版本验证git是否安装成功。</p>
+<p><code>git -v</code></p>
+<p>安装hugo。</p>
+<p><code>brew install hugo</code></p>
+<h3 id="建立网站">建立网站<a hidden class="anchor" aria-hidden="true" href="#建立网站">#</a></h3>
+<p>可以选择你的网站资料所存放位置，比如文稿Documents，则先进入Documents。</p>
+<p><code>cd Documents</code></p>
+<p>例如新建一个名为demo-blog的网站；配置成Yaml是可选项，系统默认是Toml，选择成Yaml是因为语言比较简单（听说啦）；常见的语言有Yaml，Toml和Json。</p>
+<p><code>hugo new site demo-blog -f -yml</code></p>
+<p>网站建立成功，则在文件夹生成如下文件</p>
+<pre tabindex="0"><code>
+├── archetypes # 存放front matter
+├── assets
+├── content # 存放网页的Markdown文件
+├── data # 存放数据文件，通常是json/yaml/toml 文件
+├── layouts # 存放HTML模板
+├── static # 存放静态文件比如图片img，会被复制到public目录下
+├── themes # 存放现有的主题模板
+└── config.yml # 全局配置文件
+</code></pre><h3 id="安装主题">安装主题<a hidden class="anchor" aria-hidden="true" href="#安装主题">#</a></h3>
+<p>进入刚创建好的文件地址中（已进入Documents）。</p>
+<p><code>cd demo-blog</code></p>
+<p>进入hugo主题网站选一个合你心水的，比如我选的PaperMod，其<a href="https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#method-1">Github</a>有其他安装方法，但第一个方法就可以给他run下去，theme文件夹里出现PaperMod文件夹说明安装成功。</p>
+<pre tabindex="0"><code>git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
+</code></pre><p>用<a href="https://code.visualstudio.com/">VS Code</a>打开demo-blog，配置config.yml，增加theme命令以此连结主题PaperMod。</p>
+<pre tabindex="0"><code>baseURL: &#34;&#34; # 网址这个地方可以先放空
+languageCode: en-us
+title: eddylu # 这个网站叫什么名字
+theme: PaperMod # 主要是增加这个配对主题
+</code></pre><p>试运行blog。</p>
+<p><code>hugo server</code></p>
+<p>终端运行出网站服务器，打开浏览器，输入http://localhost:1313，如果成功即可以看到个人网站的雏形。<br>
+<img loading="lazy" src="/img/hugoserver.png"></p>
+<h3 id="写篇文章试试">写篇文章试试！<a hidden class="anchor" aria-hidden="true" href="#写篇文章试试">#</a></h3>
+<p>posts指代的是content下的一个文件夹，我把所有文章都放在posts底下；first代表第一篇文章。</p>
+<p><code>hugo new posts/first.md</code></p>
+<p>如果想把文章做分类，比如美食和电影，则</p>
+<p><code>hugo new food/firstfood.md</code></p>
+<p><code>hugo new movie/firstmovie.md</code></p>
+<p>进入刚建立的md文件，系统有自带的front matter模版，亦可以增添自己想要的功能。</p>
+<pre tabindex="0"><code>---
+title: &#34;frist&#34; # 此处修改文章名
+date: 2023-02-20T14:08:56+08:00 # 日期可改
+draft: false # 是否为草稿
+---
+你好，我是第一篇博客。
+</code></pre><p>保存后刷新本地端口如果看到第一篇文章被同步了，那么代表个人主页已经成功建立了。这类的页面属于single page。</p>
+<h2 id="基础配置">基础配置<a hidden class="anchor" aria-hidden="true" href="#基础配置">#</a></h2>
+<p>有了网站的基础框架当然还不着急发布，因为还有一些连膝盖想都必须有的基础模块还未被加入。如下一些模块仅供参考，未来持续加入更多…</p>
+<h3 id="添加分类和标签">添加分类和标签<a hidden class="anchor" aria-hidden="true" href="#添加分类和标签">#</a></h3>
+<p>在config.yml里加入</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>menu:
+</span></span><span style="display:flex;"><span>  main:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">-</span> identifier: categories
+</span></span><span style="display:flex;"><span>      name: Categories
+</span></span><span style="display:flex;"><span>      url: /categories/
+</span></span><span style="display:flex;"><span>      weight: 10 # 重量越轻，就越往前面排，“1”则是置顶
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">-</span> identifier: tags
+</span></span><span style="display:flex;"><span>      name: Tags
+</span></span><span style="display:flex;"><span>      url: /tags/
+</span></span><span style="display:flex;"><span>      weight: 20
+</span></span></code></pre></div><p>注：这是categories和tags是系统默认的类目 (taxonomy)，我们也可以添加其他的，但必须在config.yml里加入代码，比如想加入moods类目（比如happy或sad），如下代码，也必须把默认的categories和tags写上。这类的页面属于list page。</p>
+<pre tabindex="0"><code>[taxonomies]
+  tag = &#34;tags&#34;
+  category = &#34;categories&#34;
+  mood = &#34;moods&#34;
+</code></pre><p>在posts里面的md文件，增加tags和categories的代码，后续可以串接到各自的list page。</p>
+<pre tabindex="0"><code>---
+title: &#34;2022币圈7大崩坏&#34; 
+date: 2022-09-29T14:08:56+08:00
+draft: false
+
+tags: [&#34;crypto&#34;,&#34;blockchain&#34;]
+categories: [&#34;blockchain&#34;]
+---
+</code></pre><h3 id="添加时间轴">添加时间轴<a hidden class="anchor" aria-hidden="true" href="#添加时间轴">#</a></h3>
+<p>在config.yml里加入</p>
+<pre tabindex="0"><code>menu:
+  main:
+  - identifier: archives
+    name: Archives
+    url: /archives/
+    weight: 10
+</code></pre><p>在content下面新建一个archives.md。</p>
+<pre tabindex="0"><code>---
+title: &#34;Archives&#34;
+layout: &#34;archives&#34;
+url: &#34;/archives/&#34;
+summary: &#34;archives&#34;
+---
+</code></pre><h3 id="添加搜索功能">添加搜索功能<a hidden class="anchor" aria-hidden="true" href="#添加搜索功能">#</a></h3>
+<p>在config.yml里加入</p>
+<pre tabindex="0"><code>outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON 
+</code></pre><pre tabindex="0"><code>menu:
+  main:
+  - identifier: search
+    name: Search
+    url: /search/
+    weight: 10
+</code></pre><p>在content下面新建一个search.md。</p>
+<pre tabindex="0"><code>---
+title: &#34;Search&#34; 
+layout: &#34;search&#34; 
+summary: &#34;search&#34;
+placeholder: &#34;search&#34;
+---
+</code></pre><h3 id="添加评论功能">添加评论功能<a hidden class="anchor" aria-hidden="true" href="#添加评论功能">#</a></h3>
+<p>在<a href="cusdis.com">cusdis.com</a>注册一个账号，并取得自己的Embed code。</p>
+<p>把如下代码贴进去自己的footer模版里，新建一个single页面模版在<code>layouts/_default/single.html</code></p>
+<pre tabindex="0"><code>  &lt;!-- Comments by Cusdis --&gt;
+      &lt;h4&gt;Comments:&lt;/h4&gt;
+      &lt;div id=&#34;cusdis_thread&#34; data-host=&#34;https://cusdis.com&#34;
+        data-app-id=&#34;See your dashbord on Cusdis&#34; # 把自己的Embed code贴进这里！
+        data-page-id=&#34;{{ .File.UniqueID }}&#34; data-page-url=&#34;{{ .Permalink }}&#34;
+        data-page-title=&#34;{{ .Title }}&#34;&gt;&lt;/div&gt;
+      &lt;script async defer src=&#34;https://cusdis.com/js/cusdis.es.js&#34;&gt;&lt;/script&gt;
+</code></pre><h3 id="建立layouts的html模版以覆盖系统模版">建立layouts的html模版以覆盖系统模版<a hidden class="anchor" aria-hidden="true" href="#建立layouts的html模版以覆盖系统模版">#</a></h3>
+<p>在layouts下建立一个新文件夹_default，再在底下建立一个archives.html；将themes/PaperMod下吗的layouts/_default的archives文件的html内容复制到刚才新建的archives.html里，则可以在里面做随心所欲的模版修改。</p>
+<h3 id="常用params参数">常用params参数<a hidden class="anchor" aria-hidden="true" href="#常用params参数">#</a></h3>
+<p>在config.yml配置一些基础的params，更多的配置可以见Github的<a href="https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/">PaperMod模版</a></p>
+<pre tabindex="0"><code>params:
+  homeInfoParams:
+    Title: &#39;学习、思考和思考的地方&#39; # 主题
+    Content: &#39;写一些给自己看的内容，然后觉得做一个网站比较屌而已&#39; # 描述
+  SocialIcons:
+      -name: facebook # 可选
+       url: &#39;www.facebook.com&#39;
+ 
+</code></pre><pre tabindex="0"><code>params:
+  ShowBreadCrumbs: true # 面包屑导航
+  ShowReadingTime: true # 阅读时间
+  ShowShareButtons: true # 分享按钮
+  ShowPostNavLinks: true # 文章前后页按钮
+ 
+</code></pre><h2 id="常用markdown语法syntax">常用Markdown语法syntax<a hidden class="anchor" aria-hidden="true" href="#常用markdown语法syntax">#</a></h2>
+<p>自定义url，在front matter增加：</p>
+<pre tabindex="0"><code>url: &#34;whateveryouwant” # 直接在域名后面的url
+</code></pre><p>增加TOC (Table of Content)文章导航，在front matter增加：</p>
+<pre tabindex="0"><code>ShowToc: true 
+TocOpen: true # 默认展开
+</code></pre><p>标题：</p>
+<pre tabindex="0"><code># 这是 H1
+## 这是 H2
+###### 这是 H6
+</code></pre><p>列表：</p>
+<pre tabindex="0"><code>- 列表项目
+1. 列表项目
+</code></pre><p>粗体、斜体和<del>删除线</del>：</p>
+<pre tabindex="0"><code>*我是斜体超屌*   # 或_斜体_
+**粗体才是真的屌**
+***加粗斜体***
+~~删除线~~
+</code></pre><p>插入链接：</p>
+<pre tabindex="0"><code>[链接文字](链接网址)
+</code></pre><p>插入图片：</p>
+<pre tabindex="0"><code>![alt text](/path/to/img.jpg)
+</code></pre><p>插入行内代码块：用`包住头尾</p>
+<pre tabindex="0"><code>`行内代码块`
+</code></pre><p>插入代码块：用```包住头尾，并指定一种语言（也可以不指定）</p>
+<pre tabindex="0"><code>我是代码块
+</code></pre><p>引用：</p>
+<pre tabindex="0"><code>&gt; 引用内容Quote
+</code></pre><p>分割线：</p>
+<pre tabindex="0"><code>---
+</code></pre><p>换行：</p>
+<pre tabindex="0"><code>&lt;br&gt;
+</code></pre><p>制作表格：<code>|</code>分隔不同的单元格，<code>-</code>分隔表头和其他行</p>
+<pre tabindex="0"><code>|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+</code></pre><table>
+	<thead>
+			<tr>
+					<th>表头</th>
+					<th>表头</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+			</tr>
+			<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+			</tr>
+	</tbody>
+</table>
+<p>插入注解footnote</p>
+<pre tabindex="0"><code>xxx[^1]
+[^1]: 注解内容
+</code></pre><p>更多的syntax可以见<a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">这里</a>。</p>
+<h2 id="部署">部署<a hidden class="anchor" aria-hidden="true" href="#部署">#</a></h2>
+<p>Mac终端执行Hugo，则内部开始建立网站，此时本地public文件夹会多出许多文件。</p>
+<p><code>hugo</code></p>
+<h3 id="github">Github<a hidden class="anchor" aria-hidden="true" href="#github">#</a></h3>
+<p>注册一个<a href="https://github.com/">Github</a>账号并创建一个仓库repository。
+<img loading="lazy" src="/img/repository.png"></p>
+<p>终端进行git初始化。</p>
+<p><code>git init</code></p>
+<p>建立git模块。</p>
+<p><code>touch .gitmodules</code></p>
+<p>在 VS Code 的 .gitmodules 里面输入 git 模块内容。</p>
+<pre tabindex="0"><code>[submodule &#34;themes/PaperMod&#34;]
+    path = themes/PaperMod
+    url = &#34;https://github.com/adityatelange/hugo-PaperMod.git&#34;
+</code></pre><p>提交版本库。</p>
+<p><code>git commit -m &quot;first commit&quot;</code></p>
+<p>注：如果这里没有成功，可以在 VS Code 里的 Source Control 里输入「first commit」,然后点击打勾试试，如果跳出来需要 user name 和 user email，可以再终端输入</p>
+<pre tabindex="0"><code>git config --global user.name &#34;firstname lastname&#34;
+
+git config --global user.email 你的邮箱
+</code></pre><p>创建分支。</p>
+<pre tabindex="0"><code>touch git brach -M main
+
+git remote add origin https://github.com/...git
+</code></pre><p>推送至远程仓库。</p>
+<p><code>git push -u origin main</code></p>
+<h3 id="netlify">Netlify<a hidden class="anchor" aria-hidden="true" href="#netlify">#</a></h3>
+<p>注册一个<a href="https://www.netlify.com/">Netlify</a>账号，串街到刚才github账号，完成设置，见<a href="https://www.youtube.com/watch?v=hjD9jTi_DQ4&amp;t=733s">Adipurdila的第41分钟教学视频</a>。</p>
+<p>完成后Netlify会跑几分钟的设置，生成一个https://&hellip;netlify.app/的网址，意味着已经成功部署到Netlify。</p>
+<p>Domain setting找到name servers的服务，进入自己域名提供商的DNS设置，将Netlify的dns记录贴到域名提供商的DNS条目中。
+<img loading="lazy" src="/img/nameservers.png"></p>
+<p>稍等片刻，Netlify也会自动把网站配置上https；最后将自己的域名贴到config.yml，大功告成！</p>
+<pre tabindex="0"><code>baseURL: &#34;https://eddy.lu&#34;
+languageCode: en-us
+title: eddylu 
+theme: PaperMod
+</code></pre><p>每次build完自己的内容，执行git的流程即可同步到网站。</p>
+<pre tabindex="0"><code>git status
+git add .
+git commit -m &#34;add&#34;
+git push
+</code></pre><p>Have fun!!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/papermod/">Papermod</a></li>
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/tags/%E5%BB%BA%E7%AB%99/">建站</a></li>
+      <li><a href="http://localhost:1313/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/">静态网站</a></li>
+    </ul>
+    
+    <div style="margin: 50px 0;"> 
+        <style>
+  #cusdis_thread iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+  </style>
+    <h4>Comments:</h4>
+      <div id="cusdis_thread" data-host="https://cusdis.com"
+        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
+        data-page-id="add41517ec0075066d29d4359fba2910" data-page-url="http://localhost:1313/posts/hugo/"
+        data-page-title="搭建 Hugo 个人网站｜PaperMod 主题"></div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

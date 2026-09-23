@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>效率 on ed</title>
+    <link>http://localhost:1313/tags/%E6%95%88%E7%8E%87/</link>
+    <description>Recent content in 效率 on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 May 2021 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Simple Productivity System</title>
+      <link>http://localhost:1313/posts/my-simple-productivity-system/</link>
+      <pubDate>Mon, 03 May 2021 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-simple-productivity-system/</guid>
+      <description>&lt;p&gt;分享人生效率工具，一软一硬。从事外贸工作以来已经更新迭代过数次，践行着极简主义，至今仍然在探索中，没有一套效率工具适合所有人，只有通过自己不断的尝试和失败和尝试，才能有越来越适合自己的方案。如下所有的工具皆是可被替换的，只不过罗列出的是目前使用最得心应手的，姑且把这次的版本定位V1，希望各位也能别在APP的海洋中遨游了。&lt;/p&gt;
+&lt;h3 id=&#34;硬件电脑和布拉格prague&#34;&gt;硬件（电脑和布拉格Prague&lt;/h3&gt;
+&lt;p&gt;💻 Macbook Air Late 2018，MBA换Retina显示屏的初代产品，我自豪的在香港官方翻新购入，我的第一生产力工具；&lt;/p&gt;
+&lt;p&gt;📱P即Phone，iPhone XR，从不盲目追求最新的电子产品，虽不是果粉，但还算是水果的忠实用户，只不过太过理性，我追求的是“够用就好的科技”；&lt;/p&gt;
+&lt;p&gt;👝R即Redmoon（硬扯），红月的钥匙包，身处电子化（且隐私曝光无底线）第一大国，从前的信用卡和储蓄卡都不用带了。这款钥匙包一定打到很多国人的痛点，里头只有钥匙、身份证、元初购物卡、少量现金、没了。国内出差同样适用，可以放入酒店门口和若干发票。亦能感受日本手工皮质经久耐用的色落，爱不释手；海外出差估计还得老老实实带钱包，等疫情后再探索了；&lt;/p&gt;
+&lt;p&gt;🚙A即Auto key(徳)，车钥匙；&lt;/p&gt;
+&lt;p&gt;💳G即Gateway，公司门禁卡；&lt;/p&gt;
+&lt;p&gt;⌚️U即Uhr(徳)，Apple Watch Series 4，地铁门禁，快速忽略来电和微信打扰；&lt;/p&gt;
+&lt;p&gt;🎧E即Earpods，我知道官方名是Airpods二代（但我必须硬拗一个E），长时间打电话神器。&lt;/p&gt;
+&lt;p&gt;注：iPad是弊大于利的产品，不要买不要买不要买。&lt;/p&gt;
+&lt;h3 id=&#34;软件&#34;&gt;软件&lt;/h3&gt;
+&lt;p&gt;📅日历，我使用的是苹果日历，主要有3大类别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schedule，（出差）行程；&lt;/li&gt;
+&lt;li&gt;Event，当日的重点事件；&lt;/li&gt;
+&lt;li&gt;Reminder，提醒我项目的milestone、deadline或跟进的事宜；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;📜To do，换了多个app，目前使用ticktick，每日的清晨约花15-30分钟整理一天工作任务（结合团队的晨会和日历领取任务），ticktick响应够快（感觉苹果的reminder稍有延迟），电脑端和移动端能同步，完成任务有“叮”的满足感；完成不了的任务可以左滑移到明天，当天的任务睡前必须清空，否则容易失眠；&lt;/p&gt;
+&lt;p&gt;📒笔记&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple Notes，记录个人和工作的快速笔记，方便快速查阅和调用；&lt;/li&gt;
+&lt;li&gt;Notion，Blog创作和其他笔记；&lt;/li&gt;
+&lt;li&gt;Bear，设计很喜欢，和一只熊的对话，用写作和自己对话，mental clarity，像是电子版的笔记本随手涂涂画画；&lt;/li&gt;
+&lt;li&gt;Evernote，文件档案，产品学习资料，培训笔记，读书笔记等；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;☁️文件存储&lt;/p&gt;
+&lt;p&gt;iCloud Drive，目前200g，够用…方便随时随地电脑和手机都能调用；&lt;/p&gt;
+&lt;p&gt;📧Email&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple mail和Outlook，for business；&lt;/li&gt;
+&lt;li&gt;QQ邮箱和Gmail个人邮箱，国内和国外订阅灵活选择；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🗂项目管理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zenkit，一款德国小众软件，使用轻量，项目overview，重点项目highlight；&lt;/li&gt;
+&lt;li&gt;Team，微软的，搭配插件Project for web和planner to do；&lt;/li&gt;
+&lt;li&gt;Omni plan，pro级的项目管理软件，几乎有你一切想要的功能；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;😅即时通讯&lt;/p&gt;
+&lt;p&gt;科技越来越发达的今天，沟通的时效性大大提升也更加的碎片化，我使用的即时通讯app多达8个，提供便利的同时，其实这些都是会打扰你、分散你注意力的存在，但由于工作的性质，和团队、客户和供应商的沟通很大一个比重由这些app完成。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

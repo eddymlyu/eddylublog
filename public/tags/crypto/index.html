@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>crypto | eddylu</title>
+<meta name="robots" content="noindex, nofollow">
+<title>“Crypto&#34; | ed</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://eddy.lu/tags/crypto/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://eddy.lu/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://eddy.lu/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://eddy.lu/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://eddy.lu/apple-touch-icon.png">
-<link rel="mask-icon" href="https://eddy.lu/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/tags/crypto/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://eddy.lu/tags/crypto/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/crypto/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/crypto/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,60 +37,49 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:title" content="crypto" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://eddy.lu/tags/crypto/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="crypto"/>
-<meta name="twitter:description" content=""/>
-
-</head>
-
-<body class="list" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script>
-
-<header class="header">
-    <nav class="nav">
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://eddy.lu" accesskey="h" title="eddylu (Alt + H)">eddylu</a>
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -105,25 +95,60 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
-                <a href="https://eddy.lu/about/" title="About">
-                    <span>About</span>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/archives/" title="Archives">
-                    <span>Archives</span>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/categories/" title="Categories">
-                    <span>Categories</span>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/tags/" title="Tags">
-                    <span>Tags</span>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
                 </a>
             </li>
         </ul>
@@ -132,41 +157,111 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    crypto
+    “Crypto&#34;
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>2022币圈7大崩坏
+    <h2 class="entry-hint-parent">香港和Web3 Explor. #06
     </h2>
   </header>
   <div class="entry-content">
-    <p> Axie Infinity被盗6亿美金 Axie Infinity的测链Ronin被黑客盗走173,600个以太币和2,550万个USDC（约等值6亿美金），值得注意的是，直到一周后一名用户无法提取出以太币的时候，这个被盗事件才被发现。 Luna/UST的死亡螺旋 Luna作为算法稳定币，曾经一度被资本看好，Do Kwon是韩国的crypto界的明日之星。有很多crypto友好的youtuber对算法稳定币前景十分看好并认为Luna对加密货币发展起着非常关键的作用。然而UST和美金脱钩（Depegged），市场恐慌出逃，很多投资者的投资瞬间蒸发，甚至害的有些人结束自己的生命。 三箭资本（3AC）倒闭 总部位于新加坡的3AC颠覆时其资产管理规模还达到100亿美元，投资了众多地雷crypto项目，比如Terra代币，Axie Infinity和交易所Blockfi等等。 Voyager Digital倒闭 币圈开始多米诺式的暴雷，三箭资本资不抵债，风险逐层传导，Voyager就是那个债主，谁叫你借钱给“熟人”？然而后续给FTX收购了，也就是最后一个大雷爆了 — FTX也宣布破产后，被币安收购。 Celsius破产 该平台以高息作招徕，曾称存款的客户可获得高达18厘的高息回报，主要是向客户借入虚币，再借给机构投资者。然而据法庭文件称，Celsius只有1.67亿美元的现金，但欠了用户约47亿美元，资产负债表中更存在约12亿美元的漏洞。Liquidity有很大问题。随时市场恐慌和机构爆雷，Celsius面临大量存户赎回而宣布停止提款，继而使这间加密借贷公司爆雷。 FTX破产 SBF靠着高明的行销手段，比如大量顶级赛事的推广FTX和游走在政客之间，打造了几乎催不可破的形象。我甚至也都在FTX做好了KYC准备使用这个交易所。SBF和自己的投资公司alameda research为非作歹，利用漏洞，挪用用户的资金杠杆交易，炒FTT空币，智商真的有点高。 BlockFi破产 BlockFi因为向3AC提供贷款而遭受损失，彼时FTX挺身而出，向BlockFi提供了信贷额度，双发财务的关系千丝万缕。后续也因为FTX的趴下，受害者名单再添一员，BlockFi申请破产。 </p>
+    <p> Travel, is life intensified. — Elliot Ng
+1）香港近日发布了有關香港虛擬資產發展的政策宣言，面对老大的管控，人才的流失，今日香港今非昔比，出台如此政策倒不令人意外。至少香港仍然与世界连结，看的清楚未来的潜在性产业，靠着本来的金融产业的盛大，借力发展虚拟资产，web3，NFT。只是现在看来还是有气无力的状态，就在10月底举行的天际100的metaverse asia上，大部分除了币，电信公司，就是交易所…看来吸引web3头像项目的加入，仍需时日。
+2）Google Cloud官方推特@了Solana创始人，导致SOL暴涨15%，作为Web2最大的公司之一，Google宣布要营运Solana的矿池。Solana个人感觉中心化程度比较明显，背后是一些大财团在操作，所以营运矿池的难度也比较高，资金等需求也比较高，但无论如何，Google要营运矿池，对加密货币世界也是一个积极的信号。
+3）FTT近期币价过山车，FTT是一种Utility token效能币，主要用途区别于BTC，ETH，是拿来使用和交易的，例如在FTX交易所上能赋予更低的交易费等等，而不是用来长期hodl增值的；且FTT过于中心化，前10名的钱包拥有93%的FTT，流通性也是比较差的。
+4）关于Ripple XRP和SEC的诉讼案，有越来越多的声音在声援Ripple，所有的矛头指向SEC的overreach，预计诉讼案在2023的上半年会告一段落，希望也还给Ripple一个清白，此举对加密货币的发展有着非常积极的作用，也需要给SEC一个警告—不能在没有任何证据的情况下无端指控一个加密公司。
+5）SWIFT是一个恐龙科技，非常outdated，但他也在和chainlink合作布局加密货币领域；美国各大交易所也开始”入侵“NBA，例如FTX赞助热火队的球场，crypto.com赞助湖人队的球场；Steph Curry也即将推出nft专利curryverse。种种迹象表明crypto已经不可阻挡。
+</p>
   </div>
-  <footer class="entry-footer"><span title='2022-09-29 14:08:56 +0800 CST'>September 29, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to 2022币圈7大崩坏" href="https://eddy.lu/post/2022%E5%B8%81%E5%9C%887%E5%A4%A7%E5%B4%A9%E5%9D%8F/"></a>
+  <footer class="entry-footer">
+
+<span title='2022-11-09 14:08:56 +0800 CST'>November 9, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 香港和Web3 Explor. #06" href="http://localhost:1313/posts/explor06/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bullish Jail Kown! Explor. #05
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1）Michael Saylor 说BTC的闪电网路是科技界最最重要的事。闪电网路是BTC的一个侧链，可以降低交易费，提高交易速度。
+2）币安交易所delist掉USDC.
+只是为了提升自己的busd市值吗？
+3）Do kwon被韩国通缉，Do kwon被韩国通缉，消息一传出，马上有人发代币token JAIL KWON，暴涨90%.
+目前加密货币仍然是无监管的状态，有这样的事情真是令人哭笑不得。类似的事情诸如Will Smith扇Rock耳光和英国女王去世，都有人可以出meme coin炒作一波。加密货币就是这样疯狂，也在不了解加密货币的人眼里，crypto就像骗局…然而这并不是crypto的核心价值。 4）Micro Strategy买入301颗BTC.
+目前还没有crypto的ETF，作为BTC信仰者Michael Saylor操盘的Micro Strategy公司，有一个不恰当的比喻 — 可以把Micro Strategy的股票当成是BTC的ETF。
+5）9/15在ETH正式转为POS之后，美国SEC企图将之纳入为“Security”的监管，理由是42%的ETH节点都在美国本土发生。
+6）Coinbase将允许用户使用.eth域名代替传统钱包地址进行发送/接受Crypto。
+看来拥有一个eth域名除了酷炫之外，使用价值也慢慢提升了。
+7）纳斯达克为机构提供加密货币保管服务。
+最近市场仍然一片恐慌，网上一堆click bait骗你去看他的新闻，导致信念不坚定的人会更恐慌。但熊市当中仍然看到的事实是有更多的公司正在布局crypto。
+8）美联储加息75个基点 Sep 22
+今年11月和12月还会有两次会议，可能继续加息，因为哪怕经济衰退也要控制出通胀。加息的决策也和失业率息息相关，每当失业率下降，Fed就继续加息。
+9）Cardano将在9/22硬分叉 Vasil Hard Fork.
+Cardano受关注的程度远不如以太坊的合并，但对于Cardano而言是一次重要的转变，由原来的Plutus编程语言转变成Plutus V2，但预计一般分叉后的币价不会有什么波动，或者对于长期来说，短期的币价波动意义不大，但对于Cardano的生态发展则意义重大。
+10）Nvidia市值腰斩，老黄头痛。
+时代的一粒灰尘落到头上，成为压死骆驼的最后一根稻草。Nvidia的基本面并没有改变，产品仍然牛逼。但是大环境变了，最高端显卡被限制出口（美为了限制中国发展）；币市大萧条，前2年大量需求用于挖矿的显卡目前需求骤减；加之国外疫情逐渐放开，宅在家里的玩家对游戏显卡的需求也骤减。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-09-24 14:08:56 +0800 CST'>September 24, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Bullish Jail Kown! Explor. #05" href="http://localhost:1313/posts/explor05/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">市场是渣男 Explor. #02
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>币安在欧洲发行Crypto卡，目前可以支持14种加密货币 此次新增支持的加密货币包括AVAX，XRP和SHIB等。
+个人观点：可能因为欧洲对于加密货币的法规比较松，币安加速扩展欧洲区的业务；加密货币对于那些被制裁的地区、较落后的地区、战乱地区的实用性意义我相信潜力相较于稳定/发达地区来得更大，据悉不久也将扩展业务到乌克兰；币安和mastercard合作在阿根廷推出crypto信用卡，用户可以避免持有阿根廷的货币而承受每个月50%左右的通膨。
+西班牙高达7%的国民都持有加密货币 全球其他地区平均持有加密货币大概1%而已，且调查显示西班牙约40%的人认为加密货币有法律监管。
+个人观点：其实没有监管…所以西班牙的朋友们对crypto的认识应该还不是很全面，可能大部分的持有者只是投机者吧。
+伊朗近日首次次通过加密货币进口了价值1千万美元的货 个人观点：这显示了Crypto在这些被制裁国家的威力。优点是别人不知道他买了什么货物，也不知道他从哪个国家采购，这个transaction没有任何银行的交易记录，因为这是用去中心化的加密货币进行支付的。有在做伊朗外贸生意的朋友们，是否也是一种未来可考虑的交易方式（跟传统出口退税说掰掰）？
+“Poor people spend, normal people save, rich people invest” 1971年美元和黄金脱钩，美国股票大概45度角一路飙升（黄金走势比S&amp;P500指数走的还好些），而美金的购买力却一路下坡。哪怕100美元，现在就应该开始投资，最好的投资时间就是现在，至于投美股还是Crypto则取决于个人认知。 别爱上你买的Crypto 之前买的NFT，晚上都会做梦这个项目会to the moon；2年前因为Elon随便喊了句而买的狗狗币，也感觉他会飙升。放心，不会的。
+市场是一个渣男，你要做的就是比他更渣就行了。任何加密货币（或NFT项目，只要基本面出问题了（哪怕是BTC），5分钟内就要清理干净。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-08-12 14:08:56 +0800 CST'>August 12, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 市场是渣男 Explor. #02" href="http://localhost:1313/posts/explor02/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://eddy.lu">eddylu</a></span>
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -193,25 +288,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

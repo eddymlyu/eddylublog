@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SEC on ed</title>
+    <link>http://localhost:1313/tags/sec/</link>
+    <description>Recent content in SEC on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Mar 2023 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>比特币好像开始涨了，等等…我仓位还没建够 Explor. #09</title>
+      <link>http://localhost:1313/posts/explor09/</link>
+      <pubDate>Wed, 01 Mar 2023 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/explor09/</guid>
+      <description>&lt;h3 id=&#34;以色列银行-bank-of-israel-开始颁布法规背书稳定币&#34;&gt;以色列银行 Bank of Israel 开始颁布法规背书稳定币&lt;/h3&gt;
+&lt;p&gt;不只是非洲和南美，中东的一些地区也开始加速布局加密货币板块了，在下一个时代来临之前。很有可能，现今的老大美国如果还没有出台法律法规监管crypto的话，以后就当不了老大了。&lt;/p&gt;
+&lt;h3 id=&#34;visa和mastercard暂停和更多加密货币公司合作&#34;&gt;Visa和Mastercard暂停和更多加密货币公司合作&lt;/h3&gt;
+&lt;p&gt;考虑到美国对加密货币法规监管的不确定性，两大信用卡公司虽然一直是加密货币友好的态度，但是目前也暂时将触角伸到加密货币更深的领域。&lt;/p&gt;
+&lt;h3 id=&#34;币安的binance-pay可以在法国使用&#34;&gt;币安的Binance Pay可以在法国使用&lt;/h3&gt;
+&lt;p&gt;用Crypto进行支付，商家收款之后可以选择转成欧元，这里有&lt;a href=&#34;https://www.youtube.com/shorts/O9ePFpDyBjY&#34;&gt;shorts视频&lt;/a&gt;；此举固然很屌，但是在发达的法国，民众不管是使用现金还是信用卡体系仍然还会是主流。&lt;/p&gt;
+&lt;h3 id=&#34;google云端宣布将成为-tezos-的网络验证节点&#34;&gt;Google云端宣布将成为 Tezos 的网络验证节点&lt;/h3&gt;
+&lt;p&gt;诸如此类，包括亚马逊的AWS在host以太链，那么这些L1主链很多节点node都还是依赖在这些web2大企业下运行，难免太中心化了，如果这些大企业云端/网络出现问题（虽然不太可能），则这些被host的L1主链就会遭殃。相比，PoW的区块链则没有这个问题，一些其他的L1主链比如Cardano的PoS机制也相对比较去中心化。&lt;/p&gt;
+&lt;h3 id=&#34;sec主席gary-gensler说除了比特币之外其他加密货币都是证券&#34;&gt;SEC主席Gary Gensler说除了比特币之外，其他加密货币都是证券&lt;/h3&gt;
+&lt;p&gt;此前可不是这么说的，可能Gensler知道比特币已经势不可挡，所以从此前的把比特币归为security而默认为commodity了。但其他加密货币，SEC都希望他们是security从而对加密货币进行监管。&lt;/p&gt;
+&lt;h3 id=&#34;spotify在测试能被nft持有者解锁的播放列表&#34;&gt;Spotify在测试能被NFT持有者解锁的播放列表&lt;/h3&gt;
+&lt;p&gt;音乐类的NFT已经不是新闻，但是这个领域还是太新，有太多值得探索的东西。这次Spotify做的东西，希望他们能摸索一些门道出来，特定NFT持有者可以有权收听特定的podcast或音乐，相信这对未来可以以某种形式保护创作者。&lt;/p&gt;
+&lt;h3 id=&#34;yuga-lab的比特币nft-twelvefold共288个采用竞标方式&#34;&gt;Yuga Lab的比特币NFT &lt;a href=&#34;https://twelvefold.io/&#34;&gt;TwelveFold&lt;/a&gt;（共288个）采用竞标方式&lt;/h3&gt;
+&lt;p&gt;NFT头部项目出的比特币NFT肯定…一般老百姓玩不了。但是用这么传统的方式竞标真的很像scam，目前第1名用了7颗比特币，而第288名用了2颗比特币，这家价格相差有点悬殊。&lt;/p&gt;
+&lt;h3 id=&#34;jack-dorsey-去中心化社交平台-bluesky-开始测试加密货币支付公司-block-前square提供比特币闪电网络的流动性&#34;&gt;Jack Dorsey 去中心化社交平台 Bluesky 开始测试；加密货币支付公司 Block （前Square）提供比特币闪电网络的流动性&lt;/h3&gt;
+&lt;p&gt;持续关注中，和twitter相比，不知道所谓的用户在去中心化平台更有权力怎么体现。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

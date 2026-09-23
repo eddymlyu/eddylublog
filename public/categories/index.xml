@@ -1,38 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on eddylu</title>
-    <link>https://eddy.lu/categories/</link>
-    <description>Recent content in Categories on eddylu</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Categories on ed</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on ed</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Sep 2022 14:08:56 +0800</lastBuildDate><atom:link href="https://eddy.lu/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Aug 2026 23:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blockchain</title>
-      <link>https://eddy.lu/categories/blockchain/</link>
-      <pubDate>Thu, 29 Sep 2022 14:08:56 +0800</pubDate>
-      
-      <guid>https://eddy.lu/categories/blockchain/</guid>
+      <title>Book Notes</title>
+      <link>http://localhost:1313/categories/book-notes/</link>
+      <pubDate>Sun, 23 Aug 2026 23:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/categories/book-notes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>book club</title>
-      <link>https://eddy.lu/categories/book-club/</link>
-      <pubDate>Sun, 13 Feb 2022 14:08:56 +0800</pubDate>
-      
-      <guid>https://eddy.lu/categories/book-club/</guid>
+      <title>Work</title>
+      <link>http://localhost:1313/categories/work/</link>
+      <pubDate>Sun, 23 Aug 2026 23:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/categories/work/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>work</title>
-      <link>https://eddy.lu/categories/work/</link>
-      <pubDate>Sat, 27 Mar 2021 14:08:56 +0800</pubDate>
-      
-      <guid>https://eddy.lu/categories/work/</guid>
+      <title>“Wellness&#34;</title>
+      <link>http://localhost:1313/categories/wellness/</link>
+      <pubDate>Sun, 19 Jul 2026 09:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/categories/wellness/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Lifestyle</title>
+      <link>http://localhost:1313/categories/lifestyle/</link>
+      <pubDate>Sun, 03 May 2026 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/categories/lifestyle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:1313/categories/tech/</link>
+      <pubDate>Tue, 24 Mar 2026 09:10:56 +0800</pubDate>
+      <guid>http://localhost:1313/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wellness</title>
+      <link>http://localhost:1313/categories/wellness/</link>
+      <pubDate>Mon, 01 Dec 2025 09:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/categories/wellness/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal Finance</title>
+      <link>http://localhost:1313/categories/personal-finance/</link>
+      <pubDate>Thu, 20 Nov 2025 09:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/categories/personal-finance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blockchain</title>
+      <link>http://localhost:1313/categories/blockchain/</link>
+      <pubDate>Tue, 03 Oct 2023 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/categories/blockchain/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Email on ed</title>
+    <link>http://localhost:1313/tags/email/</link>
+    <description>Recent content in Email on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Jul 2023 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何选一个酷炫的个人 email 地址</title>
+      <link>http://localhost:1313/posts/emailadd/</link>
+      <pubDate>Sun, 23 Jul 2023 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/emailadd/</guid>
+      <description>&lt;p&gt;最近在网上搜寻怎么创立一个好的 email address 用于个人用途。发现在中文世界很少人聊这件事，也许是因为真的太无聊了。亦有大国掌权者下辣眼睛的 qq 邮箱。&lt;/p&gt;
+&lt;p&gt;现在的个人和生意之间的界限越来越模糊了——越来越多的斜杠青年，同时拥有多个生意/项目。所以，使用自己公司域名的邮件地址变得不太方便。而且有的人极简主义作祟，懒得用多个邮箱地址，只想用一个。&lt;/p&gt;
+&lt;p&gt;网上找了些资讯，发现大部分都是七年前的内容。那个年代的人还在讨论怎么样让 email address 更正式，更 professional。的确，这些方法确实可以作为指引，但是现在是个人品牌和个人域名蓬勃发展的时代，尤其是在一些 gmail 满天飞的国家/地区，使用自己的域名作为工作邮箱总比免费邮箱服务来的更高级。&lt;/p&gt;
+&lt;p&gt;本文写给特别在乎邮件的人。Email 是一种有点浪漫又有一种不会把人逼得太紧的感觉，不立刻回复也不会显得不礼貌，非常适合我这种不入流的生活方式。&lt;/p&gt;
+&lt;p&gt;另外，从成本的角度来看，一个域名一年只要 10 到 50 美元，而一个支持自定义域名的邮箱服务也只需 12 到 36 美元。真的没有很贵。&lt;/p&gt;
+&lt;p&gt;以下为例，我注册到的域名的是 first.com (我很幸运)。这是我用失眠两夜的代价换来的思考。&lt;/p&gt;
+&lt;p&gt;备注：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;first = first name 名字&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;last = last name 姓氏&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;f = first name initial 名字首字母&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;l = last name initial 姓氏首字母&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;mailto:marketing@first.com&#34;&gt;marketing@first.com&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;首先，这是一个不错的选择，可以闻到一点生意的味道。Marketing 感觉可以 handle 一些供应链端和市场端的对接也不会有违和感。同理还有例如 business@ 等选择。&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;mailto:hello@first.com&#34;&gt;hello@first.com&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;这个适合收件而不太适合发件，作为收件的对象而言，这个地址看起来是很舒服的，有点类似于直接打招呼 hello xxx 的意味。但如果作为发件，就显得过于个人而非职业。所以对于个人用途而言是一个好选择。同理的还有例如 contact@ hi@ 等选择。&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;mailto:1@first.com&#34;&gt;1@first.com&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;受汪晟大师的影响，用数字 1 最简洁。但是使用数字似乎触碰到了 professional 的禁忌，尽管酷炫程度真的拉满。重点是手写的时候，比如在疫情期间测核酸的时候，是用手写填单的，机构则会把测试结果发到你的邮箱。这个时候对方可能不明白你写的是数字「1」 还是字母「l」，就会多问你一句。如果你还需要多解释一次，那又有何意义呢？&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

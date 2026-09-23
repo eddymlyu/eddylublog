@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ftx on ed</title>
+    <link>http://localhost:1313/tags/ftx/</link>
+    <description>Recent content in Ftx on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Dec 2022 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ftx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022币圈7大崩坏</title>
+      <link>http://localhost:1313/posts/7collapse/</link>
+      <pubDate>Fri, 30 Dec 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/7collapse/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Axie Infinity被盗6亿美金&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Axie Infinity的测链Ronin被黑客盗走173,600个以太币和2,550万个USDC（约等值6亿美金），值得注意的是，直到一周后一名用户无法提取出以太币的时候，这个被盗事件才被发现。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Luna/UST的死亡螺旋&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Luna作为算法稳定币，曾经一度被资本看好，Do Kwon是韩国的crypto界的明日之星。有很多crypto友好的youtuber对算法稳定币前景十分看好并认为Luna对加密货币发展起着非常关键的作用。然而UST和美金脱钩（Depegged），市场恐慌出逃，很多投资者的投资瞬间蒸发，甚至害的有些人结束自己的生命。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;三箭资本（3AC）倒闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;总部位于新加坡的3AC颠覆时其资产管理规模还达到100亿美元，投资了众多地雷crypto项目，比如Terra代币，Axie Infinity和交易所Blockfi等等。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Voyager Digital倒闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;币圈开始多米诺式的暴雷，三箭资本资不抵债，风险逐层传导，Voyager就是那个债主，谁叫你借钱给“熟人”？然而后续给FTX收购了，也就是最后一个大雷爆了 — FTX也宣布破产后，被币安收购。&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Celsius破产&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;该平台以高息作招徕，曾称存款的客户可获得高达18厘的高息回报，主要是向客户借入虚币，再借给机构投资者。然而据法庭文件称，Celsius只有1.67亿美元的现金，但欠了用户约47亿美元，资产负债表中更存在约12亿美元的漏洞。Liquidity有很大问题。随时市场恐慌和机构爆雷，Celsius面临大量存户赎回而宣布停止提款，继而使这间加密借贷公司爆雷。&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;FTX破产&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;SBF靠着高明的行销手段，比如大量顶级赛事的推广FTX和游走在政客之间，打造了几乎催不可破的形象。我甚至也都在FTX做好了KYC准备使用这个交易所。SBF和自己的投资公司alameda research为非作歹，利用漏洞，挪用用户的资金杠杆交易，炒FTT空币，智商真的有点高。&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;BlockFi破产&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;BlockFi因为向3AC提供贷款而遭受损失，彼时FTX挺身而出，向BlockFi提供了信贷额度，双发财务的关系千丝万缕。后续也因为FTX的趴下，受害者名单再添一员，BlockFi申请破产。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>冷钱包用不了了 Explor. #07</title>
+      <link>http://localhost:1313/posts/explor07/</link>
+      <pubDate>Wed, 07 Dec 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/explor07/</guid>
+      <description>&lt;p&gt;1）FTX暴雷的事件持续在币圈震荡，可想而知各冷钱包厂商的咨询量也是暴增，是个正常人都会想在第一时间把资产移入自己的冷钱包，self custody自己的资产。&lt;/p&gt;
+&lt;p&gt;不料当我连接上Ledger却死活也无法同步，固件版本一直卡在1.0.3亦无法升级，换了电脑也无济于事。等待官方客服漫长的回复时间，才得知原来软件服务也被墙了…&lt;/p&gt;
+&lt;p&gt;但这是否就阻挡你dca btc的脚步呢？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I continue to have this very high conviction in this bitcoin asset.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/ledgertimeout.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2）目前okx，币安对于大陆人仍然可以使用。各大交易所也纷纷发布了proof of reserves，以表自身的透明性，但感觉还是有漏洞的，说不定交易所可以随意篡改用户的数据，谁知道呢？例如，目前来看okx的proof of reserves数据是健康的，但仍然只会当成dca btc的工具之一，绝不深陷。后期还是要看V神和各大交易所出的智能合约的形式来管理和监管资产比较有看头。&lt;/p&gt;
+&lt;p&gt;3）香港的交易所AAX传出创始人跑路，还有一些交易所如Kucoin都是在玩前期超高的利息吸引投资散户入场的把戏。交易所没有一家可以相信，尽量不把大额资金长期摆在上面。&lt;/p&gt;
+&lt;p&gt;4）48%以上的eth nft是wash trading的。&lt;/p&gt;
+&lt;p&gt;非常精彩，但也在意料之中吧，NFT至少在现在还是一个短期炒作的好玩具。头部项目之一的Meebits竟然96%是炒作的；但也有一些真实的项目BAYC，在一开始就不是以套利为目的的OG项目发展起来。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading1.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;5）数据显示bitcoin shrimp和crab的小散户的数量正在逐步增加。&lt;/p&gt;
+&lt;p&gt;在如此低迷的行情和这么多噪音之下，反而让更多人沉下心来学习和积累，我相信这些人就是开始购入btc的小散户，买入的比重因人而异，倒也不重要，但能把5%左右的收入当成零花钱去定期购买btc不失为一个好选择。&lt;/p&gt;
+&lt;p&gt;Remarks: • Shrimp: less than 1 BTC&lt;/p&gt;
+&lt;p&gt;• Crab: 1 to 10 BTC&lt;/p&gt;
+&lt;p&gt;• Whale: &amp;gt;1000 BTC&lt;/p&gt;
+&lt;p&gt;6）灰度Grayscale公司高达64万颗BTC，旗下有场外交易、借贷和托管平台Genesis，媒体Coindesk，挖矿公司Foundry。公司的信托产品GBTC正在以40%的折扣出售，购买GBTC并不等同与购买BTC，而只是购买一家公司的一个金融产品。&lt;/p&gt;
+&lt;p&gt;Remarks: Microstrategy 拥有13万颗BTC，萨尔瓦多拥有2000颗BTC，特斯拉拥有1万颗。&lt;/p&gt;
+&lt;p&gt;7）巴西通过加密货币支付法案。&lt;/p&gt;
+&lt;p&gt;和萨尔瓦多有点区别，巴西并不是直接把BTC当成法币，而是将加密货币支付这件事合法化了，目前只差总统签字了。作为人口最多之一的南美国家，此举对推动加密货币的发展有重要作用。&lt;/p&gt;
+&lt;p&gt;8）数据调查美国人过圣诞夜的电灯所消耗大约是6.63 terawatt-hour 万亿瓦，远比一些非洲小国一年消耗的电力还多，也比BTC挖矿的电力还多。&lt;/p&gt;
+&lt;p&gt;如果还有人反驳BTC于电力消耗过大，不妨说说这个圣诞夜灯光的冷知识？&lt;/p&gt;
+&lt;p&gt;9）NFT BBRC项目方仍然一直在build，很令人惊喜，反而到了自己都有点追不上项目roadmap的感觉。虽然招数有点老套，但是把你的NFT去做stake玩个抽奖何乐而不为？&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin2.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>香港和Web3 Explor. #06</title>
+      <link>http://localhost:1313/posts/explor06/</link>
+      <pubDate>Wed, 09 Nov 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/explor06/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Travel, is life intensified. — Elliot Ng&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;1）香港近日发布了有關香港虛擬資產發展的政策宣言，面对老大的管控，人才的流失，今日香港今非昔比，出台如此政策倒不令人意外。至少香港仍然与世界连结，看的清楚未来的潜在性产业，靠着本来的金融产业的盛大，借力发展虚拟资产，web3，NFT。只是现在看来还是有气无力的状态，就在10月底举行的天际100的metaverse asia上，大部分除了币，电信公司，就是交易所…看来吸引web3头像项目的加入，仍需时日。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/hkfair.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2）Google Cloud官方推特@了Solana创始人，导致SOL暴涨15%，作为Web2最大的公司之一，Google宣布要营运Solana的矿池。Solana个人感觉中心化程度比较明显，背后是一些大财团在操作，所以营运矿池的难度也比较高，资金等需求也比较高，但无论如何，Google要营运矿池，对加密货币世界也是一个积极的信号。&lt;/p&gt;
+&lt;p&gt;3）FTT近期币价过山车，FTT是一种Utility token效能币，主要用途区别于BTC，ETH，是拿来使用和交易的，例如在FTX交易所上能赋予更低的交易费等等，而不是用来长期hodl增值的；且FTT过于中心化，前10名的钱包拥有93%的FTT，流通性也是比较差的。&lt;/p&gt;
+&lt;p&gt;4）关于Ripple XRP和SEC的诉讼案，有越来越多的声音在声援Ripple，所有的矛头指向SEC的overreach，预计诉讼案在2023的上半年会告一段落，希望也还给Ripple一个清白，此举对加密货币的发展有着非常积极的作用，也需要给SEC一个警告—不能在没有任何证据的情况下无端指控一个加密公司。&lt;/p&gt;
+&lt;p&gt;5）SWIFT是一个恐龙科技，非常outdated，但他也在和chainlink合作布局加密货币领域；美国各大交易所也开始”入侵“NBA，例如FTX赞助热火队的球场，crypto.com赞助湖人队的球场；Steph Curry也即将推出nft专利curryverse。种种迹象表明crypto已经不可阻挡。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

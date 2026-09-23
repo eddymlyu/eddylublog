@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>写作 on ed</title>
+    <link>http://localhost:1313/tags/%E5%86%99%E4%BD%9C/</link>
+    <description>Recent content in 写作 on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jun 2023 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>不入流的文体｜关于「盘古之白」和「直角引号」</title>
+      <link>http://localhost:1313/posts/pangu/</link>
+      <pubDate>Mon, 12 Jun 2023 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/pangu/</guid>
+      <description>&lt;h2 id=&#34;为什么我要写这篇无聊的文章&#34;&gt;为什么我要写这篇无聊的文章&lt;/h2&gt;
+&lt;p&gt;近几年阅读了「海量」书籍，涵盖了英文、简体中文和繁体中文等不同形式；而网络上的文章形式则更为「自由」，随着创作者经济的兴起和区块链技术的催化，任何人都可以 permissionless 的自由创作属于他们的狗屎（包括本 blog）。至此，新时代的中文世界的网络文体再无约束，因为大陆人有一套自己的标点符号规则，而台湾也有其延续至今的规则，任何一套规则再无「对错」之分，因为谁会来评判？Web3是属于个体的！&lt;/p&gt;
+&lt;p&gt;让我想敲下本篇 blog 的原因起源于在网上看到王建硕老师的一篇文章——他说在微信里面，如果你发送的中文和英文或数字混排的时候，显示出来的消息已经自动地在英文、数字左右加上了空格。出自文章《有些知识，一旦知道了，便再也无法回到那以前的纯真年代》。&lt;/p&gt;
+&lt;p&gt;听起来有点矫情，但是是真的！顺便也在 Line 试了一下，在打字框中 Line 自带了留白，而微信在打字框中不体现留白，消息发送出去自动生成留白；如果手动添加了空格，则发送出去的消息全角和半角间的间隙更大了一些（废话）。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wechatpangu.JPEG&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/linepangu.JPEG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;顺手 Google 一搜，原来已经有大量 blog 在说这件事，但大部分都是冰冷的摘抄，没有表达自己的思想。于是在此记录这个变动中的文体，在本文下方有我借鉴的网站，我在此基础上修改了文字和内容为自己所用，毕竟这才是我自己的文章，great artists steal 😝！但我不喜欢原文的「正确」和「错误」之说（哪怕这个「盘古之白」据说已经是 W3C 的一个规范，以及中国出版业的一个行业标准），也许这些文体根本没有一个规范，而且很多至今仍然存在着争议，倒不如直接说「看的舒服」和「看的不爽」吧。&lt;/p&gt;
+&lt;h2 id=&#34;盘古之白是什么&#34;&gt;「盘古之白」是什么？&lt;/h2&gt;
+&lt;p&gt;「盘古之白」指的就是——在中文和 English 混排的时候，中文和半角的英文（或数字或符号）之间需要加入的前后两个空格。「盘古之白」劈开了全角和半角之间的混沌。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有研究显示，打字的时候不喜欢在中文和英文之间加空格的人，感情路都走得很辛苦，有七成的比例会在 34 岁的时候跟自己不爱的人结婚，而其余三成的人最后只能把遗产留给自己的猫。毕竟爱情跟书写都需要适时地留白。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以，怎么劈的呢？&lt;/p&gt;
+&lt;h2 id=&#34;空格相关的排版问题&#34;&gt;空格相关的排版问题&lt;/h2&gt;
+&lt;h3 id=&#34;中英文之间需要增加空格&#34;&gt;中英文之间需要增加空格&lt;/h3&gt;
+&lt;p&gt;看的舒服：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在大国 iCloud 里 ，数据存储有没有 privacy 呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看的不爽：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在大国iCloud里，数据存储有没有privacy呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在大国 iCloud里，数据存储有没有privacy 呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;例外：「Web3」等产品/行业名词，按照官方所定义的格式书写（Web3 和 Web 3.0 不一样哦）。&lt;/p&gt;
+&lt;h3 id=&#34;中文与数字之间需要增加空格&#34;&gt;中文与数字之间需要增加空格&lt;/h3&gt;
+&lt;p&gt;看的舒服：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天出去潇洒花了 1000 元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看的不爽：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天出去潇洒花了 1000元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天出去潇洒花了1000元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;数字与单位之间需要增加空格&#34;&gt;数字与单位之间需要增加空格&lt;/h3&gt;
+&lt;p&gt;看的舒服：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;靠北！我家的光纤入屋宽带才 100 Mbps，SSD 一共只有 10 TB。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看的不爽：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;靠北！我家的光纤入屋宽带才 100Mbps，SSD 一共只有 10TB。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

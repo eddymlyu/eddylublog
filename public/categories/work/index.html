@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>work | eddylu</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Work | ed</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://eddy.lu/categories/work/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://eddy.lu/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://eddy.lu/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://eddy.lu/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://eddy.lu/apple-touch-icon.png">
-<link rel="mask-icon" href="https://eddy.lu/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/categories/work/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://eddy.lu/categories/work/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/work/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/work/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,60 +37,49 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:title" content="work" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://eddy.lu/categories/work/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="work"/>
-<meta name="twitter:description" content=""/>
-
-</head>
-
-<body class="list" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script>
-
-<header class="header">
-    <nav class="nav">
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://eddy.lu" accesskey="h" title="eddylu (Alt + H)">eddylu</a>
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -105,25 +95,60 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
-                <a href="https://eddy.lu/about/" title="About">
-                    <span>About</span>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/archives/" title="Archives">
-                    <span>Archives</span>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/categories/" title="Categories">
-                    <span>Categories</span>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/tags/" title="Tags">
-                    <span>Tags</span>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
                 </a>
             </li>
         </ul>
@@ -132,49 +157,337 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    work
+    Work
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>雅典城里的贫民窟
+    <h2 class="entry-hint-parent">内容创作是一份工作
     </h2>
   </header>
   <div class="entry-content">
-    <p>标题虽然怪怪的，但并没有任何贬低雅典这座古老城市的意思，相反，因为工作的原因我前后在2017和2018年夏天到访过这座文明古城，希望能就自身的出差经历，给各位读者一些浅薄建议。
-首次到访前，还是按照惯例和客户确认了具体的拜访时间，客户也非常友好的回复了旅行游玩建议，当地人的建议一直是我的首选，可以让你避免中国游客扎堆，更好的深入体验在地的生活，只可惜行程排的满到不行，欧洲行仍然以商务目的为主，深度的体验只留给了周末的雅典围城。
-初来乍到，一下飞机翻google地图看爱琴海的位置，然后你马上就知道爱琴海和Santorini圣托里尼的白色房子，还是老老实实下次旅行的时候自己来吧。作为工厂老板海外出差的贴身护法，必须是要选择最经济的出行方式，飞机一落地马上拉着大包小包地铁买票，酒店定在市中心准没错（离Acropolis卫城非常近），不料竟然花了60欧元，比打的还贵（我们三人行），而且我们不长记性，这个错误在18年又犯了一次…
-然而比起微不足道的交通费，人身财产安全来的更重要。三个亚洲人，背着双肩包加大号拉杆箱，很容易成为拥挤列车中的被抢目标。当列车到站，车门打开，从人群中冲锋陷阵挤出来时，发现背包的阻力怎么如此之大，并且有人明显在试图探索你的口袋，那一刻都忘了是如何“逃生”，急忙制造一点声势引起周围民众注意，并用手拨开千军万马，护住口袋和背包行李只管往车门冲下车，所幸没有得逞，虚惊一场！
-入住的酒店/公寓则是狠狠的体验了一把贫民窟邻居。作为中国好员工，第一次来找了个小酒店，房间可以塞下三人，当时一开出去酒店房间阳台眺望雅典城的街景，疲惫的旅途上暂时有了个歇脚的地方，但眼前的风景着实不让人惊艳，这可是市中心啊？！也罢，结果下楼用餐，餐厅少的可怜…一个人导航步行到附近的3C店买个老人机装手机卡，才第一次体验了心惊肉跳，一路上流浪汉盯着你看，天色渐晚，小跑回酒店。接下来几天的客户拜访和卫城游览，白天都不在酒店，也就没再折腾。
-如果说17年是功课没做足，但18年的旅程可谓是一场冒险。2次住的都在市中心这块区域，就在Acropolis的正北面不远，朋友们，来雅典请远离这个地方的住宿。 18年试水Airbnb订了一个公寓，来接驾的是一个穿着短裤的“纨绔子弟”，一路很热情说这说那，也没什么不对劲，直到领我们进入了“熟悉”的街区，走进了一栋昏暗的公寓楼，我连忙问他一般住在这里的是什么样的人。“Middle class to lower class…”, 最后几个字说的非常虚，我就知道这下不好了… 3晚¥1026元，This is what you get…
-拜访的客户非常好人，来回都来公寓接送。大老远跑来一趟谈项目不容易，每次一天的会议讨论完，还会招待我们去用晚餐。入乡随俗迎合欧洲人的礼仪，当天下午先回公寓做简单梳洗以参加晚餐场合，客户工程师开了一个手动宝马过来，车上闲聊说这里是全雅典最混乱的区域，“Eddy, this is the ghetto area, you know the word ghetto?”，我tm当然知道啦！前一晚出去吃饭一行人就已经觉得毛骨悚然（中餐厅老板叮嘱我们别走回去，要打车回去），不安的情绪一下爆发了，客户一直在推荐必吃的雅典小吃也已经无法放在心上，一心想着明天得马上离开这个地方。随后客户还补了一枪，看你们是亚洲人拖着行李，很容易成为目标，如果有人拿刀捅你们然后抢你们的财物，那就不好了。这…何止是不好，原来我们住在如此危险的地方，第二天早晨二话不说，直接把钥匙丢在公寓里和热情小哥WhatsApp找了个借口有急事要提前退房，马上下楼打车，booking订到海边一个99欧/晚的4星酒店，一下车酒店的管家就过来帮忙拉行李，看到了酒店泳池，沙滩，比基尼美女，心里的石头才放下，来到了一片新天地。
-事后的反思，出门在外不管出差还是旅行，酒店千万别省那些钱，获得了不好的入住体验既影响休息又影响工作。但无论如何，还是上了宝贵的一课。
-以上，当然不是我对雅典城的全部记忆，这座城市还带给我很多难忘的美好记忆。热情好客的当地客户，健康的地中海饮食，北部的工业制造业以及神秘难懂的希腊文等等。最后献上在美丽的海边享用的浪漫晚餐，个人给这道我花了10分钟点的40欧Dish取了一个中文菜名：四条虾🦐。 </p>
+    <p>
+这本书叫做《工作手册》，可能是暂时想不出更好的书名了，但对自媒体创作有不少挺好的建议。
+这篇 blog 不是一个单纯的读书笔记。它当然包含了李诞写的这本书的读书笔记，但也是一个阶段性的自媒体感悟、小结和心态。
+做自媒体的心态要摆正。真实，兴趣、交友、分享，保持好发心。爱上这份自媒体的工作就会比较自然而然。
+如果你的心态是要起号、和别人拼、整天看数据，就会做得比较痛苦，而且对你的情绪健康有负面影响。李诞说人是为别人而活，能为别人创造价值，从而体现自己的价值。之前看到网上有其他的观点——四十岁之后就要为自己而活。其实没到那一步，我也不知道什么叫为自己而活，搞不好从来不成立。
+如果做一个垂直频道，其实不太需要新的观点，因为我们要永远相信人类的忘性。很多道理过两天再听，大家还是觉得很有道理。只要你的观点是好的，就可以了。所以不需要讲什么新的东西，只讲我们认为对的东西，然后一直讲，一直重复，只不过换个方式和角度讲。
+老老实实做人，踏踏实实做事，这就是我们这个世界的秘密。赚钱、做自媒体也没什么秘密，这个秘密早就是公开的了。说得容易，做得难。这种事不适合所有人，适合长期主义者。时间会给出最好的答案。
+自媒体没有必要去假装一个人设。虽然短期内可能会有一些爆发，也会有兴奋感，但这是一种便宜的多巴胺。想想做自媒体、个人品牌、内容创作的初衷是什么。初衷是想做自己，同时能够切中市场顺便赚点钱罢了，顺序不能颠倒。
+你最终一定会成为你本该成为的人。你在人生中不停地做出选择，最后就会自然地形成你的风格。– 段永平
+自媒体是长期的，我认为理想的自媒体成功的秘密其实是敞开的，就是做你自己，真诚地表达，没有什么小秘密、小歪招、小撇步。
+李诞建议大家不要追求快速反应，这可能跟我们从小接受的教育或职场工作相悖。做自媒体，快速反应可以是一种训练的技能，但并不是表达能力的核心，也不用追求思维敏捷。你可以是结结巴巴的，或者思维比较长线、缓慢的，那就做你自己。我们的每天生活其实都是思维训练，没有必要为了自媒体去改变自己。思考质量优先于速度，质量才是最重要的。
+做自媒体很重要的一点是要克服羞耻心，尽情地暴露自己，做多了就习惯了，脸皮就厚了。一开始做自媒体的门槛，就是羞耻心，会担心被同事、朋友、老板看到。当然，这也是一个顾虑。
+做自媒体会有两个身份，一个是创作者，一个是传播者。我一开始以为自媒体等同于内容创作者，也喜欢用「内容创作者」来界定自己，因为 content creator 这个观念比自媒体好像酷一点。但是做自媒体其实包含了创作者和传播者。作为传播者，要看数据、看市场表现、粉丝转化、广告等。如果忽略这些市场因素，是不切实际的。但作为内容创作者时，不要想太多传播的事情，否则会影响内容质量，无法做最真诚的表达。作为创作者，得享受创作这个过程。
+段永平讲过一个例子，当初他投资茅台 200 元买入时，有人问他为什么不等到跌到 160 元再买。如果 10 年后回头看，160 和 200 差很大吗？其实并没有。做自媒体创作者也是这样，是长线逻辑。10 年后你会在乎是一百万粉丝还是一百二十万粉丝吗？几乎没差别。不要过于纠结短期微小的数据波动，那只会增加焦虑，也不需要给自己定目标。
+李诞的小卖部没有什么规划，就是觉得好玩就去做了，慢慢地也做成了。他是真诚地表达，这一点很重要。我也是，其实没什么规划，但总是 overthink，所以我一定会拍几个视频是关于 overthink、过度思考、想太多、自我怀疑的。现在觉得「麸质」这个视频挺有意思，好玩、有意义、利他，就去做了，反响也还不错。修修在停更了 2 个月之后，仍然有观众在回看以前的作品，可见内容的品质重要性。Evergreen 的内容也比较适合我的调性。
+创作是一份调动你一切人生的工作。自媒体是一份工作，但可以松散安排，你自己是老板，并不代表可以不认真对待。可以安排得很少，但一定要以工作的角度、赚钱的角度认真对待。既然选择做这份工作、事业或 business，我们应该尽早放弃工作和生活分开的想法，要学会从工作中享受生活，在生活中享受工作。Create anything you want。这是所有工作中，你能做你自己的。
+内容创作的目标是做一份自己喜欢的工作，要喜欢做内容创作，所以一定要做自己喜欢的内容。说来说去都是一个道理。这不是让你放弃生活，而是要意识到全部人生都应该为创作提供养分，为它服务。
+我之前一直想过以后会不会全职做自媒体，不会的理由是觉得外贸工作、读书等都为创作提供养分，很有共鸣。以后也不排除全职做自媒体的想法，当然话题就不一样了，因为会有其他人生、side project 或其他工作，都会是养分。
+做自媒体创作要有一定的节奏，要建立工作节奏，千万不能脱离节奏。前不久看了一个 YouTube 影片，互联网的表姐，她把 schedule 做得很好，分成 scripting、filming、editing、publishing。由于有本职工作，以前一个礼拜上传一支影片很难，了不起三个礼拜上传一支，或者一个月上传一支。必须当作工作，我虽然把「内容创作日」定在礼拜三，不是一定要星期三才能做，但星期三一定要自己做，周五、周四之后有时间可以继续做。不要离开战场，不要离开战友，不要离开敌人。
+李诞推荐写逐字稿，这个话题很有意思。我一开始写逐字稿，有一些 AI 帮助。他说写逐字稿的意义是利用逐字稿去想象表演时、在镜头下预演状态和要说的话。写逐字稿目的不是要讲逐字稿，写逐字稿是为了预演表演。这是很大的区别。我懒得写，可能是因为没时间或者根本就是懒，但其实可以写逐字稿，也可以写框架、keyword，不一定要写逐字稿，但要预演录制情况。如果去生硬地背诵，就会缺失活人感。
+创作不能靠雷劈，创作要没事就劈自己。意思是要给自己 deadline，要有工作节奏。Deadline 永远是创作最好的朋友。像 Morgan Housel 的畅销书 The Psychology of Money，就是一个 deadline。他在一个 Podcast 坦言——在截稿前一两个月才逼出来，并不是有灵感才写，结果书火得不得了。有时候完成比完美更重要。
+李诞很喜欢 pitch 这个单词，其实我也很喜欢。书里很大篇幅都在讲怎么创作，但没怎么讲过怎么把创作「卖」出去。其实 pitch 就有一个「卖」的意思，可以翻译成推销、提案、汇报，但用英文 pitch 这个词更有力量。首先它发音很好听，很有力量。
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-03-27 14:08:56 +0800 CST'>March 27, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to 雅典城里的贫民窟" href="https://eddy.lu/post/%E9%9B%85%E5%85%B8%E5%9F%8E%E9%87%8C%E7%9A%84%E8%B4%AB%E6%B0%91%E7%AA%9F/"></a>
+  <footer class="entry-footer">
+
+<span title='2026-08-23 23:00:00 +0800 CST'>August 23, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 内容创作是一份工作" href="http://localhost:1313/posts/ccwork/"></a>
 </article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">《创业这条路》读书笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>开创一份事业，可能是因为创业神经被挑动，但实际投入时，还是要自己去做。这是两件很不同的事情。比如原来很擅长的工作，我做外贸，做出口、进口，跟老外聊天，然后去了东南亚工作。但那个公司、那个创业项目，其实是以批发为主的商业模式，我没做过批发。
+一下子我要做这些事情，还要管财务、管现场、管仓库，这些我都没做过。突然变成一个我知道怎么处理工作的人，加上十几个我根本不知道怎么处理的工作，所以这是完全不同的。我们每个人心里都有一个创业者、一个管理者、一个专业人员。要在三者之间取得平衡，才算很厉害，但实际上很难。
+踏上创业这条路，只有少数人能在三者之间取得平衡。典型的小企业主，创业者特质只有10%，管理者特质有20%，专业人员特质却有70%。其实我就是所谓的专业人员，我懂进出口，懂跟老外聊天，懂物流，懂国际贸易，仅此而已。我也有一点管理者的特质，就是希望事情不要出差错，但却少有创业者的特质，而这恰恰是最珍贵的。
+管理者的特质是很务实，不想冒险，只想把事情做好。如果说创业者活在未来，管理者就是活在过去。创业者渴望掌控权，管理者渴望一切井然有序。创业者乐于改变，管理者想要维持现状。创业者总是看到机会，管理者总是看到问题。
+管理者会盖一栋房子，然后永远住在里面。创业者盖好一栋房子后，就开始规划下一栋。管理者把东西排列得整整齐齐，创业者把东西创造出来，让管理者去排列整齐。其实我在东南亚的生意，有点像管理者，我希望把这件事做好，把房子盖起来，然后永远住在里面。电商店铺这样做起来后，我觉得它就能一直维持现状。
+但头家更像是一个创业者，他创造新东西，然后招一大堆人去管理。可以说，管理者是跟在创业者后面收拾残局的人。但没有管理者，就没有需要收拾的残局。没有管理者，就没有事业，也没有社会；没有创业者，就没有创新。
+创业者的愿景和管理者的务实之间的摩擦，正是创造忠孝和催生所有伟大工作的源头，所以缺一不可。而专业人员是执行工作的人，他就是修修补补。如果说创业者活在未来，管理者活在过去，那专业人员就是活在现在。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-06-01 23:00:00 +0800 CST'>June 1, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 《创业这条路》读书笔记" href="http://localhost:1313/posts/emyth/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">如果你有多元兴趣，请别浪费接下来的 1 年
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你也和我一样，对什么都感兴趣吗？
+我的清单是：
+想写博客，我想把所思所学分享给这个世界。 想学剪辑，有时候影音的形式能做更好的自我表达。 想徒步，偶尔亲近大自然，提醒自己是多么渺小。 想学德语，加深和客户的羁绊，更好的体验另一种文化。 想学编程，更好的自架个人网站和维护独立站。 想学投资，Derek Sivers 说致富的简单方式就是投资。 想规律健身，看到身边太多人年轻用身体换金钱，老了整天跑医院。 但我太忙了，你的「借口」也和我一样吗？
+兴趣太多，不是你的问题 兴趣太多，是系统给你的一个错误的解法。
+系统需要的不是你，是你的功能。
+我目前在海外工作，貌似拥有了 10 年前这个社会告诉我应该拥有的一切。买了房子、车子，周遭的人对你赞赏有加。
+我很好地融入了这个系统，高薪高焦虑。
+徒步的朋友问我周末有没有空去爬山，我无法答应，因为我不知道到时候我的工作要我去到哪里。
+设计的太巧妙了，学校 &#43; 职场的这套体系，他们总能让你乖乖地听话，呆在格子间里，其他的事，不允许变得重要。他们让你专注一件事——赚钱，所以你才负担房贷和日渐膨胀的生活方式。
+30 年的房贷系统，潜移默化地让你用线性的思维去看待你的工作和财富增长。
+当今的 YM 系统，比如香港的政策之一——叫做「专才」，他们只需要你作为一个听话的零件，而不是一个完整的人。
+系统制造焦虑，把你的多元兴趣压制下去了。你要继续呆着，还是想退出这场老鼠赛跑？
+新世界的规则变了 你没有问题，有问题的是这个「系统」；而跳脱出这个「系统」，最好的时间就是现在——2026年。
+为什么？
+因为「多元兴趣」不再是你的弱点，而是你的「资产」。感谢这个网络和社交媒体，你作为「个人」，第一次可以把你对社会的价值杠杆化。阻碍你的可能只是「噪音太多」或「自我怀疑」。
+古腾堡发明印刷机之前，知识被锁在修道院里。一本书要抄写几个月，普通人根本接触不到。印刷机出现后，50 年内 2000 万本书涌入欧洲，知识第一次变得廉价——那一代人里，出现了达芬奇、米开朗基罗。
+今天发生了同样的事，只是快了 100 倍。
+社交媒体之前，你想让一万个人看到你的想法，你需要出版社、电视台、经纪人或其他媒体。现在你只需要一支手机。分发是免费的，触达是全球的。一个住在厦门的人写的东西，可以被东京、柏林、悉尼的人读到。
+这是人类历史上第一次，个人可以在不依赖任何机构的情况下，把自己的价值杠杆化。而且，「注意力」也是这个新时代的资源。
+更重要的是，做这个事情，是 不需要被别人允许 的。
+窗口是开着的。问题只是你有没有往外走。
+当我们不再各为其主，我们不必再在乎我的那个零件是什么，而是我们能组合什么。而你能组合什么，恰恰是作为「通才」能否发挥的作用，而且每个人的组合技能都独一无二。
+如果你是注册中医师，又是健身教练，你可以教别人怎么用中医的角度调整适合亚洲人的饮食，同时结合力量训练，提出和西方营养学不同的观点。
+如果你是设计师，又懂心理学，那你更懂得怎么和客户沟通，增加设计的效率。
+焦虑 AI？AI 能复制技能，但复制不了你这个人走过的路所形成的视角。你的交叉点，才是真正的护城河。
+每多一个兴趣，你对现实的模型就更复杂——你能看到的机会就更多，能解决的问题也更多。专精只会让这个模型停止生长。
+真正的问题：资源分配出了错 我可没叫你现在辞职，去追寻你的热爱。
+根本的病因是——你把时间平均分配给了你的领域。
+之前读的 百万富翁快车道，我就指出，大部分人很难做到像 MJ 一样做到财富快车，我也不认为慢车道就是不对。而是应该集中分配你的时间和精力。专注工作，保持斜杠。
+个体成功的 3 个要素，结合在一起才是「自由个体」的基础。
+Self-education，自我学习，自己决定学什么。 Self-interest，基于兴趣驱动，否则你也做不久。 Self-sufficiency，自我独立，不依赖系统而活。 解法：3 个桶 第 1 个桶：赚钱桶 对，很俗。但你首先就是需要现金流。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-04-04 14:08:56 +0800 CST'>April 4, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 如果你有多元兴趣，请别浪费接下来的 1 年" href="http://localhost:1313/posts/multiinterest/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">「第二大脑」你随意就好
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+一、为什么要有第二大脑，吃太饱？ 「第二大脑」的概念一经 Tiago 推出就整个 sexy 到不行，第二大脑风吹遍了整个互联网，众人纷纷被洗脑，我也是其中之一并无法自拔。没办法，在混乱的年代需要更好地管理知识储备 PKM (Personal Knowledge Management)，应该是多数人的（隐性）诉求。那为什么「第二大脑」要叫「第二大脑」？别太纠结，你开心就好。
+二、第二大脑的一个大误解 Your mind is for having ideas, not holding them. — David Allen
+David Allen 的这句话容易让人产生误解，既然说大脑是用来产生主意的，那么拥有「第二大脑」的意义便是用来储存资讯的了。如果带着这个想法去读 Tiago 的第二大脑系列书籍以及用于实践的话，会发现并不是这样子的。
+Tiago 表达的重点在于「采取行动」，第二大脑是围绕「Actionability」开展的。他强调的是通过构建一个第二大脑的系统，由此可以灵活调动自己的笔记并有效地输出内容和产出，而并不是单纯地存储档案。
+网上尤其 YouTube 界很多博主把「第二大脑」理解为「储存」的工具，成了「帮你记住一切」，强调输入的「个人知识库」。这和 Tiago 的意愿背道而驰——他认为笔记是拿来用的，不是拿来储存的。第二大脑的笔记法更像是一种项目管理笔记法——以项目专案 Projects 为根基的一个笔记框架。
+但是，如果我们想用这个所谓的「第二大脑」来储存知识和信息，有意义吗？当然有啊！
+于是 Tiago 的「第二大脑」概念和你自己的概念可能有那么一丢丢的出入 🤏。生搬硬套是没有幸福的，我们完全可以定义自己的「第二大脑」。
+对于我而言，第二大脑系统仍然有很大的「存储知识」的属性。真的不必为了书里提倡的去照搬，只要能给我工作和日常带来价值，就足够了。原则比工具重要。每个人都有不同的需求和输出类型，而网上 Youtuber 讲的时常是以视频输出为主，并不适合每个人。
+三、第二大脑不是只有一个 APP 歹势，一开始我就是把 Notion 当成「第二大脑」APP 在使用的。但「第二大脑」对于我的意义更多在于帮我「储存」和「行动」，当然 Notion 仍然是目前这个大脑的最大构成部分，但是其他的 APP 或 软件也网状连结，一起编织成了我的「第二大脑」。以下的 APP，一天不用我可能会死亡。
+Notion 工作的项目管理 卡片盒知识储备 PKM 阅读/写作管理 个人信息储存 Apple Notes 历史工作的项目管理 Bear 熊掌记 Mental clarity 自己的家庭/个人/工作的蓝图 Brain vomit 乱涂乱写 工作的信息及时调用 健身信息的及时调用 Quick capture 快速捕捉的碎片信息 TickTick To-do ETD 管理（基于每周 review） Follow Ups （一堆跟进的事情，主要是被动的） 每日 To-do！(我永远在写这个，不写出来即原地崩溃) Apple Calendar Schedule Reminder Event 四、对《打造第二大脑实践手册》的重新思考 先说我的 PARA 分类：
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-06-11 23:00:00 +0800 CST'>June 11, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to 「第二大脑」你随意就好" href="http://localhost:1313/posts/paramethod/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">7年外贸学到什么｜7年简历，请多指教
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 七年就是一辈子 – 李笑来
+之前的文章简单提起过我自己过去的“两辈子”，感觉还不够过瘾；刚好最近读了一篇Sivers很有意思的文章 — 一段话就写一句话（有助于眼睛阅读），刚好可以练习一下这个写法。
+码下这篇文字的另外一个原因，也是感觉到2023将会发生巨变。中山路又开始堵车了，出国的个人旅行签证又开放了；但世界上多了超多的远程工作者，很多企业的运营模式发生了很大改变；而且，我也和3年前创业时的我想法不一样了。
+所以本文当成2016～2022年间的我的简历，请多指教。下一“辈子”，不知道我又会驶向何方。
+技能 从3个方面写下我学到的东西，尽量用一句话表诉，没有其他废话。
+做了什么事情 做这件事情取得什么成效 做这件事情的初衷与反思 建站 从零开始建立公司网站。域名购买，空间用过bluehost和hostinger，建站工具 (website builder) 用过avada和elementor；期间也采用过印度外包服务帮忙。 公司的网页建立了3个并维护，对外形象基本建立（展示型网页），但是SEO效果不佳。 自有网站作为线上“N&#43;1”推广的核心，确实是应该把网站作为重中之重，尤其是外贸生意。但必须持之以恒的打造优质内容，做organic traffic（至少半年），因为google算法只会越来越聪明，只有优质的内容才能走的长久。目前是wordpress&#43;hostinger&#43;elementor的搭配，并非推荐，只是仍然在用，空间主机都是黑心的，也许明年费用就爆涨但是就吃准你懒得换的心理。 B2B平台 运营了alibaba国际站和global sources推广服务2年。 alibaba几乎没有取得目标客户；global sources询盘质量也比alibaba好一些。 alibaba就像是你付他年费，还帮他在google做权重的感觉，对于工业领域的询盘质量极烂；但这类平台付费推广，适合于没有什么推广经验的外贸人，实在不是一个好选择。 Google搜索 做市场分析（贸易数据等）、关键词建立、分析客户画像、学网页html基础了解爬虫机制、用google搜索指令去做主动搜索、whois域名分析、找到目标联系人的邮箱并做验证、定制型开发信、cold call。 成功开发了客户30个以上。 免费又最有效的开发方法（当然因行业而异），但需要时间成本。 展会 参展国内外展会如柏林IFA，香港电子展，上海AWE，法兰克福照明展，观展则无数；主导策划参展样品，海报制作，展团行程规划。 参展变成一个和老客户约见的好时机。 参展和老客户约见的意义大于开发新客户；做展会是真的累，必须有一套事后的跟进流程（记录note），否则就是参展完各回各家，把在展会遇到潜在供应商和客户都忘光光；展会不再是最高效的开发客户的方式，但仍然是最主流之一。 项目管理 管理复杂电子产品的开发流程和协调项目组的各司其职（附上当年我师傅的亲笔真迹）。 持续更新的项目进度表让客户觉得专业；成功管理项目10个以上。 PM是一门科学也是一门艺术，让我耍嘴皮子之余，又套上了光环。 销售力 作为欧洲/美国客户的窗口人 (contact window)，财务/业务/项目/技术的事情，通通由我消化和沟通。 年销售超3000万人民币，重要的是永远让客户有问题的时候找的到人。 一个优秀的业务员是一个问题解决者，而不单单是卖产品那么简单。架起中西方沟通的桥梁也一直是我热爱的事情。 供应链管理 供应商开发和管理，剔除了许多不入流的厂家，而深化和优质工厂的合作关系。 根据不同项目制定一个对应的供应商池子，池子持续优化中。 好的厂家是成功的一半，和优质工厂合作往往前面谈判困难后面生产顺利，反之亦然；好的工厂合作不需要分甲方乙方了，而是partner。 领导力 培训业务员和助手，总是传达为什么，而不是怎么去做一个机器人。 达到工作流的主动化最大化，个人可以自主工作而不用整天开无聊的会议。 工作的事情尽量精简和自动化。 职场 和理念不同的人拆伙；和靠谱的人合伙。 合伙公司走入第5个年头。 能合作就不要合伙，你好我好；创业也没那么可怕，在打工时就要拥有做老板的心态。 人 和客户一起成长，这句话不假。我从客户身上学到了太多太多，不仅仅是工作上的，更有人生哲学。但我就挑一点来写，怕废话太多。
+希腊客户70&#43;岁了退休后又重新投入工作，他跟我说this is life。其实把工作和生活分开本身就是错误的，工作是生活的一个部分，而从事的工作也很有可能是自己追求的东西（那么你就是幸运的），而不是仅仅为了钱。
+法国客户教会我每一次的送样有多么重要，任何一次侥幸的心理带来的后果都是毁灭性的，为了快而快，往往是更慢。和航母级的大客户合作，让你会关注每一次样品，每一次拜访和你说出的每一句话。
+意大利客户让我明白技术才是做产品甚至是做生意的核心，缺少了工程技术能力，即便有再好的销售和项目管理技能都是白搭。
+美国客户让我体会到跨国公司的运营有多么的困难，以及底下不同子公司的不同出发点对于公司业务的影响。每个独立主体对于利益诉求点的不同，都让母公司像老迈的战车一样难以调转。这也是为什么我一直追求轻量化，做那么大干嘛？
+土耳其货币里拉对美元暴跌，让土耳其客户的购买力一夜蒸发，我深刻体会到了政局的相对稳定是做生意的根基。
+从葡萄牙的波尔图自驾到里斯本，除了领略到别致的异国风情，我也见识到了有许许多多有活力的制造型企业在这片土地上，这里可不止有C罗和蛋挞。
+德国客户让我知道了并非所有德国采购商都是严谨的，但往往出于对德国的刻板印象，中国工厂总认为德国客户的种种举动都体现出了德国人的“严谨”和“难搞”。
+印度客户的每一封邮件都让我细细品味，对于喜欢邮件的我，犹如教科书一般。他总能把涨价说的让人心甘情愿，把严重的客诉说的令人欣然接受。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-02-24 14:08:56 +0800 CST'>February 24, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 7年外贸学到什么｜7年简历，请多指教" href="http://localhost:1313/posts/resume/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">三人行，必有我师 ｜疫情下的出海
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🗿 Background 手机相册里上一次的出国旅行照片偶尔闪现，日期是Oct 2019，疫情已经三年。
+不像旅行博主这类把旅行当饭吃的人群，商务人群近几年出国的程度并达不到“必要性”。三年里，外贸人重新思考，有的调整业务线，有的倒闭，有的转行…在风云变幻的外部环境之下，仍然咬紧牙关冲击在外贸前线的人，2022的下半年，有时连吃饭的都在想“他*的老子真的要冲出去了”。尤其是做传统B2B的外贸人，有时候亲自和客户见上一面，聊上几句，胜过10个zoom call。
+本文对此次申根签证做一次无聊复盘，无聊之余，突出对签证的细节总结以及记录多年难得体会一次的签证经历，希望对后疫情时代想要出国的小伙伴有所帮助。
+🌊 流水账复盘 Replay 日期 进度 资料 反馈 2022-07-04 VFS官网找到邮件，初步询盘 得到官腔回复（Remarks 1） 2022-08-04 提交预审资料 – 邀请函&lt; invitation letter&gt;; – 必要性声明; – 商务行程表. 邀请函，出行必要性声明均未签名盖章，属于无效文件；需补充申请人护照首页/在职证明。 2022-08-05 补充说明 – Employment Certificates;– Passports copies. 需补充展会门票 2022-08-10 补充资料 – 展会参展证. 需补充展位确认函和付款证明 2022-08-12 补充资料 – 展会确认函;– 付款证明. 预审通过，只给了15天的签证有效期 2022-08-22 首次申诉，补充说明申请的是Business Visa而不是Exhibition Visa 申诉无效！（Remarks 2） 2022-08-25 再次申诉，补充资料 – 德国出具的Additional Explanatory Letter;– 更新的商务行程;– 机票/酒店订单. 批准了1个月的签证有效期 2022-09-01 德国驻广州领事馆面签 – 邀请函；– 申诉说明文件；– 参展文件；– 必要性声明；– 商务行程表；– 在职证明；– 护照原件/复印件；– 保险；– 申根签证申请表；– 机酒预定单；– 个人银行流水单；– 个人近期白底相片； 签证官（中国人）问一些出行的目的/行程问题； 录入指纹（首次录入于2017年，约5年了，刚好重新录入）; 1周后，实际出签了1个半月的申根签证。 2022-09-13 泰国签证官网申请电子签 Transit Visa (TS) 本人 – 个人近期白底相片；– 护照首页复印件；– 国内身份证正反面；– 出行声明 Declaration；– 个人手持护照相片；– 机票/酒店行程单（出入泰国当日）； 需补充:1.申请人的所有护照页扫描件(包括空白页);2.申请人的护照首页照片;3.个人不低于5,000人民币的存款证明;4.已确认的进入和离开泰国前王第三国家的机票行程单 2022-09-14 补充资料（本人 – 护照页扫描件(大部分签证页) ；– 护照首页照片；– 个人银行流水单（拿了申请申根签证那份）；– 机票行程单； 需补充：1.申请人的整本护照页扫描件(1-46页包括空白页);2.需要近期的个人不低于5,000人民币的存款证明 2022-09-16 补充资料（本人 – 整本护照页扫描件(1-46页包括空白页)；– 个人银行流水单（拿了申请申根签证那份）； 存款证明是从2022.05.26-2022.08. 26 已到期了，需打印“最新”的 2022-09-16 立马开车去最近的银行打印流水 – 个人银行流水单（更新至2022-09-16）. 2022-09-21 出签 2022-09-14 泰国签证官网申请电子签 Transit Visa (TS) 同行人#1 同“泰国签证官网申请电子签 Transit Visa (TS) 本人”资料. 2022-09-15 直接无理由被拒 2022-09-16 再次泰国签证官网申请电子签 Transit Visa (TS) 同行人#1 同“泰国签证官网申请电子签 Transit Visa (TS) 本人”资料，换了一张比较没那么匪气的手持护照相片. 被使馆电话告知，签发机构是陕西的护照，需要apply的是西安大使馆而不是厦门大使馆，该申请也在2022-09-19被拒 2022-09-16 第三次泰国签证官网申请电子签 Transit Visa (TS) 同行人#1 同“泰国签证官网申请电子签 Transit Visa (TS) 本人”资料，直接附上整本护照页扫描和最新个人银行流水. 2022-09-20 Pending 2022-09-14 泰国签证官网申请电子签 Transit Visa (TS) 同行人#2 同“泰国签证官网申请电子签 Transit Visa (TS) 本人”资料. 反馈并需补充：1.机票订单是10月3日，怎么酒店订单10月3日至10月7日;2.不低于1万的存款证明;3.所有护照页面扫描件包括空白页 2022-09-19 补充资料 （同行人#2 – 解释为什么有10/3的住宿单；– 最新个人流水证明；– 所有护照页的扫描页. 当日出签泰国E-Visa ✍️ Highlight 关于挑选出行路线 1）前后花了大概3个月的时候才搞定签证。2022-07-04到2022-09-01为申根签证；2022-09-13到9月底为泰国签证；
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-09-21 14:08:56 +0800 CST'>September 21, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 三人行，必有我师 ｜疫情下的出海" href="http://localhost:1313/posts/visaduringcovid/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Simple Productivity System
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>分享人生效率工具，一软一硬。从事外贸工作以来已经更新迭代过数次，践行着极简主义，至今仍然在探索中，没有一套效率工具适合所有人，只有通过自己不断的尝试和失败和尝试，才能有越来越适合自己的方案。如下所有的工具皆是可被替换的，只不过罗列出的是目前使用最得心应手的，姑且把这次的版本定位V1，希望各位也能别在APP的海洋中遨游了。
+硬件（电脑和布拉格Prague 💻 Macbook Air Late 2018，MBA换Retina显示屏的初代产品，我自豪的在香港官方翻新购入，我的第一生产力工具；
+📱P即Phone，iPhone XR，从不盲目追求最新的电子产品，虽不是果粉，但还算是水果的忠实用户，只不过太过理性，我追求的是“够用就好的科技”；
+👝R即Redmoon（硬扯），红月的钥匙包，身处电子化（且隐私曝光无底线）第一大国，从前的信用卡和储蓄卡都不用带了。这款钥匙包一定打到很多国人的痛点，里头只有钥匙、身份证、元初购物卡、少量现金、没了。国内出差同样适用，可以放入酒店门口和若干发票。亦能感受日本手工皮质经久耐用的色落，爱不释手；海外出差估计还得老老实实带钱包，等疫情后再探索了；
+🚙A即Auto key(徳)，车钥匙；
+💳G即Gateway，公司门禁卡；
+⌚️U即Uhr(徳)，Apple Watch Series 4，地铁门禁，快速忽略来电和微信打扰；
+🎧E即Earpods，我知道官方名是Airpods二代（但我必须硬拗一个E），长时间打电话神器。
+注：iPad是弊大于利的产品，不要买不要买不要买。
+软件 📅日历，我使用的是苹果日历，主要有3大类别
+Schedule，（出差）行程； Event，当日的重点事件； Reminder，提醒我项目的milestone、deadline或跟进的事宜； 📜To do，换了多个app，目前使用ticktick，每日的清晨约花15-30分钟整理一天工作任务（结合团队的晨会和日历领取任务），ticktick响应够快（感觉苹果的reminder稍有延迟），电脑端和移动端能同步，完成任务有“叮”的满足感；完成不了的任务可以左滑移到明天，当天的任务睡前必须清空，否则容易失眠；
+📒笔记
+Apple Notes，记录个人和工作的快速笔记，方便快速查阅和调用； Notion，Blog创作和其他笔记； Bear，设计很喜欢，和一只熊的对话，用写作和自己对话，mental clarity，像是电子版的笔记本随手涂涂画画； Evernote，文件档案，产品学习资料，培训笔记，读书笔记等； ☁️文件存储
+iCloud Drive，目前200g，够用…方便随时随地电脑和手机都能调用；
+📧Email
+Apple mail和Outlook，for business； QQ邮箱和Gmail个人邮箱，国内和国外订阅灵活选择； 🗂项目管理
+Zenkit，一款德国小众软件，使用轻量，项目overview，重点项目highlight； Team，微软的，搭配插件Project for web和planner to do； Omni plan，pro级的项目管理软件，几乎有你一切想要的功能； 😅即时通讯
+科技越来越发达的今天，沟通的时效性大大提升也更加的碎片化，我使用的即时通讯app多达8个，提供便利的同时，其实这些都是会打扰你、分散你注意力的存在，但由于工作的性质，和团队、客户和供应商的沟通很大一个比重由这些app完成。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-03 14:08:56 +0800 CST'>May 3, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to My Simple Productivity System" href="http://localhost:1313/posts/my-simple-productivity-system/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">关于出口物流，收汇和退税
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>身处天朝，受外汇管制越来越严格。如果想在制度下畅快游戏，必须得遵守游戏规则。 物流方式和外汇密不可分，常见的几种出口物流方式如下。
+空运✈️ 标题的“空运”是广义上的“空运”，快递亦是一种空运形式。坊间说的“空运”是狭义上的，和“快递”区分开。（这困扰了我好久） 注意物流计价用货重或抛货（体积重），居高者胜。抛货计算公式为方数*167。
+快递🛫 通常指的是各大国际快递物流公司的服务，常见的有DHL中外运敦豪(德)、Fedex联邦(美)、TNT(荷兰)(已被Fedex收购)、UPS(美)、EMS国际快递等；
+快递亦可以报关办理退税，企业要多加报关费约¥150；
+货物在100～150kg以下，走快递比空运(狭义)划算；
+如果企业没有自己的快递物流账号，由第三方代发，则一般由快递公司统一抬头报关（常用于寄样品）。
+海运🚢
+最常见的物流方式，一般由企业自己抬头报关办理退税； 物流计价用方数算，不用重量计算； 一艘船可以装载7000个20‘GP标准箱。 铁路🚞 铁路由于运输平衡要求，有时候甚至需要订double的舱位； 物流计价用方数算，不用重量计算。
+对于小企业而言，除去正常的大货出货退税，有很多其他五花八门的服务类外汇收入，经常在向银行申报的时候兜兜转转，好像做了什么亏心事。
+这类的不做退税的外汇收入，比如代收运费，样品费，咨询费…简单的来说，就是你帮客户一个忙，为此客户付了你一笔钱，你刚好只有中国内地的外汇账户，硬着头皮收进来，一般来说企业需要再缴纳收汇额的6%税费。
+当然亦有其他灵活方式收取样品费，比如Paypal，Wise等，把这些小钱留在天朝外。
+退税需求的文件：关单，放行通知单，提单，外合同
+关单（中华人民共和国海关出口报关单）：品名/单位等由企业申报，必须和内合同给工厂的品名/单位一致，工厂开票的品名/单位也必须完全一致； 放行通知书：（好像有时不用）； 提单：品名和外合同一致； 外合同：品名为客户/项目/产品的描述； 发票：品名和外合同一致； 装箱单：品名和外合同一致。 退税的金额为工厂开票金额÷1.13×13%（取决于产品的退税点数）。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-03 14:08:56 +0800 CST'>May 3, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 关于出口物流，收汇和退税" href="http://localhost:1313/posts/logistic/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">关于贸易条款Incoterm，其实你不需知道太多
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>学校里学的《国际贸易实务》太无聊。
+客户的采购太不专业。
+关于贸易条款Incoterm，深究几个常用条款，便可四两拨千斤。
+Incoterm: international commercial terms 卖家“倾向”的条款 🚢
+EXW (“Ex Works”), 出厂价 FOB (“Free on Board”), 离岸价 报价的核心：把客户当白痴。
+最基本的条款含义这里不再赘述，只引申其他。EXW非常适合项目的初始报价，一切的报价都以客户为出发点，除非是要求非常细致的专业客户，否则在报价方面，卖家都得花心思去揣摩什么条款最适合提报客户，以最大化沟通效率。预估报价通常只是客户想知道你的大概价位，绝无必要详细计算包装，人工和运输等费用分摊到产品单价等等。
+出口的多数货物风险发生在海上或空中，FOB条款卖家不必操心途中发生的任何问题，只管完成出口报关，确保船离岸驶出。值得注意的是，用此条款一般客户有指定货代，如果你是贸易公司，你合作的出口货代只帮你负责工厂到码头的运输，出口报关和港杂等，有时还得和对方指定货代沟通，活多钱少，所以兴趣一般不大。
+买家“倾向”的条款 ⛴️
+CIF (“Cost, Insurance and Freight”), 到岸价 DDU (“Delivered Duty Unpaid”), 未完税交货 坊间还在流传CNF (“N”是and的意思，亦写做C&amp;F)条款，但已属于过去式，目前被CFR (“Cost and Freight”)所代替。CIF多加了一个”I”，即保险费。
+对买家来说，最懒人的条款非DDU莫属 — 送货上门！我只要付进口的关税和增值税即可。区别于DAP (“Delivered at Place”)条款，DDU的清关费用也由卖家承担。如是买卖双方都比较佛系的情况下，买家找一个强力货代，非常适合做此条款。
+关于DDP 🥶
+DDP (“Delivered Duty Paid”) DDP的中文翻译是：一条龙服务。
+DDP条款是一个非常让卖家头疼的条款，尤其是碰上非常不专业的买家，解释需要费好一番功夫。因其税的部分由于产品在不同目的国的进口关税和增值税都不一样，也很大程度和目的国的海关心情有着直接关系，所以DDP根本就是一个“不平等”条款，唯有报一个准确的DDU价格，搭配一个预估的税的费用，并备注“实报实销”，对我而言，才是一个比较安全的DDP报价。
+Case Study 🗃
+产品：盒子 单价：$2 数量：1000pcs Tariff关税：0 VAT (Value Added Tax)增值税：货值的21%，即$2100021%=$420
+尚方宝剑：“Please pay special attention to the cost $420 (Tariff 0% and VAT 21%) won’t be refined calculated until the goods arrived in Spain. In case there will be tariff generated from Spain custom, additional tax, commodity inspection and storage costs, etc, those will be paid off by your side.“ ...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-02 14:08:56 +0800 CST'>May 2, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 关于贸易条款Incoterm，其实你不需知道太多" href="http://localhost:1313/posts/incoterm/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">5年1项目｜梦回里昂 Part 4
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>法国里昂对比打车和租车的出行体验。
+发达国家的工厂必然不会在落在城市，如果客户又是一个大型集团，那出行拜访怎么到达客户工厂你得自己想法子。通常第一次拜访做足功课即可一劳永逸。
+打车 17年不是公司第一次拜访卡洛，但是是我第一次率队行动，别说是当地的交通情况了，欧罗巴大陆都是第一次登陆。下榻机场旁边的小酒店，旁边的餐厅只有一个赛百味…
+客户位于Pont eveque小镇，人口仅5000，行车距离里昂机场LYS约40km；公共交通只有里昂市区往Vienne小镇的巴士，1个小时2～3班，非常不方便。一行人坐上了的士，到了一定公里数计价表开始跳表，和国内一样，只不过从人民币换成了欧元。 提前了半个小时到达目的地，先来几张标准的游客照，在少有人烟的小镇拍拍，在客户工厂门口拍拍。里昂的天气貌似阴晴不定，当时8月的最后一天，客户说前一天还在穿短袖过夏天，今天就气温骤降感受到了秋意。 第二天起了个大早，赶早班机往巴黎，由于担心凌晨5点很难打到车，前一天就问同个的士司机能否凌晨接送。我们拖着行李和疲惫的身躯迟了个几分钟摸着黑下楼，酒店check out，发现的士司机早已等候并且开始计费了！他说约定的时间抵达，他就开始提供服务了，理应就该计费，听起来好像也蛮有道理…凌晨的计价器跳表，就像透心凉的秋雨一样，一滴一滴以极快的频率下着，一旁的老板脸都绿了🥶。
+租车 18年的里昂出行果断选择了airbnb民宿&#43;租车的搭配。
+首次欧洲自驾用一个字高度概括：慌！
+出国前上租租车的官网预定了辆小雷诺，因此行只有两人，再者来了法国感觉得订个法系车。租车行Thrifty门店做免费的机场shuttle bus即可到达，凭身份证，信用卡和租租车给的驾照翻译本就可以入店办理。结果给的车型以实际为准，官方的解释说得让你云里雾里，我也懒得听，但竟然“升级”到了一辆SUV标志。
+接着就是一顿“销售”。
+保险加不加？不加出事故可能有上万欧元的理赔费用 加一名驾驶员也需要加费用 高速快速通行卡，类似国内的ETC 税费20% …… 我不记得还有什么项目了，本来以为100欧的租车花费，结果卡一刷250欧，当然还不包括押金，账单上只是你预估需要的花费，多的额外消费比如高速通行费用，出保险（如有），还有其他你想不到的，都会在你的押金上扣除，1～2个月才会返还给你，法国人这效率… 账单长这样。 关于驾驶体验，说不上法国公里哪里不一样，但总觉得行驶起来很变扭，两人在国内可都是藤原豆腐房随便飘，到了的士速递的国土反而都变得不会开车了，一路上盯着google导航，两手握方向盘，小心翼翼的控制着油门和刹车，都在笑话着对方开车技术回归到了10年前。出行前网上稍微看了看自驾攻略，看了一堆全忘了，只记得
+要格外关注礼让行人 遇到Stop标志要停3秒，听说有警察躲着草丛里，你没遵守会跳出来开你罚单 拐角进大路要停3秒，确保没有直行车才可驶入大路 其实回想，这都是基础交规，只不过在国内不奏效，来欧洲重新打基础。对了，奇怪的是法国没有U turn？没有掉头的标示和区域，取而代之的是各种圆形转盘。如此一来没了红绿灯道路通畅，但可苦了GPS导航，一有延迟就错过了本该驶出的路口，忘了当时开错了多少路了。
+此外，我还给本次出行增加了难度，隔天早上6点多的飞机，意味着5点要还车，而一般的门店营业时间是8点。在咨询了租租车客服后，我在后台留了言并备注上了航班号，行不行不得而知，少了国内的人工客服总感觉心里的一块石头还悬着，打电话给门店一口法式英语的自助还车说明让我满脸问号。于是隔天摇头晃脑又开错了2个路口后跌跌撞撞到达门店的停车场，还不忘拍下行驶的里程数和满油状态，以免后续门店给我乱收费用，里昂这边的油价1.6欧/升，好贵…
+随后忐忑的停完车，开着手机手电筒，绕门店找了一圈才找到这个隐蔽的迷之投递箱。 而住宿也因为选择了租车，找了一个方便停车的airbnb位于里昂的北部市郊。 宽敞的标准法国公寓，长餐桌，沙发，开放式厨房，无限享用的胶囊咖啡，住在当地人的家里，是最直接的体验在地生活的一种方式。墙壁上挂着的房东家庭的画框，也显得很温暖。
+美中不足是房东不太说英语，刚见面只能用翻译软件尬聊。从桥时间，停车，打电话确认地址到指引车辆入车库都好不容易。 由于离开当天早上需要赶6点多的航班，除了还车麻烦，还房间钥匙也折腾，提前和房东打好招呼凌晨就会离开，走时顺便拍下一张还钥匙在她指定信箱的照片，并表达谢意。
+对比体验 两次的里昂体验都很新鲜，因为选择了不同的出行方式。总体来说个人仍然更喜欢自己租车。
+更加灵活。尤其是客户位于南部的小镇，公共交通非常不便，自己有车可以灵活安排时间并最大化利用时间；
+更加省钱（其实并没有）。如果按2～3天的当地行程，如果拜访客户和市内移动都打车，当地的出租车收费并不便宜，轻易花销掉上百欧元的交通费。租车的车辆本身便宜，虽然被加了莫名其妙的费用，开车的整体体验好很多，多花了钱仍觉得值得；
+更高的幸福感。国外出差必然驮着一堆行李移动，有自己的一辆车便利许多，拜访客户行程也显得怡然自得。当时拜访完客户，回去开车路上里昂的午后阳光洒进车窗，心想这个1千万人民币的项目终于取得重大突破，回想这3年来的努力，差点，当时，真的，眼泪都要流下来了。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-04-08 14:08:56 +0800 CST'>April 8, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 4" href="http://localhost:1313/posts/lyonpt4/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/categories/work/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://eddy.lu">eddylu</a></span>
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -201,25 +514,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

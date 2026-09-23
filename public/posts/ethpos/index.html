@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>以太坊 POS 机制一周年：回顾与展望 | ed</title>
+<meta name="keywords" content="crypto, blockchain, ethereum">
+<meta name="description" content="一周年里的重要事件
+一年前，以太坊（Ethereum）迎来了一个重大的变革，将其共识机制从 PoW（工作量证明）改为了 PoS（权益证明）。在这个一周年回顾中，我们来看看这一年里发生了什么重要的事情。
+质押规模不断增长
+在一年的时间里，以太坊的 PoS 质押规模迅速扩大，目前已经高达 2600 万颗以太币，相当于大约 40 Billion 美元的市值。这表明了社区对以太坊的信任，以及投资者对质押机制的兴趣。
+质押率与收益
+尽管以太坊的质押率达到了 22%，相对于其他 PoS 项目如 Cardano 的 70% 来说，仍有提升空间。然而，质押者目前可以获得约 3.7% 的收益率，这在当前的熊市环境下也算是一个还不赖的选择。
+门槛降低，更容易参与
+PoS 机制的一个显著优势是降低了参与门槛。以前，挖矿需要显卡和矿机等设备，而现在只需拥有 32 颗以太币就能够进行质押。即使没有足够的以太币，也可以通过像 Lito 矿池这样的服务来实现质押，使更多人能够参与。
+PoS的不足之处
+然而，PoS 机制并非没有缺点。在以太坊中，不管是质押还是抽离，都需要等待较长的时间，大约 2 个月，而 Cardano 则只需要大概 25 天的延迟。这是一个需要改进的领域，以提高用户体验。
+未来展望：以太坊的分片计划
+未来，以太坊将继续追求改进，其中一个关键项目是分片（sharding）。分片将大大提高以太坊的交易速度并降低交易费用，但官方表示需要 2 到 3 年，但实际可能需要 5 年甚至更长的时间才能完成。在这段时间内，以太坊仍然会是 L1 主链的领导者吗？还是有可能被其他主链项目所取代？
+以太坊在一年的时间里经历了重大的转变，从 PoW 到 PoS，展示了其不断发展和创新的能力。虽然存在一些挑战，但以太坊仍然是加密世界的重要一部分，吸引了越来越多的用户和开发者。无论未来如何，以太坊都将继续发挥其在区块链领域的关键作用。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/ethpos/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/ethpos/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei", Arial, sans-serif;
+}
+</style>
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      以太坊 POS 机制一周年：回顾与展望
+    </h1>
+    <div class="post-meta">
+
+<span title='2023-10-03 14:08:56 +0800 CST'>October 3, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>一周年里的重要事件</p>
+<p>一年前，以太坊（Ethereum）迎来了一个重大的变革，将其共识机制从 PoW（工作量证明）改为了 PoS（权益证明）。在这个一周年回顾中，我们来看看这一年里发生了什么重要的事情。</p>
+<p><strong>质押规模不断增长</strong></p>
+<p>在一年的时间里，以太坊的 PoS 质押规模迅速扩大，目前已经高达 2600 万颗以太币，相当于大约 40 Billion 美元的市值。这表明了社区对以太坊的信任，以及投资者对质押机制的兴趣。</p>
+<p><strong>质押率与收益</strong></p>
+<p>尽管以太坊的质押率达到了 22%，相对于其他 PoS 项目如 Cardano 的 70% 来说，仍有提升空间。然而，质押者目前可以获得约 3.7% 的收益率，这在当前的熊市环境下也算是一个还不赖的选择。</p>
+<p><strong>门槛降低，更容易参与</strong></p>
+<p>PoS 机制的一个显著优势是降低了参与门槛。以前，挖矿需要显卡和矿机等设备，而现在只需拥有 32 颗以太币就能够进行质押。即使没有足够的以太币，也可以通过像 Lito 矿池这样的服务来实现质押，使更多人能够参与。</p>
+<p>PoS的不足之处</p>
+<p>然而，PoS 机制并非没有缺点。在以太坊中，不管是质押还是抽离，都需要等待较长的时间，大约 2 个月，而 Cardano 则只需要大概 25 天的延迟。这是一个需要改进的领域，以提高用户体验。</p>
+<p>未来展望：以太坊的分片计划</p>
+<p>未来，以太坊将继续追求改进，其中一个关键项目是分片（sharding）。分片将大大提高以太坊的交易速度并降低交易费用，但官方表示需要 2 到 3 年，但实际可能需要 5 年甚至更长的时间才能完成。在这段时间内，以太坊仍然会是 L1 主链的领导者吗？还是有可能被其他主链项目所取代？</p>
+<p>以太坊在一年的时间里经历了重大的转变，从 PoW 到 PoS，展示了其不断发展和创新的能力。虽然存在一些挑战，但以太坊仍然是加密世界的重要一部分，吸引了越来越多的用户和开发者。无论未来如何，以太坊都将继续发挥其在区块链领域的关键作用。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/crypto/">Crypto</a></li>
+      <li><a href="http://localhost:1313/tags/blockchain/">Blockchain</a></li>
+      <li><a href="http://localhost:1313/tags/ethereum/">Ethereum</a></li>
+    </ul>
+    
+    <div style="margin: 50px 0;"> 
+        <style>
+  #cusdis_thread iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+  </style>
+    <h4>Comments:</h4>
+      <div id="cusdis_thread" data-host="https://cusdis.com"
+        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
+        data-page-id="3f064a2190bcb28feb6563997df90a26" data-page-url="http://localhost:1313/posts/ethpos/"
+        data-page-title="以太坊 POS 机制一周年：回顾与展望"></div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

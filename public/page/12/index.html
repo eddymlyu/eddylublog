@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.166.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>ed</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">自建站的主机产品
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>本文对自建站的主机Host产品做一个极简入门，并对国外主流产品当前价格做一个更新对比。
+虚拟共享主机 Shared Hosting 是一种共享主机，用户抱团取暖，使用同一个服务器的内存和空间等资源； 相当于租了一个联合办公共享空间，我多你少，你少我多，互相影响。
+虚拟专用主机 VPS Virtual Private Server 将一个服务器分割成多个虚拟专享的服务器服务，此专享的服务器的空间，内存，CPU和系统配置等都是独立的； 相当于租了一间独立一个办公室，你在里面独立办公，互不影响，但是也不能太夸张的大吼，因为有可能会吵到隔壁办公室。 注：经常营销的SaaS产品，如Squarespace，一般是VPS的主机。
+云主机 Cloud Hosting 简单的云主机理解成升级版的VPS，是一个VPS集群，也有更安全更稳定的特性； 相当于租了一栋别墅办公，里面可以有很多办公室，拥有的资源更多，你也可以在里面大吼大叫。
+独立主机 Dedicated Hosting 自己独享一台服务器； 相当于自己一栋大楼，想怎么搞就怎么搞。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-26 14:08:56 +0800 CST'>May 26, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 自建站的主机产品" href="http://localhost:1313/posts/host/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Make Time 读书笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+🚀 The Book in 3 Sentences 找到每日重点事项，并重点解决它，贯彻精要主义，这个重点可以是家庭，个人或工作的事项。 改善对日历的理解和使用。 活的像个原始人一样，睡的像原始人，吃的像原始人，做的像原始人，其实更健康。 🎨 Impressions 工作上的效率最优化一直是我的迷思之一，步入职场对于工作每个人都是一张白纸，怎么样去建立一个好的工作习惯至关重要，这些是在学校里学不到的。除了运气好能有好的上级指导，没有的话需要自己不断的去摸索和学习，这本书就是以科技业从事人员的好建议，不一定生搬硬套，可以借鉴并融会贯通，结合自己的工作性质，打造出适合自己的方案。
+☘️ How the Book Changed Me 改善了对日历和To-do的使用方法； 合理利用和改善咖啡因的摄入时间； 愿意晚上或周末去散散步，这种以前认为无聊死了的活动； 吃的更健康，适度抵抗诱惑不健康的外食； 每日思考：今天什么时候对我而言最重要。 ✍️ Quotes I have plenty of mundane stuff to get done.
+It’s a cruel irony of modern life that we’re surrounded by people yet more isolated than ever.
+📒 Summary &#43; Notes 做出适合自己的策略 Highlight, Laser, Energize, 书中的3个模式中有接近百种策略，不一定每一种都适合每一个人，相对的，只有自己去尝试、体验和修正不同的策略，才能发展和定制出适合自己的策略。 设计你的日历 这是作者的日历即视感，把早餐、咖啡、冲凉这些也写到日历里感觉实在太geek，但听说有奇效？但日历对我而言，一直是一个schedule&#43;event&#43;reminder的工具，所以过于生活化的行程我不会排入我的日历。
+另，提到的block your calendar可以用于强化你的highlight时间段，当今的碎片化生活和永无止尽的推送打扰，这么做是非常有必要的，强制隔断出一段让你专心致志做深度工作的时间，通常是早上的时间，对我来说非常有效。
+再另，新建了一个日历Template，用于大致性的限制/规划一日的行程安排和工作类型，可以审视一天里到底在忙些什么，重要的是忙了些什么，毕竟一天真正在工作的时间也就3小时。
+查看Email的时间 越来越多的人，包括Tim Ferriss的batching策略，把查阅email的安排在每天的固定时间段，而非经常性的无必要的去查阅邮件。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-19 14:08:56 +0800 CST'>May 19, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Make Time 读书笔记" href="http://localhost:1313/posts/maketime/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Simple Productivity System
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>分享人生效率工具，一软一硬。从事外贸工作以来已经更新迭代过数次，践行着极简主义，至今仍然在探索中，没有一套效率工具适合所有人，只有通过自己不断的尝试和失败和尝试，才能有越来越适合自己的方案。如下所有的工具皆是可被替换的，只不过罗列出的是目前使用最得心应手的，姑且把这次的版本定位V1，希望各位也能别在APP的海洋中遨游了。
+硬件（电脑和布拉格Prague 💻 Macbook Air Late 2018，MBA换Retina显示屏的初代产品，我自豪的在香港官方翻新购入，我的第一生产力工具；
+📱P即Phone，iPhone XR，从不盲目追求最新的电子产品，虽不是果粉，但还算是水果的忠实用户，只不过太过理性，我追求的是“够用就好的科技”；
+👝R即Redmoon（硬扯），红月的钥匙包，身处电子化（且隐私曝光无底线）第一大国，从前的信用卡和储蓄卡都不用带了。这款钥匙包一定打到很多国人的痛点，里头只有钥匙、身份证、元初购物卡、少量现金、没了。国内出差同样适用，可以放入酒店门口和若干发票。亦能感受日本手工皮质经久耐用的色落，爱不释手；海外出差估计还得老老实实带钱包，等疫情后再探索了；
+🚙A即Auto key(徳)，车钥匙；
+💳G即Gateway，公司门禁卡；
+⌚️U即Uhr(徳)，Apple Watch Series 4，地铁门禁，快速忽略来电和微信打扰；
+🎧E即Earpods，我知道官方名是Airpods二代（但我必须硬拗一个E），长时间打电话神器。
+注：iPad是弊大于利的产品，不要买不要买不要买。
+软件 📅日历，我使用的是苹果日历，主要有3大类别
+Schedule，（出差）行程； Event，当日的重点事件； Reminder，提醒我项目的milestone、deadline或跟进的事宜； 📜To do，换了多个app，目前使用ticktick，每日的清晨约花15-30分钟整理一天工作任务（结合团队的晨会和日历领取任务），ticktick响应够快（感觉苹果的reminder稍有延迟），电脑端和移动端能同步，完成任务有“叮”的满足感；完成不了的任务可以左滑移到明天，当天的任务睡前必须清空，否则容易失眠；
+📒笔记
+Apple Notes，记录个人和工作的快速笔记，方便快速查阅和调用； Notion，Blog创作和其他笔记； Bear，设计很喜欢，和一只熊的对话，用写作和自己对话，mental clarity，像是电子版的笔记本随手涂涂画画； Evernote，文件档案，产品学习资料，培训笔记，读书笔记等； ☁️文件存储
+iCloud Drive，目前200g，够用…方便随时随地电脑和手机都能调用；
+📧Email
+Apple mail和Outlook，for business； QQ邮箱和Gmail个人邮箱，国内和国外订阅灵活选择； 🗂项目管理
+Zenkit，一款德国小众软件，使用轻量，项目overview，重点项目highlight； Team，微软的，搭配插件Project for web和planner to do； Omni plan，pro级的项目管理软件，几乎有你一切想要的功能； 😅即时通讯
+科技越来越发达的今天，沟通的时效性大大提升也更加的碎片化，我使用的即时通讯app多达8个，提供便利的同时，其实这些都是会打扰你、分散你注意力的存在，但由于工作的性质，和团队、客户和供应商的沟通很大一个比重由这些app完成。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-03 14:08:56 +0800 CST'>May 3, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to My Simple Productivity System" href="http://localhost:1313/posts/my-simple-productivity-system/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">关于出口物流，收汇和退税
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>身处天朝，受外汇管制越来越严格。如果想在制度下畅快游戏，必须得遵守游戏规则。 物流方式和外汇密不可分，常见的几种出口物流方式如下。
+空运✈️ 标题的“空运”是广义上的“空运”，快递亦是一种空运形式。坊间说的“空运”是狭义上的，和“快递”区分开。（这困扰了我好久） 注意物流计价用货重或抛货（体积重），居高者胜。抛货计算公式为方数*167。
+快递🛫 通常指的是各大国际快递物流公司的服务，常见的有DHL中外运敦豪(德)、Fedex联邦(美)、TNT(荷兰)(已被Fedex收购)、UPS(美)、EMS国际快递等；
+快递亦可以报关办理退税，企业要多加报关费约¥150；
+货物在100～150kg以下，走快递比空运(狭义)划算；
+如果企业没有自己的快递物流账号，由第三方代发，则一般由快递公司统一抬头报关（常用于寄样品）。
+海运🚢
+最常见的物流方式，一般由企业自己抬头报关办理退税； 物流计价用方数算，不用重量计算； 一艘船可以装载7000个20‘GP标准箱。 铁路🚞 铁路由于运输平衡要求，有时候甚至需要订double的舱位； 物流计价用方数算，不用重量计算。
+对于小企业而言，除去正常的大货出货退税，有很多其他五花八门的服务类外汇收入，经常在向银行申报的时候兜兜转转，好像做了什么亏心事。
+这类的不做退税的外汇收入，比如代收运费，样品费，咨询费…简单的来说，就是你帮客户一个忙，为此客户付了你一笔钱，你刚好只有中国内地的外汇账户，硬着头皮收进来，一般来说企业需要再缴纳收汇额的6%税费。
+当然亦有其他灵活方式收取样品费，比如Paypal，Wise等，把这些小钱留在天朝外。
+退税需求的文件：关单，放行通知单，提单，外合同
+关单（中华人民共和国海关出口报关单）：品名/单位等由企业申报，必须和内合同给工厂的品名/单位一致，工厂开票的品名/单位也必须完全一致； 放行通知书：（好像有时不用）； 提单：品名和外合同一致； 外合同：品名为客户/项目/产品的描述； 发票：品名和外合同一致； 装箱单：品名和外合同一致。 退税的金额为工厂开票金额÷1.13×13%（取决于产品的退税点数）。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-03 14:08:56 +0800 CST'>May 3, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 关于出口物流，收汇和退税" href="http://localhost:1313/posts/logistic/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">关于贸易条款Incoterm，其实你不需知道太多
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>学校里学的《国际贸易实务》太无聊。
+客户的采购太不专业。
+关于贸易条款Incoterm，深究几个常用条款，便可四两拨千斤。
+Incoterm: international commercial terms 卖家“倾向”的条款 🚢
+EXW (“Ex Works”), 出厂价 FOB (“Free on Board”), 离岸价 报价的核心：把客户当白痴。
+最基本的条款含义这里不再赘述，只引申其他。EXW非常适合项目的初始报价，一切的报价都以客户为出发点，除非是要求非常细致的专业客户，否则在报价方面，卖家都得花心思去揣摩什么条款最适合提报客户，以最大化沟通效率。预估报价通常只是客户想知道你的大概价位，绝无必要详细计算包装，人工和运输等费用分摊到产品单价等等。
+出口的多数货物风险发生在海上或空中，FOB条款卖家不必操心途中发生的任何问题，只管完成出口报关，确保船离岸驶出。值得注意的是，用此条款一般客户有指定货代，如果你是贸易公司，你合作的出口货代只帮你负责工厂到码头的运输，出口报关和港杂等，有时还得和对方指定货代沟通，活多钱少，所以兴趣一般不大。
+买家“倾向”的条款 ⛴️
+CIF (“Cost, Insurance and Freight”), 到岸价 DDU (“Delivered Duty Unpaid”), 未完税交货 坊间还在流传CNF (“N”是and的意思，亦写做C&amp;F)条款，但已属于过去式，目前被CFR (“Cost and Freight”)所代替。CIF多加了一个”I”，即保险费。
+对买家来说，最懒人的条款非DDU莫属 — 送货上门！我只要付进口的关税和增值税即可。区别于DAP (“Delivered at Place”)条款，DDU的清关费用也由卖家承担。如是买卖双方都比较佛系的情况下，买家找一个强力货代，非常适合做此条款。
+关于DDP 🥶
+DDP (“Delivered Duty Paid”) DDP的中文翻译是：一条龙服务。
+DDP条款是一个非常让卖家头疼的条款，尤其是碰上非常不专业的买家，解释需要费好一番功夫。因其税的部分由于产品在不同目的国的进口关税和增值税都不一样，也很大程度和目的国的海关心情有着直接关系，所以DDP根本就是一个“不平等”条款，唯有报一个准确的DDU价格，搭配一个预估的税的费用，并备注“实报实销”，对我而言，才是一个比较安全的DDP报价。
+Case Study 🗃
+产品：盒子 单价：$2 数量：1000pcs Tariff关税：0 VAT (Value Added Tax)增值税：货值的21%，即$2100021%=$420
+尚方宝剑：“Please pay special attention to the cost $420 (Tariff 0% and VAT 21%) won’t be refined calculated until the goods arrived in Spain. In case there will be tariff generated from Spain custom, additional tax, commodity inspection and storage costs, etc, those will be paid off by your side.“ ...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-05-02 14:08:56 +0800 CST'>May 2, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 关于贸易条款Incoterm，其实你不需知道太多" href="http://localhost:1313/posts/incoterm/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Wise(前Transferwise)入金不完全攻略(2021)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>很多朋友发现新大陆想小额投资美股，开始体验价值投资的巴菲特白日梦，包括我。但发现开设券商容易，入金困难。办理境外银行卡（如香港或美国）谈不上难，但动辄到上万的存款或者需要亲身到当地办理，则是违背了美股新手小额投资初体验和2020年疫情爆发无法旅行的原则。于是，如果你也捣鼓注册了Transferwise（2021年更名为Wise），却卡壳在入金$20这一个步骤，那么如下的内容也许有点启发。
+为入金$20干过的”蠢事“
+支付宝上银汇款（个人跨境汇款产品于2020年12月1日起暂时停止服务，另明确提示：不得用于证券、保险、不动产等资本项目交易） 中国银行柜台汇款（虽可自由购置外币，但是个人无法汇款到Wise所在机构） 让海外的朋友汇款（入金激活的政策必须来自同一人名） 插曲：身边有朋友在2020年上半年通过一顿乱操作，意外的跳过了入金$20并成功激活，享受到了混乱福利期，然而系统很快就修复了漏洞，手慢无。
+我在2020年圣诞节12月25日成功入金了$20，用的是全球付的服务。
+但是全球付的服务比较昂贵，发现要分享此篇博文，想来回头翻阅之前的汇款记录和手续费太无趣，干脆今日2021年4月23日汇款个小额$500，分享下具体的手续费情况和（再一次）体验。
+登陆Wise，增值USD账户，选择debit或者credit card都可以，都会跳转到你绑定的全球付卡HKD Mastercard，几番周折，只能键盘敲下$477，因平台手续费需扣$20.99。
+（另，发现近期wise登陆不用科学上网了？）
+全球付也收到出账记录。
+注：我的Wise完全按真实情况注册申请，中国护照，中国地址，中国电话。于是，收不到这张绿油油的卡。听说全球付入金会有封号风险，请各位谨慎行事，目前我个人入金4次还未湿鞋。
+整体花费情况。一个字：贵。
+不好玩。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-04-25 14:08:56 +0800 CST'>April 25, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Wise(前Transferwise)入金不完全攻略(2021)" href="http://localhost:1313/posts/wise/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">5年1项目｜梦回里昂 Part 4
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>法国里昂对比打车和租车的出行体验。
+发达国家的工厂必然不会在落在城市，如果客户又是一个大型集团，那出行拜访怎么到达客户工厂你得自己想法子。通常第一次拜访做足功课即可一劳永逸。
+打车 17年不是公司第一次拜访卡洛，但是是我第一次率队行动，别说是当地的交通情况了，欧罗巴大陆都是第一次登陆。下榻机场旁边的小酒店，旁边的餐厅只有一个赛百味…
+客户位于Pont eveque小镇，人口仅5000，行车距离里昂机场LYS约40km；公共交通只有里昂市区往Vienne小镇的巴士，1个小时2～3班，非常不方便。一行人坐上了的士，到了一定公里数计价表开始跳表，和国内一样，只不过从人民币换成了欧元。 提前了半个小时到达目的地，先来几张标准的游客照，在少有人烟的小镇拍拍，在客户工厂门口拍拍。里昂的天气貌似阴晴不定，当时8月的最后一天，客户说前一天还在穿短袖过夏天，今天就气温骤降感受到了秋意。 第二天起了个大早，赶早班机往巴黎，由于担心凌晨5点很难打到车，前一天就问同个的士司机能否凌晨接送。我们拖着行李和疲惫的身躯迟了个几分钟摸着黑下楼，酒店check out，发现的士司机早已等候并且开始计费了！他说约定的时间抵达，他就开始提供服务了，理应就该计费，听起来好像也蛮有道理…凌晨的计价器跳表，就像透心凉的秋雨一样，一滴一滴以极快的频率下着，一旁的老板脸都绿了🥶。
+租车 18年的里昂出行果断选择了airbnb民宿&#43;租车的搭配。
+首次欧洲自驾用一个字高度概括：慌！
+出国前上租租车的官网预定了辆小雷诺，因此行只有两人，再者来了法国感觉得订个法系车。租车行Thrifty门店做免费的机场shuttle bus即可到达，凭身份证，信用卡和租租车给的驾照翻译本就可以入店办理。结果给的车型以实际为准，官方的解释说得让你云里雾里，我也懒得听，但竟然“升级”到了一辆SUV标志。
+接着就是一顿“销售”。
+保险加不加？不加出事故可能有上万欧元的理赔费用 加一名驾驶员也需要加费用 高速快速通行卡，类似国内的ETC 税费20% …… 我不记得还有什么项目了，本来以为100欧的租车花费，结果卡一刷250欧，当然还不包括押金，账单上只是你预估需要的花费，多的额外消费比如高速通行费用，出保险（如有），还有其他你想不到的，都会在你的押金上扣除，1～2个月才会返还给你，法国人这效率… 账单长这样。 关于驾驶体验，说不上法国公里哪里不一样，但总觉得行驶起来很变扭，两人在国内可都是藤原豆腐房随便飘，到了的士速递的国土反而都变得不会开车了，一路上盯着google导航，两手握方向盘，小心翼翼的控制着油门和刹车，都在笑话着对方开车技术回归到了10年前。出行前网上稍微看了看自驾攻略，看了一堆全忘了，只记得
+要格外关注礼让行人 遇到Stop标志要停3秒，听说有警察躲着草丛里，你没遵守会跳出来开你罚单 拐角进大路要停3秒，确保没有直行车才可驶入大路 其实回想，这都是基础交规，只不过在国内不奏效，来欧洲重新打基础。对了，奇怪的是法国没有U turn？没有掉头的标示和区域，取而代之的是各种圆形转盘。如此一来没了红绿灯道路通畅，但可苦了GPS导航，一有延迟就错过了本该驶出的路口，忘了当时开错了多少路了。
+此外，我还给本次出行增加了难度，隔天早上6点多的飞机，意味着5点要还车，而一般的门店营业时间是8点。在咨询了租租车客服后，我在后台留了言并备注上了航班号，行不行不得而知，少了国内的人工客服总感觉心里的一块石头还悬着，打电话给门店一口法式英语的自助还车说明让我满脸问号。于是隔天摇头晃脑又开错了2个路口后跌跌撞撞到达门店的停车场，还不忘拍下行驶的里程数和满油状态，以免后续门店给我乱收费用，里昂这边的油价1.6欧/升，好贵…
+随后忐忑的停完车，开着手机手电筒，绕门店找了一圈才找到这个隐蔽的迷之投递箱。 而住宿也因为选择了租车，找了一个方便停车的airbnb位于里昂的北部市郊。 宽敞的标准法国公寓，长餐桌，沙发，开放式厨房，无限享用的胶囊咖啡，住在当地人的家里，是最直接的体验在地生活的一种方式。墙壁上挂着的房东家庭的画框，也显得很温暖。
+美中不足是房东不太说英语，刚见面只能用翻译软件尬聊。从桥时间，停车，打电话确认地址到指引车辆入车库都好不容易。 由于离开当天早上需要赶6点多的航班，除了还车麻烦，还房间钥匙也折腾，提前和房东打好招呼凌晨就会离开，走时顺便拍下一张还钥匙在她指定信箱的照片，并表达谢意。
+对比体验 两次的里昂体验都很新鲜，因为选择了不同的出行方式。总体来说个人仍然更喜欢自己租车。
+更加灵活。尤其是客户位于南部的小镇，公共交通非常不便，自己有车可以灵活安排时间并最大化利用时间；
+更加省钱（其实并没有）。如果按2～3天的当地行程，如果拜访客户和市内移动都打车，当地的出租车收费并不便宜，轻易花销掉上百欧元的交通费。租车的车辆本身便宜，虽然被加了莫名其妙的费用，开车的整体体验好很多，多花了钱仍觉得值得；
+更高的幸福感。国外出差必然驮着一堆行李移动，有自己的一辆车便利许多，拜访客户行程也显得怡然自得。当时拜访完客户，回去开车路上里昂的午后阳光洒进车窗，心想这个1千万人民币的项目终于取得重大突破，回想这3年来的努力，差点，当时，真的，眼泪都要流下来了。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-04-08 14:08:56 +0800 CST'>April 8, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 4" href="http://localhost:1313/posts/lyonpt4/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">5年1项目｜梦回里昂 Part 3
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>服务一个航母级别的客户是一种什么体验？
+客户是来自法国的SEB集团，不在小家电行业的人可能听都没听过。中国有一个大品牌叫苏泊尔，他们被谁收购了知道吗？对，就是那个SEB。以下我在法国里昂公司拍下的旗下品牌，应该有你认识的。
+SEB属小家电龙头，触角遍布全球各地，目前分享的内容仅限于个人认知范围之内，我对接了集团4年，聊聊其中的秘辛…
+亚洲区架构 非常传统的采购模式，至今仍在业界沿用，哪怕香港贸易商的地位一直经受着中国大陆厂家的冲击，然而如此大型集团，短时间是不可能切换这种业务形势。
+亚洲采购办设立在香港大角咀，在这片寸土寸金的地方做了满满两层办公楼的人，负责集团在亚洲区的采购业务，就我所从事的liner care业务线，则主要管理中国大陆，香港，台湾和菲律宾等地区的供应商。香港作为法国人在亚洲地区的Gateway，发挥着关键作用，他们专注在自己的领域，各司其职；操着一口港普，他们谈吐文雅，不紧不慢；他们朝九晚五，和老外一样在工作外的时间，抱歉请别打扰我。
+上海工厂是集团的另一个重镇，地处上海的农村地带，集齐从亚洲各地发来的7颗龙珠（components&amp;parts），在上海厂做final assembly，也承载着集团自有工厂的重要角色，同时也负责部分中国内地供应商的管理职责。
+这里乱入一个概念，特别是OEM，始终认为中国人说的OEM和外国人说的OEM是两种概念。
+自有工厂：嗯，就是自己的工厂； CM：Contract Manufacturer, 协议工厂，指的是工厂设备是客户投资的，但厂不为客户所有，这种厂多半接客户的订单，这种工厂出场地，出人力，不出设备； OEM：不写3个字母的缩写了，因为反而容易曲解，简单的理解为客户的工厂型供应商。 深圳和宁波亦有office，因集团在中国大陆的OEM厂巨多，在长三角和珠三角地带分别设立办事处合情合理，单单是验货这个理由就已经足够。
+那请问，法国人管供应商，香港人也管供应商，上海人也管供应商，供应商要听谁的？这个课题，我做了4年都还没做透，但只能洞悉一二 —— 保持基础的对外公开信息，见招拆招，见人说人话，见鬼说鬼话。作为供应商，你都得“听”，但你根据不同的面向，可以传达出对方“想听到”的信息。
+卡洛 集团内部用语是Site，每一个Site都拥有一批人马，包括采购，研发以及生产基地等（我可能是错的），每一个Site分管一个独立产品事业部。在自己的民营工厂里，我尽量把客户每一个信息都在内部用中文表达，于是位于里昂的客户工厂我音译为卡洛。
+欧洲客户的old school程度超乎你想象，至今仍然保持的非常传统的形象和工作习惯。
+名片除了必须的姓名，头衔，公司地址，座机，绝对不会印上个人手机 几乎不用skype, whatsapp, viber等即使通讯工具，一般以邮件进行商务沟通，急事？打座机 而这里，便是我外贸生涯的启航点。
+有趣的是，Liner care业务部架构垂直包含了德国办事处，原先未被集团收购前也已是名震天下的品牌制造商，目前仍然在法兰克福当地运营者自己的工厂，配置着自己的采购，品质，研发…只不过通通向法国人汇报工作了。然而要精准的德国佬向浪漫的法国佬汇报工作谈何容易，工作必须是要乱成一团浆糊，也让这个跨国大公司的供应链管理雪上加霜。
+供应商拜访 集团对于供应商的管理，每年一般可以分为如下：
+每年一次的Audit，由德国品质团队carry out，一般在每年的夏天执行； 每年两次的商务性质的供应商拜访，由法国采购领军（新供应商甚至是集团VP领军）； 取决于项目进度的不定期的项目进度管控审核，生产过程质量管控审核（APQP过程），协同下游工厂的项目讨论等，由法国或香港的工程师/品质团队执行。 值得一提的是，法国或者德国人来访，一定得搭配上集团的香港人或大陆人。由此可见，仍然是十分传统的风格，这也出现了很多迷之陪同，尤其是深圳办事处的人，每次陪同老外，他们更像是第三方，全程尴尬 —— 不知道项目细节，如今工厂也自己配备海外业务人员，当然不需要他们的翻译，非常形式主义的完成被指派的工作。更啼笑皆非的是，晚餐可以跟着我们一起灌老外酒，让他们体验一下中国的酒文化，然后大声的问出每个老外都会被问到的经典问题：How much can you drink? 🍺
+我的思考🧠 报价 面对如此庞大的客户群，如此复杂的采购组织，怎么报价绝对是个针线活。每一次的报价我都能整理上一整天 —— 按客户的模版，抠出每个元器件的成本（包括指定关键元器件），加工费，等等。如果你报价错误，集团总部就会跳出一个项目Owner，再以人民币或美元的最低价来压制你的价格。如此惨绝人寰的报价表，如果摸清楚了，你就相当于掌握了九阳神功，后面对应对其他所有的客户（毫不夸张的说）再学习乾坤大挪移就易如反掌了。
+了解你的客户 一句话核心：Know your audience.
+对待高度职业化的欧洲人，一定要了解他们的做事流程，不了解项目流程和对应的突破口，一个节点没踩上轻易就浪费了一年时间。一年之中一般只有1次的见面时间，长时间没有沟通由于语言和文化上的差异，非常容易造成误解以致于项目停止不前。
+香港客户则是亦敌亦友，职业化的外表下仍然有通情达理的一面，他们也很善于和老外周旋，以一种更贴近中国文化的方式来进行商务活动。和一些重要对接人混熟了也能知悉更多的项目细节。
+做项目终究是做客户，不管是欧洲人，香港人，上海人，毕竟都是人，见面三分亲，有条件见面仍然是做生意的最优解，以前是这样，现在仍然是这样，没有什么比得上面对面沟通更有效的了。
+供应链效率最大化 客户集团每个地区的办事处各自独立，又有着微妙的协作关系，尤其是财务系统的独立，造就了每一个主体都有自己的隐性考量因素，并潜移默化的指导各自的工作，独立存在而又难舍难分。如今，我自身从供应方转移到了采购方，也在无时无刻思考着供应链最优化的问题，并为之着迷。职责，利益，激励，动力，初衷…种种因素都在左右着你的决策，我相信跨国公司在目前这个时代，特别是后疫情时代，变革仍然会存在。SEB集团呈现给我的是最传统的欧洲大型公司的供应链管理方式，而对于中小型的跨国企业，管理可以更加创新，根据目标制定出更加灵活的策略和制定出对应的OKR。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-04-05 14:08:56 +0800 CST'>April 5, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 3" href="http://localhost:1313/posts/lyonpt3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">5年1项目｜梦回里昂 Part 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>分享一份报价单，每次报价都需要整一天的那种。
+世上报价单千万种，每个行业的差异所以每个行业的报价单也不尽相同。我最喜欢的仍然是最老派的直接用邮件写报价，只是为了提升业务形象被迫走上了报价单设计这条不归路。但服务SEB这个航母级别的客户时，你必须自废武功，所有事都得按他的来，跳进客户挖好的洞里。
+当客户的触角伸到不止直接供应商，且到sub供应商时，他们是有备而来的，精心设计的报价格式如果你没有做好万全准备，很容易被客户剥的一丝不挂。我的控制板产品报价单如下。
+Item: 序列号 Part: 元器件的位号 Qty: 元器件所需数量 Component type: 元器件类型 Specification: 元器件的参数 Manufacturer: 制造商 变态之处 一般的整机采购商不会管控到间接供应商； 一般的整机采购商更不会管控到间接供应商的元器件； 一般的整机采购商甚至不会参与到个别元器件的原厂价格谈判。 对，这个客户全干了，还干的很彻底。指定元器件称为Imposed component，通常是欧美系的元器件，交期长价格贵，西方客户的OEM项目通常倾向用欧美系芯片设计，如Atmel，NXP。客户参与了和原厂的价格谈判然后让你去采购，让你一分钱都赚不到，但由于有着巨大体量，你也就只能从了。
+精华 除去材料成本，报价单的精华之处则是在于费用核算。有多细？
+Component cost: 材料成本 Purchasing overhead: 采购损耗，必须得是材料成本的3% Non-electronic components: 指solder paste锡膏，red glue红胶等物料 Total material cost: 材料总成本 Automatic THC: 自动插件费，一般没有，因为当时工厂自动化程度不够 Automatic SMC: 自动贴片费，按¥0.03*点数核算 Manual mounting: 手插件，按¥0.04*插件数核算 Other parts mounting: 其他手插件，按¥0.04*插件数核算 Microcontroller programming: 单片机烧录费用 In-circuit testing: ICT电路测试费 Functional testing: FCT功能测试费，PCBA工厂标配有FCT测试，但实际并无使用 Varnishing: 防潮油 Total Process cost: 加工总成本 Overheads (indirect costs): 总损耗，是材料总成本和加工总成本的2.5% Taxs: 税率，一般USD不含税 Margin: 工厂利润，你只能赚2.5% EXW purchase price: 材料总成本&#43;加工总成本&#43;总损耗&#43;税率&#43;利润 Transport to port: 工厂到码头运输费 Total purchase price in USD: FOB价格 变态之处 损耗和利润点数都客户说了算； 前3年采购必须每年降2%价格； 每次的报价客户内部都有专门的“工厂砍价专员“做横向对比，同一物料报价不同？指定元器件没按他们的价格？加工费用不同？测试费用不同？包装费用有出入？工厂就需要大费周章的解释一番。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-04-02 14:08:56 +0800 CST'>April 2, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 2" href="http://localhost:1313/posts/lyonpt2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">5年1项目｜梦回里昂 Part 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 有一些项目开发进程，没有踩上客户的节点，你至少再等1年。
+每年春节前期对于制造业来说都是闲暇的一个空档期，虽说经过2020疫情肆虐的一年，今年政府也鼓励员工和工人就地过年，但大部分中小型工厂订单不爆的情况下，仍然和往年一样，上着形式主义的班。稍微自由点的中高级管理人员往往借此期间会会朋友泡泡茶，互相吐吐一年来的苦水。
+John是我上一家工厂的搭档，2年了终于有时间坐下来聊聊近况。
+“法国客户的FTS项目去年下了第一批大货订单了“。
+我端着茶杯一下没反应过来。真的吗？虽然我已经脱手这个项目，也没有任何利益关系。但是听到这个项目，心里还是莫名的感动。5年前的样品，实验室，项目会议，客户拜访…一下子全部涌上脑海。
+16年那会我刚接手这个项目，直到17年都算在正常的研发进度，相较于传统成品外贸，我的产品比较“特殊“ —— 研发一款零部件供应到上海的一家厂做组装成另一个subset半成品，再出口到法国最后组装成品。求胜心切，那一个批次的样品做好之后，做完了基础的电性能测试和EMC测试便寄出给客户了。然而，没有完成一系列的可靠性测试，比如寿命测试，为后面项目的终止埋下了隐患。
+赶项目进度和提供可靠的产品是业界天然的矛盾，到底你是做完100%的测试才送样（可能耽误了时机，不能捷足先登），还是依据自家“丰富”的产品经验做60%的测试直接送样，然后再用其余样品完成余下测试（抢得先机，但样品有不能通过的风险）？这个问题，没有正确答案。
+因为寿命测试涉及到整机干烧或加水情况下，模拟10万个cycle等复杂测试，需要七七四十九天（一般需要2个月左右），我们当时选了直接送样，结果在测试过程中发现电控板外面低压注塑的热熔胶竟然开裂了！
+这一裂，就裂掉我一年多的时间。
+*样品不行这有啥？重做一个不就是了嘛！*这是大部人中国厂家的思维，也是我当时的思维。眼下第一时间召集项目会议和工程师做分析探讨对策，发邮件给客户说明情况和补救措施，给出一个新的timeline，计划在未来的某个时间节点再进行送样。我以为我处理的很好，然而，一切都太迟了。远在地球另一端的浪漫民族，工作习惯和脑回路跟你是完全不一样的。你的样品是fail的，你就已经out了。
+本来和客户热络的email渐渐少了，两个月至少来一次的法国佬也没来了，这才知道事情不对劲了。客人仍然回复你email，仍然接你的电话，但奇怪的是也不会宣判你“死刑”，只不过就吊着你。后来飞去香港客户的亚洲采购办，了解到项目的订单已经给到竞争公司了。这是一个1千万人民币销售/年的大项目，快煮熟的鸭子就这么飞了，3年来的努力化为泡影。
+两点值得深思🧠。
+一、客户的项目管理和架构不够熟悉。一直以来都是和项目组的研发老大在沟通，但其实所有研发需求都是从采购组输出，一旦采购组的需求关闭（你的样品fail，但竞争对手的样品approved），你基本已经吃了闭门羹。后续的和研发老大周旋，对方也只是“礼貌”性的回复你，其实如果真要有人来宣判你项目的失败，也应该是客户的采购。
+二、对自己的样品负责。样品漂洋过海来到法兰西，相当于自家公司的技术名片，有任何的缺陷都可能是致命性的，绝不能有任何的侥幸心理去对待。样品不能用，再一来一去，浪费的是更多的时间，以及更重要的，客户对你的信任。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2021-03-29 14:08:56 +0800 CST'>March 29, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 1" href="http://localhost:1313/posts/lyonpt1/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/11/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/13/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

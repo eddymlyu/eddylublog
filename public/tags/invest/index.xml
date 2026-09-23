@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Invest on ed</title>
+    <link>http://localhost:1313/tags/invest/</link>
+    <description>Recent content in Invest on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2024 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/invest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FIRE 无聊的运动</title>
+      <link>http://localhost:1313/posts/fire/</link>
+      <pubDate>Fri, 02 Feb 2024 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/fire/</guid>
+      <description>&lt;h2 id=&#34;fire-是什么&#34;&gt;FIRE 是什么&lt;/h2&gt;
+&lt;p&gt;FIRE (Financial Independence Retire Early) 其实并不是近几年才兴起的概念，只不过是刚好疫情的催化下，给了大家过多的思考人生的时间，一时间又串为热门词。FIRE 族就是提倡省吃俭用，不管是打工或者创业，都要省下一大半的收入而定期定额购买大型 ETF 或指数基金 Index fund，然后事先计算和规划退隐山林之后的年支出，跳脱出现代社会的 Rat race，活出自己想要的人生。&lt;/p&gt;
+&lt;p&gt;这个概念确实很吸引人，两年前我也读过的台版书《財務自由，提早過你真正想過的生活》，还存在的记忆点就是书中提倡用自己的业余时间去写 Blog 等副业创造被动收入，然后投资美股或指数基金，用投资的年回报去过退休生活。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预估退休之后的年开销。假设一个月需要 25,000RMB，那么一年则 300,000RMB，如果无任何其他的负债；当然 FIRE 族可能选一个与世无争的地方，需要花费的数字也许更低；&lt;/li&gt;
+&lt;li&gt;预估财务自由数字。ETF 或指数基金或股票的年化报酬率，FIRE 族喜欢用 4%，假设采用第一点的开销，则这个财务自由数字是 7,500,000RMB；&lt;/li&gt;
+&lt;li&gt;预估几年可以存到财务自由数字。这取决于个人，可能是 10～20 年，因人而异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;fire-的陷阱&#34;&gt;FIRE 的陷阱&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;未来风云变幻&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;虽然说指数基金的走势相对于个股和加密货币，是相对平稳的，但是国际形势动荡，什么年代了俄乌还能发生战争，中东也风起云涌——未来会发生什么，韭菜们都不知道。This time is different，正常人的小心脏很难长期 HODL。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;低估存到财务自由数字的时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一般来说，努力工作可以增加工资收入，但是随之而来，消费也变多。正常人很难抵制消费的诱惑。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;低估退休后的消费&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;只考虑平均的通货膨胀率还不够，就比如疫情这几年带来的高通膨就让很多工薪阶级吃不消了。如果 20 年后还想保持一样的生活品质，那么财务自由数字可能 7,500,000RMB 还不太够？这个和省吃俭用是两个概念，因为再省也得消费。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;没有考虑人生重大事件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果你要结婚生子买房，如果你的家人突然生了病…这些都可以把你的计划打回原形，这些事情需要的钱比想象中的多的多。FIRE 的存到财务自由数字的年限动辄五年十年，而人都是会变的，不可能永远都一样的 mentality。而人生或主动或被动，都会有所谓的「重大事件」。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;没有考虑人性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当你的周遭的朋友有的创业成功了，或者以某种形式赚了一桶金，你心里会开始发痒并忐忑不安，很难一直过着无欲无求的生活；最后可能重出江湖，却发现刀很钝，已经丧失了赚钱的能力。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;忽略中西方差异&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FIRE 源自西方，可以看出是很典型的西方思维。各个家庭单位相对独立，财政更是独立；而在遥远的东方，「家族」则往往庞大，过于独立的话甚至会显得「自私」。也许在追求财务自由数字的过程中，已经先输给了文化。&lt;/p&gt;
+&lt;h2 id=&#34;我对于-fire-的思考&#34;&gt;我对于 FIRE 的思考&lt;/h2&gt;
+&lt;p&gt;从一开始接触到 FIRE 的概念觉得它很 sexy，到现在持有的怀疑态度，因为在执行过程中并不是 FIRE 理念中三言两语阐述的那么简单，有很多根本和本地的现实生活环境不搭嘎，更别提所谓的「退休后生活」，言之过早。&lt;/p&gt;
+&lt;p&gt;「被动收入」的概念固然酷炫，但是主动收入对于绝大部分人来说才是最重要的，没有积累一定的现金流就无法做投资产生被动收入（即使硬要有，也微乎其微）。&lt;/p&gt;
+&lt;p&gt;我并不认为「省吃俭用」适合每个人。如果这让你觉得快乐，那这个生活方式可以适合你，如果你觉得生活开销斤斤计较很娘炮，那何必。「Frugal」我发现一直是 FIRE 族或者财务自由领域里面的高频词，节约是一种美德，但是个人要定制出属于自己的花销模式，依据个人的不同价值观和消费观，是一种很私人的定义。相比于 FIRE，还有一个 Early Retirement Extreme 族群，就更是极端了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>春节我在山姆会员店买了10000元</title>
+      <link>http://localhost:1313/posts/fed/</link>
+      <pubDate>Tue, 07 Feb 2023 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/fed/</guid>
+      <description>&lt;p&gt;一推车满满的商品，一个推车接着一个推车。虽然早就预见这个场景，但亲眼看见了这一幕还是有点震撼。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/samclub.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;疫情管控全面放开的报复性消费，似乎把全球的通货膨胀问题都忽略了。好歹山姆超市在本地也算中高端的品牌，但跟免费似的遭到消费者疯抢，也许在早前连停车位都快找不到的情况下，我就应该掉头就跑。&lt;/p&gt;
+&lt;p&gt;你阿嬷的过年在山姆，连同送礼和自用，还有不知道什么的原因，在这里花了“巨资”。要怪美联储？怪疫情？怪政府？还是要怪自己赚不够多？我都有点糊涂了。&lt;/p&gt;
+&lt;p&gt;适逢过年期间有一个短暂的学习期间，YouTube的演算法把我带到&lt;a href=&#34;https://www.youtube.com/watch?v=D-wc9d5ZBdo&#34;&gt;Ray的财经频道&lt;/a&gt;，也许他能帮我安抚一下受伤的钱包，讲讲通胀/美联储的历史。以下我用表格记录一些重要的历史流水。&lt;/p&gt;
+&lt;p&gt;带着一些问题看历史：
+为什么控制通胀是央行的责任？
+如果造成通胀的原因是一些不可控因素，那美联储还能靠一己之力把把通胀降下来？&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Time&lt;/th&gt;
+					&lt;th&gt;What happened&lt;/th&gt;
+					&lt;th&gt;Remarks&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1913&lt;/td&gt;
+					&lt;td&gt;美国联邦储备委员会成立 (The Board of Governors of The Federal Reserve System)&lt;/td&gt;
+					&lt;td&gt;美国联邦储备委员会成立 (The Board of Governors of The Federal Reserve System)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1929～1940&lt;/td&gt;
+					&lt;td&gt;经济大萧条；凯恩斯主义Keynesianism崛起&lt;/td&gt;
+					&lt;td&gt;凯恩斯认为社会对商品总需求的减少是经济衰退的主要原因，主张采用扩展性的策略，通过总需求增加来促进经济。即政府的每一元支出，就是百姓的每1元收入，通过在社会里流转，给更多的人带来收入；此时美联储并没有起来该有的作用，反而是完全被政府控制，比如配合政府的财政部压低利率，让政府成本更低的发行债券去参与二战。大萧条时代的奶农大量倒牛奶的案例，之前在国内被作为批判资本主义市场经济的“经典案例”，其实真实原因是奶农因为物价下降太多，因为入不敷出在抗议。&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1940&lt;/td&gt;
+					&lt;td&gt;英国经济学家凯恩斯和美国总统罗斯福交流颇多，争执也不少。罗斯福并没有在管凯恩斯的理论，但当时二战美国耗费了大量的资源和金钱，所以最终还是有意无意的采用了凯恩斯主义，最终走出了大萧条&lt;/td&gt;
+					&lt;td&gt;罗斯福任美国总统（1933～1945）；二战（1939～1945）&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1945&lt;/td&gt;
+					&lt;td&gt;美国总统楚门颁布就业法，怕二战后再次经济萧条，以此促进就业，也作为美联储双重责任的一个历史起点；当时大部分的经济学家还是比较支持凯恩斯主义，也就促使政府花大钱，走赤字经济。&lt;/td&gt;
+					&lt;td&gt;楚门任美国总统（1945～1953）；&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1951&lt;/td&gt;
+					&lt;td&gt;美国和朝鲜的战争导致通胀飙升，美联储又被政府要求降低利率，导致他们无法通过加息来控制通胀，接着就是矛盾的激发。在William Martin的努力之下，签署了协议，得以让美联储独立，获得实施货币政策的权利，为当代Fed奠定了基础。&lt;/td&gt;
+					&lt;td&gt;William Martin任美联储主席&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1958&lt;/td&gt;
+					&lt;td&gt;新西兰经济学家William Phillips通过分析数据得出著名的“菲利普斯曲线Phillips Curve”&amp;ndash; 失业率越低工资越高，失业率越高工资越低；而美国的Paul Samuelson得出相似理论，把纵轴换成了通胀 &amp;ndash; 低失业率对应高通胀，高失业率则对应低通胀。见下图。&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1962&lt;/td&gt;
+					&lt;td&gt;肯尼迪总统上任，通过经济学家的曲线，得出了“一定的通胀可以促进经济发展”的理论，凯恩斯主义如虎添翼，大通胀拉开了序幕；政府采用了“反周期”的财政政策&lt;/td&gt;
+					&lt;td&gt;肯尼迪任美国总统（1961～1963）;“反周期”政策：当经济衰退时，政府加大开支和减税，刺激经济；当经济过热时，政府减少开支和加税，抑制通胀。&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1963&lt;/td&gt;
+					&lt;td&gt;肯尼迪遇刺，副总统约翰逊上台；约翰逊不管彼时经济顾问的通过加税抵制通胀的建议，执意走赤字经济，多次召见美联储主席Martin，想说服Martin不要加息来控制通胀，但是Martin就是不服软。&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1970&lt;/td&gt;
+					&lt;td&gt;尼克松上任美国总统，强行把美联储主席Martin撤职了。&lt;/td&gt;
+					&lt;td&gt;尼克松任美国总统（1969～1974）；&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1973&lt;/td&gt;
+					&lt;td&gt;经济陷入了一种“滞胀Stagflation”的境地，高通胀伴随高失业率，凯恩斯主义的信徒大傻眼；另一个学派走入人们的眼球，几年前Friedman提出的货币主义，认为货币的多少决定了经济和通胀的走向。&lt;/td&gt;
+					&lt;td&gt;货币主义的观点，例如美联储可以通过加大供给货币来刺激经济（量化宽松）；如果经济过热，美联储则可以减少货币供应量对来对应（缩表）。Friedman认为通胀和失业率只是短期的，长期来看会存在一个“自然失业率”，以此解释“滞胀”。&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1975&lt;/td&gt;
+					&lt;td&gt;经济学家Shiskin提出观点，将连续2个季度的GDP收缩定义为“经济衰退Recession”。&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1977&lt;/td&gt;
+					&lt;td&gt;美国政府通过美联储改革案，赋予美联储双重责任 &amp;ndash; 保就业和稳物价；美联储得到了更多的权利。&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1979&lt;/td&gt;
+					&lt;td&gt;Paul Volcker就任美联储主席，新官上任三把火，把控制通胀作为美联储的第一要务。他坚持货币主义理论，将之前印的钞票从市场中抽回去，尽管这样做利润会随着市场自由浮动；结果这么一搞，基础利率来到了20%的高点，通胀不降反升。&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1980&lt;/td&gt;
+					&lt;td&gt;从1965年飙升的通胀，在1980达到高点，14%。&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1983&lt;/td&gt;
+					&lt;td&gt;Volcker没有退缩，坚持货币主义政策，最终控制在5%左右的通胀率，在接下来的40年，再无大通胀。&lt;/td&gt;
+					&lt;td&gt;1965～1982美国70年代的大通胀时代&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/phillipscurve.png&#34;&gt;
+菲利普斯曲线，src: &lt;a href=&#34;https://www.stlouisfed.org/open-vault/2020/january/what-is-phillips-curve-why-flattened&#34;&gt;https://www.stlouisfed.org/open-vault/2020/january/what-is-phillips-curve-why-flattened&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wise(前Transferwise)入金不完全攻略(2021)</title>
+      <link>http://localhost:1313/posts/wise/</link>
+      <pubDate>Sun, 25 Apr 2021 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/wise/</guid>
+      <description>&lt;p&gt;很多朋友发现新大陆想小额投资美股，开始体验价值投资的巴菲特白日梦，包括我。但发现开设券商容易，入金困难。办理境外银行卡（如香港或美国）谈不上难，但动辄到上万的存款或者需要亲身到当地办理，则是违背了美股新手小额投资初体验和2020年疫情爆发无法旅行的原则。于是，如果你也捣鼓注册了Transferwise（2021年更名为Wise），却卡壳在入金$20这一个步骤，那么如下的内容也许有点启发。&lt;/p&gt;
+&lt;p&gt;为入金$20干过的”蠢事“&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支付宝上银汇款（个人跨境汇款产品于2020年12月1日起暂时停止服务，另明确提示：不得用于证券、保险、不动产等资本项目交易）&lt;/li&gt;
+&lt;li&gt;中国银行柜台汇款（虽可自由购置外币，但是个人无法汇款到Wise所在机构）&lt;/li&gt;
+&lt;li&gt;让海外的朋友汇款（入金激活的政策必须来自同一人名）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;插曲：身边有朋友在2020年上半年通过一顿乱操作，意外的跳过了入金$20并成功激活，享受到了混乱福利期，然而系统很快就修复了漏洞，手慢无。&lt;/p&gt;
+&lt;p&gt;我在2020年圣诞节12月25日成功入金了$20，用的是全球付的服务。&lt;/p&gt;
+&lt;p&gt;但是全球付的服务比较昂贵，发现要分享此篇博文，想来回头翻阅之前的汇款记录和手续费太无趣，干脆今日2021年4月23日汇款个小额$500，分享下具体的手续费情况和（再一次）体验。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/gcash1.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/gcash2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;登陆Wise，增值USD账户，选择debit或者credit card都可以，都会跳转到你绑定的全球付卡HKD Mastercard，几番周折，只能键盘敲下$477，因平台手续费需扣$20.99。&lt;/p&gt;
+&lt;p&gt;（另，发现近期wise登陆不用科学上网了？）&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise1.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise2.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;全球付也收到出账记录。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/gcash3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注：我的Wise完全按真实情况注册申请，中国护照，中国地址，中国电话。于是，收不到这张绿油油的卡。听说全球付入金会有封号风险，请各位谨慎行事，目前我个人入金4次还未湿鞋。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;整体花费情况。一个字：贵。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/exchangerate.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/banktable.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;不好玩。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.166.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>ed</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Obstacle is the way Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+🎨 Impressions 近几年着迷 Stocism 斯多葛主义，感觉古老的千年智慧怎么在中文世界被讨论的这么少？读这本书之前只是浅浅的听说一些经典的斯多葛思想，比如「总是考虑最坏的情况」、「思考死亡这件事」和「改变自己能改变的事，不理会自己无法改变的事」。Ryan Holiday 是最近关注的一个作家，我想通过这本书了解 Holiday 怎么用斯多葛思想来面对困境，帮助我应对不稳定和迷茫的现状。生活和工作总会有很多磨难，但每一道人生的关卡，其实都是让你蜕变到下一个阶段的过程而已。
+✍️ Quotes &amp; Excerpt Failure shows us the way—by showing us what isn’t the way.
+Amor Fati: Love everything that happens.
+What is defeat? Nothing but the first steps to something better.
+📒 Summary &amp; Notes 生活中有很多事情是迫不得已，无论你在社会中的哪个阶层和贫富高低。外界总有一股力量把你推向另外一个地方，很多时候你无能为力去反抗。与其消极的抱怨，不如逆来顺受，拥抱这一份困境，并思考在这个困境里能做什么之前无法做的事情？
+因为工作变动，我变成了一个旅行者——丢掉了很多陪伴家人的时间，但同时也多了一些在路上的时间。反正飞机上没信号，高铁上信号差办公效率也很低，所以反而可以增加了我阅读的时间，而旁边大部分的人都在刷短视频。
+如何看到别人看不到的机会？当局者迷，也许很难…但我就是可以笨到去接受了这份磨难。比如 7 年前每天上下班得通勤 2 个多小时，现在每个月都得做国际航班往返，这听起来就好累，其实我也根本没有看到什么别人看不到的机会，但总觉得过了这道坎就会重新蜕变，所走的每一步才让你变成今天的你。
+别拥有太多。现在的科技、垃圾食品和传统观念都在潜移默化的影响着我们的主流的生活方式，告诉我们应该要买最新的 iPhone、打卡最夯的咖啡店和在长辈面前要假笑。我们变的小心翼翼，变得脆弱，变得每个人都像是泥土捏出来的一样。
+遇到挫折时，尝试改变你看事情的角度，有的时候会有新的解答，而不是抱怨别人。
+「Is there a chance? Do I have a shot? Is there something I can do?」经常问自己这些问题。只要有一丝机会，就值得一试。如果只是浅浅的聊一个新的生意——所有的生意都很困难，但并不意味的无法参与了，只要想清楚自己的资源和成本可控，就有一丝战斗的机会。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-12-01 09:00:00 +0800 CST'>December 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to The Obstacle is the way Book notes" href="http://localhost:1313/posts/obstacle/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">IKIGAI: The Japanese Secret to a Long and Happy Life Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 1. 不要退休，寻找财务自由的同时保持活力 关键概念：不要退休。真正的财务自由与生活幸福结合，关键是找到自己喜欢的事情，并保持活力。 2. Okinawa 饮食文化与健康 Okinawa人的健康秘诀：养成良好的饮食习惯，吃饭时八分饱，注重食物多样性，关注卡路里摄入。 对比：Okinawa人平均摄入 1800-1900 卡路里，而美国人则在 2200-3300 卡路里之间。 3. Serenity in the face of a setback - 面对挫折的宁静 学习来自斯多葛的态度，即使面对挫折也能保持宁静，有助于保持年轻和减小压力。 4. 喝茶与生活态度 每天喝绿茶和白茶带来多重好处，有益于身体健康和心理平静。 5. 生活的意义和目标 找到生存的意义是人生的关键，有了目标，你能够克服生活中的各种困难。 6. 挑战与心流状态 选择适合自己的挑战，不宜过于简单或过于困难，只有适度的挑战才能达到心流的状态。 7. 具体目标与单一任务 制定具体目标，专注于单一任务，避免多任务，以提高效率。 8. 享受平凡任务 享受平凡任务，即使是 Bill Gates 也每天自己洗碗！就比如目前我每天自己在铲猫砂一样。偶尔做做琐碎的事情，也可以调节身心。 9. 活动与长寿 长寿的人并不是那些健身健最凶的人，而是那些整天在动的人，可以经常走路也算。 10. Wabi-sabi 哲学 欣赏残缺之美，接受不完美，认识到成长的可能性，喜欢 Japandi 的装修风格。 11. Ichi-go ichi-e - 一期一会 珍惜当下，过去与未来都不如眼前重要。 12. 学习反脆弱 创造更多选项，保守和尝试并行，远离使人脆弱的事物。 人生需要 resilience，要有弹性，不怕磨难，每一次挑战都是成长的机会。 We need randomness, mess, adventures, uncertainty, self-discovery, hear traumatic episodes, all these things that make life worth living. — Nassim Taleb
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-11-30 14:08:56 +0800 CST'>November 30, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to IKIGAI: The Japanese Secret to a Long and Happy Life Book notes" href="http://localhost:1313/posts/ikigai/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">真正的快乐处方 Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+大脑具有可塑性，而非一成不变。短暂的运动约 30分钟 已足以对大脑产生积极影响。
+杏仁核在大脑中扮演着压力的触发中心，每个大脑半球各有一个。一旦杏仁核接收到危险信号，皮质醇浓度就会增加，进而刺激杏仁核，导致压力形成恶性循环。
+外部压力减少时，皮质醇浓度会逐渐降低。皮质醇在紧张时刻有益，使人更加敏锐，但长期高浓度皮质醇有害，导致海马体萎缩，而海马体是大脑的记忆中心，所以对人的记忆能力有害。此外，高浓度皮质醇还可能导致腹部脂肪堆积。
+运动会提升皮质醇浓度，而运动结束后浓度则会下降。持续规律的运动会减小皮质醇上升幅度，增大下降程度。这种锻炼教会身体对压力不要过度反应，增强了应对压力的能力。
+（高）房贷也可能持续产生高浓度皮质醇，因为它是一种显著压力来源。尽管这种压力不会杀死你，但是也有可能损害你的大脑。
+压力使海马体和额叶收缩。容易焦虑的人，大脑额叶通常较小。
+运动能增强海马体和额叶，有效抑制杏仁核的压力触发。这需要一段时间，每周持续进行 2 至 3 次有氧运动。
+就缓解压力而言，有氧运动比无氧更有效。每周至少进行 2 至 3 次加速心率的运动（如跑步比散步更佳），每次至少 20 分钟，若有条件可延长至 40 分钟。
+大脑的奖励机制因人而异。难以集中注意力的人很难激活奖励机制，导致他们不断寻找更刺激、有趣、直接的方式获得多巴胺，直至机制被激活。
+难以激活奖励机制的人可能在生意上难以遵循长期投资或经营，因为大脑的奖励机制无法让他们专心看到长远，而把注意力放在比较短期，比较刺激的事情。
+运动是改善注意力的特效良药，无副作用。运动提升多巴胺浓度，使人能保持几个小时的高浓度多巴胺（通常早晨运动效果更佳），让人感到更专注、更专心于工作。不同形式的有氧运动如跑步和骑行也会产生更丰富的多巴胺奖励。因此，让注意力更加集中的方式是运动，而不是保健品或某些所谓的 APP 应用，后者更多的只是生意。
+忧郁症患者通常缺乏血清素、多巴胺和去甲肾上腺素。血清素具有抑制作用，能减少大脑过度活跃的神经元，降低焦虑和担忧。血清素创造了冷静，和谐和内在力量的感觉。
+脑源性神经营养因子 BDNF 是大脑的自然肥料。BDNF 浓度在忧郁症患者脑中发现其浓度都很低！增加其浓度，忧郁程度就有好转。运动就是增加 BDNF 的绝佳方式，每次停止运动后，其浓度都可以增加持续两周的时间。所以仅从 BDNF 的角度来说，我们并不需要每天运动，需要科学的间歇性运动，而重训似乎不能没有有氧的效果佳。
+忧郁时，血清素，多巴胺，去甲基肾上腺素和 BDNF 的浓度都会有所下降，但是哪种对忧郁的影响最大目前还未知。
+大脑在 25 岁的时候长到最大，并且逐年开始畏缩。运动能够抵抗海马体随着年龄增长的减小，并且反而能增大之，提升人的记忆力。
+运动时会增加血流量，这个是提高短时记忆里的原因之一。运动提高了 BNDF 的浓度，加强了脑细胞之间的联系，也是类似的原因。
+不同的运动类型可以改善不同的记忆，例如重训可以改善人的联系记忆。只要条件允许，有氧和无氧都应该做。
+跑步可以创造出新的脑细胞，可以增加人的创作力。但是要记得适度就好，如果都跑到筋疲力尽反而没有好的效果。
+需要让小孩适度的运动或者活动，这能让他们更能够适应压力，对其的皮质醇浓度也更加的稳定；而没有在运动的小孩，面临压力时，皮质醇就会上升的很快。
+有氧可以有效防止大脑衰老，但是无氧对其有没有相同的效果目前还没有得到科学的证实。
+别把运动太当成一种任务或者一种负担，应该把它融入你的生活方式，对大脑有益的有氧运动可以是散步 20～30min，每周五次，或者跑步 20min，每周三次。如果达到相同的运动量，游泳和汽车站也都可以。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-11-04 14:08:56 +0800 CST'>November 4, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 真正的快乐处方 Book notes" href="http://localhost:1313/posts/happyprescription/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">以太坊 POS 机制一周年：回顾与展望
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一周年里的重要事件
+一年前，以太坊（Ethereum）迎来了一个重大的变革，将其共识机制从 PoW（工作量证明）改为了 PoS（权益证明）。在这个一周年回顾中，我们来看看这一年里发生了什么重要的事情。
+质押规模不断增长
+在一年的时间里，以太坊的 PoS 质押规模迅速扩大，目前已经高达 2600 万颗以太币，相当于大约 40 Billion 美元的市值。这表明了社区对以太坊的信任，以及投资者对质押机制的兴趣。
+质押率与收益
+尽管以太坊的质押率达到了 22%，相对于其他 PoS 项目如 Cardano 的 70% 来说，仍有提升空间。然而，质押者目前可以获得约 3.7% 的收益率，这在当前的熊市环境下也算是一个还不赖的选择。
+门槛降低，更容易参与
+PoS 机制的一个显著优势是降低了参与门槛。以前，挖矿需要显卡和矿机等设备，而现在只需拥有 32 颗以太币就能够进行质押。即使没有足够的以太币，也可以通过像 Lito 矿池这样的服务来实现质押，使更多人能够参与。
+PoS的不足之处
+然而，PoS 机制并非没有缺点。在以太坊中，不管是质押还是抽离，都需要等待较长的时间，大约 2 个月，而 Cardano 则只需要大概 25 天的延迟。这是一个需要改进的领域，以提高用户体验。
+未来展望：以太坊的分片计划
+未来，以太坊将继续追求改进，其中一个关键项目是分片（sharding）。分片将大大提高以太坊的交易速度并降低交易费用，但官方表示需要 2 到 3 年，但实际可能需要 5 年甚至更长的时间才能完成。在这段时间内，以太坊仍然会是 L1 主链的领导者吗？还是有可能被其他主链项目所取代？
+以太坊在一年的时间里经历了重大的转变，从 PoW 到 PoS，展示了其不断发展和创新的能力。虽然存在一些挑战，但以太坊仍然是加密世界的重要一部分，吸引了越来越多的用户和开发者。无论未来如何，以太坊都将继续发挥其在区块链领域的关键作用。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-10-03 14:08:56 +0800 CST'>October 3, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 以太坊 POS 机制一周年：回顾与展望" href="http://localhost:1313/posts/ethpos/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">再见，小麦
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>我被肠胃折磨了有 8 个月之久，把矛头指向新冠和工作压力虽然不无道理，但毕竟查了肠胃镜没有什么异样，前后也找了 3 个中医调理，效果也非常有限。于是我在国内外网站翻阅了 100 篇文章以及学习了 100 个 Youtube 视频…果然，还是只有自己能救自己。
+起初我以为是肠易激综合症 Irritable bowel syndrome（简称 IBS），人在犯病的时候总感觉病症描述就是在刻画自己。IBS 也称肠燥证，是一种肠胃功能的紊乱，患者一般检查不出什么肠道异样，但总是经常性的腹泻，或者便秘，或者两者交替。肠胃是情绪器官，这个病非常影响心情和工作。
+目前国外和港台地区有学者提议采用低 FODMAP 饮食。FODMAP 的食物1是一些短链碳水化合物或糖醇…算了，说人话就是吃了这些食物会容易产气或出现类似腹泻的肠道蠕动过快现象，少吃或不吃症状就能大幅舒缓。以下是低和高 FODMAP 的常见食物（网上有很多对比表但参差不齐并且有的自相矛盾，以下的版本是我个人的梳理，但也没有科学依据 100% 正确）。
+低 FODMAP 高 FODMAP 蔬菜 菠菜，胡萝卜，白萝卜，西红柿，黄瓜，西葫芦，茄子，竹笋，甜椒，芹菜 芦笋，西兰花，花菜，蘑菇，洋葱，大蒜，四季豆，豆制品，朝鲜蓟 水果 橙，奇异果，猕猴桃，香蕉，木瓜，菠萝，蓝莓，哈密瓜，葡萄，草莓 芒果，梨，苹果，西瓜，车厘子，桃子 谷物/淀粉 白米饭，土豆，玉米，藜麦，米粉，冬粉，地瓜 面包，麦片，面条，包子，馒头，意大利面，披萨，黑麦，薏仁 奶制品 杏仁奶，车打芝士 牛奶，酸奶，冰淇淋，大部分芝士 蛋白质 鸡蛋，鸡肉，牛肉，羊肉，猪肉，海鲜 杂豆类 饮料 水，薄荷茶，低糖的果汁 苹果汁，梨汁等 坚果 杏仁，南瓜籽，葵花籽，花生 腰果，开心果 其他 葱的绿色部分，姜，胡椒，辣椒，肉桂，香菜 红葱头，蜂蜜，玉米糖浆 一开始我深陷其中，在最无助的时候我可以连咖啡（咖啡因）、蛋挞（糖）、芝士（奶制品）和所有补剂（比如鱼油）都停止摄入了，并且开始做饮食日志，详细记录每天的饮食和观察自己挫塞的情况。理由是学者认为个体体质不同，IBS 有点像个新玩意，没有一套标准的饮食适合每一个 IBS 患者，即并不是所有的高 FODMAP 的食物都碰不得。所以一开始严格执行低 FODMAP 饮食，减小肠道刺激，后续逐步加入高 FODMAP 的食物，观察身体最讨厌哪些食物然后敬而远之，因为如果全部避开 FODMAP 的食物会错过很多营养，并且，像「大蒜」和「洋葱」也在列表里，如果连这些东西都吃不了，我觉得人生也很难过下去。
+我从 8月18日开始记录饮食，大概记录了一周之后，我发现「面包」和「面条」这些小麦制品经常和挫塞联系在一起。和「大蒜」、「洋葱」一样，在我的认知里是日常无法躲开的饮食，所以没过几天我就将他引入到日常食物了，但也许就是小麦制品就是背后的大魔王？！我像是突然被闪电打中，脑海里开始闪回过去的错塞种种——日舞的意面、Pizza、巧克力蛋糕、公司楼下的牛肉面和西北拉面…
+「也许我对麸质 Gluten 过敏？」，这荣膺了本年度最佳假设。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-09-04 14:08:56 +0800 CST'>September 4, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 再见，小麦" href="http://localhost:1313/posts/cuwheat/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">健身三周年 Recap
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>远程办公、异步工作、数字游民、创造者经济、NFT…随着疫情的结束，「健身」似乎是新时代生活方式的最后的倔强。
+2023 年以来，饱受肠胃问题困恼，也许新冠病毒真的挑人最弱的地方攻击，让我在健身的路上跌跌撞撞。但好歹我也算是健身三年的人了。
+Inbody 数据 Range 三年巅峰 体重 71.5kg ~ 75.4kg 78.1kg 骨骼肌 32.4kg ~ 34.2kg 36.0kg 体脂率 20.1% ~ 20.3% 19.1% 虽然进入轻度肥胖行列，但最开心的是第一年纬度的变化，当然也导致扔了半柜子的衣服。目前对于体重没有什么迷思，权衡上健身房的时间以及日常的社交，维持在 75～78kg 的体重算是比较合理，由于几乎没做有氧，体脂居高不下。
+四分化训练 前后私教一共找了 3 次，最佳找教练的时候就是遇到瓶颈的时候。刚开始健身除了能帮你调整训练动作，更重要的是降低受伤的风险。比如我的左肩肩峰撞击，弹响，做推的动作的时候就需要特别注意。
+在后续一段时间还是会按「四分化」进行训练——胸、背、肩、腿。严格来讲，也许不能称为「四分化」，而是「四个部位的训练 」，因为训练的频率不规律。
+以下的细节结合一年来的 25 节课的经验，希望一些文字帮我保留住肌肉记忆。
+🏋️ 胸 热身：泡沫轴滚胸，趴着滚，用一点核心的力量； 热身 2：练习肩胛的稳定，双手撑在杆上，手臂不弯，用肩关节带动推，胸发力； 热身 3：龙门架 Cable 夹胸，可以尝试不同高度，夹的时候往前面送，离心扯开、激活胸； 热身 4：泡沫轴滚背部；松开背部肌肉，提高肩胛骨的控制； 热身 5：龙门架 Cable 激活肩膀内旋肌和外旋肌，特别做推的动作都可以热身，预先疲劳三角肌； 平板杠铃卧推：王牌动作 1。相较于推哑铃，比较均衡发展。不是为了力量举，反弓别太厉害，起杠调整下肩胛贴紧，肩膀别跑出来，全场胸中绷紧发力，手臂不用刻意很弯或很直，重点感觉像夹胸一样；大臂和驱干 70～80 度就好，我因为怕肩膀跑出来角度太小；下来的时候有扯开胸的感觉；小拇指大概握到杠铃刻度不到；下来的时候到奶头上面一点点；胸顶起来，不要推，用胸来发力。也可以小重量练控制，离心4s； Dip：王牌动作 2。修饰胸外围这条线；手肘垂直支力点，下去有拉扯，夹胸的感觉； 坐姿器械推胸：肩膀活动度受限，所以角度一开肩膀容易跑起来，所以背要练，胸也要放松拉开。 🏋️ 背 热身：俯身下压，主要募集背阔肌/菱形肌/斜方肌，行程画弧，收缩手肘往内收背； 热身 2：含胸直立下压则偏募集下面的背阔肌刺激，下拉到大腿，菊花紧； 迎体向上：王牌动作 1。头往上看，用背去启动，头往上看，脚往后勾，胸往上杆靠；脚往下的迎体反而更难一些；一开始可以借助弹力绳训练； 自由杠铃划船：王牌动作 2。像硬拉的站姿，前脚掌受力，小腿和地面垂直，背全程绷紧。下去的时候手不必放到最远，一个美妙的弧形来划船。不要刻意夹肩胛骨，身体要下去一点并且全程稳定，没力的时候或大重量的时候才需要借力晃。 高位下拉：握距1.5倍肩宽，下来的时候手肘内收，身体不必要过度后仰； 坐姿反握划船：全程背绷紧，不要刻意夹肩胛骨，大臂往后顶，匀速的来，也可以用板凳在龙门架上做； 坐姿正握划船：稍微含胸，全程背绷紧，稍微含胸的重量比不含胸的会轻一些； 龙门架划船：用到躯体的力量和拉的力量，可以做大重量，也可以试试不同握把，小腿要始终有一点后斜，顶峰的时候手肘往内去收夹紧背； 单臂龙门架划船：反手拉的时候正手放在左大腿，不用特意扭身体而是自然挤压下背肌肉； 一般肌肉控制 2-0-2，2 秒向心 2 秒离心。或者 1-2-4，1 秒向心 2 秒顶峰收缩 4 秒离心。 🏋️ 肩 原本溜肩问题严重，所以肩膀要单独拿出来练，从后束开始练。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-08-03 14:08:56 +0800 CST'>August 3, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 健身三周年 Recap" href="http://localhost:1313/posts/gym3y/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">如何选一个酷炫的个人 email 地址
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最近在网上搜寻怎么创立一个好的 email address 用于个人用途。发现在中文世界很少人聊这件事，也许是因为真的太无聊了。亦有大国掌权者下辣眼睛的 qq 邮箱。
+现在的个人和生意之间的界限越来越模糊了——越来越多的斜杠青年，同时拥有多个生意/项目。所以，使用自己公司域名的邮件地址变得不太方便。而且有的人极简主义作祟，懒得用多个邮箱地址，只想用一个。
+网上找了些资讯，发现大部分都是七年前的内容。那个年代的人还在讨论怎么样让 email address 更正式，更 professional。的确，这些方法确实可以作为指引，但是现在是个人品牌和个人域名蓬勃发展的时代，尤其是在一些 gmail 满天飞的国家/地区，使用自己的域名作为工作邮箱总比免费邮箱服务来的更高级。
+本文写给特别在乎邮件的人。Email 是一种有点浪漫又有一种不会把人逼得太紧的感觉，不立刻回复也不会显得不礼貌，非常适合我这种不入流的生活方式。
+另外，从成本的角度来看，一个域名一年只要 10 到 50 美元，而一个支持自定义域名的邮箱服务也只需 12 到 36 美元。真的没有很贵。
+以下为例，我注册到的域名的是 first.com (我很幸运)。这是我用失眠两夜的代价换来的思考。
+备注：
+first = first name 名字
+last = last name 姓氏
+f = first name initial 名字首字母
+l = last name initial 姓氏首字母
+marketing@first.com 首先，这是一个不错的选择，可以闻到一点生意的味道。Marketing 感觉可以 handle 一些供应链端和市场端的对接也不会有违和感。同理还有例如 business@ 等选择。
+hello@first.com 这个适合收件而不太适合发件，作为收件的对象而言，这个地址看起来是很舒服的，有点类似于直接打招呼 hello xxx 的意味。但如果作为发件，就显得过于个人而非职业。所以对于个人用途而言是一个好选择。同理的还有例如 contact@ hi@ 等选择。
+1@first.com 受汪晟大师的影响，用数字 1 最简洁。但是使用数字似乎触碰到了 professional 的禁忌，尽管酷炫程度真的拉满。重点是手写的时候，比如在疫情期间测核酸的时候，是用手写填单的，机构则会把测试结果发到你的邮箱。这个时候对方可能不明白你写的是数字「1」 还是字母「l」，就会多问你一句。如果你还需要多解释一次，那又有何意义呢？
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-07-23 14:08:56 +0800 CST'>July 23, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 如何选一个酷炫的个人 email 地址" href="http://localhost:1313/posts/emailadd/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">国外吃早餐必学的 9 种蛋料理英文
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>「How would you like your eggs?」 1) 单面荷包蛋 (太阳蛋)：Sunny side up egg 荷包蛋是一种美式早餐，它是一面煎至焦黄，另一面则是半熟的蛋黄，就像一个圆圆的太阳一样亮黄。这种煎蛋通常被称为&#34;Sunny-side up&#34;，意思是将太阳那一面朝上。 2) 双面全熟荷包蛋：Over well egg 或者叫 Over hard，它的特点是两面都煎至蛋黄全熟。一般来说，有的亚洲人（非日本人）更喜欢食材完全熟透，不太习惯生食，这样更加安全可靠。而且，加上一些醬油的调味，会让荷包蛋更加美味可口。
+如果是双面半熟荷包蛋，就是 Over medium egg。
+3) 双面半生荷包蛋：Over easy egg 美国人一般不太倾向食用全熟的蛋，除非有明确要求，餐馆通常会准备蛋黄偏生的蛋。其中，“Over-easy egg”或者“Runny egg”是形容戳破后会流出汁液的那一种蛋。这种蛋两面都会经过煎烤，但只有蛋白部分熟透，蛋黄仍然保持液体状态，非常嫩滑。
+4) 炒蛋：Scrambled egg 美式炒蛋是一道色彩鲜艳、营养丰富、制作迅捷的美式早餐选择，非常适合孩子和上班族。与传统的炒蛋不同，美式炒蛋具有松软嫩滑的口感。这是因为少许牛奶被加入其中，使得蛋液更加细腻均匀，并且提供了丰富的营养成分。
+5) 班尼迪克蛋 (半熟水煮蛋，淋上荷兰酱)：Benedict egg 实际上，它就是半熟的水煮荷包蛋（每份通常有两个蛋）。它们会放在切片的英式麦包（English muffin）上，再加上火腿或培根。最后，会倒上金黄浓稠的蛋黄酱或荷兰酱（Hollandaise sauce）。吃的时候，需要将蛋切开，用麦包和肉片沾取蛋汁。
+6) 水波蛋 (半熟水煮荷包蛋)：Poached egg 水波蛋（poached egg）是一种将鸡蛋直接打入热水中煮熟的蛋类，轻轻一触碰，蛋黄就会流出，味道非常美味。
+7) 半熟水煮蛋：Soft boiled egg 在国外，如果你点了水煮蛋（Boiled egg），服务员通常会问你：「How would you like your eggs?」。如果你想要蛋黄非常嫩滑且流动，你可以说「3 Minutes」（这是专家们的最爱，喷汁的最棒）。不过，如果你担心禽流感，想要蛋黄更熟一些、硬一些，你可以说「5 Minutes」，然后用勺子轻轻敲破蛋壳上面的气室，再用勺子挖出来就可以了。
+8) 全熟水煮蛋：Hard boiled egg 对，就是在上面的半熟水煮蛋给它再多煮一下下啦。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-06-29 14:08:56 +0800 CST'>June 29, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 国外吃早餐必学的 9 种蛋料理英文" href="http://localhost:1313/posts/egg/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">关于「财务自由」，别太认真
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前不久和朋友在聊天，我开玩笑的说他已经达到「财务自由」了，结果他思考了几秒，然后一本正经的回答我：「我觉得财务自由是不可能的」。
+这句话的背后，代表了大多数人对于「财务自由」的曲解，以及自身「聚光灯效应」下的无法摆脱。近几年我读了一些书，看了几个视频，发现有些人对「财务自由」有着有趣的解读。
+维基百科 维基百科给出的定义是：
+「财务自由是指你工作并不为了钱，而钱完全够用的状态。只要你的资产产生的被动收入等于或超过你的日常开支。如果你进入这种状态，我们就可以称之为退休或其他各种名称。只要不发生什么重大的灾难，你就可以生活下去，当然如果你喜欢你的工作也可以继续干下去，或者你可以选择你自己真正喜欢做的事，而不是为生活所迫地做那些你不乐意却又无可奈何要做的事。」
+维基的定义提取四个重要的点：
+资产的被动收入 日常支出 是否继续工作 做自己真正喜欢做的事情 不得不说，一开始对于「财务自由」的理解就是简单的「被动收入大于支出」；然而，似乎「做自己真正想做的事情」才更像是终极目标。因为，如果达到了这个状态并且有可持续性，证明你也已经达到了「自由」。
+李笑来 李笑来在《通往财富自由之路》这本书讨论了这个定义：
+「一个人再也不用为了满足生活必需而出售自己的时间。」
+「财富自由不是终点站，而只是一座里程碑，在那之后还有很长的路要走。」
+「财富自由的本质是时间自主权。」
+这个定义是经过深思熟虑的，因为反复读了几遍之后，发现用一些「反例」无法击倒这个定义。这句话写的有点厉害，是高度浓缩的。同时，也让人思考目前在做的事情/工作，哪些是在单纯出售自己的时间？
+获得「时间自主权」也就是得到了「自由」。「财务自由」的前两个字「财务」没有后两个字「自由」来的重要——赚取金钱为的就是——获得自由。
+John Z.Sonmez John 在《软技能 代码之外的生存指南》这本书做了以下描述：
+「退休也不是终年坐在热带沙滩上喝着玛格丽特鸡尾酒——尽管也不排除这种可能性。我无法想象无所事事的退休生活。显然，我现在并不是无所事事，我正在写这本书。」
+「相反，我把退休定义为『自由』，具体而言，即财务自由——一种不会囿于财务状况被迫用自己别无选择的方式将自己的时间花费在不合心意的事情上的能力。」
+「我从不追求永远不再工作，但是我一直追求在我不想工作的时候就不工作。这就是我目前的状态。我有足够丰厚的『被动收入』去对抗通货膨胀，如果我愿意，我也可以躺在沙滩上来一杯鸡尾酒；但是，我依然可以投身自己感兴趣的项目——那只是因为我想投身于该项目，而不是因财务原因必须投身于该项目。」
+我觉得他说的又土又对…发现「自由」、「被动收入」和类似「自己感兴趣的项目」依然是高频关键词。读完这些描述，让人感觉「财务自由」更是一种「状态」而不是一个「终点」。
+Naval 「Retirement is when you stop sacrificing today for an imaginary tomorrow. When today is complete in and of itself, you are retired.」
+Naval 的境界总是让人感觉上升到了哲学高度，解读起来很困难。
+stop sacrificing today，意味着不做自己不喜欢的事；
+today is complete in and of itself，理解成什么都不做，也可以满足生活必须；也意味着有被动收入。
+Ray MoneyXYZ 财经博主 Ray 的对于「财务自由」定义：
+「财务自由是经济上的一个可持续的，有适应性的 lifestyle/生活状态，它的目的是让你在做自己想做的事情的同时不用太过于担心金钱的压力。」
+Ray 举了一个很生动的例子来表达达到「财务自由」的状态——超级马力欧的「帮助模式」，在这个模式下不用担心还剩下几条命，可以无忧无虑的闯关打怪。在这个模式下创造主动收入，这个收入允许我们进一步去扩张（投资）创造被动收入，形成一个良性的循环。突出了「可持续的」和「有适应性」的这件事。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-06-17 14:08:56 +0800 CST'>June 17, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 关于「财务自由」，别太认真" href="http://localhost:1313/posts/ff/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">不入流的文体｜关于「盘古之白」和「直角引号」
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>为什么我要写这篇无聊的文章 近几年阅读了「海量」书籍，涵盖了英文、简体中文和繁体中文等不同形式；而网络上的文章形式则更为「自由」，随着创作者经济的兴起和区块链技术的催化，任何人都可以 permissionless 的自由创作属于他们的狗屎（包括本 blog）。至此，新时代的中文世界的网络文体再无约束，因为大陆人有一套自己的标点符号规则，而台湾也有其延续至今的规则，任何一套规则再无「对错」之分，因为谁会来评判？Web3是属于个体的！
+让我想敲下本篇 blog 的原因起源于在网上看到王建硕老师的一篇文章——他说在微信里面，如果你发送的中文和英文或数字混排的时候，显示出来的消息已经自动地在英文、数字左右加上了空格。出自文章《有些知识，一旦知道了，便再也无法回到那以前的纯真年代》。
+听起来有点矫情，但是是真的！顺便也在 Line 试了一下，在打字框中 Line 自带了留白，而微信在打字框中不体现留白，消息发送出去自动生成留白；如果手动添加了空格，则发送出去的消息全角和半角间的间隙更大了一些（废话）。
+顺手 Google 一搜，原来已经有大量 blog 在说这件事，但大部分都是冰冷的摘抄，没有表达自己的思想。于是在此记录这个变动中的文体，在本文下方有我借鉴的网站，我在此基础上修改了文字和内容为自己所用，毕竟这才是我自己的文章，great artists steal 😝！但我不喜欢原文的「正确」和「错误」之说（哪怕这个「盘古之白」据说已经是 W3C 的一个规范，以及中国出版业的一个行业标准），也许这些文体根本没有一个规范，而且很多至今仍然存在着争议，倒不如直接说「看的舒服」和「看的不爽」吧。
+「盘古之白」是什么？ 「盘古之白」指的就是——在中文和 English 混排的时候，中文和半角的英文（或数字或符号）之间需要加入的前后两个空格。「盘古之白」劈开了全角和半角之间的混沌。
+有研究显示，打字的时候不喜欢在中文和英文之间加空格的人，感情路都走得很辛苦，有七成的比例会在 34 岁的时候跟自己不爱的人结婚，而其余三成的人最后只能把遗产留给自己的猫。毕竟爱情跟书写都需要适时地留白。
+所以，怎么劈的呢？
+空格相关的排版问题 中英文之间需要增加空格 看的舒服：
+在大国 iCloud 里 ，数据存储有没有 privacy 呢？
+看的不爽：
+在大国iCloud里，数据存储有没有privacy呢？
+在大国 iCloud里，数据存储有没有privacy 呢？
+例外：「Web3」等产品/行业名词，按照官方所定义的格式书写（Web3 和 Web 3.0 不一样哦）。
+中文与数字之间需要增加空格 看的舒服：
+今天出去潇洒花了 1000 元。
+看的不爽：
+今天出去潇洒花了 1000元。
+今天出去潇洒花了1000元。
+数字与单位之间需要增加空格 看的舒服：
+靠北！我家的光纤入屋宽带才 100 Mbps，SSD 一共只有 10 TB。
+看的不爽：
+靠北！我家的光纤入屋宽带才 100Mbps，SSD 一共只有 10TB。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-06-12 14:08:56 +0800 CST'>June 12, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 不入流的文体｜关于「盘古之白」和「直角引号」" href="http://localhost:1313/posts/pangu/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/4/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/6/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

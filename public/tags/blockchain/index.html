@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>blockchain | eddylu</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Blockchain | ed</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://eddy.lu/tags/blockchain/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://eddy.lu/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://eddy.lu/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://eddy.lu/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://eddy.lu/apple-touch-icon.png">
-<link rel="mask-icon" href="https://eddy.lu/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/tags/blockchain/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://eddy.lu/tags/blockchain/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/blockchain/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/blockchain/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,60 +37,49 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:title" content="blockchain" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://eddy.lu/tags/blockchain/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="blockchain"/>
-<meta name="twitter:description" content=""/>
-
-</head>
-
-<body class="list" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script>
-
-<header class="header">
-    <nav class="nav">
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://eddy.lu" accesskey="h" title="eddylu (Alt + H)">eddylu</a>
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -105,25 +95,60 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
-                <a href="https://eddy.lu/about/" title="About">
-                    <span>About</span>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/archives/" title="Archives">
-                    <span>Archives</span>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/categories/" title="Categories">
-                    <span>Categories</span>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/tags/" title="Tags">
-                    <span>Tags</span>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
                 </a>
             </li>
         </ul>
@@ -132,41 +157,314 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    blockchain
+    Blockchain
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>2022币圈7大崩坏
+    <h2 class="entry-hint-parent">以太坊 POS 机制一周年：回顾与展望
     </h2>
   </header>
   <div class="entry-content">
-    <p> Axie Infinity被盗6亿美金 Axie Infinity的测链Ronin被黑客盗走173,600个以太币和2,550万个USDC（约等值6亿美金），值得注意的是，直到一周后一名用户无法提取出以太币的时候，这个被盗事件才被发现。 Luna/UST的死亡螺旋 Luna作为算法稳定币，曾经一度被资本看好，Do Kwon是韩国的crypto界的明日之星。有很多crypto友好的youtuber对算法稳定币前景十分看好并认为Luna对加密货币发展起着非常关键的作用。然而UST和美金脱钩（Depegged），市场恐慌出逃，很多投资者的投资瞬间蒸发，甚至害的有些人结束自己的生命。 三箭资本（3AC）倒闭 总部位于新加坡的3AC颠覆时其资产管理规模还达到100亿美元，投资了众多地雷crypto项目，比如Terra代币，Axie Infinity和交易所Blockfi等等。 Voyager Digital倒闭 币圈开始多米诺式的暴雷，三箭资本资不抵债，风险逐层传导，Voyager就是那个债主，谁叫你借钱给“熟人”？然而后续给FTX收购了，也就是最后一个大雷爆了 — FTX也宣布破产后，被币安收购。 Celsius破产 该平台以高息作招徕，曾称存款的客户可获得高达18厘的高息回报，主要是向客户借入虚币，再借给机构投资者。然而据法庭文件称，Celsius只有1.67亿美元的现金，但欠了用户约47亿美元，资产负债表中更存在约12亿美元的漏洞。Liquidity有很大问题。随时市场恐慌和机构爆雷，Celsius面临大量存户赎回而宣布停止提款，继而使这间加密借贷公司爆雷。 FTX破产 SBF靠着高明的行销手段，比如大量顶级赛事的推广FTX和游走在政客之间，打造了几乎催不可破的形象。我甚至也都在FTX做好了KYC准备使用这个交易所。SBF和自己的投资公司alameda research为非作歹，利用漏洞，挪用用户的资金杠杆交易，炒FTT空币，智商真的有点高。 BlockFi破产 BlockFi因为向3AC提供贷款而遭受损失，彼时FTX挺身而出，向BlockFi提供了信贷额度，双发财务的关系千丝万缕。后续也因为FTX的趴下，受害者名单再添一员，BlockFi申请破产。 </p>
+    <p>一周年里的重要事件
+一年前，以太坊（Ethereum）迎来了一个重大的变革，将其共识机制从 PoW（工作量证明）改为了 PoS（权益证明）。在这个一周年回顾中，我们来看看这一年里发生了什么重要的事情。
+质押规模不断增长
+在一年的时间里，以太坊的 PoS 质押规模迅速扩大，目前已经高达 2600 万颗以太币，相当于大约 40 Billion 美元的市值。这表明了社区对以太坊的信任，以及投资者对质押机制的兴趣。
+质押率与收益
+尽管以太坊的质押率达到了 22%，相对于其他 PoS 项目如 Cardano 的 70% 来说，仍有提升空间。然而，质押者目前可以获得约 3.7% 的收益率，这在当前的熊市环境下也算是一个还不赖的选择。
+门槛降低，更容易参与
+PoS 机制的一个显著优势是降低了参与门槛。以前，挖矿需要显卡和矿机等设备，而现在只需拥有 32 颗以太币就能够进行质押。即使没有足够的以太币，也可以通过像 Lito 矿池这样的服务来实现质押，使更多人能够参与。
+PoS的不足之处
+然而，PoS 机制并非没有缺点。在以太坊中，不管是质押还是抽离，都需要等待较长的时间，大约 2 个月，而 Cardano 则只需要大概 25 天的延迟。这是一个需要改进的领域，以提高用户体验。
+未来展望：以太坊的分片计划
+未来，以太坊将继续追求改进，其中一个关键项目是分片（sharding）。分片将大大提高以太坊的交易速度并降低交易费用，但官方表示需要 2 到 3 年，但实际可能需要 5 年甚至更长的时间才能完成。在这段时间内，以太坊仍然会是 L1 主链的领导者吗？还是有可能被其他主链项目所取代？
+以太坊在一年的时间里经历了重大的转变，从 PoW 到 PoS，展示了其不断发展和创新的能力。虽然存在一些挑战，但以太坊仍然是加密世界的重要一部分，吸引了越来越多的用户和开发者。无论未来如何，以太坊都将继续发挥其在区块链领域的关键作用。
+</p>
   </div>
-  <footer class="entry-footer"><span title='2022-09-29 14:08:56 +0800 CST'>September 29, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to 2022币圈7大崩坏" href="https://eddy.lu/post/2022%E5%B8%81%E5%9C%887%E5%A4%A7%E5%B4%A9%E5%9D%8F/"></a>
+  <footer class="entry-footer">
+
+<span title='2023-10-03 14:08:56 +0800 CST'>October 3, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 以太坊 POS 机制一周年：回顾与展望" href="http://localhost:1313/posts/ethpos/"></a>
 </article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">比特币好像开始涨了，等等…我仓位还没建够 Explor. #09
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>以色列银行 Bank of Israel 开始颁布法规背书稳定币 不只是非洲和南美，中东的一些地区也开始加速布局加密货币板块了，在下一个时代来临之前。很有可能，现今的老大美国如果还没有出台法律法规监管crypto的话，以后就当不了老大了。
+Visa和Mastercard暂停和更多加密货币公司合作 考虑到美国对加密货币法规监管的不确定性，两大信用卡公司虽然一直是加密货币友好的态度，但是目前也暂时将触角伸到加密货币更深的领域。
+币安的Binance Pay可以在法国使用 用Crypto进行支付，商家收款之后可以选择转成欧元，这里有shorts视频；此举固然很屌，但是在发达的法国，民众不管是使用现金还是信用卡体系仍然还会是主流。
+Google云端宣布将成为 Tezos 的网络验证节点 诸如此类，包括亚马逊的AWS在host以太链，那么这些L1主链很多节点node都还是依赖在这些web2大企业下运行，难免太中心化了，如果这些大企业云端/网络出现问题（虽然不太可能），则这些被host的L1主链就会遭殃。相比，PoW的区块链则没有这个问题，一些其他的L1主链比如Cardano的PoS机制也相对比较去中心化。
+SEC主席Gary Gensler说除了比特币之外，其他加密货币都是证券 此前可不是这么说的，可能Gensler知道比特币已经势不可挡，所以从此前的把比特币归为security而默认为commodity了。但其他加密货币，SEC都希望他们是security从而对加密货币进行监管。
+Spotify在测试能被NFT持有者解锁的播放列表 音乐类的NFT已经不是新闻，但是这个领域还是太新，有太多值得探索的东西。这次Spotify做的东西，希望他们能摸索一些门道出来，特定NFT持有者可以有权收听特定的podcast或音乐，相信这对未来可以以某种形式保护创作者。
+Yuga Lab的比特币NFT TwelveFold（共288个）采用竞标方式 NFT头部项目出的比特币NFT肯定…一般老百姓玩不了。但是用这么传统的方式竞标真的很像scam，目前第1名用了7颗比特币，而第288名用了2颗比特币，这家价格相差有点悬殊。
+Jack Dorsey 去中心化社交平台 Bluesky 开始测试；加密货币支付公司 Block （前Square）提供比特币闪电网络的流动性 持续关注中，和twitter相比，不知道所谓的用户在去中心化平台更有权力怎么体现。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-03-01 14:08:56 +0800 CST'>March 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 比特币好像开始涨了，等等…我仓位还没建够 Explor. #09" href="http://localhost:1313/posts/explor09/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">2022币圈7大崩坏
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Axie Infinity被盗6亿美金 Axie Infinity的测链Ronin被黑客盗走173,600个以太币和2,550万个USDC（约等值6亿美金），值得注意的是，直到一周后一名用户无法提取出以太币的时候，这个被盗事件才被发现。
+Luna/UST的死亡螺旋 Luna作为算法稳定币，曾经一度被资本看好，Do Kwon是韩国的crypto界的明日之星。有很多crypto友好的youtuber对算法稳定币前景十分看好并认为Luna对加密货币发展起着非常关键的作用。然而UST和美金脱钩（Depegged），市场恐慌出逃，很多投资者的投资瞬间蒸发，甚至害的有些人结束自己的生命。
+三箭资本（3AC）倒闭 总部位于新加坡的3AC颠覆时其资产管理规模还达到100亿美元，投资了众多地雷crypto项目，比如Terra代币，Axie Infinity和交易所Blockfi等等。
+Voyager Digital倒闭 币圈开始多米诺式的暴雷，三箭资本资不抵债，风险逐层传导，Voyager就是那个债主，谁叫你借钱给“熟人”？然而后续给FTX收购了，也就是最后一个大雷爆了 — FTX也宣布破产后，被币安收购。
+Celsius破产 该平台以高息作招徕，曾称存款的客户可获得高达18厘的高息回报，主要是向客户借入虚币，再借给机构投资者。然而据法庭文件称，Celsius只有1.67亿美元的现金，但欠了用户约47亿美元，资产负债表中更存在约12亿美元的漏洞。Liquidity有很大问题。随时市场恐慌和机构爆雷，Celsius面临大量存户赎回而宣布停止提款，继而使这间加密借贷公司爆雷。
+FTX破产 SBF靠着高明的行销手段，比如大量顶级赛事的推广FTX和游走在政客之间，打造了几乎催不可破的形象。我甚至也都在FTX做好了KYC准备使用这个交易所。SBF和自己的投资公司alameda research为非作歹，利用漏洞，挪用用户的资金杠杆交易，炒FTT空币，智商真的有点高。
+BlockFi破产 BlockFi因为向3AC提供贷款而遭受损失，彼时FTX挺身而出，向BlockFi提供了信贷额度，双发财务的关系千丝万缕。后续也因为FTX的趴下，受害者名单再添一员，BlockFi申请破产。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-12-30 14:08:56 +0800 CST'>December 30, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 2022币圈7大崩坏" href="http://localhost:1313/posts/7collapse/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我割掉特斯拉了 Explor. #08
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 比特币最大的矿工之一Core Scientific申请破产。 矿工的破产和比特币本身没有直接关系，就像是用单反相机拍出来的照片不好看不能怪相机不好一样。
+数据显示比特币小散户的持有量在增加，已经来到历史最高的比特币总供应量的17%，而巨鲸持有量减小。 巨鲸持有量减小不一定是坏事，也许他们在套利，也许在控制风险；但小散户增持正在加速布局这个去中心化的金融网络。
+川普和皮朋发布NFT。 其实我满有兴趣，保持好玩的心态而已。川普和皮朋肯定都有一众追随者，只是能否抢到白名单，或是在发布价mint到真是不容易。
+MicroStrategy发布财报卖出了704颗比特币 虽然是公司首次卖出比特币，但目的只是为了抵消offset之前比特币盈利的税金而已，随即马上又囤了2500颗比特币，过度炒作Saylor首次抛售比特币只是一个无意义的fud而已。
+2022年特斯拉的跌幅超过比特币的跌幅 今年特斯拉股价跌去了70%，而比特币跌去了60%，当然从数字来看没什么太大对比的意义，只是在熊市当中，优质资产都会悬崖式的下跌，另外也可以看出比特币有点“抗跌”。
+Solana链上的DeGods项目讲挪去以太坊 原来NFT还可以转链的啊？！Solana一直负面消息不断，目前也大量流失优秀的开发者。
+狗狗币的那只狗狗不乐观 那只狗狗是一只日本柴犬Shiba Inu，名叫Kabosu的它是狗狗币Dogecoin上图案的灵感来源，可惜它得了白血病和肝病现在是病得不行，希望它安好。 </p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-12-30 14:08:56 +0800 CST'>December 30, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 我割掉特斯拉了 Explor. #08" href="http://localhost:1313/posts/explor08/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">解决境内 Ledger Live 连接超时问题
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>背景 在11月FTX事件爆发很多人开始把crypto资产转入冷钱包，Ledger作为其中一个大厂成为很多人的选择。而我在中旬尝试使用Ledger时，发现我的账户始终无法同步，重置也无效。继而发现Nano S Plus的固件始终停留在1.0.3，而无法升级成最新的1.0.4。把软件都重新卸载安装，然后连验证产品真伪这一步也无法通过了。
+询问了客服之后，原因很简单 — 大陆境内的Ledger Live被墙了。
+设置Proxifier 1. Proxifier是啥 Proxifier是一款简单易用的代理客户端软件，可以使本不支持通过代理服务器工作的网络程序能通过HTTPS或SOCKS代理，同时经过设置端口，指定的程序能够轻松让软件/游戏走直连/代理，经常和Clash，V2Ray这种代理工具配合使用。Proxifier本质是能让一些例外或者特殊程序能够顺利走代理。
+本文就是通过设置Proxifier让Ledger Live能够走代理，实现连接。
+2. 获得代理工具信息 本地代理的IP一般情况下是 127.0.0.1, 我使用的是Clash for Mac V3.7，使用 http&#43;socks 混合协议的默认代理端口 7890。
+3. 完成Proxifier常规设置 如果是第一次添加服务器Proxy Sever，它会问你是否把这个服务器当作默认服务器，点击yes。
+打开Proxifier，点击Proxies，然后点击Add添加代理server。 输入Address地址，端口，勾选Socks version 5，Save！
+4. 设置程序代理规则 📌必要设置 → 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)； → 让加速器程序走直连Direct；
+🤏可选设置： → 特定聊天软件不经代理走Direct，如微信等； → 不会自定义Clash规则，设置指定程序走Clash的全部代理。
+点击Rules设置规则，点击Add添加。
+例如添加Ledger Live，命名下Name，“&#43;”号添加应用程序，Action选Direct，Save！可依次添加google chrome和Clash等。
+5. 设置DNS代理 这个设置一般情况下不用设置，如果碰到有程序，无法通过你所用的代理工具走代理，可能需要让DNS也走代理，那可以尝试通过这个设置解决问题。
+点击DNS，取消Detect DNS Settings Automatically前面的勾，然后给Resolve Hostnames through Proxy 打勾，Save！
+实测 经过上面一连串的设置，代理软件通过Proxifier实现按需代理基本就实现了，运行正常的情况下界面如下。早前我也尝试过使用V2rayU，但是不成功，总是显示红色字的connect error。
+可以继续DCA比特币了！
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-12-23 14:08:56 +0800 CST'>December 23, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 解决境内 Ledger Live 连接超时问题" href="http://localhost:1313/posts/ledgerlive/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">冷钱包用不了了 Explor. #07
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1）FTX暴雷的事件持续在币圈震荡，可想而知各冷钱包厂商的咨询量也是暴增，是个正常人都会想在第一时间把资产移入自己的冷钱包，self custody自己的资产。
+不料当我连接上Ledger却死活也无法同步，固件版本一直卡在1.0.3亦无法升级，换了电脑也无济于事。等待官方客服漫长的回复时间，才得知原来软件服务也被墙了…
+但这是否就阻挡你dca btc的脚步呢？
+I continue to have this very high conviction in this bitcoin asset.”
+2）目前okx，币安对于大陆人仍然可以使用。各大交易所也纷纷发布了proof of reserves，以表自身的透明性，但感觉还是有漏洞的，说不定交易所可以随意篡改用户的数据，谁知道呢？例如，目前来看okx的proof of reserves数据是健康的，但仍然只会当成dca btc的工具之一，绝不深陷。后期还是要看V神和各大交易所出的智能合约的形式来管理和监管资产比较有看头。
+3）香港的交易所AAX传出创始人跑路，还有一些交易所如Kucoin都是在玩前期超高的利息吸引投资散户入场的把戏。交易所没有一家可以相信，尽量不把大额资金长期摆在上面。
+4）48%以上的eth nft是wash trading的。
+非常精彩，但也在意料之中吧，NFT至少在现在还是一个短期炒作的好玩具。头部项目之一的Meebits竟然96%是炒作的；但也有一些真实的项目BAYC，在一开始就不是以套利为目的的OG项目发展起来。
+5）数据显示bitcoin shrimp和crab的小散户的数量正在逐步增加。
+在如此低迷的行情和这么多噪音之下，反而让更多人沉下心来学习和积累，我相信这些人就是开始购入btc的小散户，买入的比重因人而异，倒也不重要，但能把5%左右的收入当成零花钱去定期购买btc不失为一个好选择。
+Remarks: • Shrimp: less than 1 BTC
+• Crab: 1 to 10 BTC
+• Whale: &gt;1000 BTC
+6）灰度Grayscale公司高达64万颗BTC，旗下有场外交易、借贷和托管平台Genesis，媒体Coindesk，挖矿公司Foundry。公司的信托产品GBTC正在以40%的折扣出售，购买GBTC并不等同与购买BTC，而只是购买一家公司的一个金融产品。
+Remarks: Microstrategy 拥有13万颗BTC，萨尔瓦多拥有2000颗BTC，特斯拉拥有1万颗。
+7）巴西通过加密货币支付法案。
+和萨尔瓦多有点区别，巴西并不是直接把BTC当成法币，而是将加密货币支付这件事合法化了，目前只差总统签字了。作为人口最多之一的南美国家，此举对推动加密货币的发展有重要作用。
+8）数据调查美国人过圣诞夜的电灯所消耗大约是6.63 terawatt-hour 万亿瓦，远比一些非洲小国一年消耗的电力还多，也比BTC挖矿的电力还多。
+如果还有人反驳BTC于电力消耗过大，不妨说说这个圣诞夜灯光的冷知识？
+9）NFT BBRC项目方仍然一直在build，很令人惊喜，反而到了自己都有点追不上项目roadmap的感觉。虽然招数有点老套，但是把你的NFT去做stake玩个抽奖何乐而不为？
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-12-07 14:08:56 +0800 CST'>December 7, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 冷钱包用不了了 Explor. #07" href="http://localhost:1313/posts/explor07/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Sam Bankman-Fried是个天才
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+SBF是怎么骗钱的？ SBF着实功力深厚，在美国政客间游离以及在各大赛事中推广FTX，仅仅两年间建立出色的人设，很多人对他的第一印象来自他躺在办公室睡觉的照片，以至于本周FTX暴出高杠杆借贷的这个雷继而宣布破产，惊动整个加密界。
+我也被骗了，我也被FTX正面的不得了的形象蒙骗，幸运的是我在FTX刚做完KYC，本想把美股的资金转出，入金到FTX，也许是市场的波动阻止了我。但周遭的一些朋友，甚至一些专业的投行的资金也都被卡在FTX了。
+区块链的初衷 Satoshi在2008设计出BTC，目的是建立一个去中心化的系统，个人能够真正的拥有自己的（虚拟）资产，能够Self custody，而不被中心化的公司或机构所控制。区块链14个年头以来发展突飞猛进，而更多人冲进这个市场的原因，我相信更多是一夜暴富，这也无可厚非，因为Crypto仍然处于早期阶段，就自带暴涨暴跌的buff，坊间流传的BTC到6万，BAYC的NFT到100 eth等等，人们开始相信他们也会成为之一。
+别相信任何交易所 交易所我试过的不多，FTX原本是下一个我要使用的交易所，因为对于选择不多的大陆居民而言，能够KYC，并且入金规则看起来十分合规，可以规避掉来源不明资金避免被封号等等。然而，SBF的面目开始显露，其他各大交易所的任何一个不合理行径都会被放大检视，各CEO的AMA开始开了起来。想想好笑，如果自己的交易所行得正坐得直，又何必去开AMA解释一些原来不需要解释的东西？
+交易所该用还是得用，但请一定备好冷钱包。币圈这次又一次动荡，对加密货币长远来看也是好事，最近应该相当大量的资产从各交易所转移到冷钱包当中，也导致了某L品牌的冷钱包软件出现问题暂时当机。
+Not your key, not your coin.
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-11-16 14:08:56 +0800 CST'>November 16, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Sam Bankman-Fried是个天才" href="http://localhost:1313/sbfgenius/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">香港和Web3 Explor. #06
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Travel, is life intensified. — Elliot Ng
+1）香港近日发布了有關香港虛擬資產發展的政策宣言，面对老大的管控，人才的流失，今日香港今非昔比，出台如此政策倒不令人意外。至少香港仍然与世界连结，看的清楚未来的潜在性产业，靠着本来的金融产业的盛大，借力发展虚拟资产，web3，NFT。只是现在看来还是有气无力的状态，就在10月底举行的天际100的metaverse asia上，大部分除了币，电信公司，就是交易所…看来吸引web3头像项目的加入，仍需时日。
+2）Google Cloud官方推特@了Solana创始人，导致SOL暴涨15%，作为Web2最大的公司之一，Google宣布要营运Solana的矿池。Solana个人感觉中心化程度比较明显，背后是一些大财团在操作，所以营运矿池的难度也比较高，资金等需求也比较高，但无论如何，Google要营运矿池，对加密货币世界也是一个积极的信号。
+3）FTT近期币价过山车，FTT是一种Utility token效能币，主要用途区别于BTC，ETH，是拿来使用和交易的，例如在FTX交易所上能赋予更低的交易费等等，而不是用来长期hodl增值的；且FTT过于中心化，前10名的钱包拥有93%的FTT，流通性也是比较差的。
+4）关于Ripple XRP和SEC的诉讼案，有越来越多的声音在声援Ripple，所有的矛头指向SEC的overreach，预计诉讼案在2023的上半年会告一段落，希望也还给Ripple一个清白，此举对加密货币的发展有着非常积极的作用，也需要给SEC一个警告—不能在没有任何证据的情况下无端指控一个加密公司。
+5）SWIFT是一个恐龙科技，非常outdated，但他也在和chainlink合作布局加密货币领域；美国各大交易所也开始”入侵“NBA，例如FTX赞助热火队的球场，crypto.com赞助湖人队的球场；Steph Curry也即将推出nft专利curryverse。种种迹象表明crypto已经不可阻挡。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-11-09 14:08:56 +0800 CST'>November 9, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 香港和Web3 Explor. #06" href="http://localhost:1313/posts/explor06/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bullish Jail Kown! Explor. #05
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1）Michael Saylor 说BTC的闪电网路是科技界最最重要的事。闪电网路是BTC的一个侧链，可以降低交易费，提高交易速度。
+2）币安交易所delist掉USDC.
+只是为了提升自己的busd市值吗？
+3）Do kwon被韩国通缉，Do kwon被韩国通缉，消息一传出，马上有人发代币token JAIL KWON，暴涨90%.
+目前加密货币仍然是无监管的状态，有这样的事情真是令人哭笑不得。类似的事情诸如Will Smith扇Rock耳光和英国女王去世，都有人可以出meme coin炒作一波。加密货币就是这样疯狂，也在不了解加密货币的人眼里，crypto就像骗局…然而这并不是crypto的核心价值。 4）Micro Strategy买入301颗BTC.
+目前还没有crypto的ETF，作为BTC信仰者Michael Saylor操盘的Micro Strategy公司，有一个不恰当的比喻 — 可以把Micro Strategy的股票当成是BTC的ETF。
+5）9/15在ETH正式转为POS之后，美国SEC企图将之纳入为“Security”的监管，理由是42%的ETH节点都在美国本土发生。
+6）Coinbase将允许用户使用.eth域名代替传统钱包地址进行发送/接受Crypto。
+看来拥有一个eth域名除了酷炫之外，使用价值也慢慢提升了。
+7）纳斯达克为机构提供加密货币保管服务。
+最近市场仍然一片恐慌，网上一堆click bait骗你去看他的新闻，导致信念不坚定的人会更恐慌。但熊市当中仍然看到的事实是有更多的公司正在布局crypto。
+8）美联储加息75个基点 Sep 22
+今年11月和12月还会有两次会议，可能继续加息，因为哪怕经济衰退也要控制出通胀。加息的决策也和失业率息息相关，每当失业率下降，Fed就继续加息。
+9）Cardano将在9/22硬分叉 Vasil Hard Fork.
+Cardano受关注的程度远不如以太坊的合并，但对于Cardano而言是一次重要的转变，由原来的Plutus编程语言转变成Plutus V2，但预计一般分叉后的币价不会有什么波动，或者对于长期来说，短期的币价波动意义不大，但对于Cardano的生态发展则意义重大。
+10）Nvidia市值腰斩，老黄头痛。
+时代的一粒灰尘落到头上，成为压死骆驼的最后一根稻草。Nvidia的基本面并没有改变，产品仍然牛逼。但是大环境变了，最高端显卡被限制出口（美为了限制中国发展）；币市大萧条，前2年大量需求用于挖矿的显卡目前需求骤减；加之国外疫情逐渐放开，宅在家里的玩家对游戏显卡的需求也骤减。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-09-24 14:08:56 +0800 CST'>September 24, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Bullish Jail Kown! Explor. #05" href="http://localhost:1313/posts/explor05/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">白话web3
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Web3其实不叫web3 Web3和web的关系，就是雷锋和雷峰塔的关系。 — 王建硕
+搞不懂web3这个词从何而来，至今也没有一个确切的定义，或者说目前的定义都不那么准确，也许也没人在乎，因为现在还是web3（或区块链）的婴儿期，web3未来发展成什么样子，成为有实际意义的东西之后，人们才会认真的赋予他一个像样的名词吧。
+Web3这个词在西方科技界（尤其是美国）早已经蔓延开来，并且在中文世界里也广为流传…行，web3就web3吧。
+刚接触的人只能咬着web3这个词在区块链的世界里头乱撞，比如买卖NFT，比如炒币，比如回过头在熊市里重新学习区块链的知识。而我，也是在这阶段，把自己blog网站分类之一的“web3”更改成了“blockchain”，因为，我再也不是一个100%的web3的believer，而”加密货币“和”区块链“才是最fundamental的关键词。
+Web3的数字“3”本身就具备迷惑性，当某些蹭热度的人提及web3和web2云云之时，往往潜移默化的就把人带往“3”就是”2“的下一代的方向，但，个人愚见 — 并不是的。Web3强调的是ownership，比如你可以在区块链上拥有数字资产，并且全世界都可以见证这件事。这听起来很酷（实际也很酷），但是请问，关web2屌事？
+Web2时代里，掌握网络生杀大权的都是一些巨头，如果你要使用他们的服务必须得注册他们的账号等等，听起来没那么糟，因为我们都已经很习惯了；而Web3的重点是去中心化，每个用户都成为”一些巨头“的一份子。Web3里用户去拥有某一个东西，并且绝对的公开，透明，不可篡改，这绝对是有意义，然而，取决是什么信息，因为有些信息还真的就比较适合中心化的平台以达到某种目的，比如说隐私。
+所以web3和web2一点都不矛盾，完全可以共存。不恰当的可以比喻成web3是web2的一个侧链，或者是平行出来的一条新的主链。
+以上讨论的是数字”3“的迷惑性，而”web“这个词同样有迷惑性，正如王建硕先生所说，web和web3根本没有关系，与其用”web“，不如用”table“，因为区块链不像一个网，而更像是一个巨大的账本，巨大的表格，为全世界的人共用，公开透明，所以倒不如称为Table1比较合适。
+Community, community, community 都说web3里community最重要，只不过可能社区的强大力量现在受限于技术或其他因素，还没有办法完全显现出来，但从目前Discord里各holder每日说GM来看，至少这也是一种社区的engagement吧。
+例如NFT具有社区通证的特点，可以集结天南地北的朋友，这本身对我而言，就已经是一件有意义的事情，特别疫情期间出国旅行不方便，所以作为催化剂，促进了去中心化应用的发展；而要在社区里面engage是需要付出时间和精力的，我相信这对于大多数人都是一种“挑战”，特别对于短期的flipper而言 — 我就想快进快出，engage个屁？
+前不久我在BBRC的DC里问了一个问题，希望向香港的朋友了解一下海外入境香港的隔离政策。我感觉当你握有同样的NFT，自然而然就会把对方当一伙人，并向对方提供力所能及的帮助。我开玩笑的跟同事说NFT的community和Cult邪教可能也就一线之隔，大家有着相同的信仰，喜欢着项目的小图片，相信着项目总有一天会起飞，然后称对方为Fam，洗对方脑，也洗着自己的脑。当然，这是玩笑话，在低迷的经济下，疫情的管控下，有这种发泄管道也是一件好事。
+而DAO (Decentralized Autonomous Organization) 的滋味我还没体验过，community不是一个DAO，公司不是一个DAO，其他组织也不是一个DAO。在此再引用王建硕先生的一个定义“所有通过投票等方式进行区块链上的智能合约的某个函数以运行的组织称为DAO组织”。也许在未来，一起干同一件事的人互相都不认识，都凭着智能合约实现管理自动化，人不需要进行干预，并且也无法干预。对了，DAO中文翻译是中心化自治组织，Autonomous这里的理解感觉用“自动”来的恰当，而非“自治”。
+区块链目前到底能干嘛 区块链目前还真啥都干不了。
+已经做出来的没什么用，有用的还做不出来。由区块链延伸出来的应用，比如NFT，比如DeFi，都可以去玩耍，但对现实生活中几乎不会产生任何影响，没有任何使用场景，毕竟后续哪条主链（以太坊，Cardano或其他）的应用会脱颖而出谁也不知道。唯独BTC的支付选项初出茅庐 — 例如购买Protonmail已经可以使用BTC。
+我理解“区块链”是一个firm keyword，但“web3”还不是。区块链是一个全新的技术，但他并不解决现有世界的问题（或者说他不是主要为了解决现有世界的问题），而是在现有世界又叠加了一层，提供新的需求和创造新的价值。
+所以，chain和web未来共存；crypto和现今银行FIAT系统未来共存；去中心化应用和中心化应用未来共存…相互影响，相互制约，动态平衡。
+NFT初体验 NFT初体验暂时告一段落，自认为对NFT的认知已经到达下一个阶段，没时间又没闲钱的朋友真不建议进场，但我喜欢体验新鲜事物所以我反而庆幸被割了这么一次韭菜。总结初体验的阶段，试着计算出第一阶段的盈亏情况，发现竟然很困难，web3里除了rmb/usd的汇率换算，还涉及eth/usd的价格变动。也罢，纯粹当成学费，知道个大概即可。
+作为长期投资者，一开始我把NFT当股票对待，找到优质的项目并长持，但如此新鲜的NFT能否做这样的投资得打个问号，因为你甚至无法拉过去10年的数据来看他是否和美股/BTC一样是往上的曲线。
+虽然在NFT买卖亏损，但是自认为成功的一点是从来没买到rug项目，直到割掉其他NFT时，那些项目方仍然在build，只是我没了兴趣而已。
+Zoofrenz，第一个入坑的项目，不惜花了“大价钱”入金购买，不惜高gas 50u从1.0转化到2.0，继续转化出稀有属性的星空猴，有人0.4e出价我不屑一顾，直到现在0.2直接割肉…而且还得给Opensea 2.5%以及项目方的Creator Fee…进场的时候，韭菜是无法预见熊市的，我以为1个e就值3000u，我以为NFT的Gas就应该50u… Alpaca，举着Sandbox大旗进军元宇宙，大搞GameFi，新韭菜google了一下Sandbox不明觉厉，再被鲸鱼扫了下地板，早已上头。只可惜我对游戏无感，虽然是荷兰项目，但明显台湾的市场拓展比较出色，加上管理层变动无常，我也失去了信念。
+Crepto，偶然发现的一遍Mirror文章，free mint了这个NFT，更重要的是结识了技术大牛，恰巧自己（未来）有发布NFT的想法，请教了制作合约，上链等问题；同时也预见有更多的人都在Mirror这个去中心化平台进行创作，所有在Mirror的内容都存储在Arweave区块链，通过连接钱包创作，还能铸造NFT，虽然具有实验性质，但是web3可玩的地方太多了。
+Zombieclub，9/9我躺在沙发上，想起来晚上有一个AMA和BBRC，听着听着想说是一个不错的机会和founder的engagement，虽然IRL活动办的不少了反响也不错，但仍然限制在亚洲，怎么走向欧美市场？果不其然得到仍需保密的回答。但disco.eth语气平静，为人谦逊，让我觉得他才是Zombie的核心，也期盼着能有机会再和这位NFT的OG深度交流。
+BBRC送我一件夹克 有别于meme，像素艺术，fomo文化，BBRC反而像是一股清流，以大众比较能接受的审美创作小图片，加上韩国New Balance总监Aaron的穿搭审美，风格新颖不落俗套，更适合长期的PFP，我试过用僵尸当头像在微信和供应商聊生意，那种感觉，wtf?!
+谈钱就俗了，但BBRC确实也是我唯一买的NFT有盈利的项目…令人惊喜的是，久久不关注，项目方也一直在build，Discord里气氛也一直很热络，也是让我抛掉其他NFT只专注一两个NFT项目的其中一个原因，也许真的能交一些五湖四海的朋友。
+Ivy league，Pet mint等等，有点无暇顾及，但项目方要送你一件夹克耶，马上抽出时间关注起来，可以预见肯定有delay，肯定有这或那的原因，但他们真的做到了！我也真的没有很需要一件夹克，但是我很欣喜参加到这一波浪潮，所以delay我也不在乎，选的size不合身也罢，我马上就去新上线的网站claim了一件Team Jacket。
+连接钱包，点选商品，输入个人收件信息，付款信用卡。和目前的网购没什么差别，唯独结账的时候可以选择烧毁一个Merch Pass以此抵用200u的商品价格。
+有点香，checkout完毕，不知道衣服是从哪里发货的，估计是东南亚，运输到大陆境内运费34u，预计还会产生感人的关税。
+需要Burn掉一个Merch Pass的NFT，夹克Claim完毕之后，Merch Pass就在你的钱包下烧了。
+最无聊的Bitcoin 好了，以上所说都是虚的。区块链世界变化太快，每个人的认知一直不停被刷新，我在键盘上敲下的字也许一个月后我会反驳自己。非投资建议，读者随意看看。但这也正是处在婴儿时期的web3迷人的地方，有什么事情能让你在短时间一直打自己脸并着迷不已？
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-09-16 14:08:56 +0800 CST'>September 16, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to 白话web3" href="http://localhost:1313/posts/web3/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/tags/blockchain/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://eddy.lu">eddylu</a></span>
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -193,25 +491,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

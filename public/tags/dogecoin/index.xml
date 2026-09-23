@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dogecoin on ed</title>
+    <link>http://localhost:1313/tags/dogecoin/</link>
+    <description>Recent content in Dogecoin on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Dec 2022 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dogecoin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我割掉特斯拉了 Explor. #08</title>
+      <link>http://localhost:1313/posts/explor08/</link>
+      <pubDate>Fri, 30 Dec 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/explor08/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;比特币最大的矿工之一Core Scientific申请破产。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;矿工的破产和比特币本身没有直接关系，就像是用单反相机拍出来的照片不好看不能怪相机不好一样。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;数据显示比特币小散户的持有量在增加，已经来到历史最高的比特币总供应量的17%，而巨鲸持有量减小。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;巨鲸持有量减小不一定是坏事，也许他们在套利，也许在控制风险；但小散户增持正在加速布局这个去中心化的金融网络。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;川普和皮朋发布NFT。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其实我满有兴趣，保持好玩的心态而已。川普和皮朋肯定都有一众追随者，只是能否抢到白名单，或是在发布价mint到真是不容易。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;MicroStrategy发布财报卖出了704颗比特币&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;虽然是公司首次卖出比特币，但目的只是为了抵消offset之前比特币盈利的税金而已，随即马上又囤了2500颗比特币，过度炒作Saylor首次抛售比特币只是一个无意义的fud而已。&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;2022年特斯拉的跌幅超过比特币的跌幅&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;今年特斯拉股价跌去了70%，而比特币跌去了60%，当然从数字来看没什么太大对比的意义，只是在熊市当中，优质资产都会悬崖式的下跌，另外也可以看出比特币有点“抗跌”。&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Solana链上的DeGods项目讲挪去以太坊&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;原来NFT还可以转链的啊？！Solana一直负面消息不断，目前也大量流失优秀的开发者。&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;狗狗币的那只狗狗不乐观&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那只狗狗是一只日本柴犬Shiba Inu，名叫Kabosu的它是狗狗币Dogecoin上图案的灵感来源，可惜它得了白血病和肝病现在是病得不行，希望它安好。
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/dogecoin.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

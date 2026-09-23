@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.166.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>ed</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">做自己的生命设计师 Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+也许想翻开这本书的人，大概是因为人生有卡住的感觉。比如虽然赚了更多的钱，却不比从前快乐；比如以为出国工作很酷，其实内心饱受煎熬。
+现实的生活总和想象里的大相径庭。
+作者给了一个很有趣的四个角度—人生仪表盘。也许可以用来套套你目前的生活。也许填满了你就开心了。
+健康最重要所以排在最基层，包括身，心，灵。「灵」难理解的话，可以问问自己「生命中是不是少了什么东西？」。3/5 爱，包含付出的爱和接受的爱。3.5/5 游戏是无关于收益的活动—纯玩，注意，工作就到工作，不是游戏。2/5 工作，4.5/5 设计人生或者设计生命是什么鬼？就像是法拉利流线型的车身，或者 Macbook Air 的工业设计，让人看了就觉得「嗯，就是他了」。好的设计让产品脱颖而出，人生也一样，可以通过好的设计让你活的更爽。试着用设计师的思维 Design thinking 去看待目前的工作和生活。
+设计人生并不是要推翻现在的工作和生活，破釜沉舟或者创业或者干嘛。而是不改变重大结构的情况下，优化目前的人生，去做微调从而达到理想的样子。
+比如经常出差的工作会缺失陪伴小孩的时间，那么在回家陪伴小孩的时候就会更加珍惜和她的点滴。
+人生的设计需要很多 重拟 reframing 的过程。人生（永远）无法事先做完美的计划。人生不只有一个解决方案，没有标准反倒是一件好事。比如「你以后要做什么」，重拟后变成「你以后想成为什么样的人」。
+也许设计人生比「财务自由」更重要。因为如果财务自由了但还是不快乐有什么用？如果过上自己理想的生活，就算没有财务自由也很 ok。这样一想，财务自由虽然还是「非常重要」，但也没「那么重要」了，那只是一个里程碑罢了。
+热情是良好的人生设计带来的结果，不是源头。
+「热情」是试过之后才会出现的东西，追寻你的热情根本是一个很危险的想法。无法事先知道热情所在，因为没去尝试，就不会知道你是否真的喜欢。
+⠀ 重力问题 gravity problem 意指不是问题的问题—无法被解决的问题。就如同重力是无法解决的问题。典型的无效问题比如：
+大学念什么专业，毕业后就得就业相关工作； 只要「成功」了，人生就快乐了； 现在才开始考虑理想生活已经太迟了。 从前身陷在很多重力问题里无法自拔，如果重拟问题，也许可以找到新的思路。
+人生设计就是一个不断打造原型和实验的过程，一旦用了设计师的脑袋思考，就知道人生永远没有完工的一天。只有在死亡降临的那一刻，我们才会停止设计人生。
+未来没有绝对，一旦开始设计一件事，这件事就有可能改变未来。
+设计师的本质是行动家。设计人生重点在于不断折腾，不断尝试，探索自我，找到自己，成为下一个自己。
+人生罗盘可以指引你设计生命的方向。打造人生罗盘需要两个东西，工作观和人生观。简单地说工作观和人生观要相契合，那份工作才会是让你比较开心的。
+工作观即工作在你心目中的意义，你为什么要工作？什么工作才是好工作？
+而人生观就是你对世界的看法，你认为这个世界是如何运行的？人生的价值来自何方？你的人生和家人，社会与地球上的人有什么关联？
+对了，人生罗盘每个时期都会改变的，就像海贼王的指针一样，每到一个地方，就会指向新的航海方向。 ⠀ 书中建议用小几百字写下自己的观点，但我如果用分点的方式尝试写工作观的话就会像这样：
+超过 50% 喜欢这份工作 最大化带来现金流 避免黑天鹅事件 成长的机会 成就感的满足 链接地球上的其他人，接触不同文化 拓展国际视野 对某个行业/产品专业 对周遭人有正向指引 至于人生观：
+做有意义的事情 40 岁前还算年轻人，还可以冲 尽管冲会有一定的牺牲 通过阅读/写作，分享一些资讯给这个世界 体验不同的人生，不想在一个地方呆太久 一个更自由更多选择的 identity 培养下一代有清醒的认识，而不是一个泥人 Provide 家庭 长期主义，追求财务和身心的复利 我掰不下去了，以后再想想…
+怎么样去知道自己理想的工作和生活上啥样子？记录好时光日志是一个练习的方法。通过联想「人事时地物」等因素，每周至少两次记录下好时光和聚焦。以此发现做哪些事情自己能达到心流的状态，以及精力充沛的时刻。也许你的工作观和人生观也更容易具像化。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-10-16 23:00:00 +0800 CST'>October 16, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to 做自己的生命设计师 Book notes" href="http://localhost:1313/posts/designyourlife/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Same as Ever Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+🎨 Impressions 这是一本讨论在变化万千的世界中永恒不变的人性法则与致富心态的书。Morgan Housel 已经晋升为我的新偶像，他的笔墨把金钱讲的没那么晦涩，也恰到好处地把人性融合进投资类的主题。虽然书里看很多案例有点烦，但是阐述的道理都打中你人生当中的某一个卡点，非常受用。
+在动荡的时代，这是一本能教我们保持清晰思维和内心平静的指南。与其预测变化的未来，倒不如遵从恒久不变的人性规律，站在前人的肩膀上，人生少走一些弯路。比起上一本 The Psychology of Money，书中有很多让你活的更从容，更自在，更懂得重视那些长久不变的智慧。
+我很喜欢书面那个 ♾️ 的logo，让人心里很平静。
+✍️ Quotes &amp; Excerpt If you can get your work life to where you enjoy half of it, that is amazing. Very few people ever achieve that. — Jeff Bezos
+I think everybody should get rich and famous and do everything they ever dreamed of so they can see that it is not the answer. — Jim Carrey
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-09-23 09:00:00 +0800 CST'>September 23, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Same as Ever Book notes" href="http://localhost:1313/posts/sameasever/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">别对每件事都有反应 Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+淡泊一点也无妨。
+为什么要看这本书？纯粹书名吸引我，发现还有其他的禅联系，稍微引发下思考。《别对每件事都有反应》，单单这个书名就对我很有意义，因为我总是在快速执行别人给的「任务」，总有一天会累死，我何必。
+我们一天的脑力有限，把「反应」保留给少数重要的事情，反应得更好，更深，更真诚。当我们面对永无止尽的讯息和要求时，要学会选择性的反应。千万别成为「有求必应」的人，办不到的事情就是办不到！
+夫妻之间，无法理解的东西就选择放下，不必要什么事情都得有共鸣。男人女人本来就是不同的生物，走到一起是一种缘分，如果另一半不喜欢独立，不喜欢自由，那便随她/他去吧。只要在生活中找到能有共享的事情，一起过生活，就已经足够。
+对待小孩，不要过度插手，只要不涉及黑天鹅或者危险的事情，要放手让小孩去做她自己的事情。
+经常为自己安排「凝视自己」的独处时光。比如在异国他乡工作的日子，多了一点独处的时光，别浪费在刷手机上，而是应该利用更多时间思考。比如做内容创作，比如和大自然的接触，比如 hiking，都是和自己独处的一种方式。
+无法考上的学校，无法应聘上的工作，无法如期的会议，无法和对象的约会…有的时候要随缘，事情做不到，只是缘份不够而已，那便算了。
+谦虚再谦虚，我还是不够谦虚，人总是要 show off，要炫耀。比如申请了优才，巴不得和别人讲，有什么好讲的？我有病。
+学会快速「称赞」，比如另一半今天的穿搭很有小巧思；也可以快速称赞陌生人，润滑人际关系。这个世界就会开心一点。
+平均值的生活方式，并不存在。媒体每天都在发什么购房的平均年龄，中国各城市的收入平均水平等等，其实都是他妈的空虚。就算数据是真的，也别自己对号入座，没有任何意义。我的人生，我自己活，跟其他人有什么关系？
+每个人都不同，别去比较，真要比较，那就觉得别人的特点很厉害，就够了。要比永远比不完。要比就跟昨天的自己比，和去年的自己比，觉得以前的自己很愚蠢就对了。
+「意想不到」，让人生更有趣。事实是，人生是你要料想也料想不了，所以别去做无意义的规划。人生充满了变数。注重当下，先过好眼前就好了。
+不懂的，想不明白的，就别想了！
+偶尔要关上资讯的入口，心灵才能获得平静，尤其是在当今信息爆炸和让人焦虑的时代。比如把手机调成飞行模式。
+永远精简工作和作业流程。疫情的原因，让我们知道有一些工作是毫无意义的。只做有意义的工作就行了。
+学会降速，即时沟通软件是一个毒瘤，有的东西不回复，或者延迟回复吧，就丢在那边吧，管他的，其实都没那么重要。
+别人的话，永远只是别人的话。要贯彻自己的做事方式，别让别人牵着鼻子走，别人可以给意见，但只是意见。
+「此时、此地、自己」，这句禅语的意思就是——现在，在这个地方，做自己该做的事情。前一刻的自己已经结束，下一刻的自己不能保证能够活着。我们的生命，实际上只能存在于「现在」。
+执着过去的人，会失去未来。之前的成功工作经验，有可能成为你的绊脚石，所以适时归零吧。
+不擅长的事，就交给擅长的人去做。
+晚上不做决策，晚上头脑累，无法思考。早上的时间头脑比较清醒。
+「诸行无常」，人生并没有「幸」和「不幸」。这只是生活本来的样子。
+自己的选择，全部都正确！剩下的只等花开。正确的选择不只有一个。以前念书最讨厌多选题，因为很难，总是没办法多选到全部正确的答案，比较喜欢单选题。但是人生却是一个他妈的多选题，人生并不容易。但真的也没那么难。
+忙碌时，更要喘口气。所以每年要出国旅行，获得新的体验和补充能量场。所以办公环境有时候换一换，对着阳台，冲个咖啡，发发呆，也是一种喘口气的方式。
+「正常」的人或者想法，其实也没有一定很「正常」，何必自己给自己设限，让自己好像融入主流，让自己很正常。10 个人就有 10 个想法，没有哪 2 个是一模一样的。
+「正论」无法说服别人，在一些社交场合，说出大道理和最真最实用的东西，反而不一定有好的效果，甚至遭人不快，也有可能让别人觉得你是怪胎。所以圆滑一点，见招拆招，笑一笑，也就那样。
+人本来无一物。钱这个东西，赚越多越想要更多，差不多就好了。但多少是「差不多」？很多人包括我自己都说不清楚。可以考虑为后代赚钱是一个不错的角度。
+承认不知道是一种自信的展现。首先要清楚知道「我真正在乎的是什么事情」，然后就可以建立用于说出「不知道」的心态。那些无关紧要的事情，我就是不知道，你能把我吃了？
+别老是看别人脸色，这种举动的背后是卑微。如果我们面对 10 个人，就要准备 10 种不同的面具，到最后哪一个才是自己真正的模样？让自己过的更好的方法，就是尽可能真诚，be real。但是在老板面前可能还是要看看脸色吧，不然会饿死。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-09-11 14:08:56 +0800 CST'>September 11, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to 别对每件事都有反应 Book notes" href="http://localhost:1313/posts/dontreact/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">如何在 70 岁的时候还能去欧洲旅行？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+医学3.0 这本书的理念是「要在鸡蛋掉落在地上之前阻止扔鸡蛋的人」。医学2.0 则是「头痛医头，脚痛医脚」，常常等到病入膏肓，却发现为时已晚。作者 Attia 把长寿分成两个组成部分。第一个部分是你能活多久，即你的实际寿命；第二个部分才是重点——高质量的晚年健康生活，即「健康寿命」。Attia 对现代医疗面对慢性病的态度提出异议——亡羊补牢的方式不仅代价昂贵，效果也很差。
+死亡「四骑士」——癌症，心血管疾病（心脏病），脑神经退化（阿兹海尔默），第二型糖尿病，这些现代社会的文明病，他们是一伙的。大部分的主流生活方式很难完全甩掉他们，「干预」越早越好。这场战役其实在 30&#43; 岁的时候就已经悄然开始。我们的脑细胞，负责燃烧热量的线粒体，到上刀山下火海时需要的肌肉细胞和骨骼等等，都会随着年龄增长慢慢衰退。而时间，是打赢这场战役的最关键资源。
+据不完全统计显示，目前中国居民的平均寿命是 77 岁，预计到 2035 年平均寿命将达到 81 岁。但是心血管疾病和阿尔茨海默症等「老年病」患者人数呈现上升趋势，并且年龄层在不断下降。在生命最后的 10 年甚至更长，有的患者过着连生活都无法自理的生活。那活着干屁？
+医学3.0 并非真的和技术相关，对于大多数普通人，是一种思维方式的进化，一种对医学方式的态度改变。每个人都是独特的，每个人基因都不同，对应的疗法可能不同，但一定都是注重延长健康生命。
+胆固醇 我们需要重新看待胆固醇本人，他并不总是坏的。祖传的健康知识已经不再受用，他们认为鸡蛋特别是蛋黄不能多吃，怕胆固醇过高。其实饮食中摄入的胆固醇其实和血液的胆固醇没什么屌关系，大部分吃进去的会被人体排出，血液的胆固醇大部分是人体本身细胞形成的。胆固醇其实是消防队，不是纵火者，他可以帮助修补人体的血管发炎，而造成血管发炎的其实血糖过高，可以简单地认为是吃了太多的甜食或精致淀粉。
+以前有过用兔子做胆固醇相关的实验。但是兔子有一个独特的能力——可以从食物吸收胆固醇去血液，从而造成动脉粥样硬化，导致以前那个错误的推论。
+胆固醇属于脂质家族即脂肪。胆固醇不溶于水，要在我们血液流动就需要有一个载体，这个载体就叫脂蛋白 Lipoprotein，HDL 和 LDL 的最后一个「L」就是这个单词。这个脂蛋白部分是脂质（内部），部分是蛋白质（外部）。之所以分为高密度脂蛋白 HDL 和低密度脂蛋白 LDL，就是蛋白质和脂质比例不同而已。LDL 携带更多的脂质，密度更小，HDL 反之。
+这些颗粒和其他脂蛋白经常要互换货物，于是就有了常说的「好胆固醇」和「坏胆固醇」。高密度脂蛋白颗粒 apoA 的颗粒可以轻松从 2 个方向推过内皮屏障，而低密度脂蛋白颗粒包裹在一种叫「载脂蛋白B」apoB 的分子中，他就不能通过内皮屏障，就塞住了！这就是为什么说 HDL 好，而 LDL 不好的原因了。问题不是在胆固醇，而是携带它的颗粒。所以不必太在意 HDL，但是要控制 LDL 颗粒 apoB 的浓度。Attia 就指出体检报告单他看的从来就不是 DHL 或 LDL 的数值，而是追踪他的 apoB 的指标。
+动脉粥样硬化和高血压 我在2023年9月体检查出动脉粥样硬化指标超出，附带的报告不出意外的写了一些多吃蔬果，少吃油腻，多运动的没用屁话。起初没太在意，但在过去 1 年有过几次连干 2 场洋酒的经历，隔天伴随着头晕和噁心，量了血压——低压超过 100，才给我敲响警钟。虽然坊间都说高血压会遗传，只不过对于我这样的年纪，是不是来的太快了些？
+动脉粥状硬化和高血压息息相关。高血压对血管的伤害是物理性的，如果血压高，那么血管在每一分钟就会被攻击七八十次，如此的持续撞击会损伤血管。而血管受伤恢复之后，内膜就会增厚，再加上脂肪的堆积，就让血管壁慢慢变厚，这就是动脉粥状硬化（如发生在心脏就是心肌梗塞，发生在大脑就是中风）。高血压对内皮细胞的机械伤害，反过来又会导致更多的低密度脂蛋白颗粒的滞留，接着又对内皮细胞造成更大的损伤。
+每一种动脉粥样硬化的脂蛋白，不仅仅是低密度脂蛋白，还有其他几种，都携带一种 apoB 的蛋白质特征。这些脂蛋白大部分都以甘油三酯的形式存在（我的 TG 数值也超出）。apoB 颗粒被卡在内皮下空间并被氧化了，使其具有一定的毒性，引发了整个动脉粥样硬化连锁反应。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-07-06 14:08:56 +0800 CST'>July 6, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to 如何在 70 岁的时候还能去欧洲旅行？" href="http://localhost:1313/posts/outlive/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">「第二大脑」你随意就好
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+一、为什么要有第二大脑，吃太饱？ 「第二大脑」的概念一经 Tiago 推出就整个 sexy 到不行，第二大脑风吹遍了整个互联网，众人纷纷被洗脑，我也是其中之一并无法自拔。没办法，在混乱的年代需要更好地管理知识储备 PKM (Personal Knowledge Management)，应该是多数人的（隐性）诉求。那为什么「第二大脑」要叫「第二大脑」？别太纠结，你开心就好。
+二、第二大脑的一个大误解 Your mind is for having ideas, not holding them. — David Allen
+David Allen 的这句话容易让人产生误解，既然说大脑是用来产生主意的，那么拥有「第二大脑」的意义便是用来储存资讯的了。如果带着这个想法去读 Tiago 的第二大脑系列书籍以及用于实践的话，会发现并不是这样子的。
+Tiago 表达的重点在于「采取行动」，第二大脑是围绕「Actionability」开展的。他强调的是通过构建一个第二大脑的系统，由此可以灵活调动自己的笔记并有效地输出内容和产出，而并不是单纯地存储档案。
+网上尤其 YouTube 界很多博主把「第二大脑」理解为「储存」的工具，成了「帮你记住一切」，强调输入的「个人知识库」。这和 Tiago 的意愿背道而驰——他认为笔记是拿来用的，不是拿来储存的。第二大脑的笔记法更像是一种项目管理笔记法——以项目专案 Projects 为根基的一个笔记框架。
+但是，如果我们想用这个所谓的「第二大脑」来储存知识和信息，有意义吗？当然有啊！
+于是 Tiago 的「第二大脑」概念和你自己的概念可能有那么一丢丢的出入 🤏。生搬硬套是没有幸福的，我们完全可以定义自己的「第二大脑」。
+对于我而言，第二大脑系统仍然有很大的「存储知识」的属性。真的不必为了书里提倡的去照搬，只要能给我工作和日常带来价值，就足够了。原则比工具重要。每个人都有不同的需求和输出类型，而网上 Youtuber 讲的时常是以视频输出为主，并不适合每个人。
+三、第二大脑不是只有一个 APP 歹势，一开始我就是把 Notion 当成「第二大脑」APP 在使用的。但「第二大脑」对于我的意义更多在于帮我「储存」和「行动」，当然 Notion 仍然是目前这个大脑的最大构成部分，但是其他的 APP 或 软件也网状连结，一起编织成了我的「第二大脑」。以下的 APP，一天不用我可能会死亡。
+Notion 工作的项目管理 卡片盒知识储备 PKM 阅读/写作管理 个人信息储存 Apple Notes 历史工作的项目管理 Bear 熊掌记 Mental clarity 自己的家庭/个人/工作的蓝图 Brain vomit 乱涂乱写 工作的信息及时调用 健身信息的及时调用 Quick capture 快速捕捉的碎片信息 TickTick To-do ETD 管理（基于每周 review） Follow Ups （一堆跟进的事情，主要是被动的） 每日 To-do！(我永远在写这个，不写出来即原地崩溃) Apple Calendar Schedule Reminder Event 四、对《打造第二大脑实践手册》的重新思考 先说我的 PARA 分类：
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-06-11 23:00:00 +0800 CST'>June 11, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to 「第二大脑」你随意就好" href="http://localhost:1313/posts/paramethod/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Keep Going Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+🎨 Impressions 这本书是 Austin Kleon 的三部曲的最后一本，我一直放着没看因为书名有点误导我——感觉像是一本教你持续创作的书。但翻了几页就察觉到，更多的是传达了创作，甚至是生活的心智，亦延续了 Austin 迷你小书的好读，当然一如既往的赏心悦目的文字插画。
+✍️ Quotes &amp; Excerpt What’s clear is that it’s healthiest if we make a daily appointment to disconnect from the world so that we can connect with ourselves.
+Everybody gets so much information all day long that they lose their common sense. — Gertrude Stein
+The phone gives us a lot but it takes away three key elements of discovery: loneliness, uncertainty, and boredom. Those have always been were creative ideas com from. — Lynda Barry
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-04-06 09:00:00 +0800 CST'>April 6, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Keep Going Book notes" href="http://localhost:1313/posts/keepgoing/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">FIRE 无聊的运动
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>FIRE 是什么 FIRE (Financial Independence Retire Early) 其实并不是近几年才兴起的概念，只不过是刚好疫情的催化下，给了大家过多的思考人生的时间，一时间又串为热门词。FIRE 族就是提倡省吃俭用，不管是打工或者创业，都要省下一大半的收入而定期定额购买大型 ETF 或指数基金 Index fund，然后事先计算和规划退隐山林之后的年支出，跳脱出现代社会的 Rat race，活出自己想要的人生。
+这个概念确实很吸引人，两年前我也读过的台版书《財務自由，提早過你真正想過的生活》，还存在的记忆点就是书中提倡用自己的业余时间去写 Blog 等副业创造被动收入，然后投资美股或指数基金，用投资的年回报去过退休生活。
+预估退休之后的年开销。假设一个月需要 25,000RMB，那么一年则 300,000RMB，如果无任何其他的负债；当然 FIRE 族可能选一个与世无争的地方，需要花费的数字也许更低； 预估财务自由数字。ETF 或指数基金或股票的年化报酬率，FIRE 族喜欢用 4%，假设采用第一点的开销，则这个财务自由数字是 7,500,000RMB； 预估几年可以存到财务自由数字。这取决于个人，可能是 10～20 年，因人而异。 FIRE 的陷阱 未来风云变幻 虽然说指数基金的走势相对于个股和加密货币，是相对平稳的，但是国际形势动荡，什么年代了俄乌还能发生战争，中东也风起云涌——未来会发生什么，韭菜们都不知道。This time is different，正常人的小心脏很难长期 HODL。
+低估存到财务自由数字的时间 一般来说，努力工作可以增加工资收入，但是随之而来，消费也变多。正常人很难抵制消费的诱惑。
+低估退休后的消费 只考虑平均的通货膨胀率还不够，就比如疫情这几年带来的高通膨就让很多工薪阶级吃不消了。如果 20 年后还想保持一样的生活品质，那么财务自由数字可能 7,500,000RMB 还不太够？这个和省吃俭用是两个概念，因为再省也得消费。
+没有考虑人生重大事件 如果你要结婚生子买房，如果你的家人突然生了病…这些都可以把你的计划打回原形，这些事情需要的钱比想象中的多的多。FIRE 的存到财务自由数字的年限动辄五年十年，而人都是会变的，不可能永远都一样的 mentality。而人生或主动或被动，都会有所谓的「重大事件」。
+没有考虑人性 当你的周遭的朋友有的创业成功了，或者以某种形式赚了一桶金，你心里会开始发痒并忐忑不安，很难一直过着无欲无求的生活；最后可能重出江湖，却发现刀很钝，已经丧失了赚钱的能力。
+忽略中西方差异 FIRE 源自西方，可以看出是很典型的西方思维。各个家庭单位相对独立，财政更是独立；而在遥远的东方，「家族」则往往庞大，过于独立的话甚至会显得「自私」。也许在追求财务自由数字的过程中，已经先输给了文化。
+我对于 FIRE 的思考 从一开始接触到 FIRE 的概念觉得它很 sexy，到现在持有的怀疑态度，因为在执行过程中并不是 FIRE 理念中三言两语阐述的那么简单，有很多根本和本地的现实生活环境不搭嘎，更别提所谓的「退休后生活」，言之过早。
+「被动收入」的概念固然酷炫，但是主动收入对于绝大部分人来说才是最重要的，没有积累一定的现金流就无法做投资产生被动收入（即使硬要有，也微乎其微）。
+我并不认为「省吃俭用」适合每个人。如果这让你觉得快乐，那这个生活方式可以适合你，如果你觉得生活开销斤斤计较很娘炮，那何必。「Frugal」我发现一直是 FIRE 族或者财务自由领域里面的高频词，节约是一种美德，但是个人要定制出属于自己的花销模式，依据个人的不同价值观和消费观，是一种很私人的定义。相比于 FIRE，还有一个 Early Retirement Extreme 族群，就更是极端了。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-02-02 14:08:56 +0800 CST'>February 2, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to FIRE 无聊的运动" href="http://localhost:1313/posts/fire/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Psychology of Money Book notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+🎨 Impressions 在铜锣湾的诚品购入的这本纸质书，不晓得为什么在香港的实体书卖这么贵，但既然碰到了就是缘分，况且这本书写的实在有点精彩，作为在新的 2024 年第一本读的书来说，还不赖。作者 Morgan Housel 认为人们总是用理解知识的方式在建立各自的金钱观，而不是用理解心智和行为模式的方式去学习投资理财。这本书透过这样一个特别的视角，用 20 个小章节，帮我们看透投资的本质，并更好的解读自己在投资的偏见和误解。
+✍️ Quotes &amp; Excerpt We all do crazy stuff with money, because we’re all relatively new to this game and what looks crazy to you might make sense to me. But no one is crazy–we all make decisions based on our own unique experiences that seem to make sense to us in a given moment.
+The ability to do what you want, when you want, with who you want, for as long as you want, is priceless. It is the highest dividend money pays.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-01-10 09:00:00 +0800 CST'>January 10, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to The Psychology of Money Book notes" href="http://localhost:1313/posts/psychologyofmoney/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">蛋白质初级摄入指南
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>蛋白质，作为人体构建和维护组织的基石，扮演着不可或缺的角色。然而，在健身界，关于蛋白质的迷思层出不穷。如果如下的的问题有一个或多个你有兴趣知道答案，也许这篇文章可以帮助到你，在增肌减脂的路上少走一些弯路。
+Disclaimer：本篇内容不适合有慢性病的朋友以及专业健美运动员。
+「一天要吃多少蛋白质？」
+「吃太多蛋白质身体会损害肾脏？」
+「重训后需要立即摄入蛋白质？」
+「吃植物性蛋白质不够，一定要吃动物性的蛋白质？」
+「吃太多植物性蛋白质会雌化？」
+「需要额外补充乳清蛋白粉吗？」
+一、为什么我们需要吃蛋白质？ 人体的酵素、激素、血红素、白血球和抗体，这一切都是蛋白质的杰作。我们真正需要的是蛋白质的组成成分——氨基酸。我们吃下所谓的蛋白质，其实都是氨基酸所组成的。人体总的需要 20 种氨基酸，其中有 9 种是人体无法自行合成的必需氨基酸，这些氨基酸需要通过膳食摄入，对于人体的生存和发展至关重要。
+这 9 种必须氨基酸是：Lysine 赖氨酸、Methionine 甲硫氨酸（又称蛋氨酸）、Threonine 苏氨酸、Leucine 亮氨酸、Isoleucine 异亮氨酸、Valine 缬氨酸、Phenylalanine 苯丙氨酸、Tryptophan 色氨酸和 Histidine 组氨酸。
+注：健身常用的补剂支链氨基酸 BCAA 成分就是亮氨酸、异亮氨酸、缬氨酸。
+二、什么是优质蛋白质？ 氨基酸组成：具备人体所需的 9 种必需氨基酸。 氨基酸消化率：人体对这些必需氨基酸的高消化率。 不同年龄族群的需求量：符合各年龄段人体对必需氨基酸的需求。 三、肌肉合成的关键氨基酸 启动 mTOR (Mammalian Target Of Rapamycin) 途径是合成肌肉的关键。需要关注的三种氨基酸：
+Leucine 亮氨酸（台湾叫白胺酸） Lysine 赖氨酸（台湾叫离氨酸） Methionine 甲硫氨酸 人体的组织和细胞有 2 种模式——分解模式和合成模式，当吃够了食物，身体就进入合成模式，反之当营养不足就会进入分解模式。专家建议在每日的第一餐就摄入足够蛋白质（需要 2.5～3g 亮氨酸），让身体进入肌肉合成模式。另需 3～4g 赖氨酸，1g 甲硫氨酸，确保肌肉的合成材料充足。
+启动 mTOR 的两种氨基酸，一个是亮氨酸，另一个是 Arginine 精氨酸（人体可以自己合成）。
+要练肌肉而言，优质的碳水，优质的蛋白质，有一定强度的有氧或阻力训练，这三种缺一不可。所以，如果只吃蛋白质却不运动，还是会掉肌肉的！
+四、蛋白质的正确打开方式 1. 合理分配蛋白质 第一餐和最后一餐集中摄入：每天第一餐和最后一餐摄入 2.5～3g 亮氨酸，约 30g 蛋白质，以此启动 mTOR pathway。最后一餐蛋白质让肌肉的 mTOR 在睡眠的前半段，生长激素分泌和身体组织修补时也保持启动。 震惊：对于年过 40 的中老年人来说，其实要确保第一餐和最后一餐的蛋白质超过 30g，甚至 40-10-40 的分配为佳。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-12-09 14:08:56 +0800 CST'>December 9, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 蛋白质初级摄入指南" href="http://localhost:1313/posts/protein/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">2023 最终章：我和香港的连结
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 旅行为自己提供一个在日常生活中也许永远找不到的，绝佳的观察世界的角度和寻找真我的窗口。旅行的真正意义——真正地与不同的地方和人建立联系，并由此搭建与自己内心的链接。旅行是一个人可以送给自己的最佳的教育资源，它与你护照上的印章多寡无关：它关乎你在旅途中观察到的人生百态和你想要成为的人。– 数字游民 Jarod Zhang
+算命的说我今年会破财，我从来不相信命运，但自从看了 Outliers 这本书之后做了一些思考，有一股力量总会把你带到你应该去的地方。
+2023 真是够了，工作和生活都发生了很大的变动。我以为和家人在 11 月的香港旅行会让生活缓冲一下，而旅行是生活的浓缩——总让人有另外的冲动去推动其他剧情的发展。我也许花了大半年的时间思考我和我的家人应该去到哪一个角落，而考虑到实际情况，大部分我的设想也都只是天方夜谭。不料让我产生心里产生涟漪的竟然是香港伯父的离开。
+原来我和这一座城市的连结比我想的还要再深一点。
+殡仪馆里用来装纸钱的每一个袋子外边都钉着伯父身份证的复印件。这一张「永久性居民」的小卡片对我来说意义重大，它是和这个世界连结的重要通道，也是连结我和那些跟世界断链的家人的枢纽，它似乎是一张象征名片——让我可以兼顾这个和那个的最低门槛的人生解决方案。复印件上面的是熟悉的面孔，陌生的法定姓名以及同样陌生的粤拼。
+三十万港币给这个位于香港岛北角的殡仪馆冲了业绩，大家都想好好的送伯父一程，听说赌王何鴻燊的白事亦是在这里操办。除了亲人的失声痛哭和农村老家相似度很高的闽南流程，剩下的就是和宾客许久不见的寒暄以及互相确认对方称呼的尴尬时刻。这是我们的习俗和文化，要热闹要人多；这是我们的习俗，师公八九个舞来舞去。我到底在哪？直到司仪从流利的闽南语切换到流利的广东话我才回过神。
+香港的北角，马尼拉的王彬，是不同的地方，但其实也是一样的地方。
+街边的区议会选举沸沸扬扬，扩音器里传出的晋江话/泉州话拉票冻蒜声浪让你错乱，不知道自己在哪个空间「我系XXX，请基奇XXX」。北角是闽南世界，这个闽南世界位于香港，然后这里可以做一些不同事情好像还不赖…
+离殡仪馆最近的地铁站是 Quarry Bay 鲗鱼涌。我盯着这个几个字看了很久，除了因为香港公用场合使用的繁体中文字体耐看之外，总惊叹于这个中文名字怎么那么美，随之的英文名怎么也这么好听？谁取的啊？
+也许类似的发现，你必须得来过香港十次已经才能体会的到，因为前面十次都是在尖沙咀和铜锣湾血拼和打卡…在那里到处都是普通话，也许香港真的需要这份业绩，但是你完全可以选择用自己的角度去体会这座城市。
+这个亲戚住在东涌挺清净的，那个亲戚住在康城挺新的，再另个亲戚住在黄埔也挺习惯的。原来香港大多数的角落，并不总是那么多人、那么挤。等到有一回我来到香港，没有一丝念头去逛巴塔或卡哈的时候，也许我就又进化了。
+我带着「20 万人离开」的眼色边走边观察着熙熙攘攘的街道。果然，新闻就是新闻，很多东西不可能在一瞬间崩塌，或者应该说——瘦死的骆驼也总比马大。我兴致勃勃的用游客视角在地图导航找到一家古着店，然后因为得了逛街就会头晕的病在十分钟离开现场，经过炮台山的几年前就有的那家 Levis 折扣店和几年前想拍照忘了拍所以这次补合影的「油街」…原来这些都还在？
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-12-03 14:08:56 +0800 CST'>December 3, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 2023 最终章：我和香港的连结" href="http://localhost:1313/posts/2023-%E6%9C%80%E7%BB%88%E7%AB%A0%E6%88%91%E5%92%8C%E9%A6%99%E6%B8%AF%E7%9A%84%E8%BF%9E%E7%BB%93/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/3/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/5/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

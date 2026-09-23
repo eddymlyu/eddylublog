@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.110.0"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.166.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>eddylu</title>
+<meta name="robots" content="noindex, nofollow">
+<title>ed</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://eddy.lu/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://eddy.lu/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://eddy.lu/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://eddy.lu/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://eddy.lu/apple-touch-icon.png">
-<link rel="mask-icon" href="https://eddy.lu/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://eddy.lu/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
         #theme-toggle,
@@ -37,73 +39,49 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:title" content="eddylu" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://eddy.lu/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="eddylu"/>
-<meta name="twitter:description" content=""/>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "eddylu",
-  "url": "https://eddy.lu",
-  "description": "",
-  "thumbnailUrl": "https://eddy.lu/favicon.ico",
-  "sameAs": [
-      
-  ]
-}
-</script>
-</head>
-
-<body class="list" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script>
-
-<header class="header">
-    <nav class="nav">
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://eddy.lu" accesskey="h" title="eddylu (Alt + H)">eddylu</a>
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -119,25 +97,60 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
-                <a href="https://eddy.lu/about/" title="About">
-                    <span>About</span>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/archives/" title="Archives">
-                    <span>Archives</span>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/categories/" title="Categories">
-                    <span>Categories</span>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/tags/" title="Tags">
-                    <span>Tags</span>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
                 </a>
             </li>
         </ul>
@@ -146,13 +159,25 @@
 <main class="main"> 
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>写一些给自己看的内容，然后觉得做一个网站比较屌而已</h1>
+        <h1>🏄‍♂️ eddy 个人网站</h1>
     </header>
-    <div class="entry-content">
+    <div class="entry-content md-content">
         
+        <p>记录一些东西，感觉做一个网站比较屌而已</p>
+
     </div>
     <footer class="entry-footer">
-        <div class="social-icons">
+        <div class="social-icons" >
+    <a href="https://www.youtube.com/@eddylyu" target="_blank" rel="noopener noreferrer me"
+        title="Youtube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+    </path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+    </a>
 </div>
 
     </footer>
@@ -160,112 +185,339 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>2022币圈7大崩坏
+    <h2 class="entry-hint-parent">内容创作是一份工作
     </h2>
   </header>
   <div class="entry-content">
-    <p> Axie Infinity被盗6亿美金 Axie Infinity的测链Ronin被黑客盗走173,600个以太币和2,550万个USDC（约等值6亿美金），值得注意的是，直到一周后一名用户无法提取出以太币的时候，这个被盗事件才被发现。 Luna/UST的死亡螺旋 Luna作为算法稳定币，曾经一度被资本看好，Do Kwon是韩国的crypto界的明日之星。有很多crypto友好的youtuber对算法稳定币前景十分看好并认为Luna对加密货币发展起着非常关键的作用。然而UST和美金脱钩（Depegged），市场恐慌出逃，很多投资者的投资瞬间蒸发，甚至害的有些人结束自己的生命。 三箭资本（3AC）倒闭 总部位于新加坡的3AC颠覆时其资产管理规模还达到100亿美元，投资了众多地雷crypto项目，比如Terra代币，Axie Infinity和交易所Blockfi等等。 Voyager Digital倒闭 币圈开始多米诺式的暴雷，三箭资本资不抵债，风险逐层传导，Voyager就是那个债主，谁叫你借钱给“熟人”？然而后续给FTX收购了，也就是最后一个大雷爆了 — FTX也宣布破产后，被币安收购。 Celsius破产 该平台以高息作招徕，曾称存款的客户可获得高达18厘的高息回报，主要是向客户借入虚币，再借给机构投资者。然而据法庭文件称，Celsius只有1.67亿美元的现金，但欠了用户约47亿美元，资产负债表中更存在约12亿美元的漏洞。Liquidity有很大问题。随时市场恐慌和机构爆雷，Celsius面临大量存户赎回而宣布停止提款，继而使这间加密借贷公司爆雷。 FTX破产 SBF靠着高明的行销手段，比如大量顶级赛事的推广FTX和游走在政客之间，打造了几乎催不可破的形象。我甚至也都在FTX做好了KYC准备使用这个交易所。SBF和自己的投资公司alameda research为非作歹，利用漏洞，挪用用户的资金杠杆交易，炒FTT空币，智商真的有点高。 BlockFi破产 BlockFi因为向3AC提供贷款而遭受损失，彼时FTX挺身而出，向BlockFi提供了信贷额度，双发财务的关系千丝万缕。后续也因为FTX的趴下，受害者名单再添一员，BlockFi申请破产。 </p>
+    <p>
+这本书叫做《工作手册》，可能是暂时想不出更好的书名了，但对自媒体创作有不少挺好的建议。
+这篇 blog 不是一个单纯的读书笔记。它当然包含了李诞写的这本书的读书笔记，但也是一个阶段性的自媒体感悟、小结和心态。
+做自媒体的心态要摆正。真实，兴趣、交友、分享，保持好发心。爱上这份自媒体的工作就会比较自然而然。
+如果你的心态是要起号、和别人拼、整天看数据，就会做得比较痛苦，而且对你的情绪健康有负面影响。李诞说人是为别人而活，能为别人创造价值，从而体现自己的价值。之前看到网上有其他的观点——四十岁之后就要为自己而活。其实没到那一步，我也不知道什么叫为自己而活，搞不好从来不成立。
+如果做一个垂直频道，其实不太需要新的观点，因为我们要永远相信人类的忘性。很多道理过两天再听，大家还是觉得很有道理。只要你的观点是好的，就可以了。所以不需要讲什么新的东西，只讲我们认为对的东西，然后一直讲，一直重复，只不过换个方式和角度讲。
+老老实实做人，踏踏实实做事，这就是我们这个世界的秘密。赚钱、做自媒体也没什么秘密，这个秘密早就是公开的了。说得容易，做得难。这种事不适合所有人，适合长期主义者。时间会给出最好的答案。
+自媒体没有必要去假装一个人设。虽然短期内可能会有一些爆发，也会有兴奋感，但这是一种便宜的多巴胺。想想做自媒体、个人品牌、内容创作的初衷是什么。初衷是想做自己，同时能够切中市场顺便赚点钱罢了，顺序不能颠倒。
+你最终一定会成为你本该成为的人。你在人生中不停地做出选择，最后就会自然地形成你的风格。– 段永平
+自媒体是长期的，我认为理想的自媒体成功的秘密其实是敞开的，就是做你自己，真诚地表达，没有什么小秘密、小歪招、小撇步。
+李诞建议大家不要追求快速反应，这可能跟我们从小接受的教育或职场工作相悖。做自媒体，快速反应可以是一种训练的技能，但并不是表达能力的核心，也不用追求思维敏捷。你可以是结结巴巴的，或者思维比较长线、缓慢的，那就做你自己。我们的每天生活其实都是思维训练，没有必要为了自媒体去改变自己。思考质量优先于速度，质量才是最重要的。
+做自媒体很重要的一点是要克服羞耻心，尽情地暴露自己，做多了就习惯了，脸皮就厚了。一开始做自媒体的门槛，就是羞耻心，会担心被同事、朋友、老板看到。当然，这也是一个顾虑。
+做自媒体会有两个身份，一个是创作者，一个是传播者。我一开始以为自媒体等同于内容创作者，也喜欢用「内容创作者」来界定自己，因为 content creator 这个观念比自媒体好像酷一点。但是做自媒体其实包含了创作者和传播者。作为传播者，要看数据、看市场表现、粉丝转化、广告等。如果忽略这些市场因素，是不切实际的。但作为内容创作者时，不要想太多传播的事情，否则会影响内容质量，无法做最真诚的表达。作为创作者，得享受创作这个过程。
+段永平讲过一个例子，当初他投资茅台 200 元买入时，有人问他为什么不等到跌到 160 元再买。如果 10 年后回头看，160 和 200 差很大吗？其实并没有。做自媒体创作者也是这样，是长线逻辑。10 年后你会在乎是一百万粉丝还是一百二十万粉丝吗？几乎没差别。不要过于纠结短期微小的数据波动，那只会增加焦虑，也不需要给自己定目标。
+李诞的小卖部没有什么规划，就是觉得好玩就去做了，慢慢地也做成了。他是真诚地表达，这一点很重要。我也是，其实没什么规划，但总是 overthink，所以我一定会拍几个视频是关于 overthink、过度思考、想太多、自我怀疑的。现在觉得「麸质」这个视频挺有意思，好玩、有意义、利他，就去做了，反响也还不错。修修在停更了 2 个月之后，仍然有观众在回看以前的作品，可见内容的品质重要性。Evergreen 的内容也比较适合我的调性。
+创作是一份调动你一切人生的工作。自媒体是一份工作，但可以松散安排，你自己是老板，并不代表可以不认真对待。可以安排得很少，但一定要以工作的角度、赚钱的角度认真对待。既然选择做这份工作、事业或 business，我们应该尽早放弃工作和生活分开的想法，要学会从工作中享受生活，在生活中享受工作。Create anything you want。这是所有工作中，你能做你自己的。
+内容创作的目标是做一份自己喜欢的工作，要喜欢做内容创作，所以一定要做自己喜欢的内容。说来说去都是一个道理。这不是让你放弃生活，而是要意识到全部人生都应该为创作提供养分，为它服务。
+我之前一直想过以后会不会全职做自媒体，不会的理由是觉得外贸工作、读书等都为创作提供养分，很有共鸣。以后也不排除全职做自媒体的想法，当然话题就不一样了，因为会有其他人生、side project 或其他工作，都会是养分。
+做自媒体创作要有一定的节奏，要建立工作节奏，千万不能脱离节奏。前不久看了一个 YouTube 影片，互联网的表姐，她把 schedule 做得很好，分成 scripting、filming、editing、publishing。由于有本职工作，以前一个礼拜上传一支影片很难，了不起三个礼拜上传一支，或者一个月上传一支。必须当作工作，我虽然把「内容创作日」定在礼拜三，不是一定要星期三才能做，但星期三一定要自己做，周五、周四之后有时间可以继续做。不要离开战场，不要离开战友，不要离开敌人。
+李诞推荐写逐字稿，这个话题很有意思。我一开始写逐字稿，有一些 AI 帮助。他说写逐字稿的意义是利用逐字稿去想象表演时、在镜头下预演状态和要说的话。写逐字稿目的不是要讲逐字稿，写逐字稿是为了预演表演。这是很大的区别。我懒得写，可能是因为没时间或者根本就是懒，但其实可以写逐字稿，也可以写框架、keyword，不一定要写逐字稿，但要预演录制情况。如果去生硬地背诵，就会缺失活人感。
+创作不能靠雷劈，创作要没事就劈自己。意思是要给自己 deadline，要有工作节奏。Deadline 永远是创作最好的朋友。像 Morgan Housel 的畅销书 The Psychology of Money，就是一个 deadline。他在一个 Podcast 坦言——在截稿前一两个月才逼出来，并不是有灵感才写，结果书火得不得了。有时候完成比完美更重要。
+李诞很喜欢 pitch 这个单词，其实我也很喜欢。书里很大篇幅都在讲怎么创作，但没怎么讲过怎么把创作「卖」出去。其实 pitch 就有一个「卖」的意思，可以翻译成推销、提案、汇报，但用英文 pitch 这个词更有力量。首先它发音很好听，很有力量。
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-09-29 14:08:56 +0800 CST'>September 29, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to 2022币圈7大崩坏" href="https://eddy.lu/post/2022%E5%B8%81%E5%9C%887%E5%A4%A7%E5%B4%A9%E5%9D%8F/"></a>
+  <footer class="entry-footer">
+
+<span title='2026-08-23 23:00:00 +0800 CST'>August 23, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 内容创作是一份工作" href="http://localhost:1313/posts/ccwork/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>影响我的书 Pt. 1
+    <h2 class="entry-hint-parent">了不起的中国超级食物
     </h2>
   </header>
   <div class="entry-content">
-    <p>我其实没有很爱看书的一个人。但自从打通了任督二脉，我明白了需要主动去找寻“痛感“，就像一早跑去健身房一样，可以分泌一些多巴胺，让人更快乐一些。更重要的是，读书提升自己多一点点，以应对这个快速变化的时代。有效的学习通常是“痛苦”的，所以变强绝不是偶然。
-疫情以来，我算是建立了读书的习惯（包括做书的读书笔记），虽然读的量不多，每本翻开的书也不一定看完，但是只要一本书能改变我或者影响我一点点，那么，读这本书也便有了意义。
-我发现我对个人提升，效率和生活方式类的书比较感兴趣，而现在看书的出发点和学生时期也不同 — 完全是自主性的学习，而非被动性的应试，由此也让看书这件事变得没那么无聊。
-Rework 重生 by Jason Fried / David Heinemeier Hansso 这是一本很适合创业者看的书。我们受的常规教育并不适用于商业和现实，学术上的理论虽然头头是道，但是在现实生活和工作中可能一文不值，唯有带着自己的初心，想办法给客户带来真正的长期的价值，才有办法在商业战场中立足，想个60%就可以立即出发去试探市场，现实会一步一步的纠正你。并且，公司的规格也不必做“大”，小公司也可以是一种目标，只要能够持续发展，保持盈利，保持灵活，何必壮大？
-Atomic Habits 原子习惯 by James Clear 这本书科学的讲解如何去建立一个好的习惯。疫情以来呈指数级增长的健身人群中，我算是其中一个。建立习惯非常受用的一点就是建立一个好的环境，能够对你产生强烈的暗示作用，比如健身前一天的晚上，我把健身的装备都拿出来放在健身包里并放在沙发上，第二条自然而然就会提起健身包走去健身房，而不会觉得健身好麻烦还要想拿很多衣服才能出门从而打消念头。 我也学到了没有所谓的“很自律”的人，人或多或少都不是自律的，所以要减少周围环境的负面影响，比如想戒掉零食，那你干脆就不要买零食在家里比你买了一堆零食在家里，强迫自己不去吃他们，来的容易的多。 组织一个好的习惯建立不是失败，而是无聊，因为没有得到一些正向的刺激或反馈。比如健身如果练了半年，体态一点都没有改变，那么很容易就放弃了。尽可能的设置出小的milestone来激励你建立的习惯，因为人脑会对立即的刺激反应优于延迟的刺激。
-Why we sleep 为什么要睡觉 by Matthew Walker 我们的睡眠主要可以分为两种，一种是快速眼动睡眠（REM睡眠），另一种是非快速眼动睡眠（NREM睡眠）。而NREM又可以分为浅睡眠的阶段一和二，还有深度睡眠的阶段三。一般成年人每天需要7～9个小时的睡眠，个体之间有差异，所以大概会有4～5个睡眠周期，每个周期在90～120分钟之间。这和我阅读的另一本书睡眠革命R90理论相悖，除了第一个周期90分钟之外，后续的周期会大于90分钟，所以如果都用90分钟作为标尺是不准确的，而且谁会在半夜失眠心情不好的时候去数90分钟呢？ 在天气热的时区，可以适当午睡不超过30分钟而在天气冷的时区（或冬天），也可以适当不午睡。晚上睡觉之前的30分钟尽量不工作和远离电子产品。 注：REM Rapid Eye Movement
-Essentialism 精要主义 by Greg McKeown 在开始一天的工作/生活之前，我总在个人的To-do上做个简单排序并思考哪个任务才是今天最重要的（不能多于3个任务）？选择decision是精要主义的核心，好的选择往往是痛苦的，但是它会更有价值。以前很多时候一天到晚忙忙碌碌感觉做了很多事情，但是回想起来，真正有意义的寥寥无几，就像是炒股票，整天在盯盘，短期的进进出出，浪费了超多时间，赚也只会赚一点点（一般也是亏的多），得不偿失。巴菲特90%的财富只来源于10项投资，有时候，你不做什么恰恰和你做什么一样重要。 我也应用在管理手机照片这件事，定期删除手机照片成为了我理清思绪和更好的记住生活的一招撇步 — 把所有无意义，或是貌似有意义其实无意义的照片统统删除，只留下spark joy的。
-Anything you want by Derek Sivers 这是我读的第一本Sivers写的书。对我而言，他简直是一个哲学家。不管是工作或者生活，人的思考，人的情感，占着很重要的地位，而不是一味的追求自动化，利润和扩张。 不管在创业的什么阶段，永远要思考你的工作目前在做的事情有没有帮助到客户？如果有，客户是否有利润，你是否有利润，如果都有，那不是足够了吗？Sivers做事情绝大部分喜欢亲力亲为，甚至连网站代码都自己从零折腾，在我看来，他很享受创业的每个过程。这件事没有对错，有的人追求小而精，有的人追求可复制化。 读后我随即和Sivers往来了几封email（因为他说过他每一封邮件都会回复），聊聊创业，聊聊域名…感觉他是一个超真实的人！
-Show your work by Austin Kleon 你不需要是一个专家，才能去分享你的内容。这是这本书对我最大的冲击和观念上的改变，我相信也是这点让很多人走上创作者的道路。你也不一定要去create内容，你可以去document记录内容，记录一个你所学的有价值的东西，创作文字，图片或者视频，以一个高质量的方式呈现出来，长期的做下去，自然会有serendipity发生，吸引到有相同兴趣的人成为你的“粉丝”。
-Steal like an artist by Austin Kleon 从模仿到超越，身为创作者，这是一条完全ok的道路。几乎没有人可以从零开始创作，甚至也不鼓励从零开始。Side project和爱好很重要！也是因为你有了兴趣，你才会去专研和记录，从而更近一步的收集和关联你的所学并输出你自己的东西，而这一个过程就是在吸收，收集，模仿，借鉴。 利用仅有的现有资源去发挥自己的创造力，不必要去要求别人成功所利用的一模一样的资源。比如我有网站主机host服务，我有elementor插件，马上就可以搭建出一个像样的wordpress网站，业余时间在那里进行文字创作。...</p>
+    <p>
+不建议用微波炉处理任何食物，因为会干扰能量。少吃烤出来的食物，尤其是早餐时。吃清蒸、水分充足、营养密度更高的食物，对肠胃会更好。
+如果早上只吃烤出来的食物，比如松饼，配上一杯咖啡，白天会容易感到紧张、焦虑和口渴。
+一般来说，热带水果的能量更偏「阴」。它们体积大，含有大量果汁，有助于身体降温和放松。
+现在，越来越多的人去水果店买水果来对抗日益增长的压力和加快的生活节奏。压力和快节奏都具有阳性能量，所以身体会试图进行自我平衡。Kimberly 没有和很多传统中医一样排斥水果。
+天然的食物就是超级食物。如果体质寒凉的人，应该多吃赤小豆、红枣、生姜这些表面呈现红色的食物，少吃西瓜、冰淇淋和那些对抗身体内部状态的食物。
+优先推荐使用天然气和明火作为能量来源，供给身体、健康和神经系统。Kimberly 能用明火就不会用电，因为用电和古今习惯使用的天然明火完全不同，得到的能量也大不相同。她还说，尽量减少带着「嗡嗡声」的电力通过食物和身体。
+应季而食。从传统中医和自然平衡饮食的观点来看，我们都应该有意识地以中庸之道来吃饭，也就是吃得不偏不倚，绝不极端，在正确的时间平衡地吃对应的食物，而不要反季节而食。依靠购买进口食物只为了吃上一口，其实比较违背传统中医的观点。
+这样吃进口食物又贵，对身体又不好，那为什么要吃进口食物？所以食物就应该健康烹饪，应季而食，根据当地的特点去吃当地的食材就可以了。
+</p>
   </div>
-  <footer class="entry-footer"><span title='2022-02-13 14:08:56 +0800 CST'>February 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to 影响我的书 Pt. 1" href="https://eddy.lu/post/%E5%BD%B1%E5%93%8D%E6%88%91%E7%9A%84%E4%B9%A6-pt.-1/"></a>
+  <footer class="entry-footer">
+
+<span title='2026-07-19 09:00:00 +0800 CST'>July 19, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 了不起的中国超级食物" href="http://localhost:1313/posts/chinesesuperfood/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>5年1项目｜梦回里昂 Part 1
+    <h2 class="entry-hint-parent">《好的家庭教育》读书笔记
     </h2>
   </header>
   <div class="entry-content">
-    <p>“有一些项目开发进程，没有踩上客户的节点，你至少再等1年。“ 每年春节前期对于制造业来说都是闲暇的一个空档期，虽说经过2020疫情肆虐的一年，今年政府也鼓励员工和工人就地过年，但大部分中小型工厂订单不爆的情况下，仍然和往年一样，上着形式主义的班。稍微自由点的中高级管理人员往往借此期间会会朋友泡泡茶，互相吐吐一年来的苦水。
-John是我上一家工厂的搭档，2年了终于有时间坐下来聊聊近况。
-“法国客户的FTS项目去年下了第一批大货订单了“。
-我端着茶杯一下没反应过来。真的吗？虽然我已经脱手这个项目，也没有任何利益关系。但是听到这个项目，心里还是莫名的感动。5年前的样品，实验室，项目会议，客户拜访…一下子全部涌上脑海。
-16年那会我刚接手这个项目，直到17年都算在正常的研发进度，相较于传统成品外贸，我的产品比较“特殊“ —— 研发一款零部件供应到上海的一家厂做组装成另一个subset半成品，再出口到法国最后组装成品。求胜心切，那一个批次的样品做好之后，做完了基础的电性能测试和EMC测试便寄出给客户了。然而，没有完成一系列的可靠性测试，比如寿命测试，为后面项目的终止埋下了隐患。
-赶项目进度和提供可靠的产品是业界天然的矛盾，到底你是做完100%的测试才送样（可能耽误了时机，不能捷足先登），还是依据自家“丰富”的产品经验做60%的测试直接送样，然后再用其余样品完成余下测试（抢得先机，但样品有不能通过的风险）？这个问题，没有正确答案。
-因为寿命测试涉及到整机干烧或加水情况下，模拟10万个cycle等复杂测试，需要七七四十九天（一般需要2个月左右），我们当时选了直接送样，结果在测试过程中发现电控板外面低压注塑的热熔胶竟然开裂了！
-这一裂，就裂掉我一年多的时间。
-*样品不行这有啥？重做一个不就是了嘛！*这是大部人中国厂家的思维，也是我当时的思维。眼下第一时间召集项目会议和工程师做分析探讨对策，发邮件给客户说明情况和补救措施，给出一个新的timeline，计划在未来的某个时间节点再进行送样。我以为我处理的很好，然而，一切都太迟了。远在地球另一端的浪漫民族，工作习惯和脑回路跟你是完全不一样的。你的样品是fail的，你就已经out了。
-本来和客户热络的email渐渐少了，两个月至少来一次的法国佬也没来了，这才知道事情不对劲了。客人仍然回复你email，仍然接你的电话，但奇怪的是也不会宣判你“死刑”，只不过就吊着你。后来飞去香港客户的亚洲采购办，了解到项目的订单已经给到竞争公司了。这是一个1千万人民币销售/年的大项目，快煮熟的鸭子就这么飞了，3年来的努力化为泡影。
-两点值得深思🧠。
-一、客户的项目管理和架构不够熟悉。一直以来都是和项目组的研发老大在沟通，但其实所有研发需求都是从采购组输出，一旦采购组的需求关闭（你的样品fail，但竞争对手的样品approved），你基本已经吃了闭门羹。后续的和研发老大周旋，对方也只是“礼貌”性的回复你，其实如果真要有人来宣判你项目的失败，也应该是客户的采购。
-二、对自己的样品负责。样品漂洋过海来到法兰西，相当于自家公司的技术名片，有任何的缺陷都可能是致命性的，绝不能有任何的侥幸心理去对待。样品不能用，再一来一去，浪费的是更多的时间，以及更重要的，客户对你的信任。</p>
+    <p>
+复杂系统有两种生成方式，一种是设计，一种是发展。我们到底要做设计论者，还是发展论者？
+对于家庭教育，绝大多数家长都是设计论者，而不是发展论者。父母总是设定一个或多个目标让孩子去做。但从长远来看，很多事情都是不可预测的。孩子以后做什么工作，喜欢什么，在哪里生活，都是发展出来的结果，这些都是不可预测的，父母的一厢情愿没有用。
+我们应该给孩子灌输一个重要的基础观念，然后他们会自己调整，慢慢改进，慢慢迭代，这样就够了。只要做好事，不必过分在意结果，所以要做一个发展论者。设计的潜力是有限的，但发展的潜力是无限的，最终会发展成什么样子，没有人知道。
+复杂的结果并不一定需要复杂的设计，很多复杂的结果更可能源于简单规则的反复迭代，而不是复杂的设计。
+夫妻之间的承诺是很重的，严重的重，沉重的重，重要的重。「在一起一辈子」，你能想出比这个更重的承诺吗？
+李笑来认为，作为父母，家长的责任并不是要满足子女所有的欲望和要求。父母要照顾孩子婴幼儿时期的吃喝拉撒睡，也要为他们青少年的衣食住行学提供必要支持。但除此之外的物质要求，都不是父母的责任。做父母的，首先要热爱生活，在孩子面前尽量成为榜样，这样才能潜移默化地引导孩子走向健康的道路。自己也要以身作则，在工作和生活上都要积极。不是说整天陪小孩就有用，陪小孩的时候，如果你在工作、在做出卓越的事情，孩子会从你身上耳濡目染地获得更多。
+有的原则，越简单越好。极简主义，处处保持简单。我非常信任这个理念。如果你要做一个组织，其实简单至上，组织不是越大越好。时代不同了，我很讨厌组织很大、很复杂、做事很慢。其实这和传统的老板管员工有点矛盾，因为我觉得组织越松散越好。去中心化组织的优势在二三十年前就已经被各个领域论证过了。去中心化表面上越松散，沟通其实很简单。保持简单绝对不是降低水准，恰恰相反，正因为保持简单，我们才有能量去提高水准。
+做生意也是，商业模式不要弄得太复杂，因为别人根本没有时间管你是谁，也不在乎你。所以越简单越好，简单真的很重要。简单追求极致，简单就是好。只要你痴迷于改进，保持乐观就是自然而然的事。保持简单远比保持乐观艰难。保持简单很难，因为人的劣根性和天生的欲望无穷无尽。你满足了一个欲望，就会追求下一个，欲望无止境。
+你要知道自己喜欢什么，要什么样的生活，不要什么样的生活。不要掉入陷阱。保持简单不容易，需要自己训练和培养。要定期清理不利于简单状态的因素。每个月、每个季度、每半年、每年都要有专门时间反省，发现多余的东西马上剔除。
+李笑来回想人生路程，他不是靠远大理想走到今天的，也不是学霸或者好学生，更像是一个「进化机器」。我也认为我是这样，我也不是好学生，但一直靠着工作的经验和资源一路走到现在。也许现在追求绝对的财务自由还太早，但通过工作、做外贸、体验不同的生活方式，接触西方社会，提升了英文能力、跨文化交际能力、领导能力和学习能力，我一直在进化和改变。
+现在到东南亚做生意，我还是在进化。虽然销售和管理能力还很弱，但我愿意去做。进化自己这件事很重要。
+大卫·爱泼斯坦有一本书，《成长的边界：超专业化时代，为什么通才能成功》，2019 年出版。他发现大部分卓越者都是比较晚才确定自己的最终专业。所以反问自己，我现在已经确认自己的最终专业了吗？前三年我觉得是的，那时候进入家族生意，觉得各个行业都发展良好，但后来逐渐发现和我理想的生活方式不一样。家族复杂的关系网让我知道了自己想要什么，不想要什么。所以我可能还没有确定自己的最终专业，但已经模糊有一个雏形了。
+李笑来认为，子女如果满足这三个标准，在家庭教育方面就已经做得足够好了：在经济上自给自足，找到值得做一辈子的事情，组建完整的家庭，并完成了一次家庭的迭代。
+</p>
   </div>
-  <footer class="entry-footer"><span title='2021-03-29 14:08:56 +0800 CST'>March 29, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 1" href="https://eddy.lu/post/5%E5%B9%B41%E9%A1%B9%E7%9B%AE%E6%A2%A6%E5%9B%9E%E9%87%8C%E6%98%82-part-1/"></a>
+  <footer class="entry-footer">
+
+<span title='2026-06-02 23:00:00 +0800 CST'>June 2, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 《好的家庭教育》读书笔记" href="http://localhost:1313/posts/goodedu/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>雅典城里的贫民窟
+    <h2 class="entry-hint-parent">《创业这条路》读书笔记
     </h2>
   </header>
   <div class="entry-content">
-    <p>标题虽然怪怪的，但并没有任何贬低雅典这座古老城市的意思，相反，因为工作的原因我前后在2017和2018年夏天到访过这座文明古城，希望能就自身的出差经历，给各位读者一些浅薄建议。
-首次到访前，还是按照惯例和客户确认了具体的拜访时间，客户也非常友好的回复了旅行游玩建议，当地人的建议一直是我的首选，可以让你避免中国游客扎堆，更好的深入体验在地的生活，只可惜行程排的满到不行，欧洲行仍然以商务目的为主，深度的体验只留给了周末的雅典围城。
-初来乍到，一下飞机翻google地图看爱琴海的位置，然后你马上就知道爱琴海和Santorini圣托里尼的白色房子，还是老老实实下次旅行的时候自己来吧。作为工厂老板海外出差的贴身护法，必须是要选择最经济的出行方式，飞机一落地马上拉着大包小包地铁买票，酒店定在市中心准没错（离Acropolis卫城非常近），不料竟然花了60欧元，比打的还贵（我们三人行），而且我们不长记性，这个错误在18年又犯了一次…
-然而比起微不足道的交通费，人身财产安全来的更重要。三个亚洲人，背着双肩包加大号拉杆箱，很容易成为拥挤列车中的被抢目标。当列车到站，车门打开，从人群中冲锋陷阵挤出来时，发现背包的阻力怎么如此之大，并且有人明显在试图探索你的口袋，那一刻都忘了是如何“逃生”，急忙制造一点声势引起周围民众注意，并用手拨开千军万马，护住口袋和背包行李只管往车门冲下车，所幸没有得逞，虚惊一场！
-入住的酒店/公寓则是狠狠的体验了一把贫民窟邻居。作为中国好员工，第一次来找了个小酒店，房间可以塞下三人，当时一开出去酒店房间阳台眺望雅典城的街景，疲惫的旅途上暂时有了个歇脚的地方，但眼前的风景着实不让人惊艳，这可是市中心啊？！也罢，结果下楼用餐，餐厅少的可怜…一个人导航步行到附近的3C店买个老人机装手机卡，才第一次体验了心惊肉跳，一路上流浪汉盯着你看，天色渐晚，小跑回酒店。接下来几天的客户拜访和卫城游览，白天都不在酒店，也就没再折腾。
-如果说17年是功课没做足，但18年的旅程可谓是一场冒险。2次住的都在市中心这块区域，就在Acropolis的正北面不远，朋友们，来雅典请远离这个地方的住宿。 18年试水Airbnb订了一个公寓，来接驾的是一个穿着短裤的“纨绔子弟”，一路很热情说这说那，也没什么不对劲，直到领我们进入了“熟悉”的街区，走进了一栋昏暗的公寓楼，我连忙问他一般住在这里的是什么样的人。“Middle class to lower class…”, 最后几个字说的非常虚，我就知道这下不好了… 3晚¥1026元，This is what you get…
-拜访的客户非常好人，来回都来公寓接送。大老远跑来一趟谈项目不容易，每次一天的会议讨论完，还会招待我们去用晚餐。入乡随俗迎合欧洲人的礼仪，当天下午先回公寓做简单梳洗以参加晚餐场合，客户工程师开了一个手动宝马过来，车上闲聊说这里是全雅典最混乱的区域，“Eddy, this is the ghetto area, you know the word ghetto?”，我tm当然知道啦！前一晚出去吃饭一行人就已经觉得毛骨悚然（中餐厅老板叮嘱我们别走回去，要打车回去），不安的情绪一下爆发了，客户一直在推荐必吃的雅典小吃也已经无法放在心上，一心想着明天得马上离开这个地方。随后客户还补了一枪，看你们是亚洲人拖着行李，很容易成为目标，如果有人拿刀捅你们然后抢你们的财物，那就不好了。这…何止是不好，原来我们住在如此危险的地方，第二天早晨二话不说，直接把钥匙丢在公寓里和热情小哥WhatsApp找了个借口有急事要提前退房，马上下楼打车，booking订到海边一个99欧/晚的4星酒店，一下车酒店的管家就过来帮忙拉行李，看到了酒店泳池，沙滩，比基尼美女，心里的石头才放下，来到了一片新天地。
-事后的反思，出门在外不管出差还是旅行，酒店千万别省那些钱，获得了不好的入住体验既影响休息又影响工作。但无论如何，还是上了宝贵的一课。
-以上，当然不是我对雅典城的全部记忆，这座城市还带给我很多难忘的美好记忆。热情好客的当地客户，健康的地中海饮食，北部的工业制造业以及神秘难懂的希腊文等等。最后献上在美丽的海边享用的浪漫晚餐，个人给这道我花了10分钟点的40欧Dish取了一个中文菜名：四条虾🦐。 </p>
+    <p>开创一份事业，可能是因为创业神经被挑动，但实际投入时，还是要自己去做。这是两件很不同的事情。比如原来很擅长的工作，我做外贸，做出口、进口，跟老外聊天，然后去了东南亚工作。但那个公司、那个创业项目，其实是以批发为主的商业模式，我没做过批发。
+一下子我要做这些事情，还要管财务、管现场、管仓库，这些我都没做过。突然变成一个我知道怎么处理工作的人，加上十几个我根本不知道怎么处理的工作，所以这是完全不同的。我们每个人心里都有一个创业者、一个管理者、一个专业人员。要在三者之间取得平衡，才算很厉害，但实际上很难。
+踏上创业这条路，只有少数人能在三者之间取得平衡。典型的小企业主，创业者特质只有10%，管理者特质有20%，专业人员特质却有70%。其实我就是所谓的专业人员，我懂进出口，懂跟老外聊天，懂物流，懂国际贸易，仅此而已。我也有一点管理者的特质，就是希望事情不要出差错，但却少有创业者的特质，而这恰恰是最珍贵的。
+管理者的特质是很务实，不想冒险，只想把事情做好。如果说创业者活在未来，管理者就是活在过去。创业者渴望掌控权，管理者渴望一切井然有序。创业者乐于改变，管理者想要维持现状。创业者总是看到机会，管理者总是看到问题。
+管理者会盖一栋房子，然后永远住在里面。创业者盖好一栋房子后，就开始规划下一栋。管理者把东西排列得整整齐齐，创业者把东西创造出来，让管理者去排列整齐。其实我在东南亚的生意，有点像管理者，我希望把这件事做好，把房子盖起来，然后永远住在里面。电商店铺这样做起来后，我觉得它就能一直维持现状。
+但头家更像是一个创业者，他创造新东西，然后招一大堆人去管理。可以说，管理者是跟在创业者后面收拾残局的人。但没有管理者，就没有需要收拾的残局。没有管理者，就没有事业，也没有社会；没有创业者，就没有创新。
+创业者的愿景和管理者的务实之间的摩擦，正是创造忠孝和催生所有伟大工作的源头，所以缺一不可。而专业人员是执行工作的人，他就是修修补补。如果说创业者活在未来，管理者活在过去，那专业人员就是活在现在。
+</p>
   </div>
-  <footer class="entry-footer"><span title='2021-03-27 14:08:56 +0800 CST'>March 27, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to 雅典城里的贫民窟" href="https://eddy.lu/post/%E9%9B%85%E5%85%B8%E5%9F%8E%E9%87%8C%E7%9A%84%E8%B4%AB%E6%B0%91%E7%AA%9F/"></a>
+  <footer class="entry-footer">
+
+<span title='2026-06-01 23:00:00 +0800 CST'>June 1, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 《创业这条路》读书笔记" href="http://localhost:1313/posts/emyth/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Archives
+    <h2 class="entry-hint-parent">5 海里之外的平行世界
     </h2>
   </header>
   <div class="entry-content">
-    <p>archives</p>
+    <p> 临时起意去金门虚度 3 日，以此填补小长假的空缺。
+被工作的琐事压得喘不过气来的我，不紧不慢地踏上这次的旅程。出发之前反复确认手机的信号能够通畅无阻，准备好随时被工作打扰。
+我女儿可不这么想。幸好入金证在出发前一天傍晚办出，让她可以选旅行带的小小斜挎包，在镜子面前凹造型。
+本次也是我的 32L 黑洞包首秀。衣物几件，杂物若干，很轻松就塞进了包里。加上完美卡了一个周末（五一国外也是假期），连平时通勤需要的电脑也省了。
+来码头接送的杜哥，是从台北过来金门置业运营民宿的。杜哥本身长年经常往返大陆，很多用词反而贴近大陆，他说「奔驰」而不是「宾士」。奇怪，有时候听台湾人讲话，反而觉得很亲切。
+民宿是杜哥自己买下，并由此转为金门县居民的。我开玩笑地说我买也可以拥有居住权吗？
+「你们不能买啦！」
+民宿一楼杜哥夫妇自住，2 楼 3 楼提供给旅客。金门的自建房看着和老家很相似，但是细节全然不同。在推开房间窗户的一刹那，同行的朋友 K 先生说「感觉他们的铝合金质量很好耶。」确实，作为在制造业打滚 10 年的人来说，我们很清楚 Made in Taiwan 的品质。再看浴室，里面的洗手液，洗发水这些日化用品，时刻在提醒你「哎哟，这里的东西真的是不一样的」。
+离厦门坐船 30 分钟的金门，感觉处处相同，又处处不同。
+由于不可言喻的原因，金门给人的感觉就是——这么近，那么远。多了一道海关，多了一份签证，就是会自然地多一份隔阂。不同于港澳通行的便利，入台虽说不上遥不可及，但能感觉到他在严格筛选你。
+一个地区发达与否，从来就不关乎高楼大厦。指标之一就是社会福利，这次金门居民可以享受的福利，作为旅客的我们也小蹭一波——搭乘公共交通都免费。虽然说民宿位置并不在中心地带，公车 1 个小时才有 1 班次，uber 等打车软件据说有覆盖全台但是因为金门基数太小也没有司机等等不便…但就是恰恰这种不便，反而给你带来了很多自由。这也许才是生活原本的样子。
+我们都被打车软件和外卖软件宠坏了。我们都为了「快」牺牲掉了很多品质。以前很追求「效率」，现在却很讨厌这件事情。「快」也是一天，「慢」也是一天，赶着去投胎做什么？
+太快了必然丢失品质，比如牛奶。亲爱的同胞，请你们下手轻一点…作为乳糖不耐受和喝牛奶必爆痘体质双重 buff 叠加的本人，我在澳洲、德国和这次的金门喝牛奶的经历就是——安全着陆。很多东西，cost down 到最后，由于初心的不纯，那个东西就不再是那个东西了。而且，难道只有牛奶吗？
+和当地人产生连结是旅行一大课题。很幸运这次因为订不到酒店反而下榻杜哥的民宿，除了 A 了杜哥一瓶金门高粱之外，还可以交换思想，聊一些和在地人的话题。我们聊高粱酒，聊台湾新闻，聊台式审美…
+尤其聊到「婚恋文化差异」，相隔仅仅 5 海里，差异之大，惊掉杜哥下巴。「现在还有在相亲哦？」「结婚礼金要给这么多哦？」。两岸一线之隔，但文化的传承，糟粕的去除，生活的理念都差很多。相比香港人的中西结合，新加坡人的落地生根…台湾的华人文化，是我认为达到的一个比较理想的平衡，尤其是对于一个闽南人而言。守规矩又不死板，传承传统文化又能和世界接轨，涉及严肃话题又能带着一份搞笑。
+虽然是一顿瞎聊，但我真的很需要这些对话，正是生活中有这些碎片，才能拼凑出你的整个人生。所以，出门旅行是一种「需要」，而不是「想要」。
+悲伤的是，我们所处的这个系统让你只活出你的名片上写的那个职位，其他的事情他一概否定。
+每一次的旅行，远近与否，都让你思考人生，什么样的生活方式才是最适合自己的。感觉台日的商业模式几分相似，药妆店里玲琅满目的商品初次见面的时候让人着迷，以至于到后面买无可买的时候，才让我更确定「我的人生已经达到生存以上的标准」这件事。
+买了抹痘痘的，3M 公司的，台湾产，感觉很厉害； 买了喷鼻子的，过敏性鼻炎，瑞士产，感觉很厉害； 买了普拿疼，香港叫必理痛，只是觉得感冒风寒的时候可以泡上一包。 以上的东西，我全部都不需要。随手买买只是旅行的一个小乐趣罢了。我的物欲越来越低，真正重要的东西没几样，有价值的东西一如既往…其他的，只是系统的推送通知而已，「离线」变得越来越是一种奢侈。
+Paul Millerd 在他的书《The Pathless Path》聊到「痛苦税」的概念——即人们为了逃避短期的痛苦，而付出更长期的代价。比如酒水、趴体、报复性消费、自我犒赏消费等等…这些消费随着（痛苦工作）收入增加而增加，然后这些不快乐的工作者会给自己洗脑：「工作就是为了支撑这样的开销」。
+无价值的工作，打扰你生活的人，还有想给你洗脑的人…请让他们统统见鬼去吧。
+这次来金门，我女儿注意到地上经常出现鲜红色的小虫子，可怕中又带点特别。我查了一下，学名叫「红姬缘椿象」，常见于台湾栾树旁边，它们吃素，不咬人，亦无毒。只不过，红色是它们的警戒色，似乎在提醒我们：「林北是台湾的哦，你们那边没有哦」。
+</p>
   </div>
-  <footer class="entry-footer"></footer>
-  <a class="entry-link" aria-label="post link to Archives" href="https://eddy.lu/archives/"></a>
+  <footer class="entry-footer">
+
+<span title='2026-05-03 14:08:56 +0800 CST'>May 3, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 5 海里之外的平行世界" href="http://localhost:1313/posts/5seamilesaway/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">让打扰你生活的人见鬼去｜《被讨厌的勇气》读书笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 🎨 初印象 被迫因为琐事来到上海是不开心的，办完事情误入旁边园区美丽的 Tsutaya 书店是开心的。「被讨厌的勇气」这一行字，仿佛不远处的高人在指点我，亮瞎我的狗眼，超符合当时的心境——整天在迎合别人和这个社会到底是为了什么？
+于是，点了菜单第一种咖啡——日式咖啡。
+所谓的自由，就是被别人讨厌。
+🚀 3 句话讲完这本书 你觉得不幸，是你自己选的——你缺的是「获得幸福的勇气」。
+让干涉你生活的人见鬼去。不要活在别人的期待中，做好课题分离。
+幸福就是贡献感——我不依赖你的认可，但我仍然愿意对你有益。
+☘️ 这本书改变了我什么 不再和别人比了——以前深陷比较的泥潭，现在只和自己比，赚钱只是一个数字游戏。 不再追求那个虚构的「理想自我」——自卑感、别人眼中的标准，这些东西其实都不存在。 甘于平凡——这不是躺平，是接纳自己。 比以前更有勇气做自己，准备好被讨厌了。抱歉，我就是这样。 📒 阅读记录 你为什么觉得不幸？ 有时候，你之所以感受不到幸福和快乐，是因为你不懂的怎么爱自己。你总是希望「成为别人」，而放弃了最真实的自我，所以无法体会到幸福。
+现在你觉得不幸，很可能是因为你自己亲手选择了这些「不幸」。这些都是你自己的选择。比如，这个社会默认让你努力读书、找工作、买房、结婚、生子等等，这些事情真的是你想要的吗？有可能这些「不幸」，正是你自己选择的。
+很多时候，外界会强加给我们许多观念，让我们想要取悦别人，或者想成为别人，结果却无法做真实的自己。正因为这样，我们才会觉得不够快乐。
+你之所以不幸，并不是因为过去、环境，或者能力不足，而是因为你缺乏勇气，更准确地说，是缺乏「获得幸福的勇气」。阿德勒心理学认为，其实获得快乐和幸福的方式很简单。
+阿德勒的核心理论——目的论与当下 这本书讲的是阿德勒的心理学。阿德勒和荣格、弗洛伊德并称为世界三大心理学巨头。阿德勒心理学关注「勇气」，是关于勇气的心理学。
+阿德勒心理学讲的是目的论，不是弗洛伊德的原因论。两个人当时意见不同，才分成了两种不同的心理学理论。弗洛伊德总是从过去找原因，而阿德勒认为，无论过去发生了什么，都不会影响你今后的人生。决定自己人生的，是此时此刻的自己。
+阿德勒心理学强调，人生取决于当下，不是过去，也不是环境，就是现在——要活在当下。他认为人是可以改变的，强调不要试图改变别人，而是要改变自己，改变自己的生活方式。
+如果你给自己下了「不要改变」的决心，那你永远无法获得幸福，这其实就是缺乏获得幸福的勇气。正因为如此，你才会觉得不幸。
+我们无法改变客观事实，但可以随意调整自己的主观解释。换句话说，我们都生活在自己的主观世界里，如何追求幸福和快乐，其实完全取决于自己。
+阿德勒的心理学不是改变他人的心理学，而是追求自我改变的心理学。阿德勒的心理学也不是「拥有的心理学」，而是「使用的心理学」。也就是说，关键不在于你被给予了什么，而在于你如何使用被给予的东西。决定权在你自己手里。
+人际关系——一切烦恼的来源 不要比较 人生不是和他人的比赛。其实，没必要和别人竞争，只要自己不断前进就好。每个人都有自己的人生轨迹。
+美国总统奥巴马是 47 岁才当上总统。有的人二十几岁就实现财富自由，有的人则很晚才达到他们想要达到的目标。每个人都不一样。这样比较有意义吗？其实没有意义。但社会会让你下意识地去比较。
+我以前也曾深陷这种比较的泥潭，但现在我只和自己比，不和同事比。谁赚得多，谁赚得少，这些都没有必要去在意。这样只会让人产生自卑感，甚至会有一个虚构的「理想自我」。其实这些东西都不存在。
+每个人都是独特的。虽然我们不同，但我们是平等的。人和人之间有差异，我们「不同但是平等」。
+课题分离——让干涉你生活的人见鬼去 书中第三章的标题是《让干涉你生活的人见鬼去》。其实正是看到这个标题，我觉得这本书直击我的内心，所以才买了它。是啊，让干涉你生活的人见鬼去，没什么大不了的。
+阿德勒的心理学否认寻求他人认可。根本没必要被别人认可，也不要去追求认可。不要活在别人的期待中。
+但阿德勒所讲的不用迎合别人，不用取悦别人，并不是在说「只要我开心就好」，而是「课题分离」——谁的事情是谁的。他强调，仍然要活在「共同体」中；阿德勒不是在鼓励「自我为中心」，而是——不依赖认可，但是仍然选择善意与贡献的生活方式。
+「分离课题」不是以自我为中心，相反，干涉别人——才是以自我为中心的想法。
+横向关系 vs 纵向关系 阿德勒心理学认为，一切烦恼皆源于人际关系。
+阿德勒心理学反对一切的「纵向关系」，而提倡把所有人际关系看成「横向关系」，即「虽不同但平等」。比如否定对小孩的赏罚教育，批评不好，但是表扬也不行，因为如此一来，就和小孩形成了纵向关系。
+干涉别人，本质上也是一种纵向关系，正是因为把别人看的低，所以才会去干涉别人。如果你和某人建立了纵向关系，那么，你就会不自觉地从「纵向」去把握所有的人际关系。这听起来，和老板的思维很像。
+阿德勒认为应该基于横向关系对别人给予「鼓励」，有鼓励才能产生勇气。人只有在能够感觉自己有价值的时候才能获得勇气。
+那到底怎么活？——共同体感与贡献 阿德勒提倡的是「Gemeinschaftsgefühl 共同体感」。这个词可以拆成 3 层意思。
+归属感，你觉得自己不是孤立的个体，而是这个社会的一部分。 关心他人，你会考虑别人的感受，而不是只围绕自己。 贡献意愿，你不仅仅属于这个社会，还会考虑对社会有什么贡献。 简而言之，就是——我不依赖你的认可，但我仍然愿意对你是有益的。这点很关键，否则容易被误解为一种「高级自私」。
+英文中，共同体感叫做 Social interest，也就是「对社会的关心」。社会的最小单位——即「我和你」，只要有 2 个人存在，就能形成社会。
+工作的本质是对他人的贡献。阿德勒把为他人牺牲自己的人生称为过度适应社会的人。体会到「我对别人有用」，能够切身感受到自己的价值。但是往往无法掌握好那个度，为别人工作，就形成了纵向关系，虽然自己有价值，但是失去了自由。是否，比如提供咨询服务，就能回到横向关系？尽管从利益来讲，不是最优解。
+对人而言，最大的不幸就是不喜欢自己。幸福就是贡献感，你可以对他人有益，对共同体有益（甚至是主观感受也行），以此体会自己的价值。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-04-17 14:08:56 +0800 CST'>April 17, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 让打扰你生活的人见鬼去｜《被讨厌的勇气》读书笔记" href="http://localhost:1313/posts/couragetobedisliked/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">如果你有多元兴趣，请别浪费接下来的 1 年
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你也和我一样，对什么都感兴趣吗？
+我的清单是：
+想写博客，我想把所思所学分享给这个世界。 想学剪辑，有时候影音的形式能做更好的自我表达。 想徒步，偶尔亲近大自然，提醒自己是多么渺小。 想学德语，加深和客户的羁绊，更好的体验另一种文化。 想学编程，更好的自架个人网站和维护独立站。 想学投资，Derek Sivers 说致富的简单方式就是投资。 想规律健身，看到身边太多人年轻用身体换金钱，老了整天跑医院。 但我太忙了，你的「借口」也和我一样吗？
+兴趣太多，不是你的问题 兴趣太多，是系统给你的一个错误的解法。
+系统需要的不是你，是你的功能。
+我目前在海外工作，貌似拥有了 10 年前这个社会告诉我应该拥有的一切。买了房子、车子，周遭的人对你赞赏有加。
+我很好地融入了这个系统，高薪高焦虑。
+徒步的朋友问我周末有没有空去爬山，我无法答应，因为我不知道到时候我的工作要我去到哪里。
+设计的太巧妙了，学校 &#43; 职场的这套体系，他们总能让你乖乖地听话，呆在格子间里，其他的事，不允许变得重要。他们让你专注一件事——赚钱，所以你才负担房贷和日渐膨胀的生活方式。
+30 年的房贷系统，潜移默化地让你用线性的思维去看待你的工作和财富增长。
+当今的 YM 系统，比如香港的政策之一——叫做「专才」，他们只需要你作为一个听话的零件，而不是一个完整的人。
+系统制造焦虑，把你的多元兴趣压制下去了。你要继续呆着，还是想退出这场老鼠赛跑？
+新世界的规则变了 你没有问题，有问题的是这个「系统」；而跳脱出这个「系统」，最好的时间就是现在——2026年。
+为什么？
+因为「多元兴趣」不再是你的弱点，而是你的「资产」。感谢这个网络和社交媒体，你作为「个人」，第一次可以把你对社会的价值杠杆化。阻碍你的可能只是「噪音太多」或「自我怀疑」。
+古腾堡发明印刷机之前，知识被锁在修道院里。一本书要抄写几个月，普通人根本接触不到。印刷机出现后，50 年内 2000 万本书涌入欧洲，知识第一次变得廉价——那一代人里，出现了达芬奇、米开朗基罗。
+今天发生了同样的事，只是快了 100 倍。
+社交媒体之前，你想让一万个人看到你的想法，你需要出版社、电视台、经纪人或其他媒体。现在你只需要一支手机。分发是免费的，触达是全球的。一个住在厦门的人写的东西，可以被东京、柏林、悉尼的人读到。
+这是人类历史上第一次，个人可以在不依赖任何机构的情况下，把自己的价值杠杆化。而且，「注意力」也是这个新时代的资源。
+更重要的是，做这个事情，是 不需要被别人允许 的。
+窗口是开着的。问题只是你有没有往外走。
+当我们不再各为其主，我们不必再在乎我的那个零件是什么，而是我们能组合什么。而你能组合什么，恰恰是作为「通才」能否发挥的作用，而且每个人的组合技能都独一无二。
+如果你是注册中医师，又是健身教练，你可以教别人怎么用中医的角度调整适合亚洲人的饮食，同时结合力量训练，提出和西方营养学不同的观点。
+如果你是设计师，又懂心理学，那你更懂得怎么和客户沟通，增加设计的效率。
+焦虑 AI？AI 能复制技能，但复制不了你这个人走过的路所形成的视角。你的交叉点，才是真正的护城河。
+每多一个兴趣，你对现实的模型就更复杂——你能看到的机会就更多，能解决的问题也更多。专精只会让这个模型停止生长。
+真正的问题：资源分配出了错 我可没叫你现在辞职，去追寻你的热爱。
+根本的病因是——你把时间平均分配给了你的领域。
+之前读的 百万富翁快车道，我就指出，大部分人很难做到像 MJ 一样做到财富快车，我也不认为慢车道就是不对。而是应该集中分配你的时间和精力。专注工作，保持斜杠。
+个体成功的 3 个要素，结合在一起才是「自由个体」的基础。
+Self-education，自我学习，自己决定学什么。 Self-interest，基于兴趣驱动，否则你也做不久。 Self-sufficiency，自我独立，不依赖系统而活。 解法：3 个桶 第 1 个桶：赚钱桶 对，很俗。但你首先就是需要现金流。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-04-04 14:08:56 +0800 CST'>April 4, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 如果你有多元兴趣，请别浪费接下来的 1 年" href="http://localhost:1313/posts/multiinterest/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">博客评论系统 Cusdis
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hugo 里加一段 HTML，在你的文章模板里（通常是）：
+layouts/_default/single.html 在文章底部加：
+&lt;div id=&#34;cusdis_thread&#34; data-host=&#34;https://cusdis.com&#34; data-app-id=&#34;你的APP_ID&#34; data-page-id=&#34;{{ .RelPermalink }}&#34; data-page-url=&#34;{{ .Permalink }}&#34; data-page-title=&#34;{{ .Title }}&#34; &gt;&lt;/div&gt; &lt;script async defer src=&#34;https://cusdis.com/js/cusdis.es.js&#34;&gt;&lt;/script&gt; 碰到的问题是，comment 系统太挤，Cusdis 是 iframe，默认很矮，需要手动拉才能看到完整评论。
+要做的只有一件事。
+在「h4」上面，加一段「style」，height 你可以根据需求自己调整。
+&lt;div style=&#34;margin: 50px 0;&#34;&gt; &lt;style&gt; #cusdis_thread iframe { width: 100%; height: 800px; border: none; } &lt;/style&gt; &lt;h4&gt;Comments:&lt;/h4&gt; &lt;div id=&#34;cusdis_thread&#34; data-host=&#34;https://cusdis.com&#34; data-app-id=&#34;b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b&#34; data-page-id=&#34;{{ .File.UniqueID }}&#34; data-page-url=&#34;{{ .Permalink }}&#34; data-page-title=&#34;{{ .Title }}&#34;&gt; &lt;/div&gt; &lt;script async defer src=&#34;https://cusdis.com/js/cusdis.es.js&#34;&gt;&lt;/script&gt; &lt;/div&gt; </p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-03-24 09:10:56 +0800 CST'>March 24, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 博客评论系统 Cusdis" href="http://localhost:1313/posts/cusdis/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">VPS &#43; Tailscale 搭建 VPN
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>VPS &#43; Tailscale 搭建 VPN 使用说明书（小白版）
+所需设备
+一台 Mac 💻 一双手 👋 1. 购买 VPS 注册 VPS 服务商（如 UltaHost、Vultr、Hetzner、Linode、DigitalOcean 等），我用的是 Vultr 选择合适的套餐：一般选 shared CPU 足够。1 vCPU / 1 GB 内存 / 25 GB SSD，USD 5/month 选定节点（如日本 / 新加坡，取决于你想要的出口 IP） 操作系统建议选：Ubuntu 22.04 LTS (64-bit) 购买后，你会得到：
+公网 IP（例如 45.xx.xxx.xxx） root 用户名和初始密码 2. 连接 VPS 在 Mac 终端机输入：
+ssh root@&lt;你的VPS_IP&gt;
+ssh root@45.xx.xxx.xxx 首次登录会提示
+Are you sure you want to continue connecting (yes/no)? → 输入 yes。
+然后输入服务商提供的 root 密码。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-03-23 14:08:56 +0800 CST'>March 23, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to VPS &#43; Tailscale 搭建 VPN" href="http://localhost:1313/posts/vps/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ED 的大酱汤 #06
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+「孤独」就是人际关系比自己期待的少。
+Inspiration is perishable. Act on it immediately.
+Rich people buy time, poor people sell it. The middle class debate rather time or money is worth more.
+Wealth is what you accumulate, not what you spend.
+The best quality to have in the world of investing is not how smart you are, but how stable your emotion is.
+房地产有 4 种——农地，商用，自住，出租投资的那种。投资赚钱的是最后一种，但普罗大众在聊的一般是自己住的，其实并不算是一个资产。
+如果是贷款利率大于 7% 的，不用多想，尽早还清；如果是相对低的，比如安迪龙视频里的汽车 3%，房贷 2%，则不一定要尽早还清。
+如果你选择做大部分人在做的同样的事情，那么你注定只会成为大部分人的一员。如果大家都在小额投资美股大盘，其实不会有扭转人生，要投资并有 significant 的收益，或者说投资房地产，一定要投的够多，问题是大部分人没有很多闲置资金。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-02-06 14:08:56 +0800 CST'>February 6, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to ED 的大酱汤 #06" href="http://localhost:1313/posts/doenjangjjigae06/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://eddy.lu">eddylu</a></span>
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -292,25 +544,25 @@ John是我上一家工厂的搭档，2年了终于有时间坐下来聊聊近况
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

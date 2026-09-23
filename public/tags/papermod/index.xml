@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Papermod on ed</title>
+    <link>http://localhost:1313/tags/papermod/</link>
+    <description>Recent content in Papermod on ed</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Feb 2023 14:08:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>搭建 Hugo 个人网站｜PaperMod 主题</title>
+      <link>http://localhost:1313/posts/hugo/</link>
+      <pubDate>Tue, 21 Feb 2023 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hugo/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;谈不上个人品牌的打造，也谈不上被动收入的项目，但我的确是受到近几年的FIRE运动浪潮和创作者经济的影响，不断的捏造这个个人博客的小泥人，不断的重新思考如果我做一个自己的网站，对自己和他人能有什么积极的意义。&lt;/p&gt;
+&lt;p&gt;想到就去做，做事情我喜欢start small。执行的过程中，现实这只手会慢慢推动你去往另外一个地方。况且，输出文字帮助我mental clarity，减压不少，单单是这一点，就已经是写作的动力了；而如果还能结交到同好两三，更是我的荣幸。&lt;/p&gt;
+&lt;p&gt;因为工作的原因一开始用wordpress建站，YouTube的算法把我带到&lt;a href=&#34;https://www.youtube.com/watch?v=gm6zdoL1r0Y&#34;&gt;林猫先生的频道&lt;/a&gt;，又开启了一扇门…经过疫情的催化，以及区块链技术的萌芽，更让我相信辛苦工作之余，必须抽出时间skin in the game，做一些更个人化、去中心化的项目以此反脆弱，给这个世界留下一点微不足道的声音，而通过做个人网站，这个声音可以很自由，很独立。&lt;/p&gt;
+&lt;p&gt;所以，why Hugo?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;速度超快，之前的wordpress我习惯把主机架设在国外，国内用户访问速度受限；而Hugo是html静态网站不涉及后台运行；&lt;/li&gt;
+&lt;li&gt;维护简单，不存在wordpress整天在更新插件；&lt;/li&gt;
+&lt;li&gt;主题极简，例如目前使用的PaperMod，非常纯粹；&lt;/li&gt;
+&lt;li&gt;几乎免费，除了购买域名，搭建Hugo网站的服务如Github和Netlify都是免费的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;建站&#34;&gt;建站&lt;/h2&gt;
+&lt;h3 id=&#34;环境建设&#34;&gt;环境建设&lt;/h3&gt;
+&lt;p&gt;由于我使用的是Mac，以下的操作适用于macOS。&lt;/p&gt;
+&lt;p&gt;安装Homebrew。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;需要注意的是如上code可能会被更新，请根据最新的安装代码执行；另，如果安装极度缓慢，可以执行如下国内镜像源备选（我就是执行第一个镜像源成功）。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/bin/zsh -c &amp;#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以通过如下检查版本验证Homebrew是否安装成功。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew -v&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装git。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;可以通过如下检查版本验证git是否安装成功。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git -v&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装hugo。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install hugo&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;建立网站&#34;&gt;建立网站&lt;/h3&gt;
+&lt;p&gt;可以选择你的网站资料所存放位置，比如文稿Documents，则先进入Documents。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd Documents&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;例如新建一个名为demo-blog的网站；配置成Yaml是可选项，系统默认是Toml，选择成Yaml是因为语言比较简单（听说啦）；常见的语言有Yaml，Toml和Json。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo new site demo-blog -f -yml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;网站建立成功，则在文件夹生成如下文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+├── archetypes # 存放front matter
+├── assets
+├── content # 存放网页的Markdown文件
+├── data # 存放数据文件，通常是json/yaml/toml 文件
+├── layouts # 存放HTML模板
+├── static # 存放静态文件比如图片img，会被复制到public目录下
+├── themes # 存放现有的主题模板
+└── config.yml # 全局配置文件
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;安装主题&#34;&gt;安装主题&lt;/h3&gt;
+&lt;p&gt;进入刚创建好的文件地址中（已进入Documents）。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

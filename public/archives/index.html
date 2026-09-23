@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Archives | eddylu</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Archives | ed</title>
 <meta name="keywords" content="">
 <meta name="description" content="archives">
 <meta name="author" content="">
-<link rel="canonical" href="https://eddy.lu/archives/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://eddy.lu/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://eddy.lu/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://eddy.lu/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://eddy.lu/apple-touch-icon.png">
-<link rel="mask-icon" href="https://eddy.lu/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/archives/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/archives/">
 <noscript>
     <style>
         #theme-toggle,
@@ -35,112 +36,49 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:title" content="Archives" />
-<meta property="og:description" content="archives" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://eddy.lu/archives/" /><meta property="article:section" content="post" />
-
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Archives"/>
-<meta name="twitter:description" content="archives"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Posts",
-      "item": "https://eddy.lu/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Archives",
-      "item": "https://eddy.lu/archives/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Archives",
-  "name": "Archives",
-  "description": "archives",
-  "keywords": [
-    
-  ],
-  "articleBody": "",
-  "wordCount" : "0",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://eddy.lu/archives/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "eddylu",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://eddy.lu/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="list" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script>
-
-<header class="header">
-    <nav class="nav">
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://eddy.lu" accesskey="h" title="eddylu (Alt + H)">eddylu</a>
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -156,25 +94,60 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
-                <a href="https://eddy.lu/about/" title="About">
-                    <span>About</span>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/archives/" title="Archives">
-                    <span class="active">Archives</span>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/categories/" title="Categories">
-                    <span>Categories</span>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="https://eddy.lu/tags/" title="Tags">
-                    <span>Tags</span>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span class="active">文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
                 </a>
             </li>
         </ul>
@@ -186,16 +159,416 @@
   <h1>Archives</h1>
 </header>
 <div class="archive-year">
-  <h2 class="archive-year-header">2022<sup class="archive-count">&nbsp;&nbsp;2</sup>
+  <h2 class="archive-year-header">2026<sup class="archive-count">&nbsp;&nbsp;11</sup>
   </h2>
   <div class="archive-month">
-    <h3 class="archive-month-header">September<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <h3 class="archive-month-header">August<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
     <div class="archive-posts">
       <div class="archive-entry">
-        <h3 class="archive-entry-title">2022币圈7大崩坏
+        <h3 class="archive-entry-title">内容创作是一份工作
         </h3>
-        <div class="archive-meta"><span title='2022-09-29 14:08:56 +0800 CST'>September 29, 2022</span></div>
-        <a class="entry-link" aria-label="post link to 2022币圈7大崩坏" href="https://eddy.lu/post/2022%E5%B8%81%E5%9C%887%E5%A4%A7%E5%B4%A9%E5%9D%8F/"></a>
+        <div class="archive-meta">
+
+<span title='2026-08-23 23:00:00 +0800 CST'>August 23, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 内容创作是一份工作" href="http://localhost:1313/posts/ccwork/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">July<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">了不起的中国超级食物
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-07-19 09:00:00 +0800 CST'>July 19, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 了不起的中国超级食物" href="http://localhost:1313/posts/chinesesuperfood/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">June<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">《好的家庭教育》读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-06-02 23:00:00 +0800 CST'>June 2, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 《好的家庭教育》读书笔记" href="http://localhost:1313/posts/goodedu/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">《创业这条路》读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-06-01 23:00:00 +0800 CST'>June 1, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 《创业这条路》读书笔记" href="http://localhost:1313/posts/emyth/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">May<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">5 海里之外的平行世界
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-05-03 14:08:56 +0800 CST'>May 3, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 5 海里之外的平行世界" href="http://localhost:1313/posts/5seamilesaway/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">April<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">让打扰你生活的人见鬼去｜《被讨厌的勇气》读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-04-17 14:08:56 +0800 CST'>April 17, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 让打扰你生活的人见鬼去｜《被讨厌的勇气》读书笔记" href="http://localhost:1313/posts/couragetobedisliked/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">如果你有多元兴趣，请别浪费接下来的 1 年
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-04-04 14:08:56 +0800 CST'>April 4, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 如果你有多元兴趣，请别浪费接下来的 1 年" href="http://localhost:1313/posts/multiinterest/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">March<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">博客评论系统 Cusdis
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-03-24 09:10:56 +0800 CST'>March 24, 2026</span></div>
+        <a class="entry-link" aria-label="post link to 博客评论系统 Cusdis" href="http://localhost:1313/posts/cusdis/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">VPS + Tailscale 搭建 VPN
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-03-23 14:08:56 +0800 CST'>March 23, 2026</span></div>
+        <a class="entry-link" aria-label="post link to VPS &#43; Tailscale 搭建 VPN" href="http://localhost:1313/posts/vps/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">February<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">ED 的大酱汤 #06
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-02-06 14:08:56 +0800 CST'>February 6, 2026</span></div>
+        <a class="entry-link" aria-label="post link to ED 的大酱汤 #06" href="http://localhost:1313/posts/doenjangjjigae06/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">The Art of Spending Money Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2026-02-03 09:00:00 +0800 CST'>February 3, 2026</span></div>
+        <a class="entry-link" aria-label="post link to The Art of Spending Money Book notes" href="http://localhost:1313/posts/theartofspendingmoney/"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="archive-year">
+  <h2 class="archive-year-header">2025<sup class="archive-count">&nbsp;&nbsp;17</sup>
+  </h2>
+  <div class="archive-month">
+    <h3 class="archive-month-header">December<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">代谢力打造最强好能量 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-12-01 09:00:00 +0800 CST'>December 1, 2025</span></div>
+        <a class="entry-link" aria-label="post link to 代谢力打造最强好能量 Book notes" href="http://localhost:1313/posts/ge/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">November<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">The Millionaire Fastlane Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-11-20 09:00:00 +0800 CST'>November 20, 2025</span></div>
+        <a class="entry-link" aria-label="post link to The Millionaire Fastlane Book notes" href="http://localhost:1313/posts/tmf/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">September<sup class="archive-count">&nbsp;&nbsp;3</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">无路之路 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-09-15 14:08:56 +0800 CST'>September 15, 2025</span></div>
+        <a class="entry-link" aria-label="post link to 无路之路 Book notes" href="http://localhost:1313/posts/thepathlesspath/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">不对称陷阱 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-09-14 14:08:56 +0800 CST'>September 14, 2025</span></div>
+        <a class="entry-link" aria-label="post link to 不对称陷阱 Book notes" href="http://localhost:1313/posts/skininthegame/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">ED 的大酱汤 #05
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-09-09 14:08:56 +0800 CST'>September 9, 2025</span></div>
+        <a class="entry-link" aria-label="post link to ED 的大酱汤 #05" href="http://localhost:1313/posts/doenjangjjigae05/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">August<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Die with Zero Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-08-21 14:08:56 +0800 CST'>August 21, 2025</span></div>
+        <a class="entry-link" aria-label="post link to Die with Zero Book notes" href="http://localhost:1313/posts/diewithzero/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">July<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">一周吃 30 种植物性食物 be like&hellip;
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-07-22 14:08:56 +0800 CST'>July 22, 2025</span></div>
+        <a class="entry-link" aria-label="post link to 一周吃 30 种植物性食物 be like..." href="http://localhost:1313/posts/plantbaseddiet/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">April<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">The Simple Path to Wealth Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-04-30 14:08:56 +0800 CST'>April 30, 2025</span></div>
+        <a class="entry-link" aria-label="post link to The Simple Path to Wealth Book notes" href="http://localhost:1313/posts/simplepath/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">执行长日记 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-04-01 09:00:00 +0800 CST'>April 1, 2025</span></div>
+        <a class="entry-link" aria-label="post link to 执行长日记 读书笔记" href="http://localhost:1313/posts/thediaryofaceo/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">March<sup class="archive-count">&nbsp;&nbsp;3</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">ED 的大酱汤 #04
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-03-29 14:08:56 +0800 CST'>March 29, 2025</span></div>
+        <a class="entry-link" aria-label="post link to ED 的大酱汤 #04" href="http://localhost:1313/posts/doenjangjjigae04/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Millionaire Teacher 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-03-29 14:08:56 +0800 CST'>March 29, 2025</span></div>
+        <a class="entry-link" aria-label="post link to Millionaire Teacher 读书笔记" href="http://localhost:1313/posts/millionaireteacher/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Portfolio 饮食
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-03-16 14:08:56 +0800 CST'>March 16, 2025</span></div>
+        <a class="entry-link" aria-label="post link to Portfolio 饮食" href="http://localhost:1313/posts/portfoliodiet/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">February<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">More Morgan Housel
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-02-05 14:08:56 +0800 CST'>February 5, 2025</span></div>
+        <a class="entry-link" aria-label="post link to More Morgan Housel" href="http://localhost:1313/posts/moremh/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">持续买进 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-02-04 14:08:56 +0800 CST'>February 4, 2025</span></div>
+        <a class="entry-link" aria-label="post link to 持续买进 Book notes" href="http://localhost:1313/posts/justkeepbuying/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">January<sup class="archive-count">&nbsp;&nbsp;3</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">ED 的大酱汤 #03
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-01-25 14:08:56 +0800 CST'>January 25, 2025</span></div>
+        <a class="entry-link" aria-label="post link to ED 的大酱汤 #03" href="http://localhost:1313/posts/doenjangjjigae03/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Wabisabi 侘寂 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-01-08 14:08:56 +0800 CST'>January 8, 2025</span></div>
+        <a class="entry-link" aria-label="post link to Wabisabi 侘寂 读书笔记" href="http://localhost:1313/posts/wabisabi/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">ED 的大酱汤 #02
+        </h3>
+        <div class="archive-meta">
+
+<span title='2025-01-07 14:08:56 +0800 CST'>January 7, 2025</span></div>
+        <a class="entry-link" aria-label="post link to ED 的大酱汤 #02" href="http://localhost:1313/posts/doenjangjjigae02/"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="archive-year">
+  <h2 class="archive-year-header">2024<sup class="archive-count">&nbsp;&nbsp;10</sup>
+  </h2>
+  <div class="archive-month">
+    <h3 class="archive-month-header">December<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">ED 的大酱汤 #01
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-12-07 14:08:56 +0800 CST'>December 7, 2024</span></div>
+        <a class="entry-link" aria-label="post link to ED 的大酱汤 #01" href="http://localhost:1313/posts/doenjangjjigae01/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">November<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">逆转发炎体质 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-11-04 23:00:00 +0800 CST'>November 4, 2024</span></div>
+        <a class="entry-link" aria-label="post link to 逆转发炎体质 Book notes" href="http://localhost:1313/posts/antiinflammatory/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">October<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">做自己的生命设计师 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-10-16 23:00:00 +0800 CST'>October 16, 2024</span></div>
+        <a class="entry-link" aria-label="post link to 做自己的生命设计师 Book notes" href="http://localhost:1313/posts/designyourlife/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">September<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Same as Ever Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-09-23 09:00:00 +0800 CST'>September 23, 2024</span></div>
+        <a class="entry-link" aria-label="post link to Same as Ever Book notes" href="http://localhost:1313/posts/sameasever/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">别对每件事都有反应 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-09-11 14:08:56 +0800 CST'>September 11, 2024</span></div>
+        <a class="entry-link" aria-label="post link to 别对每件事都有反应 Book notes" href="http://localhost:1313/posts/dontreact/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">July<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">如何在 70 岁的时候还能去欧洲旅行？
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-07-06 14:08:56 +0800 CST'>July 6, 2024</span></div>
+        <a class="entry-link" aria-label="post link to 如何在 70 岁的时候还能去欧洲旅行？" href="http://localhost:1313/posts/outlive/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">June<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">「第二大脑」你随意就好
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-06-11 23:00:00 +0800 CST'>June 11, 2024</span></div>
+        <a class="entry-link" aria-label="post link to 「第二大脑」你随意就好" href="http://localhost:1313/posts/paramethod/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">April<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Keep Going Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-04-06 09:00:00 +0800 CST'>April 6, 2024</span></div>
+        <a class="entry-link" aria-label="post link to Keep Going Book notes" href="http://localhost:1313/posts/keepgoing/"></a>
       </div>
     </div>
   </div>
@@ -203,31 +576,816 @@
     <h3 class="archive-month-header">February<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
     <div class="archive-posts">
       <div class="archive-entry">
-        <h3 class="archive-entry-title">影响我的书 Pt. 1
+        <h3 class="archive-entry-title">FIRE 无聊的运动
         </h3>
-        <div class="archive-meta"><span title='2022-02-13 14:08:56 +0800 CST'>February 13, 2022</span></div>
-        <a class="entry-link" aria-label="post link to 影响我的书 Pt. 1" href="https://eddy.lu/post/%E5%BD%B1%E5%93%8D%E6%88%91%E7%9A%84%E4%B9%A6-pt.-1/"></a>
+        <div class="archive-meta">
+
+<span title='2024-02-02 14:08:56 +0800 CST'>February 2, 2024</span></div>
+        <a class="entry-link" aria-label="post link to FIRE 无聊的运动" href="http://localhost:1313/posts/fire/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">January<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">The Psychology of Money Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2024-01-10 09:00:00 +0800 CST'>January 10, 2024</span></div>
+        <a class="entry-link" aria-label="post link to The Psychology of Money Book notes" href="http://localhost:1313/posts/psychologyofmoney/"></a>
       </div>
     </div>
   </div>
 </div>
 <div class="archive-year">
-  <h2 class="archive-year-header">2021<sup class="archive-count">&nbsp;&nbsp;2</sup>
+  <h2 class="archive-year-header">2023<sup class="archive-count">&nbsp;&nbsp;25</sup>
   </h2>
+  <div class="archive-month">
+    <h3 class="archive-month-header">December<sup class="archive-count">&nbsp;&nbsp;3</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">蛋白质初级摄入指南
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-12-09 14:08:56 +0800 CST'>December 9, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 蛋白质初级摄入指南" href="http://localhost:1313/posts/protein/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">2023 最终章：我和香港的连结
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-12-03 14:08:56 +0800 CST'>December 3, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 2023 最终章：我和香港的连结" href="http://localhost:1313/posts/2023-%E6%9C%80%E7%BB%88%E7%AB%A0%E6%88%91%E5%92%8C%E9%A6%99%E6%B8%AF%E7%9A%84%E8%BF%9E%E7%BB%93/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">The Obstacle is the way Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-12-01 09:00:00 +0800 CST'>December 1, 2023</span></div>
+        <a class="entry-link" aria-label="post link to The Obstacle is the way Book notes" href="http://localhost:1313/posts/obstacle/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">November<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">IKIGAI: The Japanese Secret to a Long and Happy Life Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-11-30 14:08:56 +0800 CST'>November 30, 2023</span></div>
+        <a class="entry-link" aria-label="post link to IKIGAI: The Japanese Secret to a Long and Happy Life Book notes" href="http://localhost:1313/posts/ikigai/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">真正的快乐处方 Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-11-04 14:08:56 +0800 CST'>November 4, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 真正的快乐处方 Book notes" href="http://localhost:1313/posts/happyprescription/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">October<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">以太坊 POS 机制一周年：回顾与展望
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-10-03 14:08:56 +0800 CST'>October 3, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 以太坊 POS 机制一周年：回顾与展望" href="http://localhost:1313/posts/ethpos/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">September<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">再见，小麦
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-09-04 14:08:56 +0800 CST'>September 4, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 再见，小麦" href="http://localhost:1313/posts/cuwheat/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">August<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">健身三周年 Recap
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-08-03 14:08:56 +0800 CST'>August 3, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 健身三周年 Recap" href="http://localhost:1313/posts/gym3y/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">July<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">如何选一个酷炫的个人 email 地址
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-07-23 14:08:56 +0800 CST'>July 23, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 如何选一个酷炫的个人 email 地址" href="http://localhost:1313/posts/emailadd/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">June<sup class="archive-count">&nbsp;&nbsp;4</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">国外吃早餐必学的 9 种蛋料理英文
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-06-29 14:08:56 +0800 CST'>June 29, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 国外吃早餐必学的 9 种蛋料理英文" href="http://localhost:1313/posts/egg/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">关于「财务自由」，别太认真
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-06-17 14:08:56 +0800 CST'>June 17, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 关于「财务自由」，别太认真" href="http://localhost:1313/posts/ff/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">不入流的文体｜关于「盘古之白」和「直角引号」
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-06-12 14:08:56 +0800 CST'>June 12, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 不入流的文体｜关于「盘古之白」和「直角引号」" href="http://localhost:1313/posts/pangu/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Unfair Advantage 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-06-04 14:08:56 +0800 CST'>June 4, 2023</span></div>
+        <a class="entry-link" aria-label="post link to Unfair Advantage 读书笔记" href="http://localhost:1313/posts/unfairadvantage/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">May<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">找出自己的 IKIGAI｜澳洲10天旅行
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-05-31 14:08:56 +0800 CST'>May 31, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 找出自己的 IKIGAI｜澳洲10天旅行" href="http://localhost:1313/posts/austravel/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">April<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Outliers 读书笔记｜(Plus: 如何吸收一本书？)
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-04-06 14:08:56 +0800 CST'>April 6, 2023</span></div>
+        <a class="entry-link" aria-label="post link to Outliers 读书笔记｜(Plus: 如何吸收一本书？)" href="http://localhost:1313/posts/outliers/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">March<sup class="archive-count">&nbsp;&nbsp;3</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Living out of a backpack｜菲律宾6天旅行
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-03-03 14:08:56 +0800 CST'>March 3, 2023</span></div>
+        <a class="entry-link" aria-label="post link to Living out of a backpack｜菲律宾6天旅行" href="http://localhost:1313/posts/phtravel/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">马尼拉
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-03-02 14:08:56 +0800 CST'>March 2, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 马尼拉" href="http://localhost:1313/posts/manila/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">比特币好像开始涨了，等等…我仓位还没建够 Explor. #09
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-03-01 14:08:56 +0800 CST'>March 1, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 比特币好像开始涨了，等等…我仓位还没建够 Explor. #09" href="http://localhost:1313/posts/explor09/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">February<sup class="archive-count">&nbsp;&nbsp;3</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">7年外贸学到什么｜7年简历，请多指教
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-02-24 14:08:56 +0800 CST'>February 24, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 7年外贸学到什么｜7年简历，请多指教" href="http://localhost:1313/posts/resume/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">搭建 Hugo 个人网站｜PaperMod 主题
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-02-21 14:08:56 +0800 CST'>February 21, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 搭建 Hugo 个人网站｜PaperMod 主题" href="http://localhost:1313/posts/hugo/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">春节我在山姆会员店买了10000元
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-02-07 14:08:56 +0800 CST'>February 7, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 春节我在山姆会员店买了10000元" href="http://localhost:1313/posts/fed/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">January<sup class="archive-count">&nbsp;&nbsp;4</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">小长假干什么才不无聊｜Company of One 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-01-28 14:08:56 +0800 CST'>January 28, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 小长假干什么才不无聊｜Company of One 读书笔记" href="http://localhost:1313/posts/companyofone/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">影响我的书 Pt. 3
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-01-07 14:08:56 +0800 CST'>January 7, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 影响我的书 Pt. 3" href="http://localhost:1313/posts/bookpt3/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">影响我的书 Pt. 2
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-01-06 14:08:56 +0800 CST'>January 6, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 影响我的书 Pt. 2" href="http://localhost:1313/posts/bookpt2/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">影响我的书 Pt. 1
+        </h3>
+        <div class="archive-meta">
+
+<span title='2023-01-05 14:08:56 +0800 CST'>January 5, 2023</span></div>
+        <a class="entry-link" aria-label="post link to 影响我的书 Pt. 1" href="http://localhost:1313/posts/bookpt1/"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="archive-year">
+  <h2 class="archive-year-header">2022<sup class="archive-count">&nbsp;&nbsp;41</sup>
+  </h2>
+  <div class="archive-month">
+    <h3 class="archive-month-header">December<sup class="archive-count">&nbsp;&nbsp;10</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">2022币圈7大崩坏
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-30 14:08:56 +0800 CST'>December 30, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 2022币圈7大崩坏" href="http://localhost:1313/posts/7collapse/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">我割掉特斯拉了 Explor. #08
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-30 14:08:56 +0800 CST'>December 30, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 我割掉特斯拉了 Explor. #08" href="http://localhost:1313/posts/explor08/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">养猫四个月，我学到了什么
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-29 14:08:56 +0800 CST'>December 29, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 养猫四个月，我学到了什么" href="http://localhost:1313/posts/cat/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">从业电控板行业四年，但我讨厌加入电控功能的小家电
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-28 14:08:56 +0800 CST'>December 28, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 从业电控板行业四年，但我讨厌加入电控功能的小家电" href="http://localhost:1313/posts/hatecontrolboard/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">我到底喜不喜欢古着
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-23 14:08:56 +0800 CST'>December 23, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 我到底喜不喜欢古着" href="http://localhost:1313/posts/vintage/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">解决境内 Ledger Live 连接超时问题
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-23 14:08:56 +0800 CST'>December 23, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 解决境内 Ledger Live 连接超时问题" href="http://localhost:1313/posts/ledgerlive/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">一个普通人对去中心化的愿景
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-21 14:08:56 +0800 CST'>December 21, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 一个普通人对去中心化的愿景" href="http://localhost:1313/posts/decentralized/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">关于姓氏「吕」的前世今生
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-21 14:08:56 +0800 CST'>December 21, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 关于姓氏「吕」的前世今生" href="http://localhost:1313/posts/lu/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">疫情爆发期间一个普通人的周末午后
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-21 14:08:56 +0800 CST'>December 21, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 疫情爆发期间一个普通人的周末午后" href="http://localhost:1313/posts/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E6%9C%9F%E9%97%B4%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E5%91%A8%E6%9C%AB%E5%8D%88%E5%90%8E/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">冷钱包用不了了 Explor. #07
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-12-07 14:08:56 +0800 CST'>December 7, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 冷钱包用不了了 Explor. #07" href="http://localhost:1313/posts/explor07/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">November<sup class="archive-count">&nbsp;&nbsp;4</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Things that I would bring with me
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-11-29 14:08:56 +0800 CST'>November 29, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Things that I would bring with me" href="http://localhost:1313/posts/things-that-i-would-bring-with-me/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Sam Bankman-Fried是个天才
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-11-16 14:08:56 +0800 CST'>November 16, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Sam Bankman-Fried是个天才" href="http://localhost:1313/sbfgenius/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">香港和Web3 Explor. #06
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-11-09 14:08:56 +0800 CST'>November 9, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 香港和Web3 Explor. #06" href="http://localhost:1313/posts/explor06/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">洗礼
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-11-03 14:08:56 +0800 CST'>November 3, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 洗礼" href="http://localhost:1313/posts/baptism/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">September<sup class="archive-count">&nbsp;&nbsp;3</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Bullish Jail Kown! Explor. #05
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-09-24 14:08:56 +0800 CST'>September 24, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Bullish Jail Kown! Explor. #05" href="http://localhost:1313/posts/explor05/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">三人行，必有我师 ｜疫情下的出海
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-09-21 14:08:56 +0800 CST'>September 21, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 三人行，必有我师 ｜疫情下的出海" href="http://localhost:1313/posts/visaduringcovid/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">白话web3
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-09-16 14:08:56 +0800 CST'>September 16, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 白话web3" href="http://localhost:1313/posts/web3/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">August<sup class="archive-count">&nbsp;&nbsp;19</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">伤脑筋，现在签证办理真复杂 Explor. #04
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-26 14:08:56 +0800 CST'>August 26, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 伤脑筋，现在签证办理真复杂 Explor. #04" href="http://localhost:1313/posts/explor04/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">市场总是比你聪明
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-17 14:08:56 +0800 CST'>August 17, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 市场总是比你聪明" href="http://localhost:1313/posts/marketissmart/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">How to live 读书笔记 Part 2
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-16 14:08:56 +0800 CST'>August 16, 2022</span></div>
+        <a class="entry-link" aria-label="post link to How to live 读书笔记 Part 2" href="http://localhost:1313/posts/howtolivept2/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">WordPress建站就像搬家
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-16 14:08:56 +0800 CST'>August 16, 2022</span></div>
+        <a class="entry-link" aria-label="post link to WordPress建站就像搬家" href="http://localhost:1313/posts/wordpress/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Crypto investment portfolio update Aug 2022
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-15 14:08:56 +0800 CST'>August 15, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Crypto investment portfolio update Aug 2022" href="http://localhost:1313/posts/crypto-investment-portfolio-update-aug-2022/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">How to live 读书笔记 Part 1
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-15 14:08:56 +0800 CST'>August 15, 2022</span></div>
+        <a class="entry-link" aria-label="post link to How to live 读书笔记 Part 1" href="http://localhost:1313/posts/howtolivept1/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">七年就是一辈子 Explor. #03
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-15 14:08:56 +0800 CST'>August 15, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 七年就是一辈子 Explor. #03" href="http://localhost:1313/posts/explor03/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">市场是渣男 Explor. #02
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-12 14:08:56 +0800 CST'>August 12, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 市场是渣男 Explor. #02" href="http://localhost:1313/posts/explor02/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">我试了植物性蛋白粉30天
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-12 14:08:56 +0800 CST'>August 12, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 我试了植物性蛋白粉30天" href="http://localhost:1313/posts/vegan/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">关于优质脂肪，脂肪肝和鸡蛋
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-11 14:08:56 +0800 CST'>August 11, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 关于优质脂肪，脂肪肝和鸡蛋" href="http://localhost:1313/posts/goodfat/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">6个要素简单评估一个Project
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-10 14:08:56 +0800 CST'>August 10, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 6个要素简单评估一个Project" href="http://localhost:1313/posts/6factors/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">我的 Proof of Steak
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-09 14:08:56 +0800 CST'>August 9, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 我的 Proof of Steak" href="http://localhost:1313/posts/steak/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Building a second brain 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-07 14:08:56 +0800 CST'>August 7, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Building a second brain 读书笔记" href="http://localhost:1313/posts/secondbrain/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">什么是Cardano艾达币
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-05 14:08:56 +0800 CST'>August 5, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 什么是Cardano艾达币" href="http://localhost:1313/posts/cardano/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">极简护肤这样创
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-05 14:08:56 +0800 CST'>August 5, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 极简护肤这样创" href="http://localhost:1313/posts/sunscreen/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">迟早成为一个whole coiner Explor. #01
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-05 14:08:56 +0800 CST'>August 5, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 迟早成为一个whole coiner Explor. #01" href="http://localhost:1313/posts/explor01/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Redmoon钥匙包
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-03 14:08:56 +0800 CST'>August 3, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Redmoon钥匙包" href="http://localhost:1313/posts/keycase/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">常见食物营养清单
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-02 14:08:56 +0800 CST'>August 2, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 常见食物营养清单" href="http://localhost:1313/posts/nutrient/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">我买了 Zombieclub token 的 NFT
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-08-02 14:08:56 +0800 CST'>August 2, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 我买了 Zombieclub token 的 NFT" href="http://localhost:1313/posts/zct/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">July<sup class="archive-count">&nbsp;&nbsp;5</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Chinese medicine says those veggies are COLD (wtf)
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-07-30 14:08:56 +0800 CST'>July 30, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Chinese medicine says those veggies are COLD (wtf)" href="http://localhost:1313/posts/chinese-medicine-says-those-veggies-are-cold-wtf/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">3 months I still don’t get my cold wallet and still counting
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-07-29 14:08:56 +0800 CST'>July 29, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 3 months I still don’t get my cold wallet and still counting" href="http://localhost:1313/posts/3-months-i-still-dont-get-my-cold-wallet-and-still-counting/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">4 tips on staying healthy in summer
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-07-29 14:08:56 +0800 CST'>July 29, 2022</span></div>
+        <a class="entry-link" aria-label="post link to 4 tips on staying healthy in summer" href="http://localhost:1313/posts/4-tips-on-staying-healthy-in-summer/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Web3 investment portfolio update
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-07-19 14:08:56 +0800 CST'>July 19, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Web3 investment portfolio update" href="http://localhost:1313/posts/web3-investment-portfolio-update/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Atomic Habits 原子习惯 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2022-07-09 14:08:56 +0800 CST'>July 9, 2022</span></div>
+        <a class="entry-link" aria-label="post link to Atomic Habits 原子习惯 读书笔记" href="http://localhost:1313/posts/atomichabits/"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="archive-year">
+  <h2 class="archive-year-header">2021<sup class="archive-count">&nbsp;&nbsp;17</sup>
+  </h2>
+  <div class="archive-month">
+    <h3 class="archive-month-header">August<sup class="archive-count">&nbsp;&nbsp;1</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">The Almanack of Naval Ravikant 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-08-25 14:08:56 +0800 CST'>August 25, 2021</span></div>
+        <a class="entry-link" aria-label="post link to The Almanack of Naval Ravikant 读书笔记" href="http://localhost:1313/posts/naval/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">July<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">The 4-Hour Workweek Book notes
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-07-30 14:08:56 +0800 CST'>July 30, 2021</span></div>
+        <a class="entry-link" aria-label="post link to The 4-Hour Workweek Book notes" href="http://localhost:1313/posts/tim/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">软技能-代码之外的生存指南 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-07-08 14:08:56 +0800 CST'>July 8, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 软技能-代码之外的生存指南 读书笔记" href="http://localhost:1313/posts/softskills/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">June<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">健身一周年 Recap
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-06-23 14:08:56 +0800 CST'>June 23, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 健身一周年 Recap" href="http://localhost:1313/posts/gym1y/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">训练计划 Training program Mar, 2022
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-06-23 14:08:56 +0800 CST'>June 23, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 训练计划 Training program Mar, 2022" href="http://localhost:1313/posts/training202203/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">May<sup class="archive-count">&nbsp;&nbsp;6</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">遇(预)见创作者经济、远程工作和加密货币
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-05-31 14:08:56 +0800 CST'>May 31, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 遇(预)见创作者经济、远程工作和加密货币" href="http://localhost:1313/posts/creatoreconomic/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">自建站的主机产品
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-05-26 14:08:56 +0800 CST'>May 26, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 自建站的主机产品" href="http://localhost:1313/posts/host/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Make Time 读书笔记
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-05-19 14:08:56 +0800 CST'>May 19, 2021</span></div>
+        <a class="entry-link" aria-label="post link to Make Time 读书笔记" href="http://localhost:1313/posts/maketime/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">My Simple Productivity System
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-05-03 14:08:56 +0800 CST'>May 3, 2021</span></div>
+        <a class="entry-link" aria-label="post link to My Simple Productivity System" href="http://localhost:1313/posts/my-simple-productivity-system/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">关于出口物流，收汇和退税
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-05-03 14:08:56 +0800 CST'>May 3, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 关于出口物流，收汇和退税" href="http://localhost:1313/posts/logistic/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">关于贸易条款Incoterm，其实你不需知道太多
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-05-02 14:08:56 +0800 CST'>May 2, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 关于贸易条款Incoterm，其实你不需知道太多" href="http://localhost:1313/posts/incoterm/"></a>
+      </div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <h3 class="archive-month-header">April<sup class="archive-count">&nbsp;&nbsp;4</sup></h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">Wise(前Transferwise)入金不完全攻略(2021)
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-04-25 14:08:56 +0800 CST'>April 25, 2021</span></div>
+        <a class="entry-link" aria-label="post link to Wise(前Transferwise)入金不完全攻略(2021)" href="http://localhost:1313/posts/wise/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">5年1项目｜梦回里昂 Part 4
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-04-08 14:08:56 +0800 CST'>April 8, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 4" href="http://localhost:1313/posts/lyonpt4/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">5年1项目｜梦回里昂 Part 3
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-04-05 14:08:56 +0800 CST'>April 5, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 3" href="http://localhost:1313/posts/lyonpt3/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">5年1项目｜梦回里昂 Part 2
+        </h3>
+        <div class="archive-meta">
+
+<span title='2021-04-02 14:08:56 +0800 CST'>April 2, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 2" href="http://localhost:1313/posts/lyonpt2/"></a>
+      </div>
+    </div>
+  </div>
   <div class="archive-month">
     <h3 class="archive-month-header">March<sup class="archive-count">&nbsp;&nbsp;2</sup></h3>
     <div class="archive-posts">
       <div class="archive-entry">
         <h3 class="archive-entry-title">5年1项目｜梦回里昂 Part 1
         </h3>
-        <div class="archive-meta"><span title='2021-03-29 14:08:56 +0800 CST'>March 29, 2021</span></div>
-        <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 1" href="https://eddy.lu/post/5%E5%B9%B41%E9%A1%B9%E7%9B%AE%E6%A2%A6%E5%9B%9E%E9%87%8C%E6%98%82-part-1/"></a>
+        <div class="archive-meta">
+
+<span title='2021-03-29 14:08:56 +0800 CST'>March 29, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 5年1项目｜梦回里昂 Part 1" href="http://localhost:1313/posts/lyonpt1/"></a>
       </div>
       <div class="archive-entry">
         <h3 class="archive-entry-title">雅典城里的贫民窟
         </h3>
-        <div class="archive-meta"><span title='2021-03-27 14:08:56 +0800 CST'>March 27, 2021</span></div>
-        <a class="entry-link" aria-label="post link to 雅典城里的贫民窟" href="https://eddy.lu/post/%E9%9B%85%E5%85%B8%E5%9F%8E%E9%87%8C%E7%9A%84%E8%B4%AB%E6%B0%91%E7%AA%9F/"></a>
+        <div class="archive-meta">
+
+<span title='2021-03-27 14:08:56 +0800 CST'>March 27, 2021</span></div>
+        <a class="entry-link" aria-label="post link to 雅典城里的贫民窟" href="http://localhost:1313/posts/athens/"></a>
       </div>
     </div>
   </div>
@@ -235,23 +1393,33 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://eddy.lu">eddylu</a></span>
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -278,25 +1446,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Building a second brain 读书笔记 | ed</title>
+<meta name="keywords" content="reading, book, second brain, 第二大脑">
+<meta name="description" content="
+🚀 The Book in 3 Sentences
+
+
+介绍了PARA (Projects, Areas, Resources, Archives) 这样一个动态的笔记分类和行动系统，非常实用。
+
+
+介绍了 CODE (capture, organize, distill, express) 方法，作为一个工作流做知识整理和创作。
+
+
+整理第二大脑的内容本身而言就是一个整理思绪的过程（对我而言非常有意义）。
+
+
+☘️ How the Book Changed Me
+
+重新整理Notion并把他作为我的第二大脑系统，按照PARA分类。
+更进一步的整理思绪mental clarity。
+删除掉无用信息（以前感觉有用却说不出理由的），只留下能引起共鸣的，有意义的内容。
+Hemingway Bridges这个概念很有意思，对于内容创作非常受用。
+
+✍️ Quotes &#43; Excerpt
+
+Your mind is for having ideas, not holding them.
+— David Allen
+
+
+In the digital realm, information can be molded and shaped and directed to any purpose, like a magical primordial force of nature.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/secondbrain/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/secondbrain/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei", Arial, sans-serif;
+}
+</style>
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Building a second brain 读书笔记
+    </h1>
+    <div class="post-meta">
+
+<span title='2022-08-07 14:08:56 +0800 CST'>August 7, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><img loading="lazy" src="/img/secbrain.jpg"></p>
+<h3 id="-the-book-in-3-sentences">🚀 The Book in 3 Sentences<a hidden class="anchor" aria-hidden="true" href="#-the-book-in-3-sentences">#</a></h3>
+<ol>
+<li>
+<p>介绍了PARA (Projects, Areas, Resources, Archives) 这样一个动态的笔记分类和行动系统，非常实用。</p>
+</li>
+<li>
+<p>介绍了 CODE (capture, organize, distill, express) 方法，作为一个工作流做知识整理和创作。</p>
+</li>
+<li>
+<p>整理第二大脑的内容本身而言就是一个整理思绪的过程（对我而言非常有意义）。</p>
+</li>
+</ol>
+<h3 id="-how-the-book-changed-me">☘️ How the Book Changed Me<a hidden class="anchor" aria-hidden="true" href="#-how-the-book-changed-me">#</a></h3>
+<ol>
+<li>重新整理Notion并把他作为我的第二大脑系统，按照PARA分类。</li>
+<li>更进一步的整理思绪mental clarity。</li>
+<li>删除掉无用信息（以前感觉有用却说不出理由的），只留下能引起共鸣的，有意义的内容。</li>
+<li>Hemingway Bridges这个概念很有意思，对于内容创作非常受用。</li>
+</ol>
+<h3 id="-quotes--excerpt">✍️ Quotes + Excerpt<a hidden class="anchor" aria-hidden="true" href="#-quotes--excerpt">#</a></h3>
+<blockquote>
+<p>Your mind is for having ideas, not holding them.
+— David Allen</p>
+</blockquote>
+<blockquote>
+<p>In the digital realm, information can be molded and shaped and directed to any purpose, like a magical primordial force of nature.</p>
+</blockquote>
+<blockquote>
+<p>A set of practical techniques that you can implement today that will begin to yield benefits tomorrow.</p>
+</blockquote>
+<blockquote>
+<p>Habits reduce cognitive load and free up mental capacity, so you can allocate your attention to other tasks.
+— James Clear <!-- raw HTML omitted --></p>
+</blockquote>
+<h3 id="-highlights--notes">📒 Highlights + Notes<a hidden class="anchor" aria-hidden="true" href="#-highlights--notes">#</a></h3>
+<ol>
+<li>现在人均每天的信息消费量达到34GB，这个数字是1986年（读报纸等等）的5倍。</li>
+<li>如果要对一个观点进行认证，我们需要的辅助材料往往要花比较多的时间搜寻，但如果长期积累在第二大脑系统，可以极大的提升效率。</li>
+<li>我们生活在一个信息爆炸的时代，信息筛选也变成一个重要的能力，在第二大脑系统中，大脑要初筛那些有用的信息，在每一次要发信息放入第二大脑前，思考这些内容是否是对你（或他人）有帮助，是否是你长期想创作的内容相关。</li>
+<li>第二大脑的内容总是private的，而输出（express）阶段的内容是public的。每次做输出需要清楚的知道你的受众和你输出的内容。所以，我blog的内容部分只在米课圈发布，部分只在知识星球发布，部分只在Medium平台发布，部分只在公众号发布，而全部内容都在个人主页发布（内容更为自由）。</li>
+<li>写作更塑造思考（有时候空想无法形成一个比较清晰的架构），也是一个我坚持定期写作的原因。</li>
+<li>The Cathedral effect大教堂效应 — 指的是环境影响和促进思维，本书指的尤其是软件的界面环境。试想，是否有时候电脑桌面一团糟，必须得归类桌面的文档才能安心开始工作？有时候办公桌一团糟，必须得打扫完才能继续工作？这便是Cathedral effect，心无旁贷的时候更适合思考和创作。</li>
+<li>对于第二大脑，我目前选择的是Notion — 选择黑暗模式，很爽。第二大脑不只是一个工具，而更是一种环境。另，读完这本书我重新整理归类所有笔记，按PARA的目录，以便于我应付目前的短期项目和长期慢慢build的品类。刚开始思维需要转换，待用了2个星期了慢慢习惯，发现PARA的资料归类也给我带来了极大的头脑清晰和工作（创作）动力。</li>
+<li>PARA归类是一种动态的系统，并非一成不变。因为我们可能会换工作，我们的兴趣也在随着时间会变化…比如长期的项目突然不想干了归到Achieves；放在Resources的资料突然有天做项目的时候很受用，被调回Project；放在Area的一个待定项目突然很紧急拉回了Project等等。所以这是一个长期可用，动态的归类系统，也是我觉得他伟大的地方，其中一个美妙之处也在于把暂时不做的，无用的项目丢到Archives，真的对视觉上和心理上都有很积极的暗示，以至于我连手机的最后一页都放了一个文件夹Archives，把平时不用但是偶尔会用到的App都放在里头（有124个App）。</li>
+<li>我也思考过在我的Mac和iPhone上也用PARA系统，但也许是一个烂主意。因为第二大脑是一个适合工作（创作）的文件资料归类系统，这个“系统”适合一个App比如Notion，但不适合Mac和iPhone这样的硬件，因为硬件对于人的意义有所不同。</li>
+<li>别从0开始创作，从0.5开始，从小东西开始。一些资源包（intermediate packets），比如别人的博客，播客，视频等等，我们都可以Capture，收集和整理，然后结合自己的思考，输出完全属于自己的东西。</li>
+<li>Hemingway bridges，指的是连结你想法（archipelago of ideas）的一座座岛屿，海明威在每次写作完成时都会想到其他的和本次创作相关的点子，作为下一次写作的引子，从而有源源不断的内容创作。</li>
+<li>Mise-en-place餐前准备，引用自法国大厨在准备餐厅出品的一套系统，用于如何在后台通过心思缜密的准备食材，烹饪流程，人员调动等等，以此呈现给大量的客人精致的法国料理。对于第二大脑，Mise-en-place于知识工作者而言，道理相同 — 不仅要生产出质量，同时也要保证数量（周杰伦如果没有在出道前几年保证每年发一张专辑也不会像现在红成这样）。所以，我们必须定期维护第二大脑系统，不断优化使之永远让我们拥有最佳的创作条件，这也是前面所讲的第二大脑是一个永远动态的系统。</li>
+<li>第二大脑不仅适用于知识工作者和内容创造者，绝大部分的人都适用。不管你是做金融，做外贸，做健身，各种领域，每个人都需要学习，都需要思考，而大部分人都停在这一步了，没有去主动的萃取，蒸馏 — 用自己的语言去组织想法，输出一个自己作品（也不一定要发布）。</li>
+<li>本书和之前汪晟推荐的How to take smart notes侧重点有所不同，但也有相似之处，即非常强调笔记的关联性，如果去运用新软件工具去最优化你的写作/创作，几十年前别人用卡片盒，现在有很多好用的软件比如Notion或Logseq（还有很多比如老外推荐的Roam Research等，别纠结用什么软件，用的顺手就行）。现在时代信息量爆炸，怎么去获得和吸收信息决定是一门技能，开始理解什么是所谓的Incremental Reading/Writing对于人生真的太有帮助了。这个是学校不会教的。</li>
+<li>本读书笔记仅仅抛砖引玉，分享一些hashtag，去网上看看别人是怎么打造各自的PKM的。</li>
+</ol>
+<p>#PKM, personal knowledge management
+#BASB, building a second brain
+#secondbrain
+#toolsforthoughts</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/reading/">Reading</a></li>
+      <li><a href="http://localhost:1313/tags/book/">Book</a></li>
+      <li><a href="http://localhost:1313/tags/second-brain/">Second Brain</a></li>
+      <li><a href="http://localhost:1313/tags/%E7%AC%AC%E4%BA%8C%E5%A4%A7%E8%84%91/">第二大脑</a></li>
+    </ul>
+    
+    <div style="margin: 50px 0;"> 
+        <style>
+  #cusdis_thread iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+  </style>
+    <h4>Comments:</h4>
+      <div id="cusdis_thread" data-host="https://cusdis.com"
+        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
+        data-page-id="d29ee53b116f3490f568e2f82c3c519c" data-page-url="http://localhost:1313/posts/secondbrain/"
+        data-page-title="Building a second brain 读书笔记"></div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

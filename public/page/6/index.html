@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.166.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>ed</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Unfair Advantage 读书笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎨 Impressions 我在 Ali Abdaal 的频道里得知这本书，他给了一个浅显易懂的公式，认为 成功 = 努力 &#43; 运气 &#43; 不平等优势。而读本书更像是读 Outliers 的一个延伸，也许听起来有点消极，但是成功除了努力之外，你自身的运气和不平等优势也至关重要。人生本来就是非常不公平的。所以，别去做不切实际的美梦，好好回家想想你爸爸是谁你妈妈是谁吧，人生本来就是一场苦旅，幸运的是尽早读到这本书让你头脑稍微清醒一点。
+✍️ Quotes &amp; Excerpt I did not do well in school, but I’m now a voracious reader of non fiction books.
+Working hard without working smart is useless.
+📒 Summary &amp; Notes 想要获得成功，运气和努力都很重要，但是哪一个更重要不必过度纠结。书中举了一大堆的例子，阐述了先天的优势占了获得成功的前提条件，选择不对，那么再努力也可能徒劳。
+如果你出生在沿海地区，那么你就比内地的朋友更有和外界交流的先天优势；如果你家里有亲戚能提供不错的人脉和背景，那么你做起生意来也会更加如鱼得水。但是不能忽略了后天的努力，懂得跟上科技的发展和时代的脚步，结合自己的特点努力工作也必不可少。
+懂得用自己的石头碰别人的鸡蛋。每当开启一个新专案的时候，问问自己 — 我做这件事有什么优势？
+人生在每一个往上爬的节点，不论主动或被动，每一个推动你的力量其实都是你的 unfair advantage，比如当初父母让你接受更好的教育、大学选的科系、因为生病进医院而认识了现在的另一半、因为老丈人的建议从事了外贸、因为工作中积累的人脉认识到了新的客户…真的，人生走的每一步都算数。
+很多人都不知道自己的 unfair advantage，于是书中列了一个 MILES 的框架，帮助读者找到自己的不平等优势。Money, Intelligence &amp; Insight, Location &amp; Luck, Education &amp; Expertise, Status.
+透过这一个框架，也许可以让你知道，你的身上有着别人没有的不平等优势，只是自己还浑然不知。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-06-04 14:08:56 +0800 CST'>June 4, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Unfair Advantage 读书笔记" href="http://localhost:1313/posts/unfairadvantage/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">找出自己的 IKIGAI｜澳洲10天旅行
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>出发前 在家后面到跆拳道馆的路上，我尝试给波妞传授旅游和旅行的不同，在本次的澳洲行之前。
+旅行主要的目的有两个，一个是跳脱舒适圈，另一个是学点新的东西。
+女儿满脸问号，我试着跟她解释舒适圈的意思；其实上面的两个目的是硬掰的，一般来讲如果跳脱了舒适圈，自然也就学习到了新的东西。
+我大概重复了两遍，女儿很聪明，跟她说过的事情很容易就记住了。我总是希望能把有意义的概念放进她小小的脑袋里面。
+敢开口和陌生人用英文打招呼 学游泳 用自己的方式记录下所见所闻，比如画画 带家人体验一下澳洲的公寓 看目前为止只在电视上能看到的动物（考拉和袋鼠） 吃传统中餐以外的食物 没有家里的吸管杯喝牛奶，尝试用其他的方法喝牛奶 受一点不同文化的洗礼 干嘛这样，她才5岁 出发前顺便赋予了她一个英文名 Boni ，她听着这个发音放空了五秒开始傻笑，似乎并不排斥，那就凑活着用吧。
+远程办公 也许带家人出国旅行，远程办公只是痴人说梦。
+有想去打卡的景点、每天要想今天或者明天的行程、考虑下一顿吃什么、想做的士还是搭乘公共交通、确保小孩安全问题…所有一切在家所在城市不需要考虑的事情会塞满整个旅行。
+所以大概每天工作1小时，亦是粗浅的工作，无法 deep work。
+也许有人会说出国玩就好好玩，干嘛还想工作？抱歉，我是最卷的华人民族。
+我仍然拥抱远程办公和异步工作 async work，因为科技的发展已经满足办公的基本需求，当你认为工作并不等于生活，当你认为有更好的生活方式的时候，远程办公可以为你带来新的动态平衡 — 在卷和玩之间，游刃有余。
+只不过大部分人暂时无法认同你。
+我的 Living out of a backpack 背包 5月是澳洲的深秋时节，在北半球的我好不容易要入夏封印冬天衣物了，但是却不得不再拿出装备在澳洲御寒。
+所以，我的 Osprey Farpoint 40 背包达到了大约8kg的重量，好像已经超过了上飞机 carry on 的临界值了。大约一个哑铃的重量，确实有点沉。
+也许带3件卫衣太多了。本次全程住酒店，没有了 Airbnb 的洗衣机功能，洗涤条件几乎为0。
+去年10月的科隆，和本次的阿德莱德，一到城市购物街，难免添置衣服，于是对于本来就已经满员的背包而言是雪上加霜。我在 Nudie 买 Gritty Jackson 这条牛，我很清楚自己在干什么，本来就是一条结实的原牛可以一口气穿到黑，在养牛增加色落添加风味的同时，也遭到老婆的嫌弃。
+本次作弊的地方是西装夹克 — 因为有婚礼场合，西装塞在背包里会被压变形，所以租借在同行人的拉杆箱中。我如果背着一个40L背包，手拎着西装袋旅行，看起来一定像是疯子。
+好物 阿德莱德街上有一间 Nudie 专卖店。Nudie 我早有耳闻，某宝也可以购入，但是穿裤子这种事，网购时间成本太大让我打了退堂鼓。
+已经过了喜欢原牛的年纪，但是拥有一条高质量又百搭的原牛，对于“游牧”人生真的很有意义。
+瑞典这个牌子给人的感觉就是剪裁很 slim，偏偏我试穿的 Steady Eddie 腰部的感觉很奇怪，最后选了 regular 剪裁的 Gritty Jackson，也没有我喜欢 taper 裤脚。可能因为近2年在练深蹲把大腿练粗了，不料 Nudie 的直筒裤型这么合我心水？！
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-05-31 14:08:56 +0800 CST'>May 31, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 找出自己的 IKIGAI｜澳洲10天旅行" href="http://localhost:1313/posts/austravel/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Outliers 读书笔记｜(Plus: 如何吸收一本书？)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎨 Impressions 本书的副标题是The story of success，谈白讲对讲“成功”的书籍没什么兴趣，不是应该读“失败”的书籍比较能获益吗？但读完才发现，这本书是在讲“为什么能成功”以及“左右成功的重要因素”这件事。
+比较精彩的部分是第一章，“机遇”对于一个人成功起了至关重要的作用，甚至有些事情冥冥之中已经注定好（这么说有点悲观）；但同时也可以让人重新思考自己现在所从事的工作，是否有利用书中所讲的“优势”。
+🚀 The Book in 3 Sentences 抓住每一个机遇吧，有些时候有些机会稍纵即逝。 田忌赛马，用自己的石头碰别人的鸡蛋。 坚持长期主义，只要是有价值的事情就值得投入时间长期付出努力。 ☘️ How the Book Changed Me 坚定了我继续从事国际贸易的工作，适合我的个人特点。 每个人都有自己的人生轨迹，有的人20岁就是明星，有的人70岁才当总统，“佛系”一点，别去羡慕他人，每个人的发展路线都不同。 继续斜杠青年，假设有3个斜杠工作/项目，那么按中国人的努力天性来说，其实10年时间，你就是一个在3个领域都称得上“专家”的人才；困难的反而是怎么去找到适合你的工作或事情。 增加课余时间对小孩的教育影响。 ✍️ Quotes &amp; Excerpt They are products of history and community, of opportunity and legacy. Their success is not exceptional or mysterious. It is grounded in a web of advantages and inheritances, some deserved, some not, some earned, some just plain lucky — but all critical to making them who they are. The outlier, in the end, is not outlier at all.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-04-06 14:08:56 +0800 CST'>April 6, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Outliers 读书笔记｜(Plus: 如何吸收一本书？)" href="http://localhost:1313/posts/outliers/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Living out of a backpack｜菲律宾6天旅行
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 旅游tourism和旅行travel是不同的。旅游是单纯的消费行为；而旅行是一种有主动意识的行为 (intentional travel)。— Ray from MoneyXYZ
+前言 Ray的关于旅行是消费主义还是个人投资的这一番表诉挺有意思，也让我重新思考了近几年的出国出差和游玩是属于tourism还是travel？以及今后我的出国旅行想达到哪些更有深层次的目的？因为，我也并不是一个单纯喜欢玩的人。
+本次是独自旅行，我忘了上次solo是何时…机会难得，正值国门放开之际，刚好践行一下背包客的生活方式，以及远程办公的探索。以下分享。
+Living out of a backpack 大约在五年前，我被Kraig Adams的内容创作所震撼，把生活装进一个背包里(Fit your life into a backpack) 这个想法在我心里埋下了种子。实不相瞒，一开始我是抱着超怀疑甚至不屑的态度去看待这件事情，进而到理解和亲身尝试，因为几年来逐渐思考了如下：
+背包容量有限，有哪些东西是真正为你带来价值的？ 可以丢掉哪些东西（延伸到家里的物品）？ 买一件新物品，会问自己这件东西到底有没有用？ 摒弃消费主义，不买废物； 超爱一件可以捏成一团体积重量都很小的外套； 天天用的东西，直接买最好的（自己能承受的经济范围）； 持续探索极简主义 (Minimalism)，极简主义并不是什么都不拥有，而是拥有对自身而言真正有价值的东西，不关乎物品的多或少； 专注在需要专注的事情上，而不被周围的噪音所影响（好像扯远了…） 这次旅行用的背包是小鹰osprey farpoint 40。40升的容量对于1周左右的旅行恰到好处，尤其是应对东南亚地区的天气，没有太多需要带厚衣服的负担；osprey的背负系统也良好设计，试过了朋友的O记包，所以入手了这款人气产品。
+Pros:
+真的很好背，40升的容量几乎塞的满满当当的，但是旅行过程不感到吃力； 不会太丑； 合理的小隔层可以收纳数据线和必备良药，取代原本的收纳袋 (Packing cube)； 旅行途中解放双手，真的太爽； 过海关安检，电脑/充电宝也方便取出，有点优雅； 在香港机场快线里看别人费尽全力在放置他们的拉杆箱时，突然有种扭曲的优越感… 香港往返马尼拉的廉价机票刚好也没有免费托运行李额度，节省很多出行成本，下机不需等待托运行李，第一个冲出机场。 Cons:
+阻挡不了亲戚朋友的热情，远道而来难免送个小礼物，所以回程相当狼狈，而且带不完的东西还得麻烦别人下趟帮忙带。 移动办公 我从四年前就在做移动办公的美梦，目前充其量也就是半个（还不到）的远程工作者。但是这样的生活和工作方式一直是我追求的，如果天天都在一个地方办公，那人生真的太没意思了！
+香港 虽然目的地是菲律宾，但是贪图香港往返的机票廉价，疫情管控放松助我一臂之力，刚好就花下午3个小时的时间来小蓝瓶 Blue bottle 咖啡店折磨自己。
+Pros:
+可以品尝小蓝瓶的drip coffee厉害在哪里（我土炮，我第一次来）； 可以给家人带下commuter cup小礼物； 新增随机的香港和外籍同事，仿佛置身于国际大公司办公环境中。 Cons:
+地方太小了，所以很吵，无法进行比较深度的工作，只能shallow work； 香港物价太高了，常来会伤财。 介绍下我的香港同事，A先生和B小姐。 马尼拉 菲律宾的网络速度，真的太慢了，哪怕我买了一个当地卡，必须给一个一颗星的分数。但家中wifi速度还过的去，所以在家里的移动办公则比较顺畅，算是WFSH (work from someone’s home)。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-03-03 14:08:56 +0800 CST'>March 3, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Living out of a backpack｜菲律宾6天旅行" href="http://localhost:1313/posts/phtravel/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">马尼拉
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>在车上，一个老外跟我说他超爱马尼拉，他指着窗外的街道，那些在我们眼里破破旧旧的街道在老外眼里却是别有一番风景。
+20年来，马尼拉是沿海地区华人的谋生之地，他们说，这里的钱好赚一些。
+“王彬街”，“山上”，“南岛”…是当地华人经常提及的地方，仿佛菲国就由这些地方构成。甚至我以前也是这么认为的。
+汽车驶向海边的酒店餐厅，我以为这里是洛杉矶。
+华人社区由一个泡泡笼罩着，里面的人可以看得到外面的世界，只是有的人懒得跳脱出来，有的人不得不待在里面。
+我和当地人交换了思想，才发觉原来马尼拉这么多值得探索的地方。这里的人可跟以前长辈口中描述的当地人大有不同，我为他们感到很遗憾，他们不清楚马尼拉是这样一个多元的地方。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-03-02 14:08:56 +0800 CST'>March 2, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 马尼拉" href="http://localhost:1313/posts/manila/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">比特币好像开始涨了，等等…我仓位还没建够 Explor. #09
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>以色列银行 Bank of Israel 开始颁布法规背书稳定币 不只是非洲和南美，中东的一些地区也开始加速布局加密货币板块了，在下一个时代来临之前。很有可能，现今的老大美国如果还没有出台法律法规监管crypto的话，以后就当不了老大了。
+Visa和Mastercard暂停和更多加密货币公司合作 考虑到美国对加密货币法规监管的不确定性，两大信用卡公司虽然一直是加密货币友好的态度，但是目前也暂时将触角伸到加密货币更深的领域。
+币安的Binance Pay可以在法国使用 用Crypto进行支付，商家收款之后可以选择转成欧元，这里有shorts视频；此举固然很屌，但是在发达的法国，民众不管是使用现金还是信用卡体系仍然还会是主流。
+Google云端宣布将成为 Tezos 的网络验证节点 诸如此类，包括亚马逊的AWS在host以太链，那么这些L1主链很多节点node都还是依赖在这些web2大企业下运行，难免太中心化了，如果这些大企业云端/网络出现问题（虽然不太可能），则这些被host的L1主链就会遭殃。相比，PoW的区块链则没有这个问题，一些其他的L1主链比如Cardano的PoS机制也相对比较去中心化。
+SEC主席Gary Gensler说除了比特币之外，其他加密货币都是证券 此前可不是这么说的，可能Gensler知道比特币已经势不可挡，所以从此前的把比特币归为security而默认为commodity了。但其他加密货币，SEC都希望他们是security从而对加密货币进行监管。
+Spotify在测试能被NFT持有者解锁的播放列表 音乐类的NFT已经不是新闻，但是这个领域还是太新，有太多值得探索的东西。这次Spotify做的东西，希望他们能摸索一些门道出来，特定NFT持有者可以有权收听特定的podcast或音乐，相信这对未来可以以某种形式保护创作者。
+Yuga Lab的比特币NFT TwelveFold（共288个）采用竞标方式 NFT头部项目出的比特币NFT肯定…一般老百姓玩不了。但是用这么传统的方式竞标真的很像scam，目前第1名用了7颗比特币，而第288名用了2颗比特币，这家价格相差有点悬殊。
+Jack Dorsey 去中心化社交平台 Bluesky 开始测试；加密货币支付公司 Block （前Square）提供比特币闪电网络的流动性 持续关注中，和twitter相比，不知道所谓的用户在去中心化平台更有权力怎么体现。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-03-01 14:08:56 +0800 CST'>March 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 比特币好像开始涨了，等等…我仓位还没建够 Explor. #09" href="http://localhost:1313/posts/explor09/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">7年外贸学到什么｜7年简历，请多指教
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 七年就是一辈子 – 李笑来
+之前的文章简单提起过我自己过去的“两辈子”，感觉还不够过瘾；刚好最近读了一篇Sivers很有意思的文章 — 一段话就写一句话（有助于眼睛阅读），刚好可以练习一下这个写法。
+码下这篇文字的另外一个原因，也是感觉到2023将会发生巨变。中山路又开始堵车了，出国的个人旅行签证又开放了；但世界上多了超多的远程工作者，很多企业的运营模式发生了很大改变；而且，我也和3年前创业时的我想法不一样了。
+所以本文当成2016～2022年间的我的简历，请多指教。下一“辈子”，不知道我又会驶向何方。
+技能 从3个方面写下我学到的东西，尽量用一句话表诉，没有其他废话。
+做了什么事情 做这件事情取得什么成效 做这件事情的初衷与反思 建站 从零开始建立公司网站。域名购买，空间用过bluehost和hostinger，建站工具 (website builder) 用过avada和elementor；期间也采用过印度外包服务帮忙。 公司的网页建立了3个并维护，对外形象基本建立（展示型网页），但是SEO效果不佳。 自有网站作为线上“N&#43;1”推广的核心，确实是应该把网站作为重中之重，尤其是外贸生意。但必须持之以恒的打造优质内容，做organic traffic（至少半年），因为google算法只会越来越聪明，只有优质的内容才能走的长久。目前是wordpress&#43;hostinger&#43;elementor的搭配，并非推荐，只是仍然在用，空间主机都是黑心的，也许明年费用就爆涨但是就吃准你懒得换的心理。 B2B平台 运营了alibaba国际站和global sources推广服务2年。 alibaba几乎没有取得目标客户；global sources询盘质量也比alibaba好一些。 alibaba就像是你付他年费，还帮他在google做权重的感觉，对于工业领域的询盘质量极烂；但这类平台付费推广，适合于没有什么推广经验的外贸人，实在不是一个好选择。 Google搜索 做市场分析（贸易数据等）、关键词建立、分析客户画像、学网页html基础了解爬虫机制、用google搜索指令去做主动搜索、whois域名分析、找到目标联系人的邮箱并做验证、定制型开发信、cold call。 成功开发了客户30个以上。 免费又最有效的开发方法（当然因行业而异），但需要时间成本。 展会 参展国内外展会如柏林IFA，香港电子展，上海AWE，法兰克福照明展，观展则无数；主导策划参展样品，海报制作，展团行程规划。 参展变成一个和老客户约见的好时机。 参展和老客户约见的意义大于开发新客户；做展会是真的累，必须有一套事后的跟进流程（记录note），否则就是参展完各回各家，把在展会遇到潜在供应商和客户都忘光光；展会不再是最高效的开发客户的方式，但仍然是最主流之一。 项目管理 管理复杂电子产品的开发流程和协调项目组的各司其职（附上当年我师傅的亲笔真迹）。 持续更新的项目进度表让客户觉得专业；成功管理项目10个以上。 PM是一门科学也是一门艺术，让我耍嘴皮子之余，又套上了光环。 销售力 作为欧洲/美国客户的窗口人 (contact window)，财务/业务/项目/技术的事情，通通由我消化和沟通。 年销售超3000万人民币，重要的是永远让客户有问题的时候找的到人。 一个优秀的业务员是一个问题解决者，而不单单是卖产品那么简单。架起中西方沟通的桥梁也一直是我热爱的事情。 供应链管理 供应商开发和管理，剔除了许多不入流的厂家，而深化和优质工厂的合作关系。 根据不同项目制定一个对应的供应商池子，池子持续优化中。 好的厂家是成功的一半，和优质工厂合作往往前面谈判困难后面生产顺利，反之亦然；好的工厂合作不需要分甲方乙方了，而是partner。 领导力 培训业务员和助手，总是传达为什么，而不是怎么去做一个机器人。 达到工作流的主动化最大化，个人可以自主工作而不用整天开无聊的会议。 工作的事情尽量精简和自动化。 职场 和理念不同的人拆伙；和靠谱的人合伙。 合伙公司走入第5个年头。 能合作就不要合伙，你好我好；创业也没那么可怕，在打工时就要拥有做老板的心态。 人 和客户一起成长，这句话不假。我从客户身上学到了太多太多，不仅仅是工作上的，更有人生哲学。但我就挑一点来写，怕废话太多。
+希腊客户70&#43;岁了退休后又重新投入工作，他跟我说this is life。其实把工作和生活分开本身就是错误的，工作是生活的一个部分，而从事的工作也很有可能是自己追求的东西（那么你就是幸运的），而不是仅仅为了钱。
+法国客户教会我每一次的送样有多么重要，任何一次侥幸的心理带来的后果都是毁灭性的，为了快而快，往往是更慢。和航母级的大客户合作，让你会关注每一次样品，每一次拜访和你说出的每一句话。
+意大利客户让我明白技术才是做产品甚至是做生意的核心，缺少了工程技术能力，即便有再好的销售和项目管理技能都是白搭。
+美国客户让我体会到跨国公司的运营有多么的困难，以及底下不同子公司的不同出发点对于公司业务的影响。每个独立主体对于利益诉求点的不同，都让母公司像老迈的战车一样难以调转。这也是为什么我一直追求轻量化，做那么大干嘛？
+土耳其货币里拉对美元暴跌，让土耳其客户的购买力一夜蒸发，我深刻体会到了政局的相对稳定是做生意的根基。
+从葡萄牙的波尔图自驾到里斯本，除了领略到别致的异国风情，我也见识到了有许许多多有活力的制造型企业在这片土地上，这里可不止有C罗和蛋挞。
+德国客户让我知道了并非所有德国采购商都是严谨的，但往往出于对德国的刻板印象，中国工厂总认为德国客户的种种举动都体现出了德国人的“严谨”和“难搞”。
+印度客户的每一封邮件都让我细细品味，对于喜欢邮件的我，犹如教科书一般。他总能把涨价说的让人心甘情愿，把严重的客诉说的令人欣然接受。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-02-24 14:08:56 +0800 CST'>February 24, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 7年外贸学到什么｜7年简历，请多指教" href="http://localhost:1313/posts/resume/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">搭建 Hugo 个人网站｜PaperMod 主题
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前言 谈不上个人品牌的打造，也谈不上被动收入的项目，但我的确是受到近几年的FIRE运动浪潮和创作者经济的影响，不断的捏造这个个人博客的小泥人，不断的重新思考如果我做一个自己的网站，对自己和他人能有什么积极的意义。
+想到就去做，做事情我喜欢start small。执行的过程中，现实这只手会慢慢推动你去往另外一个地方。况且，输出文字帮助我mental clarity，减压不少，单单是这一点，就已经是写作的动力了；而如果还能结交到同好两三，更是我的荣幸。
+因为工作的原因一开始用wordpress建站，YouTube的算法把我带到林猫先生的频道，又开启了一扇门…经过疫情的催化，以及区块链技术的萌芽，更让我相信辛苦工作之余，必须抽出时间skin in the game，做一些更个人化、去中心化的项目以此反脆弱，给这个世界留下一点微不足道的声音，而通过做个人网站，这个声音可以很自由，很独立。
+所以，why Hugo?
+速度超快，之前的wordpress我习惯把主机架设在国外，国内用户访问速度受限；而Hugo是html静态网站不涉及后台运行； 维护简单，不存在wordpress整天在更新插件； 主题极简，例如目前使用的PaperMod，非常纯粹； 几乎免费，除了购买域名，搭建Hugo网站的服务如Github和Netlify都是免费的。 建站 环境建设 由于我使用的是Mac，以下的操作适用于macOS。
+安装Homebrew。
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; 需要注意的是如上code可能会被更新，请根据最新的安装代码执行；另，如果安装极度缓慢，可以执行如下国内镜像源备选（我就是执行第一个镜像源成功）。
+/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34; 可以通过如下检查版本验证Homebrew是否安装成功。
+brew -v
+安装git。
+brew install git
+可以通过如下检查版本验证git是否安装成功。
+git -v
+安装hugo。
+brew install hugo
+建立网站 可以选择你的网站资料所存放位置，比如文稿Documents，则先进入Documents。
+cd Documents
+例如新建一个名为demo-blog的网站；配置成Yaml是可选项，系统默认是Toml，选择成Yaml是因为语言比较简单（听说啦）；常见的语言有Yaml，Toml和Json。
+hugo new site demo-blog -f -yml
+网站建立成功，则在文件夹生成如下文件
+├── archetypes # 存放front matter ├── assets ├── content # 存放网页的Markdown文件 ├── data # 存放数据文件，通常是json/yaml/toml 文件 ├── layouts # 存放HTML模板 ├── static # 存放静态文件比如图片img，会被复制到public目录下 ├── themes # 存放现有的主题模板 └── config.yml # 全局配置文件 安装主题 进入刚创建好的文件地址中（已进入Documents）。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-02-21 14:08:56 +0800 CST'>February 21, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 搭建 Hugo 个人网站｜PaperMod 主题" href="http://localhost:1313/posts/hugo/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">春节我在山姆会员店买了10000元
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一推车满满的商品，一个推车接着一个推车。虽然早就预见这个场景，但亲眼看见了这一幕还是有点震撼。
+疫情管控全面放开的报复性消费，似乎把全球的通货膨胀问题都忽略了。好歹山姆超市在本地也算中高端的品牌，但跟免费似的遭到消费者疯抢，也许在早前连停车位都快找不到的情况下，我就应该掉头就跑。
+你阿嬷的过年在山姆，连同送礼和自用，还有不知道什么的原因，在这里花了“巨资”。要怪美联储？怪疫情？怪政府？还是要怪自己赚不够多？我都有点糊涂了。
+适逢过年期间有一个短暂的学习期间，YouTube的演算法把我带到Ray的财经频道，也许他能帮我安抚一下受伤的钱包，讲讲通胀/美联储的历史。以下我用表格记录一些重要的历史流水。
+带着一些问题看历史： 为什么控制通胀是央行的责任？ 如果造成通胀的原因是一些不可控因素，那美联储还能靠一己之力把把通胀降下来？
+Time What happened Remarks 1913 美国联邦储备委员会成立 (The Board of Governors of The Federal Reserve System) 美国联邦储备委员会成立 (The Board of Governors of The Federal Reserve System) 1929～1940 经济大萧条；凯恩斯主义Keynesianism崛起 凯恩斯认为社会对商品总需求的减少是经济衰退的主要原因，主张采用扩展性的策略，通过总需求增加来促进经济。即政府的每一元支出，就是百姓的每1元收入，通过在社会里流转，给更多的人带来收入；此时美联储并没有起来该有的作用，反而是完全被政府控制，比如配合政府的财政部压低利率，让政府成本更低的发行债券去参与二战。大萧条时代的奶农大量倒牛奶的案例，之前在国内被作为批判资本主义市场经济的“经典案例”，其实真实原因是奶农因为物价下降太多，因为入不敷出在抗议。 1940 英国经济学家凯恩斯和美国总统罗斯福交流颇多，争执也不少。罗斯福并没有在管凯恩斯的理论，但当时二战美国耗费了大量的资源和金钱，所以最终还是有意无意的采用了凯恩斯主义，最终走出了大萧条 罗斯福任美国总统（1933～1945）；二战（1939～1945） 1945 美国总统楚门颁布就业法，怕二战后再次经济萧条，以此促进就业，也作为美联储双重责任的一个历史起点；当时大部分的经济学家还是比较支持凯恩斯主义，也就促使政府花大钱，走赤字经济。 楚门任美国总统（1945～1953）； 1951 美国和朝鲜的战争导致通胀飙升，美联储又被政府要求降低利率，导致他们无法通过加息来控制通胀，接着就是矛盾的激发。在William Martin的努力之下，签署了协议，得以让美联储独立，获得实施货币政策的权利，为当代Fed奠定了基础。 William Martin任美联储主席 1958 新西兰经济学家William Phillips通过分析数据得出著名的“菲利普斯曲线Phillips Curve”– 失业率越低工资越高，失业率越高工资越低；而美国的Paul Samuelson得出相似理论，把纵轴换成了通胀 – 低失业率对应高通胀，高失业率则对应低通胀。见下图。 1962 肯尼迪总统上任，通过经济学家的曲线，得出了“一定的通胀可以促进经济发展”的理论，凯恩斯主义如虎添翼，大通胀拉开了序幕；政府采用了“反周期”的财政政策 肯尼迪任美国总统（1961～1963）;“反周期”政策：当经济衰退时，政府加大开支和减税，刺激经济；当经济过热时，政府减少开支和加税，抑制通胀。 1963 肯尼迪遇刺，副总统约翰逊上台；约翰逊不管彼时经济顾问的通过加税抵制通胀的建议，执意走赤字经济，多次召见美联储主席Martin，想说服Martin不要加息来控制通胀，但是Martin就是不服软。 1970 尼克松上任美国总统，强行把美联储主席Martin撤职了。 尼克松任美国总统（1969～1974）； 1973 经济陷入了一种“滞胀Stagflation”的境地，高通胀伴随高失业率，凯恩斯主义的信徒大傻眼；另一个学派走入人们的眼球，几年前Friedman提出的货币主义，认为货币的多少决定了经济和通胀的走向。 货币主义的观点，例如美联储可以通过加大供给货币来刺激经济（量化宽松）；如果经济过热，美联储则可以减少货币供应量对来对应（缩表）。Friedman认为通胀和失业率只是短期的，长期来看会存在一个“自然失业率”，以此解释“滞胀”。 1975 经济学家Shiskin提出观点，将连续2个季度的GDP收缩定义为“经济衰退Recession”。 1977 美国政府通过美联储改革案，赋予美联储双重责任 – 保就业和稳物价；美联储得到了更多的权利。 1979 Paul Volcker就任美联储主席，新官上任三把火，把控制通胀作为美联储的第一要务。他坚持货币主义理论，将之前印的钞票从市场中抽回去，尽管这样做利润会随着市场自由浮动；结果这么一搞，基础利率来到了20%的高点，通胀不降反升。 1980 从1965年飙升的通胀，在1980达到高点，14%。 1983 Volcker没有退缩，坚持货币主义政策，最终控制在5%左右的通胀率，在接下来的40年，再无大通胀。 1965～1982美国70年代的大通胀时代 菲利普斯曲线，src: https://www.stlouisfed.org/open-vault/2020/january/what-is-phillips-curve-why-flattened
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-02-07 14:08:56 +0800 CST'>February 7, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 春节我在山姆会员店买了10000元" href="http://localhost:1313/posts/fed/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">小长假干什么才不无聊｜Company of One 读书笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最喜欢的还是小长假前的那几天，那种即将要放假的心情。如果假期不是去旅行，而是停留在原地，那么在假期开启之后，马上会感觉无聊，无聊到很痛苦。与父老乡亲周旋，无法学习，浪费时间…大概也就成了假期主旋律。好在我发现了三个好借口，可以逃离现实。
+读一本书，看一部电影，学一门课程。主要是春节连健身房也关了，这三件事情可以在让你独处同时，并吸收一点新的东西。
+Nomadland, 今次在家里阳台看完这部期盼已久的电影。这部看点很多，首先nomad这个题材就很令人好奇，当然，影片的游民和现今盛行的digital nomad群体相差甚远，类似于一个是被动的，一个是主动的选择的一种生活方式。听说是Frances Mcdormand主动找的赵婷来拍这部片子，华人导演因为“周围到处都是谎言“被断章取义，莫名其妙被冠上辱华之名，有意无意，这倒不是重点，重点是总局敏感程度可见一番。影片宁静又悲伤，和我一边吃的开心果很搭配，细细雕刻出美国底层人民的生活，还有他们的意志。对于那些有能力主动活出自己的生活方式的人，是很幸运的，同时又令人敬佩。
+再推荐一部前不久看的好电影，V For Vendetta。追求民主和自由，推翻极权和专政，虽然是老生常谈的话题，但是影片架构在一个虚拟的时空环境下和用暴力推翻的手段来阐述，不论对错与否，也许追求自由就会是一场血腥抗争。
+Company of one 这本书我并没有全部读完，感觉作者有些观点一直在重复，而且很多论点也不只是适用于一人公司（或mini公司），而是大多数生意都应该借鉴的。无论如何，书里还是有许多地方让我产生共鸣，所以分享之。
+This fetishization of wanting more, are empty promises of happiness and fulfillment that never seem to come to fruition. Sometimes “enough” or even less is all we need, since “more” too offen equates to more stress, more problems, and more responsibilities in both life and business.
+Each year Peldi takes $1 million personally, keeps an eighteen month RUNWAY in the company (in case anything bad happens).
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-01-28 14:08:56 +0800 CST'>January 28, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 小长假干什么才不无聊｜Company of One 读书笔记" href="http://localhost:1313/posts/companyofone/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/5/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/7/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

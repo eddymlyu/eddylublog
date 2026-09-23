@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>VPS &#43; Tailscale 搭建 VPN | ed</title>
+<meta name="keywords" content="vpn, vps, vultr, tailscale">
+<meta name="description" content="VPS &#43; Tailscale 搭建 VPN 使用说明书（小白版）
+所需设备
+
+一台 Mac 💻
+一双手 👋
+
+1. 购买 VPS
+
+注册 VPS 服务商（如 UltaHost、Vultr、Hetzner、Linode、DigitalOcean 等），我用的是 Vultr
+选择合适的套餐：一般选 shared CPU 足够。1 vCPU / 1 GB 内存 / 25 GB SSD，USD 5/month
+选定节点（如日本 / 新加坡，取决于你想要的出口 IP）
+操作系统建议选：Ubuntu 22.04 LTS (64-bit)
+
+购买后，你会得到：
+
+公网 IP（例如 45.xx.xxx.xxx）
+root 用户名和初始密码
+
+
+2. 连接 VPS
+在 Mac 终端机输入：
+ssh root@&lt;你的VPS_IP&gt;
+ssh root@45.xx.xxx.xxx
+首次登录会提示
+Are you sure you want to continue connecting (yes/no)? → 输入 yes。
+然后输入服务商提供的 root 密码。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/vps/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/vps/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ed (Alt + H)">ed</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="文章列表">
+                    <span>文章列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="近况">
+                    <span>近况</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/1/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/2/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/3/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/4/" title="">
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei", Arial, sans-serif;
+}
+</style>
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      VPS &#43; Tailscale 搭建 VPN
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-03-23 14:08:56 +0800 CST'>March 23, 2026</span>
+
+</div>
+  </header> <details class="toc"  open>
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#1-%e8%b4%ad%e4%b9%b0-vps" aria-label="1. 购买 VPS">1. 购买 VPS</a></li>
+            <li>
+                <a href="#2-%e8%bf%9e%e6%8e%a5-vps" aria-label="2. 连接 VPS">2. 连接 VPS</a></li>
+            <li>
+                <a href="#3-%e5%88%9b%e5%bb%ba%e6%99%ae%e9%80%9a%e7%94%a8%e6%88%b7%e9%81%bf%e5%85%8d%e7%9b%b4%e6%8e%a5%e7%94%a8-root" aria-label="3. 创建普通用户（避免直接用 root）">3. 创建普通用户（避免直接用 root）</a></li>
+            <li>
+                <a href="#4-%e4%b8%8a%e4%bc%a0-ssh-%e5%85%ac%e9%92%a5%e5%85%8d%e5%af%86%e7%99%bb%e5%bd%95" aria-label="4. 上传 SSH 公钥（免密登录）">4. 上传 SSH 公钥（免密登录）</a></li>
+            <li>
+                <a href="#5-%e6%9b%b4%e6%96%b0%e7%b3%bb%e7%bb%9f" aria-label="5. 更新系统">5. 更新系统</a></li>
+            <li>
+                <a href="#6-%e5%ae%89%e8%a3%85-tailscale" aria-label="6. 安装 Tailscale">6. 安装 Tailscale</a></li>
+            <li>
+                <a href="#7-%e5%90%af%e7%94%a8-exit-node" aria-label="7. 启用 Exit Node">7. 启用 Exit Node</a></li>
+            <li>
+                <a href="#8-%e6%89%93%e5%bc%80%e8%bd%ac%e5%8f%91%e5%8a%9f%e8%83%bd" aria-label="8. 打开转发功能">8. 打开转发功能</a></li>
+            <li>
+                <a href="#9-%e9%85%8d%e7%bd%ae%e9%98%b2%e7%81%ab%e5%a2%99ufw" aria-label="9. 配置防火墙（UFW）">9. 配置防火墙（UFW）</a></li>
+            <li>
+                <a href="#10-%e5%9c%a8-tailscale-%e5%90%8e%e5%8f%b0%e5%90%af%e7%94%a8-exit-node" aria-label="10. 在 Tailscale 后台启用 Exit Node">10. 在 Tailscale 后台启用 Exit Node</a></li>
+            <li>
+                <a href="#11-%e6%9c%ac%e5%9c%b0%e8%ae%be%e5%a4%87%e9%80%89%e6%8b%a9-exit-node" aria-label="11. 本地设备选择 Exit Node">11. 本地设备选择 Exit Node</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content"><p><strong>VPS + Tailscale 搭建 VPN 使用说明书（小白版）</strong></p>
+<p>所需设备</p>
+<ul>
+<li>一台 Mac 💻</li>
+<li>一双手 👋</li>
+</ul>
+<h3 id="1-购买-vps">1. 购买 VPS<a hidden class="anchor" aria-hidden="true" href="#1-购买-vps">#</a></h3>
+<ul>
+<li>注册 VPS 服务商（如 UltaHost、Vultr、Hetzner、Linode、DigitalOcean 等），我用的是 Vultr</li>
+<li>选择合适的套餐：一般选 <a href="https://eddy.lu/posts/host/">shared CPU</a> 足够。1 vCPU / 1 GB 内存 / 25 GB SSD，USD 5/month</li>
+<li>选定节点（如日本 / 新加坡，取决于你想要的出口 IP）</li>
+<li>操作系统建议选：<strong>Ubuntu 22.04 LTS (64-bit)</strong></li>
+</ul>
+<p>购买后，你会得到：</p>
+<ul>
+<li>公网 IP（例如 45.xx.xxx.xxx）</li>
+<li>root 用户名和初始密码</li>
+</ul>
+<p><img loading="lazy" src="/img/vpsip.png"></p>
+<h3 id="2-连接-vps">2. 连接 VPS<a hidden class="anchor" aria-hidden="true" href="#2-连接-vps">#</a></h3>
+<p>在 Mac 终端机输入：</p>
+<p>ssh root@&lt;你的VPS_IP&gt;</p>
+<pre tabindex="0"><code>ssh root@45.xx.xxx.xxx
+</code></pre><p>首次登录会提示</p>
+<p><strong>Are you sure you want to continue connecting (yes/no)? → 输入 yes。</strong><br>
+然后输入服务商提供的 root 密码。</p>
+<h3 id="3-创建普通用户避免直接用-root">3. 创建普通用户（避免直接用 root）<a hidden class="anchor" aria-hidden="true" href="#3-创建普通用户避免直接用-root">#</a></h3>
+<pre tabindex="0"><code>adduser eddy  
+</code></pre><p>给系统 sudo 权限，理解为管理员权限。</p>
+<pre tabindex="0"><code>usermod -aG sudo eddy
+</code></pre><p>⚠️ eddy 换成你想要创建的用户名。</p>
+<p>测试：</p>
+<pre tabindex="0"><code>ssh eddy@&lt;你的VPS_IP&gt;  
+</code></pre><p>期间可能提醒你更新密码。</p>
+<p>👉 系统觉得“不够安全”，给你一个警告。</p>
+<pre tabindex="0"><code>BAD PASSWORD: The password contains the user name in some form
+</code></pre><pre tabindex="0"><code>Full Name []:
+Room Number []:
+Work Phone []:
+Home Phone []:
+Other []:
+</code></pre><p>👉 这些全部可以，直接按 Enter 跳过。</p>
+<p>最后它会问：</p>
+<pre tabindex="0"><code>Is the information correct? [Y/n]
+</code></pre><p>当然是 Y，不然呢？</p>
+<h3 id="4-上传-ssh-公钥免密登录">4. 上传 SSH 公钥（免密登录）<a hidden class="anchor" aria-hidden="true" href="#4-上传-ssh-公钥免密登录">#</a></h3>
+<p>✍️ <strong>SSH key = 一把“不会被偷的钥匙”</strong>
+用来登录你的服务器（VPS），<strong>替代密码</strong>。</p>
+<p>在 Mac 上生成密钥（如果还没有）：</p>
+<pre tabindex="0"><code>ssh-keygen -t ed25519 -C &#34;eddy-mac&#34;  
+</code></pre><p>然后一路回车：</p>
+<pre tabindex="0"><code>Enter file in which to save the key (...) → 回车
+Enter passphrase → 可以回车（先简单点）
+</code></pre><p>把公钥上传到 VPS 服务器：</p>
+<pre tabindex="0"><code>ssh-copy-id eddy@&lt;你的VPS_IP&gt;  
+</code></pre><p>如果提示 Are you sure you want to continue connecting (yes/no)?</p>
+<p>就给他 yes 下去。</p>
+<p>然后会让你输入密码。</p>
+<p>👉 输入你刚刚设置的 eddy 用户密码。（输入时不会显示，正常）。</p>
+<p>成功后会看到类似：</p>
+<pre tabindex="0"><code>Number of key(s) added: 1
+</code></pre><p>✅ 你的 Mac 已经有“钥匙”可以登录服务器了</p>
+<p>马上测试看看吧！
+先退出服务器：</p>
+<pre tabindex="0"><code>exit
+</code></pre><p>然后重新登录：</p>
+<pre tabindex="0"><code>ssh eddy@&lt;你的VPS_IP&gt;
+</code></pre><p>👉 如果：</p>
+<p>直接进去了
+没有让你输密码</p>
+<p>那就说明：</p>
+<p>🎉 SSH key 登录成功</p>
+<h3 id="5-更新系统">5. 更新系统<a hidden class="anchor" aria-hidden="true" href="#5-更新系统">#</a></h3>
+<p>更新服务器的软件包，相当于手机系统更新 / App 更新。</p>
+<p>⚠️ 先确认你已经在 eddy 用户下</p>
+<p>终端应该是这样：</p>
+<pre tabindex="0"><code>eddy@vultr:~$
+</code></pre><pre tabindex="0"><code>sudo apt update &amp;&amp; sudo apt upgrade -y  
+</code></pre><p>如果看到 Pending kernel upgrade，不要慌，是内核更新了，需要重启。</p>
+<pre tabindex="0"><code>sudo reboot
+</code></pre><p>再重新登陆</p>
+<pre tabindex="0"><code>ssh eddy@&lt;你的VPS_IP&gt;
+</code></pre><h3 id="6-安装-tailscale">6. 安装 Tailscale<a hidden class="anchor" aria-hidden="true" href="#6-安装-tailscale">#</a></h3>
+<pre tabindex="0"><code>curl -fsSL https://tailscale.com/install.sh | sh  
+</code></pre><p>期间如果出现粉色的对话框，选 keep the local version currently installed</p>
+<p><img loading="lazy" src="/img/installvps2.png"></p>
+<p>这个界面你不用纠结，直接这样做：</p>
+<p>✅ 保持默认勾选，直接按 Enter（OK）</p>
+<p><img loading="lazy" src="/img/installvps3.png"></p>
+<h3 id="7-启用-exit-node">7. 启用 Exit Node<a hidden class="anchor" aria-hidden="true" href="#7-启用-exit-node">#</a></h3>
+<pre tabindex="0"><code>sudo tailscale up --ssh --advertise-exit-node --advertise-routes=0.0.0.0/0,::/0  
+</code></pre><p>👉 它会输出一个 URL，把链接复制到浏览器，用 GitHub 或 Google 登录并授权。我用的是 Github。</p>
+<h3 id="8-打开转发功能">8. 打开转发功能<a hidden class="anchor" aria-hidden="true" href="#8-打开转发功能">#</a></h3>
+<p>1️⃣ 开启 IPv4 转发</p>
+<pre tabindex="0"><code>echo &#39;net.ipv4.ip_forward = 1&#39; | sudo tee -a /etc/sysctl.conf  
+</code></pre><p>2️⃣ 开启 IPv6 转发（建议一起开）</p>
+<pre tabindex="0"><code>echo &#39;net.ipv6.conf.all.forwarding = 1&#39; | sudo tee -a /etc/sysctl.conf  
+</code></pre><p>3️⃣ 让配置生效</p>
+<pre tabindex="0"><code>sudo sysctl -p  
+</code></pre><p>开启 exit node，在 VPS 上执行：</p>
+<pre tabindex="0"><code>tailscale up --exit-node=45.76.110.122
+</code></pre><h3 id="9-配置防火墙ufw">9. 配置防火墙（UFW）<a hidden class="anchor" aria-hidden="true" href="#9-配置防火墙ufw">#</a></h3>
+<pre tabindex="0"><code>sudo ufw allow OpenSSH  
+</code></pre><pre tabindex="0"><code>sudo ufw allow 41641/udp  
+</code></pre><pre tabindex="0"><code>sudo ufw default deny incoming  
+</code></pre><pre tabindex="0"><code>sudo ufw default allow outgoing  
+</code></pre><pre tabindex="0"><code>sudo ufw default allow routed  
+</code></pre><pre tabindex="0"><code>sudo ufw enable  
+</code></pre><p>👉 它会问：</p>
+<pre tabindex="0"><code>Command may disrupt existing ssh connections. Proceed with operation (y/n)?
+</code></pre><p>👉 输入：</p>
+<pre tabindex="0"><code>y
+</code></pre><p>检查：</p>
+<pre tabindex="0"><code>sudo ufw status verbose  
+</code></pre><p>👉 需要显示 allow (routed)，代表成功。</p>
+<h3 id="10-在-tailscale-后台启用-exit-node">10. 在 Tailscale 后台启用 Exit Node<a hidden class="anchor" aria-hidden="true" href="#10-在-tailscale-后台启用-exit-node">#</a></h3>
+<ol>
+<li>登录 <a href="https://login.tailscale.com/admin/machines">Tailscale 管理后台</a></li>
+<li>找到你的 VPS → 点开 → 勾选 <strong>Use as Exit Node</strong> → Save</li>
+</ol>
+<p><img loading="lazy" src="/img/exitnode.jpg"></p>
+<h3 id="11-本地设备选择-exit-node">11. 本地设备选择 Exit Node<a hidden class="anchor" aria-hidden="true" href="#11-本地设备选择-exit-node">#</a></h3>
+<ul>
+<li><strong>Mac / iPhone / iPad</strong></li>
+<li>打开 Tailscale 客户端 → Settings → Exit Node → 选择你的 VPS</li>
+<li>测试</li>
+</ul>
+<p>在 Safari/Chrome 访问 <a href="https://whatismyipaddress.com">https://whatismyipaddress.com</a>，<br>
+👉 IP 地址应显示为 VPS 的 IP（例如 45.xx.xxx.xxx）。</p>
+<p>📙 <strong>说明书总结</strong></p>
+<ul>
+<li><strong>VPS</strong>：你租用的服务器，作为出口</li>
+<li><strong>Tailscale</strong>：用来安全连接 VPS 和设备</li>
+<li><strong>Exit Node</strong>：让 VPS 成为你的「网络跳板」</li>
+<li><strong>结果</strong>：手机/电脑 → 通过 Tailscale → VPS → 外网，出口 IP 在 VPS 所在国家</li>
+<li>出现很多「故障」，不懂问 AI 就好了</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/vpn/">Vpn</a></li>
+      <li><a href="http://localhost:1313/tags/vps/">Vps</a></li>
+      <li><a href="http://localhost:1313/tags/vultr/">Vultr</a></li>
+      <li><a href="http://localhost:1313/tags/tailscale/">Tailscale</a></li>
+    </ul>
+    
+    <div style="margin: 50px 0;"> 
+        <style>
+  #cusdis_thread iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+  </style>
+    <h4>Comments:</h4>
+      <div id="cusdis_thread" data-host="https://cusdis.com"
+        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
+        data-page-id="65186c9c4cfe796925e88c508b4f06f8" data-page-url="http://localhost:1313/posts/vps/"
+        data-page-title="VPS &#43; Tailscale 搭建 VPN"></div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">ed</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
