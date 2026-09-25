@@ -197,8 +197,8 @@
 &lt;p&gt;疫情管控全面放开的报复性消费，似乎把全球的通货膨胀问题都忽略了。好歹山姆超市在本地也算中高端的品牌，但跟免费似的遭到消费者疯抢，也许在早前连停车位都快找不到的情况下，我就应该掉头就跑。&lt;/p&gt;
 &lt;p&gt;你阿嬷的过年在山姆，连同送礼和自用，还有不知道什么的原因，在这里花了“巨资”。要怪美联储？怪疫情？怪政府？还是要怪自己赚不够多？我都有点糊涂了。&lt;/p&gt;
 &lt;p&gt;适逢过年期间有一个短暂的学习期间，YouTube的演算法把我带到&lt;a href=&#34;https://www.youtube.com/watch?v=D-wc9d5ZBdo&#34;&gt;Ray的财经频道&lt;/a&gt;，也许他能帮我安抚一下受伤的钱包，讲讲通胀/美联储的历史。以下我用表格记录一些重要的历史流水。&lt;/p&gt;
-&lt;p&gt;带着一些问题看历史：
-为什么控制通胀是央行的责任？
+&lt;p&gt;带着一些问题看历史：&lt;br&gt;
+为什么控制通胀是央行的责任？&lt;br&gt;
 如果造成通胀的原因是一些不可控因素，那美联储还能靠一己之力把把通胀降下来？&lt;/p&gt;
 &lt;table&gt;
 	&lt;thead&gt;
@@ -286,7 +286,7 @@
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/phillipscurve.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/phillipscurve.png&#34;&gt;&lt;br&gt;
 菲利普斯曲线，src: &lt;a href=&#34;https://www.stlouisfed.org/open-vault/2020/january/what-is-phillips-curve-why-flattened&#34;&gt;https://www.stlouisfed.org/open-vault/2020/january/what-is-phillips-curve-why-flattened&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -308,20 +308,20 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/ClashforMac.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-完成proxifier常规设置&#34;&gt;3. 完成Proxifier常规设置&lt;/h4&gt;
 &lt;p&gt;如果是第一次添加服务器Proxy Sever，它会问你是否把这个服务器当作默认服务器，点击yes。&lt;/p&gt;
-&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。
+&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;输入Address地址，端口，勾选Socks version 5，Save！&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier2.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;4-设置程序代理规则&#34;&gt;4. 设置程序代理规则&lt;/h4&gt;
-&lt;p&gt;📌必要设置
-→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；
+&lt;p&gt;📌必要设置&lt;br&gt;
+→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；&lt;br&gt;
 → 让加速器程序走直连Direct；&lt;/p&gt;
-&lt;p&gt;🤏可选设置：
-→ 特定聊天软件不经代理走Direct，如微信等；
+&lt;p&gt;🤏可选设置：&lt;br&gt;
+→ 特定聊天软件不经代理走Direct，如微信等；&lt;br&gt;
 → 不会自定义Clash规则，设置指定程序走Clash的全部代理。&lt;/p&gt;
 &lt;p&gt;点击Rules设置规则，点击Add添加。&lt;/p&gt;
 &lt;p&gt;例如添加Ledger Live，命名下Name，“+”号添加应用程序，Action选Direct，Save！可依次添加google chrome和Clash等。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier4.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;5-设置dns代理&#34;&gt;5. 设置DNS代理&lt;/h4&gt;
 &lt;p&gt;这个设置一般情况下不用设置，如果碰到有程序，无法通过你所用的代理工具走代理，可能需要让DNS也走代理，那可以尝试通过这个设置解决问题。&lt;/p&gt;
@@ -329,7 +329,7 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier5.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;实测&#34;&gt;实测&lt;/h3&gt;
 &lt;p&gt;经过上面一连串的设置，代理软件通过Proxifier实现按需代理基本就实现了，运行正常的情况下界面如下。早前我也尝试过使用V2rayU，但是不成功，总是显示红色字的connect error。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;&lt;br&gt;
 可以继续DCA比特币了！&lt;/p&gt;</description>
     </item>
     <item>
@@ -470,19 +470,19 @@
 &lt;p&gt;插曲：身边有朋友在2020年上半年通过一顿乱操作，意外的跳过了入金$20并成功激活，享受到了混乱福利期，然而系统很快就修复了漏洞，手慢无。&lt;/p&gt;
 &lt;p&gt;我在2020年圣诞节12月25日成功入金了$20，用的是全球付的服务。&lt;/p&gt;
 &lt;p&gt;但是全球付的服务比较昂贵，发现要分享此篇博文，想来回头翻阅之前的汇款记录和手续费太无趣，干脆今日2021年4月23日汇款个小额$500，分享下具体的手续费情况和（再一次）体验。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/gcash1.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/gcash1.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/gcash2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;登陆Wise，增值USD账户，选择debit或者credit card都可以，都会跳转到你绑定的全球付卡HKD Mastercard，几番周折，只能键盘敲下$477，因平台手续费需扣$20.99。&lt;/p&gt;
 &lt;p&gt;（另，发现近期wise登陆不用科学上网了？）&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise1.png&#34;&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise2.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise1.png&#34;&gt;&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise2.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise3.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;全球付也收到出账记录。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/gcash3.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;注：我的Wise完全按真实情况注册申请，中国护照，中国地址，中国电话。于是，收不到这张绿油油的卡。听说全球付入金会有封号风险，请各位谨慎行事，目前我个人入金4次还未湿鞋。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/wise4.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;整体花费情况。一个字：贵。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/exchangerate.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/exchangerate.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/banktable.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;不好玩。&lt;/p&gt;</description>
     </item>

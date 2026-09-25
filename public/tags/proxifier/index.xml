@@ -27,20 +27,20 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/ClashforMac.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-完成proxifier常规设置&#34;&gt;3. 完成Proxifier常规设置&lt;/h4&gt;
 &lt;p&gt;如果是第一次添加服务器Proxy Sever，它会问你是否把这个服务器当作默认服务器，点击yes。&lt;/p&gt;
-&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。
+&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;输入Address地址，端口，勾选Socks version 5，Save！&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier2.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;4-设置程序代理规则&#34;&gt;4. 设置程序代理规则&lt;/h4&gt;
-&lt;p&gt;📌必要设置
-→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；
+&lt;p&gt;📌必要设置&lt;br&gt;
+→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；&lt;br&gt;
 → 让加速器程序走直连Direct；&lt;/p&gt;
-&lt;p&gt;🤏可选设置：
-→ 特定聊天软件不经代理走Direct，如微信等；
+&lt;p&gt;🤏可选设置：&lt;br&gt;
+→ 特定聊天软件不经代理走Direct，如微信等；&lt;br&gt;
 → 不会自定义Clash规则，设置指定程序走Clash的全部代理。&lt;/p&gt;
 &lt;p&gt;点击Rules设置规则，点击Add添加。&lt;/p&gt;
 &lt;p&gt;例如添加Ledger Live，命名下Name，“+”号添加应用程序，Action选Direct，Save！可依次添加google chrome和Clash等。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier4.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;5-设置dns代理&#34;&gt;5. 设置DNS代理&lt;/h4&gt;
 &lt;p&gt;这个设置一般情况下不用设置，如果碰到有程序，无法通过你所用的代理工具走代理，可能需要让DNS也走代理，那可以尝试通过这个设置解决问题。&lt;/p&gt;
@@ -48,7 +48,7 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier5.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;实测&#34;&gt;实测&lt;/h3&gt;
 &lt;p&gt;经过上面一连串的设置，代理软件通过Proxifier实现按需代理基本就实现了，运行正常的情况下界面如下。早前我也尝试过使用V2rayU，但是不成功，总是显示红色字的connect error。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;&lt;br&gt;
 可以继续DCA比特币了！&lt;/p&gt;</description>
     </item>
   </channel>

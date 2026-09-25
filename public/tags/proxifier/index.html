@@ -173,9 +173,14 @@
 本文就是通过设置Proxifier让Ledger Live能够走代理，实现连接。
 2. 获得代理工具信息 本地代理的IP一般情况下是 127.0.0.1, 我使用的是Clash for Mac V3.7，使用 http&#43;socks 混合协议的默认代理端口 7890。
 3. 完成Proxifier常规设置 如果是第一次添加服务器Proxy Sever，它会问你是否把这个服务器当作默认服务器，点击yes。
-打开Proxifier，点击Proxies，然后点击Add添加代理server。 输入Address地址，端口，勾选Socks version 5，Save！
-4. 设置程序代理规则 📌必要设置 → 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)； → 让加速器程序走直连Direct；
-🤏可选设置： → 特定聊天软件不经代理走Direct，如微信等； → 不会自定义Clash规则，设置指定程序走Clash的全部代理。
+打开Proxifier，点击Proxies，然后点击Add添加代理server。
+输入Address地址，端口，勾选Socks version 5，Save！
+4. 设置程序代理规则 📌必要设置
+→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；
+→ 让加速器程序走直连Direct；
+🤏可选设置：
+→ 特定聊天软件不经代理走Direct，如微信等；
+→ 不会自定义Clash规则，设置指定程序走Clash的全部代理。
 点击Rules设置规则，点击Add添加。
 例如添加Ledger Live，命名下Name，“&#43;”号添加应用程序，Action选Direct，Save！可依次添加google chrome和Clash等。
 5. 设置DNS代理 这个设置一般情况下不用设置，如果碰到有程序，无法通过你所用的代理工具走代理，可能需要让DNS也走代理，那可以尝试通过这个设置解决问题。

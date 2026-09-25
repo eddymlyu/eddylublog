@@ -115,7 +115,7 @@
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;狗狗币的那只狗狗不乐观&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;那只狗狗是一只日本柴犬Shiba Inu，名叫Kabosu的它是狗狗币Dogecoin上图案的灵感来源，可惜它得了白血病和肝病现在是病得不行，希望它安好。
+&lt;p&gt;那只狗狗是一只日本柴犬Shiba Inu，名叫Kabosu的它是狗狗币Dogecoin上图案的灵感来源，可惜它得了白血病和肝病现在是病得不行，希望它安好。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/dogecoin.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -137,20 +137,20 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/ClashforMac.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-完成proxifier常规设置&#34;&gt;3. 完成Proxifier常规设置&lt;/h4&gt;
 &lt;p&gt;如果是第一次添加服务器Proxy Sever，它会问你是否把这个服务器当作默认服务器，点击yes。&lt;/p&gt;
-&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。
+&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;输入Address地址，端口，勾选Socks version 5，Save！&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier2.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;4-设置程序代理规则&#34;&gt;4. 设置程序代理规则&lt;/h4&gt;
-&lt;p&gt;📌必要设置
-→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；
+&lt;p&gt;📌必要设置&lt;br&gt;
+→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；&lt;br&gt;
 → 让加速器程序走直连Direct；&lt;/p&gt;
-&lt;p&gt;🤏可选设置：
-→ 特定聊天软件不经代理走Direct，如微信等；
+&lt;p&gt;🤏可选设置：&lt;br&gt;
+→ 特定聊天软件不经代理走Direct，如微信等；&lt;br&gt;
 → 不会自定义Clash规则，设置指定程序走Clash的全部代理。&lt;/p&gt;
 &lt;p&gt;点击Rules设置规则，点击Add添加。&lt;/p&gt;
 &lt;p&gt;例如添加Ledger Live，命名下Name，“+”号添加应用程序，Action选Direct，Save！可依次添加google chrome和Clash等。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier4.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;5-设置dns代理&#34;&gt;5. 设置DNS代理&lt;/h4&gt;
 &lt;p&gt;这个设置一般情况下不用设置，如果碰到有程序，无法通过你所用的代理工具走代理，可能需要让DNS也走代理，那可以尝试通过这个设置解决问题。&lt;/p&gt;
@@ -158,7 +158,7 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier5.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;实测&#34;&gt;实测&lt;/h3&gt;
 &lt;p&gt;经过上面一连串的设置，代理软件通过Proxifier实现按需代理基本就实现了，运行正常的情况下界面如下。早前我也尝试过使用V2rayU，但是不成功，总是显示红色字的connect error。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;&lt;br&gt;
 可以继续DCA比特币了！&lt;/p&gt;</description>
     </item>
     <item>
@@ -177,7 +177,7 @@
 &lt;p&gt;3）香港的交易所AAX传出创始人跑路，还有一些交易所如Kucoin都是在玩前期超高的利息吸引投资散户入场的把戏。交易所没有一家可以相信，尽量不把大额资金长期摆在上面。&lt;/p&gt;
 &lt;p&gt;4）48%以上的eth nft是wash trading的。&lt;/p&gt;
 &lt;p&gt;非常精彩，但也在意料之中吧，NFT至少在现在还是一个短期炒作的好玩具。头部项目之一的Meebits竟然96%是炒作的；但也有一些真实的项目BAYC，在一开始就不是以套利为目的的OG项目发展起来。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading1.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading1.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;5）数据显示bitcoin shrimp和crab的小散户的数量正在逐步增加。&lt;/p&gt;
 &lt;p&gt;在如此低迷的行情和这么多噪音之下，反而让更多人沉下心来学习和积累，我相信这些人就是开始购入btc的小散户，买入的比重因人而异，倒也不重要，但能把5%左右的收入当成零花钱去定期购买btc不失为一个好选择。&lt;/p&gt;
@@ -191,7 +191,7 @@
 &lt;p&gt;8）数据调查美国人过圣诞夜的电灯所消耗大约是6.63 terawatt-hour 万亿瓦，远比一些非洲小国一年消耗的电力还多，也比BTC挖矿的电力还多。&lt;/p&gt;
 &lt;p&gt;如果还有人反驳BTC于电力消耗过大，不妨说说这个圣诞夜灯光的冷知识？&lt;/p&gt;
 &lt;p&gt;9）NFT BBRC项目方仍然一直在build，很令人惊喜，反而到了自己都有点追不上项目roadmap的感觉。虽然招数有点老套，但是把你的NFT去做stake玩个抽奖何乐而不为？&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin2.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -236,7 +236,7 @@
 &lt;p&gt;2）币安交易所delist掉USDC.&lt;/p&gt;
 &lt;p&gt;只是为了提升自己的busd市值吗？&lt;/p&gt;
 &lt;p&gt;3）Do kwon被韩国通缉，Do kwon被韩国通缉，消息一传出，马上有人发代币token JAIL KWON，暴涨90%.&lt;/p&gt;
-&lt;p&gt;目前加密货币仍然是无监管的状态，有这样的事情真是令人哭笑不得。类似的事情诸如Will Smith扇Rock耳光和英国女王去世，都有人可以出meme coin炒作一波。加密货币就是这样疯狂，也在不了解加密货币的人眼里，crypto就像骗局…然而这并不是crypto的核心价值。
+&lt;p&gt;目前加密货币仍然是无监管的状态，有这样的事情真是令人哭笑不得。类似的事情诸如Will Smith扇Rock耳光和英国女王去世，都有人可以出meme coin炒作一波。加密货币就是这样疯狂，也在不了解加密货币的人眼里，crypto就像骗局…然而这并不是crypto的核心价值。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/jkwon.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;4）Micro Strategy买入301颗BTC.&lt;/p&gt;
 &lt;p&gt;目前还没有crypto的ETF，作为BTC信仰者Michael Saylor操盘的Micro Strategy公司，有一个不恰当的比喻 — 可以把Micro Strategy的股票当成是BTC的ETF。&lt;/p&gt;
@@ -247,7 +247,7 @@
 &lt;p&gt;最近市场仍然一片恐慌，网上一堆click bait骗你去看他的新闻，导致信念不坚定的人会更恐慌。但熊市当中仍然看到的事实是有更多的公司正在布局crypto。&lt;/p&gt;
 &lt;p&gt;8）美联储加息75个基点 Sep 22&lt;/p&gt;
 &lt;p&gt;今年11月和12月还会有两次会议，可能继续加息，因为哪怕经济衰退也要控制出通胀。加息的决策也和失业率息息相关，每当失业率下降，Fed就继续加息。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/fedchart.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/fedchart.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/market.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;9）Cardano将在9/22硬分叉 Vasil Hard Fork.&lt;/p&gt;
 &lt;p&gt;Cardano受关注的程度远不如以太坊的合并，但对于Cardano而言是一次重要的转变，由原来的Plutus编程语言转变成Plutus V2，但预计一般分叉后的币价不会有什么波动，或者对于长期来说，短期的币价波动意义不大，但对于Cardano的生态发展则意义重大。&lt;/p&gt;
@@ -262,7 +262,7 @@
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/postbox.jpeg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;web3其实不叫web3&#34;&gt;Web3其实不叫web3&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Web3和web的关系，就是雷锋和雷峰塔的关系。
+&lt;p&gt;Web3和web的关系，就是雷锋和雷峰塔的关系。&lt;br&gt;
 — 王建硕&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;搞不懂web3这个词从何而来，至今也没有一个确切的定义，或者说目前的定义都不那么准确，也许也没人在乎，因为现在还是web3（或区块链）的婴儿期，web3未来发展成什么样子，成为有实际意义的东西之后，人们才会认真的赋予他一个像样的名词吧。&lt;/p&gt;
@@ -309,7 +309,7 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcroadmap.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ivy league，Pet mint等等，有点无暇顾及，但项目方要送你一件夹克耶，马上抽出时间关注起来，可以预见肯定有delay，肯定有这或那的原因，但他们真的做到了！我也真的没有很需要一件夹克，但是我很欣喜参加到这一波浪潮，所以delay我也不在乎，选的size不合身也罢，我马上就去新上线的网站claim了一件Team Jacket。&lt;/p&gt;
 &lt;p&gt;连接钱包，点选商品，输入个人收件信息，付款信用卡。和目前的网购没什么差别，唯独结账的时候可以选择烧毁一个Merch Pass以此抵用200u的商品价格。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcjacket.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcjacket.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/cart.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;有点香，checkout完毕，不知道衣服是从哪里发货的，估计是东南亚，运输到大陆境内运费34u，预计还会产生感人的关税。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/checkout.png&#34;&gt;&lt;/p&gt;
@@ -325,27 +325,27 @@
       <guid>http://localhost:1313/posts/explor04/</guid>
       <description>&lt;h2 id=&#34;-quotes&#34;&gt;✍️ Quotes&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;有意愿有能力做出主动的选择，才是真正的活着。
+&lt;p&gt;有意愿有能力做出主动的选择，才是真正的活着。&lt;br&gt;
 — 李笑来&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;區塊鏈讓在的各種國際衝突裡面完全沒轍的人民跟社群稍微還有根稻草可以抓著。沒轍的窮國家陸續使用比特幣而不是美金當儲備變成 Network State 來吸引有資產族移民和脫離幫美國買單。或許不可串改的特性還給我們真正的歷史數據（更接近事實+ 可以追溯的新聞）；讓我們的下一代擁有獨立思考的能力。又或者在健保醫療/犯罪判決紀錄/資產擁有權上避免詐騙/吃案？”
+&lt;p&gt;區塊鏈讓在的各種國際衝突裡面完全沒轍的人民跟社群稍微還有根稻草可以抓著。沒轍的窮國家陸續使用比特幣而不是美金當儲備變成 Network State 來吸引有資產族移民和脫離幫美國買單。或許不可串改的特性還給我們真正的歷史數據（更接近事實+ 可以追溯的新聞）；讓我們的下一代擁有獨立思考的能力。又或者在健保醫療/犯罪判決紀錄/資產擁有權上避免詐騙/吃案？”&lt;br&gt;
 — Ned (disco.eth)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;一线城市的房产，很像托尔金笔下的那枚魔戒，戴上去很容易，摘下来却很难，并大概率会演变成控制我们的心魔。一个人一旦有了短期内无力偿还的债务，也就失去了跟别人说fuck you的权利。”
+&lt;p&gt;一线城市的房产，很像托尔金笔下的那枚魔戒，戴上去很容易，摘下来却很难，并大概率会演变成控制我们的心魔。一个人一旦有了短期内无力偿还的债务，也就失去了跟别人说fuck you的权利。”&lt;br&gt;
 — Jarod 数字游民部落&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Freedom is not letting you do whatever you want but teaching you not to do the things you don’t wanna do.
+&lt;p&gt;Freedom is not letting you do whatever you want but teaching you not to do the things you don’t wanna do.&lt;br&gt;
 — Immanuel Kant&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The worst thing to do is buy an asset when it’s in the news and sell it when it’s in the news.
+&lt;p&gt;The worst thing to do is buy an asset when it’s in the news and sell it when it’s in the news.&lt;br&gt;
 — Balaji Srinivasan&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Network state is a social network with a moral innovation, a sense of national consciousness, a recognized founder, a capacity for collective action, an in-person level of stability, an integrated cryptocurrency, an archipelago of crowdfunded physical territories, a virtual capital and an on-chain census that proves a large enough population income and real estate footprint to attain a measure of diplomatic recognition.
+&lt;p&gt;Network state is a social network with a moral innovation, a sense of national consciousness, a recognized founder, a capacity for collective action, an in-person level of stability, an integrated cryptocurrency, an archipelago of crowdfunded physical territories, a virtual capital and an on-chain census that proves a large enough population income and real estate footprint to attain a measure of diplomatic recognition.&lt;br&gt;
 — Balaji Srinivasan&lt;/p&gt;</description>
     </item>
     <item>
@@ -488,7 +488,7 @@
 &lt;h4 id=&#34;伊朗近日首次次通过加密货币进口了价值1千万美元的货&#34;&gt;伊朗近日首次次通过加密货币进口了价值1千万美元的货&lt;/h4&gt;
 &lt;p&gt;个人观点：这显示了Crypto在这些被制裁国家的威力。优点是别人不知道他买了什么货物，也不知道他从哪个国家采购，这个transaction没有任何银行的交易记录，因为这是用去中心化的加密货币进行支付的。有在做伊朗外贸生意的朋友们，是否也是一种未来可考虑的交易方式（跟传统出口退税说掰掰）？&lt;/p&gt;
 &lt;h4 id=&#34;poor-people-spend-normal-people-save-rich-people-invest&#34;&gt;“Poor people spend, normal people save, rich people invest”&lt;/h4&gt;
-&lt;p&gt;1971年美元和黄金脱钩，美国股票大概45度角一路飙升（黄金走势比S&amp;amp;P500指数走的还好些），而美金的购买力却一路下坡。哪怕100美元，现在就应该开始投资，最好的投资时间就是现在，至于投美股还是Crypto则取决于个人认知。
+&lt;p&gt;1971年美元和黄金脱钩，美国股票大概45度角一路飙升（黄金走势比S&amp;amp;P500指数走的还好些），而美金的购买力却一路下坡。哪怕100美元，现在就应该开始投资，最好的投资时间就是现在，至于投美股还是Crypto则取决于个人认知。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/adollarsworth.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;别爱上你买的crypto&#34;&gt;别爱上你买的Crypto&lt;/h4&gt;
 &lt;p&gt;之前买的NFT，晚上都会做梦这个项目会to the moon；2年前因为Elon随便喊了句而买的狗狗币，也感觉他会飙升。放心，不会的。&lt;/p&gt;
@@ -786,7 +786,7 @@
 &lt;p&gt;个人观点：Tiffany的现任CEO Alexandre Arnault本身也是NFT玩家，twitter头像就是一只Punk，之前自己show off就已经定制1个吊坠在显摆，现在可以说是小玩一把，估计发售名额的时候也是一场gas war，会玩，但普通人真的就是看看就好。&lt;/p&gt;
 &lt;h4 id=&#34;特斯拉卖掉75的btc&#34;&gt;特斯拉卖掉75%的BTC&lt;/h4&gt;
 &lt;p&gt;特斯拉称内部资金以及上海工厂运营等原因，抛售了75%的BTC套现（大概卖在29000的价格左右），网上骂声一遍。&lt;/p&gt;
-&lt;p&gt;个人观点：这有什么好骂的？虽然Elon是加密货币的支持者，但是投资买卖的操作是别人的自由，卖掉套现并不代表Elon（或特斯拉）不看好BTC了。很多散户的心态很脆弱，跟风投资，一旦哪个influencer做了点不如意的小动作，就开始fud而没有保持学习和独立思考。
+&lt;p&gt;个人观点：这有什么好骂的？虽然Elon是加密货币的支持者，但是投资买卖的操作是别人的自由，卖掉套现并不代表Elon（或特斯拉）不看好BTC了。很多散户的心态很脆弱，跟风投资，一旦哪个influencer做了点不如意的小动作，就开始fud而没有保持学习和独立思考。&lt;br&gt;
 PS：但是狗狗币我还是不懂啦。。&lt;/p&gt;
 &lt;h4 id=&#34;一韩国家庭投资crypto的悲伤故事&#34;&gt;一韩国家庭投资Crypto的悲伤故事&lt;/h4&gt;
 &lt;p&gt;几个月前Terra Luna死亡螺旋，一个韩国家庭重仓了USDT血本无归后，父母把小孩带进车里，全家人开往湖里和世界告别；现在尤其大城市的韩国年轻人躺平，靠着加密货币投资梦想有一天咸鱼翻身。&lt;/p&gt;

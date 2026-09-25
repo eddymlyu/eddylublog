@@ -27,20 +27,20 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/ClashforMac.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-完成proxifier常规设置&#34;&gt;3. 完成Proxifier常规设置&lt;/h4&gt;
 &lt;p&gt;如果是第一次添加服务器Proxy Sever，它会问你是否把这个服务器当作默认服务器，点击yes。&lt;/p&gt;
-&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。
+&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;输入Address地址，端口，勾选Socks version 5，Save！&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier2.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;4-设置程序代理规则&#34;&gt;4. 设置程序代理规则&lt;/h4&gt;
-&lt;p&gt;📌必要设置
-→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；
+&lt;p&gt;📌必要设置&lt;br&gt;
+→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；&lt;br&gt;
 → 让加速器程序走直连Direct；&lt;/p&gt;
-&lt;p&gt;🤏可选设置：
-→ 特定聊天软件不经代理走Direct，如微信等；
+&lt;p&gt;🤏可选设置：&lt;br&gt;
+→ 特定聊天软件不经代理走Direct，如微信等；&lt;br&gt;
 → 不会自定义Clash规则，设置指定程序走Clash的全部代理。&lt;/p&gt;
 &lt;p&gt;点击Rules设置规则，点击Add添加。&lt;/p&gt;
 &lt;p&gt;例如添加Ledger Live，命名下Name，“+”号添加应用程序，Action选Direct，Save！可依次添加google chrome和Clash等。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier4.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;5-设置dns代理&#34;&gt;5. 设置DNS代理&lt;/h4&gt;
 &lt;p&gt;这个设置一般情况下不用设置，如果碰到有程序，无法通过你所用的代理工具走代理，可能需要让DNS也走代理，那可以尝试通过这个设置解决问题。&lt;/p&gt;
@@ -48,7 +48,7 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier5.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;实测&#34;&gt;实测&lt;/h3&gt;
 &lt;p&gt;经过上面一连串的设置，代理软件通过Proxifier实现按需代理基本就实现了，运行正常的情况下界面如下。早前我也尝试过使用V2rayU，但是不成功，总是显示红色字的connect error。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;&lt;br&gt;
 可以继续DCA比特币了！&lt;/p&gt;</description>
     </item>
     <item>
@@ -67,7 +67,7 @@
 &lt;p&gt;3）香港的交易所AAX传出创始人跑路，还有一些交易所如Kucoin都是在玩前期超高的利息吸引投资散户入场的把戏。交易所没有一家可以相信，尽量不把大额资金长期摆在上面。&lt;/p&gt;
 &lt;p&gt;4）48%以上的eth nft是wash trading的。&lt;/p&gt;
 &lt;p&gt;非常精彩，但也在意料之中吧，NFT至少在现在还是一个短期炒作的好玩具。头部项目之一的Meebits竟然96%是炒作的；但也有一些真实的项目BAYC，在一开始就不是以套利为目的的OG项目发展起来。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading1.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading1.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/washtrading2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;5）数据显示bitcoin shrimp和crab的小散户的数量正在逐步增加。&lt;/p&gt;
 &lt;p&gt;在如此低迷的行情和这么多噪音之下，反而让更多人沉下心来学习和积累，我相信这些人就是开始购入btc的小散户，买入的比重因人而异，倒也不重要，但能把5%左右的收入当成零花钱去定期购买btc不失为一个好选择。&lt;/p&gt;
@@ -81,7 +81,7 @@
 &lt;p&gt;8）数据调查美国人过圣诞夜的电灯所消耗大约是6.63 terawatt-hour 万亿瓦，远比一些非洲小国一年消耗的电力还多，也比BTC挖矿的电力还多。&lt;/p&gt;
 &lt;p&gt;如果还有人反驳BTC于电力消耗过大，不妨说说这个圣诞夜灯光的冷知识？&lt;/p&gt;
 &lt;p&gt;9）NFT BBRC项目方仍然一直在build，很令人惊喜，反而到了自己都有点追不上项目roadmap的感觉。虽然招数有点老套，但是把你的NFT去做stake玩个抽奖何乐而不为？&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin.png&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin.png&#34;&gt;&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcstaketowin2.png&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
