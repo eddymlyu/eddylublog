@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>我的第二大脑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&family=Caveat:wght@500;700&family=Noto+Sans+SC:wght@400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f4ee;
+    --dot:#dcd8cd;
+    --ink:#39352f;
+    --ink-soft:#6b665d;
+    --gray:#6b6b6b;
+    --gray-soft:#8a877f;
+    --orange:#e0793d;
+    --orange-deep:#b85f2c;
+    --card:#fffdf7;
+    --line:#c9c3b6;
+    --shadow: 4px 4px 0 rgba(57,53,47,0.14);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#242019;
+      --dot:#37322a;
+      --ink:#f0ece1;
+      --ink-soft:#c9c2b3;
+      --gray:#b4afa3;
+      --gray-soft:#8f8a7d;
+      --orange:#f0904f;
+      --orange-deep:#ffb277;
+      --card:#2c2720;
+      --line:#4a4438;
+      --shadow: 4px 4px 0 rgba(0,0,0,0.35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#242019;
+    --dot:#37322a;
+    --ink:#f0ece1;
+    --ink-soft:#c9c2b3;
+    --gray:#b4afa3;
+    --gray-soft:#8f8a7d;
+    --orange:#f0904f;
+    --orange-deep:#ffb277;
+    --card:#2c2720;
+    --line:#4a4438;
+    --shadow: 4px 4px 0 rgba(0,0,0,0.35);
+    color-scheme: dark;
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:
+      radial-gradient(var(--dot) 1.6px, transparent 1.6px);
+    background-size: 26px 26px;
+    color:var(--ink);
+    font-family:"Noto Sans SC","PingFang SC",-apple-system,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    padding-left:16px;
+    padding-right:16px;
+  }
+  h1,h2,h3{ text-wrap:balance; margin:0; }
+  .brush{ font-family:"Zhi Mang Xing","Noto Sans SC",sans-serif; font-weight:400; }
+  .hand{ font-family:"Caveat","Noto Sans SC",cursive; font-weight:700; }
+  .mono{ font-family:"Space Mono",monospace; }
+  a{ color:var(--orange-deep); }
+  img{ max-width:100%; }
+  [hidden]{ display:none!important; }
+
+  .wrap{ max-width:760px; margin:0 auto; }
+  .wrap-wide{ max-width:920px; margin:0 auto; }
+
+  /* ---------- progress bar ---------- */
+  #progress{
+    position:fixed; top:env(safe-area-inset-top,0px); left:0; height:3px;
+    background:var(--orange); width:0%; z-index:60;
+    transition:width .1s linear;
+  }
+
+  /* ---------- nav ---------- */
+  nav.pillbar{
+    position:sticky; top:env(safe-area-inset-top,0px); z-index:50;
+    margin:0 -16px; padding:10px 16px;
+    background:color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .pillrow{
+    max-width:920px; margin:0 auto;
+    display:flex; gap:8px; overflow-x:auto; scrollbar-width:none;
+    padding-bottom:2px;
+  }
+  .pillrow::-webkit-scrollbar{ display:none; }
+  .pillrow a{
+    flex:0 0 auto;
+    text-decoration:none;
+    font-family:"Space Mono",monospace;
+    font-size:12.5px;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+    background:var(--card);
+    border:2px solid var(--ink);
+    border-radius:999px;
+    padding:7px 14px;
+    white-space:nowrap;
+    transition:transform .15s ease, background .15s ease, color .15s ease;
+  }
+  .pillrow a.active{
+    background:var(--orange); color:#fff8ef; border-color:var(--orange-deep);
+  }
+  .pillrow a:hover{ transform:translateY(-2px); }
+
+  /* ---------- hero ---------- */
+  header.hero{
+    max-width:920px; margin:0 auto;
+    padding-block: 56px 40px;
+    text-align:center;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-family:"Space Mono",monospace;
+    font-size:12px; letter-spacing:.14em;
+    color:var(--orange-deep);
+    border:1.5px dashed var(--orange);
+    border-radius:999px;
+    padding:5px 14px;
+    margin-bottom:22px;
+  }
+  h1.title{
+    font-size:clamp(2.6rem, 8vw, 4.6rem);
+    line-height:1.15;
+    color:var(--ink);
+  }
+  h1.title .accent{ color:var(--orange); }
+  .subtitle{
+    font-size:clamp(1.3rem, 4vw, 1.8rem);
+    color:var(--gray);
+    margin-top:6px;
+  }
+  .hook{
+    max-width:640px; margin:30px auto 0;
+    font-size:1.14rem;
+    color:var(--ink);
+  }
+  .hook .q{ font-weight:700; }
+  .lede{
+    max-width:600px; margin:14px auto 0;
+    color:var(--ink-soft); font-size:.98rem;
+  }
+  .persona{
+    max-width:560px; margin:26px auto 0;
+    font-size:1.05rem; color:var(--ink-soft);
+    padding-top:18px; border-top:1px dashed var(--line);
+  }
+  .persona b{ color:var(--ink); }
+
+  .cta{
+    display:inline-flex; align-items:center; gap:8px;
+    margin-top:32px;
+    font-family:"Space Mono",monospace; font-weight:700; font-size:14px;
+    color:var(--ink); background:var(--card);
+    border:2.5px solid var(--ink); border-radius:999px;
+    padding:13px 26px;
+    box-shadow:var(--shadow);
+    text-decoration:none;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover{ transform:translate(2px,2px); box-shadow:1px 1px 0 rgba(57,53,47,0.14); }
+
+  /* torn paper divider */
+  .torn{ max-width:920px; margin:44px auto 0; height:22px; }
+  .torn svg{ width:100%; height:100%; display:block; }
+
+  /* ---------- sections ---------- */
+  section{ padding-block:58px; }
+  section.tight{ padding-block:40px; }
+  .kicker{
+    font-family:"Space Mono",monospace; font-size:12px; letter-spacing:.12em;
+    color:var(--gray-soft); margin-bottom:10px;
+  }
+  h2.head{
+    font-family:"Zhi Mang Xing","Noto Sans SC",sans-serif;
+    font-weight:400;
+    font-size:clamp(1.9rem,5vw,2.6rem);
+    margin-bottom:20px;
+  }
+  h2.head .accent{ color:var(--orange); }
+  p{ margin:0 0 16px; }
+  p:last-child{ margin-bottom:0; }
+  .note{
+    font-family:"Caveat","Noto Sans SC",cursive; font-weight:700;
+    color:var(--orange-deep); font-size:1.5rem; line-height:1.35;
+  }
+
+  /* two-card contrast */
+  .pair{ display:flex; gap:18px; flex-wrap:wrap; margin-top:22px; }
+  .pcard{
+    flex:1 1 240px;
+    background:var(--card); border:2px solid var(--ink);
+    border-radius:18px; padding:22px 22px 20px;
+    box-shadow:var(--shadow);
+  }
+  .pcard h3{ font-size:1.15rem; margin-bottom:8px; }
+  .pcard .tag{ font-family:"Space Mono",monospace; font-size:11px; letter-spacing:.08em; color:var(--gray-soft); }
+  .pcard p{ font-size:.95rem; color:var(--ink-soft); margin-top:8px; }
+  .picon{ width:40px; height:40px; margin-bottom:10px; }
+
+  /* CODE / PARA diagram */
+  .codeflow{
+    display:flex; align-items:center; justify-content:center;
+    gap:10px; flex-wrap:wrap; margin:30px 0 14px;
+  }
+  .letterpill{
+    font-family:"Space Mono",monospace; font-weight:700; font-size:1.15rem;
+    width:52px; height:52px; border-radius:14px;
+    display:flex; align-items:center; justify-content:center;
+    border:2.5px solid var(--gray); color:var(--gray);
+  }
+  .letterpill.hot{ border-color:var(--orange); color:var(--orange); background:color-mix(in srgb, var(--orange) 10%, transparent); }
+  .arrow-sm{ color:var(--line); font-size:1.2rem; }
+  .nestwrap{
+    max-width:340px; margin:8px auto 0; text-align:center;
+  }
+  .nestwrap svg{ width:100%; height:auto; display:block; }
+
+  /* tags */
+  .tagrow{ display:flex; gap:8px; flex-wrap:wrap; margin:14px 0; }
+  .softtag{
+    font-family:"Space Mono",monospace; font-size:12px;
+    border:1.5px solid var(--line); border-radius:999px;
+    padding:4px 11px; color:var(--ink-soft);
+  }
+
+  blockquote.margin{
+    margin:26px auto 0; max-width:520px; text-align:center;
+    font-family:"Caveat","Noto Sans SC",cursive; font-weight:700;
+    font-size:1.55rem; color:var(--orange-deep); line-height:1.3;
+    position:relative;
+  }
+
+  /* stat tiles */
+  .stats{ display:flex; gap:14px; flex-wrap:wrap; margin:26px 0 18px; }
+  .stat{
+    flex:1 1 150px; background:var(--card); border:2px solid var(--line);
+    border-radius:16px; padding:18px 18px 14px; text-align:center;
+  }
+  .stat .num{
+    font-family:"Space Mono",monospace; font-weight:700;
+    font-size:1.8rem; color:var(--orange); font-variant-numeric:tabular-nums;
+  }
+  .stat .lbl{ font-size:.82rem; color:var(--ink-soft); margin-top:4px; }
+
+  /* timeline */
+  .timeline{
+    display:flex; gap:0; margin-top:34px; overflow-x:auto; padding-bottom:10px;
+  }
+  .tnode{
+    flex:0 0 200px; position:relative; padding:26px 18px 0 0;
+  }
+  .tnode::before{
+    content:""; position:absolute; top:8px; left:0; right:0; height:2px; background:var(--line);
+  }
+  .tnode:last-child::before{ right:50%; }
+  .tnode:first-child::before{ left:50%; }
+  .tdot{
+    position:absolute; top:1px; left:50%; transform:translateX(-50%);
+    width:16px; height:16px; border-radius:50%;
+    background:var(--card); border:2.5px solid var(--gray);
+  }
+  .tnode.final .tdot{ border-color:var(--orange); background:var(--orange); }
+  .tname{ font-family:"Space Mono",monospace; font-weight:700; text-align:center; margin-top:16px; font-size:.95rem; }
+  .tnote{ text-align:center; font-size:.82rem; color:var(--ink-soft); margin-top:4px; padding:0 6px; }
+  @media (max-width:620px){
+    .timeline{ flex-direction:column; overflow-x:visible; }
+    .tnode{ flex:none; padding:0 0 26px 26px; }
+    .tnode::before{ top:0; bottom:0; left:7px; right:auto; width:2px; height:auto; }
+    .tnode:first-child::before, .tnode:last-child::before{ left:7px; right:auto; }
+    .tdot{ top:2px; left:0; transform:none; }
+    .tname, .tnote{ text-align:left; padding:0; }
+  }
+
+  /* ACE cards */
+  .acegrid{ display:flex; gap:16px; flex-wrap:wrap; margin-top:26px; }
+  .acecard{
+    flex:1 1 220px; background:var(--card); border:2px solid var(--orange);
+    border-radius:18px; padding:20px; box-shadow:var(--shadow);
+  }
+  .acecard .letter{
+    font-family:"Space Mono",monospace; font-weight:700; font-size:1.5rem; color:var(--orange);
+  }
+  .acecard h3{ font-size:1.05rem; margin:4px 0 8px; }
+  .acecard p{ font-size:.9rem; color:var(--ink-soft); }
+  .aside{
+    font-family:"Caveat","Noto Sans SC",cursive; font-weight:700; font-size:1.15rem;
+    color:var(--gray); margin-top:8px;
+  }
+
+  /* PARA -> ACE map */
+  .maprow{
+    display:flex; align-items:center; gap:14px; margin:22px 0;
+    flex-wrap:wrap; justify-content:center;
+  }
+  .chipstack{ display:flex; flex-direction:column; gap:6px; }
+  .chip{
+    font-family:"Space Mono",monospace; font-size:13px; font-weight:700;
+    border:2px solid var(--gray); color:var(--gray); border-radius:999px;
+    padding:7px 16px; text-align:center; background:var(--card);
+  }
+  .mapfolder{
+    display:flex; flex-direction:column; align-items:center; gap:6px;
+  }
+  .mapfolder svg{ width:56px; height:46px; }
+  .mapfolder .lbl{ font-family:"Space Mono",monospace; font-weight:700; font-size:13px; color:var(--orange); }
+  .maparrow{ width:64px; height:24px; flex:0 0 auto; }
+  .maparrow svg{ width:100%; height:100%; display:block; }
+  @media (max-width:520px){
+    .maprow{ flex-direction:column; }
+    .maparrow svg{ transform:rotate(90deg); }
+  }
+
+  /* three questions */
+  .qgrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:26px; }
+  @media (max-width:760px){ .qgrid{ grid-template-columns:1fr; } }
+  .qcard{
+    background:var(--card); border:2px solid var(--ink); border-radius:18px;
+    padding:22px; box-shadow:var(--shadow);
+    transition:transform .15s ease;
+  }
+  .qcard:hover{ transform:translateY(-4px); }
+  .qnum{ font-family:"Space Mono",monospace; color:var(--orange); font-weight:700; font-size:.85rem; }
+  .qcard h3{ font-size:1.12rem; margin:6px 0 10px; }
+  .qcard p{ font-size:.92rem; color:var(--ink-soft); }
+  .qmore{
+    margin-top:12px; padding-top:12px; border-top:1px dashed var(--line);
+  }
+  .qmore summary{
+    cursor:pointer; font-family:"Space Mono",monospace; font-size:11.5px;
+    color:var(--gray-soft); letter-spacing:.04em; outline:none;
+  }
+  .qmore p{ margin-top:8px; }
+
+  /* footer */
+  footer{
+    max-width:760px; margin:0 auto; padding-block:50px 60px;
+    padding-bottom: calc(60px + env(safe-area-inset-bottom,0px));
+    text-align:center;
+  }
+  .signoff{
+    font-family:"Zhi Mang Xing","Noto Sans SC",sans-serif; font-weight:400;
+    font-size:1.7rem; margin-bottom:6px;
+  }
+  .footlinks{
+    display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:26px;
+  }
+  .footlinks span{
+    font-family:"Space Mono",monospace; font-size:12px; color:var(--ink-soft);
+    border:1.5px solid var(--line); border-radius:999px; padding:6px 14px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none!important; scroll-behavior:auto!important; }
+  }
+</style>
+</head>
+<body>
+
+
+<div id="progress"></div>
+
+<nav class="pillbar">
+  <div class="pillrow" id="pillrow">
+    <a href="#myth">迷思</a>
+    <a href="#paracode">PARA / CODE</a>
+    <a href="#zettel">卡片盒笔记</a>
+    <a href="#software">软件史</a>
+    <a href="#ace">ACE 系统</a>
+    <a href="#mapping">对照</a>
+    <a href="#questions">三个问题</a>
+    <a href="#end">写在最后</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <span class="eyebrow">VIDEO ESSAY · 人生整理术</span>
+  <h1 class="title brush">我的不完美「第二<span class="accent">大脑</span>」</h1>
+  <div class="subtitle hand">My Imperfect Second Brain</div>
+
+  <div class="hook">
+    <p class="q">你有没有想过，Elon Musk、Mark Zuckerberg 这些人，是不是都有一套特别厉害的笔记系统，才能同时管理好几家公司？</p>
+  </div>
+  <p class="lede">网上一堆文章教你番茄工作法、怎么开会更高效——却很少有人告诉你，答案可能没有你想的那么玄乎。</p>
+
+  <div class="persona">
+    我是 <b>Eddy</b>，一个外贸人、内容创作者、多元兴趣者。<br>
+    这是我拆了又拼、用了很多年的笔记系统——粗糙，但真的在用。
+  </div>
+
+  <a class="cta" href="#myth">开始阅读 ↓</a>
+</header>
+
+<div class="torn">
+  <svg viewBox="0 0 920 22" preserveAspectRatio="none"><path d="M0,4 L24,14 L48,2 L72,16 L96,6 L120,18 L144,4 L168,14 L192,2 L216,16 L240,6 L264,18 L288,4 L312,14 L336,2 L360,16 L384,6 L408,18 L432,4 L456,14 L480,2 L504,16 L528,6 L552,18 L576,4 L600,14 L624,2 L648,16 L672,6 L696,18 L720,4 L744,14 L768,2 L792,16 L816,6 L840,18 L864,4 L888,14 L912,2 L920,8 L920,22 L0,22 Z" fill="var(--card)"/></svg>
+</div>
+
+<main class="wrap">
+
+  <section id="myth">
+    <div class="kicker">01 · 两种声音</div>
+    <h2 class="head">第二大脑到底是为了什么<span class="accent">？</span></h2>
+    <p>前几年"第二大脑"这个词很火，网上基本是两种声音。没有哪种是对的、哪种是错的——适合你的，就是对的。</p>
+
+    <div class="pair">
+      <div class="pcard">
+        <svg class="picon" viewBox="0 0 40 40" fill="none"><path d="M8 30 L18 30 L18 14" stroke="var(--gray)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 14 L30 8 M30 8 L24 8 M30 8 L30 14" stroke="var(--orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="tag">ACTIONABILITY</div>
+        <h3>行动派</h3>
+        <p>记笔记是为了产出、为了行动。笔记能不能真的推动你去做点什么，才是重点——大部分博主和《打造第二大脑》的作者都强调这个。</p>
+      </div>
+      <div class="pcard">
+        <svg class="picon" viewBox="0 0 40 40" fill="none"><rect x="8" y="16" width="24" height="16" rx="2" stroke="var(--gray)" stroke-width="3"/><path d="M8 16 L20 8 L32 16" stroke="var(--gray)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="tag">MEMO &amp; ARCHIVE</div>
+        <h3>存档派</h3>
+        <p>单纯拿来当备忘录，存点资料、留个记录。不需要因为某本书说"重点是行动"，就觉得自己存资料是错的。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="paracode">
+    <div class="kicker">02 · 常被搞混的两套东西</div>
+    <h2 class="head">PARA 和 <span class="accent">CODE</span>，不是一回事</h2>
+    <p>这两本书绕不开一个词：PARA，Tiago Forte 提出的"数字知识管理法"。但书里其实讲了两套不同的东西，很多人会搞混，包括我。</p>
+
+    <div class="codeflow">
+      <div class="letterpill">C</div><span class="arrow-sm">→</span>
+      <div class="letterpill hot">O</div><span class="arrow-sm">→</span>
+      <div class="letterpill">D</div><span class="arrow-sm">→</span>
+      <div class="letterpill">E</div>
+    </div>
+    <p style="text-align:center; font-size:.9rem; color:var(--ink-soft);">Capture · Organize · Distill · Express —— 一个处理信息的<b>工作流</b></p>
+
+    <div class="nestwrap">
+      <svg viewBox="0 0 300 130">
+        <circle cx="150" cy="55" r="50" fill="none" stroke="var(--orange)" stroke-width="2.5" stroke-dasharray="6 6"/>
+        <text x="150" y="62" text-anchor="middle" font-family="Space Mono, monospace" font-weight="700" font-size="20" fill="var(--orange)">PARA</text>
+        <text x="150" y="120" text-anchor="middle" font-family="Space Mono, monospace" font-size="12" fill="var(--gray-soft)">嵌在 O · Organize 这一步里</text>
+      </svg>
+    </div>
+
+    <div class="tagrow" style="justify-content:center;">
+      <span class="softtag">Project</span><span class="softtag">Area</span><span class="softtag">Resources</span><span class="softtag">Archive</span>
+    </div>
+    <p style="text-align:center;">PARA 是一个<b>分类法</b>——这条笔记该放哪个抽屉。把处理流程和分类方法打包成一个系统来卖，是这本书最大的卖点，但也让第二大脑变得特别复杂。</p>
+  </section>
+
+  <section class="tight">
+    <div class="kicker">03 · 用久了会卡在哪</div>
+    <h2 class="head">我用 PARA 的<span class="accent">四五年</span></h2>
+    <p><b>Project</b> 太笼统——一个 project 通常是一组工作，很难用一页笔记装下，最后大部分内容都堆去了 Area 和 Resources。</p>
+    <p><b>Area</b>（长期不紧急，比如人际关系、健康管理）和 <b>Resources</b>（未来可能用到的资料）之间，界限也很模糊。体检记录该放哪？高胆固醇的问题又该放哪？</p>
+    <blockquote class="margin">"不是我笨，是这套分类法本来就不是拿来一字不差照抄的。"</blockquote>
+    <p style="margin-top:22px;">太较真，可玩性太强，很容易掉进整理笔记的陷阱，反而盖过了真正要解决问题这件事。</p>
+  </section>
+
+  <section id="zettel">
+    <div class="kicker">04 · 一个常被搞混的概念</div>
+    <h2 class="head">卡片盒笔记法，不是 <span class="accent">PARA</span></h2>
+    <p>Zettelkasten 卡片盒笔记法，是德国社会学家 <b>Niklas Luhmann</b> 发明的。核心逻辑：每张笔记只写一个独立想法，靠双向链接互相连接，而不是靠文件夹分类。</p>
+
+    <div class="stats">
+      <div class="stat"><div class="num mono">90,000</div><div class="lbl">张知识卡片</div></div>
+      <div class="stat"><div class="num mono">70+</div><div class="lbl">本著作</div></div>
+      <div class="stat"><div class="num mono">300+</div><div class="lbl">篇论文</div></div>
+    </div>
+    <p style="font-size:.85rem; color:var(--gray-soft);">后来德国教授 Sönke Ahrens 写了《How to Take Smart Notes》，把这套方法重新梳理讲透，在英文世界又火了一波。</p>
+
+    <p style="margin-top:22px;">PARA 先分类，服务当下项目；卡片盒不分类，靠链接让想法自己长出新东西——两者哲学几乎相反，不是一回事。</p>
+    <p>但两者也有重合：用 Notion 之类的软件把笔记串联起来，就能做到 <span class="softtag" style="display:inline-block;">Incremental Writing 渐进式写作</span>，不必从零开始，把知识点一条一条串起来。</p>
+  </section>
+
+  <section id="software" class="tight">
+    <div class="kicker">05 · 换软件这件事</div>
+    <h2 class="head">从 Evernote 到 <span class="accent">Obsidian</span></h2>
+    <p>这几年换过不少笔记软件，每次换的原因都很朴素——不是软件不好，只是那个阶段不趁手。</p>
+
+    <div class="timeline">
+      <div class="tnode"><span class="tdot"></span><div class="tname mono">Evernote</div><div class="tnote">最早的起点</div></div>
+      <div class="tnode"><span class="tdot"></span><div class="tname mono">Notion</div><div class="tnote">PARA 系统主力</div></div>
+      <div class="tnode"><span class="tdot"></span><div class="tname mono">Apple Notes / Bear</div><div class="tnote">轻量随手记</div></div>
+      <div class="tnode final"><span class="tdot"></span><div class="tname mono">Obsidian</div><div class="tnote">本地 Markdown + 云同步</div></div>
+    </div>
+
+    <p style="margin-top:30px;">为什么现在用 Obsidian？它用本地 Markdown 文件，我存在自己的云上——手机丢了、电脑被偷，记录都不会丢。是一种反脆弱，也很适合长期主义者。而且轻，快，用起来爽，仅此而已。</p>
+    <p style="color:var(--ink-soft); font-size:.92rem;">软件几乎都能互相替代，每个软件的强项不一样，但真正决定效果的，从来不是软件本身。</p>
+  </section>
+
+  <section id="ace">
+    <div class="kicker">06 · 换了软件，顺手也换了系统</div>
+    <h2 class="head"><span class="accent">ACE</span>：Nick Milo 的三分法</h2>
+    <p>说来好笑，我竟然因为换了个软件，就换了个系统——这不代表 PARA 不堪用，只是我一直在根据自己的习惯改善、微调，改到了现在这个样子。</p>
+
+    <div class="acegrid">
+      <div class="acecard">
+        <div class="letter mono">A</div>
+        <h3>Atlas</h3>
+        <p>已经掌握、想长期留存参考的东西——工作记录、备忘、学到的知识。</p>
+        <div class="aside">名字来自 16 世纪制图师麦卡托，地图集封面那个扛着地球的巨神。</div>
+      </div>
+      <div class="acecard">
+        <div class="letter mono">C</div>
+        <h3>Calendar</h3>
+        <p>PARA 里没有的东西。用时间归档：日记、杂思、周复盘、会议记录，按日期存放，方便以后搜索。</p>
+        <div class="aside">脑子里的念头倒进去，也能降低焦虑。</div>
+      </div>
+      <div class="acecard">
+        <div class="letter mono">E</div>
+        <h3>Effort</h3>
+        <p>最重要的一栏，其实就是 PARA 里的 Project——你现在正在做的事、正在推进的项目。</p>
+      </div>
+    </div>
+
+    <p style="margin-top:26px;">我不是在推荐 Obsidian，也不是在推荐 ACE。说白了它跟 PARA 换汤不换药，只是换了一个更顺手的起点，接着改而已。</p>
+  </section>
+
+  <section id="mapping" class="tight">
+    <div class="kicker">07 · 对照一下</div>
+    <h2 class="head">PARA <span class="accent">→</span> ACE，是怎么换的</h2>
+    <p>以前 Area、Resource 不好分类的，我直接丢进 Atlas，极简一点。</p>
+
+    <div class="maprow">
+      <div class="chipstack"><div class="chip">Area</div><div class="chip">Resource</div></div>
+      <div class="maparrow"><svg viewBox="0 0 64 24"><path d="M2,12 H54" stroke="var(--orange)" stroke-width="2.5" fill="none"/><path d="M46,4 L58,12 L46,20" stroke="var(--orange)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="mapfolder">
+        <svg viewBox="0 0 100 84"><rect x="6" y="10" width="46" height="16" rx="3" fill="none" stroke="var(--orange)" stroke-width="4"/><rect x="0" y="24" width="100" height="58" rx="8" fill="none" stroke="var(--orange)" stroke-width="4"/></svg>
+        <div class="lbl">Atlas</div>
+      </div>
+    </div>
+
+    <div class="maprow">
+      <div class="chipstack"><div class="chip">Project</div></div>
+      <div class="maparrow"><svg viewBox="0 0 64 24"><path d="M2,12 H54" stroke="var(--orange)" stroke-width="2.5" fill="none"/><path d="M46,4 L58,12 L46,20" stroke="var(--orange)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="mapfolder">
+        <svg viewBox="0 0 100 84"><rect x="6" y="10" width="46" height="16" rx="3" fill="none" stroke="var(--orange)" stroke-width="4"/><rect x="0" y="24" width="100" height="58" rx="8" fill="none" stroke="var(--orange)" stroke-width="4"/></svg>
+        <div class="lbl">Effort</div>
+      </div>
+    </div>
+
+    <div class="maprow">
+      <div class="chipstack"><div class="chip">Archive</div></div>
+      <div class="maparrow"><svg viewBox="0 0 64 24"><path d="M2,12 H54" stroke="var(--orange)" stroke-width="2.5" fill="none"/><path d="M46,4 L58,12 L46,20" stroke="var(--orange)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="mapfolder">
+        <svg viewBox="0 0 100 84"><rect x="6" y="10" width="46" height="16" rx="3" fill="none" stroke="var(--orange)" stroke-width="4"/><rect x="0" y="24" width="100" height="58" rx="8" fill="none" stroke="var(--orange)" stroke-width="4"/><line x1="50" y1="40" x2="50" y2="68" stroke="var(--orange)" stroke-width="5" stroke-linecap="round"/><line x1="36" y1="54" x2="64" y2="54" stroke="var(--orange)" stroke-width="5" stroke-linecap="round"/></svg>
+        <div class="lbl">＋</div>
+      </div>
+    </div>
+
+    <p style="margin-top:8px;">觉得不重要就归档，不至于删掉，拖到"＋"上就行。</p>
+    <div class="aside" style="text-align:center; margin-top:14px;">我把 Content Creator 从 Effort 里单独拎出来，根目录还放着账单、每日看板、Quick Capture——你不必照抄这个架构，找到自己的版本就好。</div>
+  </section>
+
+  <section id="questions">
+    <div class="kicker">08 · 别再问该用哪个 App 了</div>
+    <h2 class="head">问自己<span class="accent">三个问题</span>就够了</h2>
+    <p>封面上那五个 app——Obsidian、日历、待办、Slax、相册——其实都不重要。你可能是苹果用户，也可能是 Android 用户，软件都能替换，用得爽就行。</p>
+
+    <div class="qgrid">
+      <div class="qcard">
+        <div class="qnum">Q1</div>
+        <h3>你每天到底做什么？</h3>
+        <p>最简单的答案就是 To Do。今天要做的事、日历上的行程、相册里的各种截图，都汇总进来。</p>
+        <details class="qmore"><summary>举例 ▾</summary><p>每天先看一遍看板，照着它展开一天的工作和生活。</p></details>
+      </div>
+      <div class="qcard">
+        <div class="qnum">Q2</div>
+        <h3>怎么快速捕捉想法？</h3>
+        <p>不管你是内容创作者还是上班族，都需要快速捕捉。工具不重要，重点是要够快、够轻。</p>
+        <details class="qmore"><summary>举例 ▾</summary><p>看到有意思的东西就截图，吸收完就删；开车时有想法，打开语音输入让 AI 转文字；在电脑前就用 Quick Capture。整理的时间点不重要，随手记的动作要够轻，你才会真的去做。</p></details>
+      </div>
+      <div class="qcard">
+        <div class="qnum">Q3</div>
+        <h3>怎么备忘？</h3>
+        <p>长期结构化信息——银行信息、工作备忘录、产品笔记、财务记录，直接丢进 Atlas。</p>
+        <details class="qmore"><summary>举例 ▾</summary><p>然后，就没有然后了。这就是我的第二大脑——很粗糙，也挺极简的，但正因为粗糙、极简，才真的容易用起来。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="end" class="tight">
+    <div class="kicker">写在最后</div>
+    <h2 class="head">第二大脑，从来不是一个 <span class="accent">App</span></h2>
+    <p>也许那些很复杂、很完美的第二大脑系统，从来都不存在。如果你能回答上面那三个问题，既能管理个人知识系统，又能处理工作、推进项目——作为普通人，这就真的很够用了。</p>
+    <p>第二大脑从来不是只靠一个 app，而是用一套简单的系统，去管理你的人生。</p>
+    <blockquote class="margin">"如果今天你什么都记不住，只记住一件事：现在就随手记一条你今天特别有共鸣的想法。"</blockquote>
+  </section>
+
+</main>
+
+<footer>
+  <div class="signoff brush">我是 Eddy，我们下次再见。拜。</div>
+  <div class="footlinks">
+    <span>© Eddy 2026</span>
+    <span>那些阿嬷没讲的事</span>
+    <span>人生整理术</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  try{
+    var bar = document.getElementById('progress');
+    function onScroll(){
+      var h = document.documentElement;
+      var scrolled = h.scrollTop;
+      var max = h.scrollHeight - h.clientHeight;
+      var pct = max > 0 ? (scrolled / max) * 100 : 0;
+      if(bar) bar.style.width = pct + '%';
+    }
+    document.addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+  }catch(e){}
+
+  try{
+    var links = Array.prototype.slice.call(document.querySelectorAll('.pillrow a'));
+    var sections = links.map(function(a){
+      return document.getElementById(a.getAttribute('href').slice(1));
+    });
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    links.forEach(function(a){
+      a.addEventListener('click', function(ev){
+        var id = a.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if(target){
+          ev.preventDefault();
+          target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block:'start' });
+          history.replaceState(null,'','#'+id);
+        }
+      });
+    });
+
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            var idx = sections.indexOf(entry.target);
+            links.forEach(function(a){ a.classList.remove('active'); });
+            if(idx > -1 && links[idx]) links[idx].classList.add('active');
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold:0 });
+      sections.forEach(function(s){ if(s) io.observe(s); });
+    }
+  }catch(e){}
+})();
+</script>
+
+</body>
+</html>
