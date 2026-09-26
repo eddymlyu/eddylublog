@@ -872,6 +872,8 @@
   </url><url>
     <loc>http://localhost:1313/now/</loc>
   </url><url>
+    <loc>http://localhost:1313/turnleft/</loc>
+  </url><url>
     <loc>http://localhost:1313/shit/</loc>
   </url><url>
     <loc>http://localhost:1313/aan/</loc>
