@@ -394,20 +394,18 @@ body {
       <li><a href="http://localhost:1313/tags/mindset/">Mindset</a></li>
     </ul>
     
-    <div style="margin: 50px 0;"> 
-        <style>
-  #cusdis_thread iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-  }
-  </style>
-    <h4>Comments:</h4>
-      <div id="cusdis_thread" data-host="https://cusdis.com"
-        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
-        data-page-id="c1a9e243b222d909bd93ccac47334f31" data-page-url="http://localhost:1313/posts/multiinterest/"
-        data-page-title="如果你有多元兴趣，请别浪费接下来的 1 年"></div>
-      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <div style="margin: 50px 0;">
+      <h4>Comments:</h4>
+      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+      <div id="waline"></div>
+      <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        init({
+          el: '#waline',
+          serverURL: 'https://edcomments.vercel.app',
+          lang: 'zh-CN',
+        });
+      </script>
     </div>
 
   </footer>

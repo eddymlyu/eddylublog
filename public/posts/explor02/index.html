@@ -236,20 +236,18 @@ body {
       <li><a href="http://localhost:1313/tags/%E8%A5%BF%E7%8F%AD%E7%89%99/">西班牙</a></li>
     </ul>
     
-    <div style="margin: 50px 0;"> 
-        <style>
-  #cusdis_thread iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-  }
-  </style>
-    <h4>Comments:</h4>
-      <div id="cusdis_thread" data-host="https://cusdis.com"
-        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
-        data-page-id="a9e6ab24b4f75db4eff6efbd01b3fbdf" data-page-url="http://localhost:1313/posts/explor02/"
-        data-page-title="市场是渣男 Explor. #02"></div>
-      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <div style="margin: 50px 0;">
+      <h4>Comments:</h4>
+      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+      <div id="waline"></div>
+      <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        init({
+          el: '#waline',
+          serverURL: 'https://edcomments.vercel.app',
+          lang: 'zh-CN',
+        });
+      </script>
     </div>
 
   </footer>

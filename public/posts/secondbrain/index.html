@@ -271,20 +271,18 @@ body {
       <li><a href="http://localhost:1313/tags/%E7%AC%AC%E4%BA%8C%E5%A4%A7%E8%84%91/">第二大脑</a></li>
     </ul>
     
-    <div style="margin: 50px 0;"> 
-        <style>
-  #cusdis_thread iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-  }
-  </style>
-    <h4>Comments:</h4>
-      <div id="cusdis_thread" data-host="https://cusdis.com"
-        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
-        data-page-id="d29ee53b116f3490f568e2f82c3c519c" data-page-url="http://localhost:1313/posts/secondbrain/"
-        data-page-title="Building a second brain 读书笔记"></div>
-      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <div style="margin: 50px 0;">
+      <h4>Comments:</h4>
+      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+      <div id="waline"></div>
+      <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        init({
+          el: '#waline',
+          serverURL: 'https://edcomments.vercel.app',
+          lang: 'zh-CN',
+        });
+      </script>
     </div>
 
   </footer>

@@ -210,20 +210,18 @@ body {
       <li><a href="http://localhost:1313/tags/%E7%96%AB%E6%83%85/">疫情</a></li>
     </ul>
     
-    <div style="margin: 50px 0;"> 
-        <style>
-  #cusdis_thread iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-  }
-  </style>
-    <h4>Comments:</h4>
-      <div id="cusdis_thread" data-host="https://cusdis.com"
-        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
-        data-page-id="cd6ddc2a02b6681f38538c7064b5c2a3" data-page-url="http://localhost:1313/posts/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E6%9C%9F%E9%97%B4%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E5%91%A8%E6%9C%AB%E5%8D%88%E5%90%8E/"
-        data-page-title="疫情爆发期间一个普通人的周末午后"></div>
-      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <div style="margin: 50px 0;">
+      <h4>Comments:</h4>
+      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+      <div id="waline"></div>
+      <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        init({
+          el: '#waline',
+          serverURL: 'https://edcomments.vercel.app',
+          lang: 'zh-CN',
+        });
+      </script>
     </div>
 
   </footer>

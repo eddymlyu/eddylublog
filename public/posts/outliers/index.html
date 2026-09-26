@@ -345,20 +345,18 @@ body {
       <li><a href="http://localhost:1313/tags/%E6%B8%90%E8%BF%9B%E5%BC%8F%E5%86%99%E4%BD%9C/">渐进式写作</a></li>
     </ul>
     
-    <div style="margin: 50px 0;"> 
-        <style>
-  #cusdis_thread iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-  }
-  </style>
-    <h4>Comments:</h4>
-      <div id="cusdis_thread" data-host="https://cusdis.com"
-        data-app-id="b9de8ab5-52d3-45b6-8ad4-b7f4c7f4939b"
-        data-page-id="0143df9238b1f8b7d81320257e969084" data-page-url="http://localhost:1313/posts/outliers/"
-        data-page-title="Outliers 读书笔记｜(Plus: 如何吸收一本书？)"></div>
-      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <div style="margin: 50px 0;">
+      <h4>Comments:</h4>
+      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+      <div id="waline"></div>
+      <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        init({
+          el: '#waline',
+          serverURL: 'https://edcomments.vercel.app',
+          lang: 'zh-CN',
+        });
+      </script>
     </div>
 
   </footer>
