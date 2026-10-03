@@ -7,7 +7,7 @@ url: "posts/explor06"
 ShowToc: true
 TocOpen: true
 
-tags: ["blockchain",“crypto",”"solana","ftx","香港","web3"]
+tags: ["blockchain","crypto","solana","ftx","香港","web3"]
 categories: ["blockchain"]
 ---
 

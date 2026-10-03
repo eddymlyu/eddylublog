@@ -4,7 +4,7 @@ date: 2025-03-29T14:08:56+08:00
 draft: false
 url: "posts/millionaireteacher"
 
-tags: ["reading","book","读书",“ETF","投资","指数基金"]
+tags: ["reading","book","读书","ETF","投资","指数基金"]
 categories: ["book notes","personal finance"]
 ---
 ![](/img/millionaireteacher.jpeg)

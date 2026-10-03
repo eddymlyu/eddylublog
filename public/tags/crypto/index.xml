@@ -1,13 +1,127 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>“Crypto&#34; on ed</title>
+    <title>Crypto on ed</title>
     <link>http://localhost:1313/tags/crypto/</link>
-    <description>Recent content in “Crypto&#34; on ed</description>
+    <description>Recent content in Crypto on ed</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Nov 2022 14:08:56 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Oct 2023 14:08:56 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>以太坊 POS 机制一周年：回顾与展望</title>
+      <link>http://localhost:1313/posts/ethpos/</link>
+      <pubDate>Tue, 03 Oct 2023 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ethpos/</guid>
+      <description>&lt;p&gt;一周年里的重要事件&lt;/p&gt;
+&lt;p&gt;一年前，以太坊（Ethereum）迎来了一个重大的变革，将其共识机制从 PoW（工作量证明）改为了 PoS（权益证明）。在这个一周年回顾中，我们来看看这一年里发生了什么重要的事情。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;质押规模不断增长&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在一年的时间里，以太坊的 PoS 质押规模迅速扩大，目前已经高达 2600 万颗以太币，相当于大约 40 Billion 美元的市值。这表明了社区对以太坊的信任，以及投资者对质押机制的兴趣。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;质押率与收益&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;尽管以太坊的质押率达到了 22%，相对于其他 PoS 项目如 Cardano 的 70% 来说，仍有提升空间。然而，质押者目前可以获得约 3.7% 的收益率，这在当前的熊市环境下也算是一个还不赖的选择。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;门槛降低，更容易参与&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;PoS 机制的一个显著优势是降低了参与门槛。以前，挖矿需要显卡和矿机等设备，而现在只需拥有 32 颗以太币就能够进行质押。即使没有足够的以太币，也可以通过像 Lito 矿池这样的服务来实现质押，使更多人能够参与。&lt;/p&gt;
+&lt;p&gt;PoS的不足之处&lt;/p&gt;
+&lt;p&gt;然而，PoS 机制并非没有缺点。在以太坊中，不管是质押还是抽离，都需要等待较长的时间，大约 2 个月，而 Cardano 则只需要大概 25 天的延迟。这是一个需要改进的领域，以提高用户体验。&lt;/p&gt;
+&lt;p&gt;未来展望：以太坊的分片计划&lt;/p&gt;
+&lt;p&gt;未来，以太坊将继续追求改进，其中一个关键项目是分片（sharding）。分片将大大提高以太坊的交易速度并降低交易费用，但官方表示需要 2 到 3 年，但实际可能需要 5 年甚至更长的时间才能完成。在这段时间内，以太坊仍然会是 L1 主链的领导者吗？还是有可能被其他主链项目所取代？&lt;/p&gt;
+&lt;p&gt;以太坊在一年的时间里经历了重大的转变，从 PoW 到 PoS，展示了其不断发展和创新的能力。虽然存在一些挑战，但以太坊仍然是加密世界的重要一部分，吸引了越来越多的用户和开发者。无论未来如何，以太坊都将继续发挥其在区块链领域的关键作用。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2022币圈7大崩坏</title>
+      <link>http://localhost:1313/posts/7collapse/</link>
+      <pubDate>Fri, 30 Dec 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/7collapse/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Axie Infinity被盗6亿美金&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Axie Infinity的测链Ronin被黑客盗走173,600个以太币和2,550万个USDC（约等值6亿美金），值得注意的是，直到一周后一名用户无法提取出以太币的时候，这个被盗事件才被发现。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Luna/UST的死亡螺旋&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Luna作为算法稳定币，曾经一度被资本看好，Do Kwon是韩国的crypto界的明日之星。有很多crypto友好的youtuber对算法稳定币前景十分看好并认为Luna对加密货币发展起着非常关键的作用。然而UST和美金脱钩（Depegged），市场恐慌出逃，很多投资者的投资瞬间蒸发，甚至害的有些人结束自己的生命。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;三箭资本（3AC）倒闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;总部位于新加坡的3AC颠覆时其资产管理规模还达到100亿美元，投资了众多地雷crypto项目，比如Terra代币，Axie Infinity和交易所Blockfi等等。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Voyager Digital倒闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;币圈开始多米诺式的暴雷，三箭资本资不抵债，风险逐层传导，Voyager就是那个债主，谁叫你借钱给“熟人”？然而后续给FTX收购了，也就是最后一个大雷爆了 — FTX也宣布破产后，被币安收购。&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Celsius破产&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;该平台以高息作招徕，曾称存款的客户可获得高达18厘的高息回报，主要是向客户借入虚币，再借给机构投资者。然而据法庭文件称，Celsius只有1.67亿美元的现金，但欠了用户约47亿美元，资产负债表中更存在约12亿美元的漏洞。Liquidity有很大问题。随时市场恐慌和机构爆雷，Celsius面临大量存户赎回而宣布停止提款，继而使这间加密借贷公司爆雷。&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;FTX破产&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;SBF靠着高明的行销手段，比如大量顶级赛事的推广FTX和游走在政客之间，打造了几乎催不可破的形象。我甚至也都在FTX做好了KYC准备使用这个交易所。SBF和自己的投资公司alameda research为非作歹，利用漏洞，挪用用户的资金杠杆交易，炒FTT空币，智商真的有点高。&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;BlockFi破产&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;BlockFi因为向3AC提供贷款而遭受损失，彼时FTX挺身而出，向BlockFi提供了信贷额度，双发财务的关系千丝万缕。后续也因为FTX的趴下，受害者名单再添一员，BlockFi申请破产。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解决境内 Ledger Live 连接超时问题</title>
+      <link>http://localhost:1313/posts/ledgerlive/</link>
+      <pubDate>Fri, 23 Dec 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ledgerlive/</guid>
+      <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
+&lt;p&gt;在11月FTX事件爆发很多人开始把crypto资产转入冷钱包，Ledger作为其中一个大厂成为很多人的选择。而我在中旬尝试使用Ledger时，发现我的账户始终无法同步，重置也无效。继而发现Nano S Plus的固件始终停留在1.0.3，而无法升级成最新的1.0.4。把软件都重新卸载安装，然后连验证产品真伪这一步也无法通过了。&lt;/p&gt;
+&lt;p&gt;询问了客服之后，原因很简单 — 大陆境内的Ledger Live被墙了。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/ledgertimeout.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;设置proxifier&#34;&gt;设置Proxifier&lt;/h3&gt;
+&lt;h4 id=&#34;1-proxifier是啥&#34;&gt;1. Proxifier是啥&lt;/h4&gt;
+&lt;p&gt;Proxifier是一款简单易用的代理客户端软件，可以使本不支持通过代理服务器工作的网络程序能通过HTTPS或SOCKS代理，同时经过设置端口，指定的程序能够轻松让软件/游戏走直连/代理，经常和Clash，V2Ray这种代理工具配合使用。Proxifier本质是能让一些例外或者特殊程序能够顺利走代理。&lt;/p&gt;
+&lt;p&gt;本文就是通过设置Proxifier让Ledger Live能够走代理，实现连接。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier.png&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2-获得代理工具信息&#34;&gt;2. 获得代理工具信息&lt;/h4&gt;
+&lt;p&gt;本地代理的IP一般情况下是 127.0.0.1, 我使用的是Clash for Mac V3.7，使用 http+socks 混合协议的默认代理端口 7890。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/ClashforMac.png&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3-完成proxifier常规设置&#34;&gt;3. 完成Proxifier常规设置&lt;/h4&gt;
+&lt;p&gt;如果是第一次添加服务器Proxy Sever，它会问你是否把这个服务器当作默认服务器，点击yes。&lt;/p&gt;
+&lt;p&gt;打开Proxifier，点击Proxies，然后点击Add添加代理server。&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;输入Address地址，端口，勾选Socks version 5，Save！&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier2.png&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;4-设置程序代理规则&#34;&gt;4. 设置程序代理规则&lt;/h4&gt;
+&lt;p&gt;📌必要设置&lt;br&gt;
+→ 让Clash/代理程序走正常的网络Direct(但我测试成功Clash走的是Rule不是Direct)；&lt;br&gt;
+→ 让加速器程序走直连Direct；&lt;/p&gt;
+&lt;p&gt;🤏可选设置：&lt;br&gt;
+→ 特定聊天软件不经代理走Direct，如微信等；&lt;br&gt;
+→ 不会自定义Clash规则，设置指定程序走Clash的全部代理。&lt;/p&gt;
+&lt;p&gt;点击Rules设置规则，点击Add添加。&lt;/p&gt;
+&lt;p&gt;例如添加Ledger Live，命名下Name，“+”号添加应用程序，Action选Direct，Save！可依次添加google chrome和Clash等。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier3.png&#34;&gt;&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier4.png&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;5-设置dns代理&#34;&gt;5. 设置DNS代理&lt;/h4&gt;
+&lt;p&gt;这个设置一般情况下不用设置，如果碰到有程序，无法通过你所用的代理工具走代理，可能需要让DNS也走代理，那可以尝试通过这个设置解决问题。&lt;/p&gt;
+&lt;p&gt;点击DNS，取消Detect DNS Settings Automatically前面的勾，然后给Resolve Hostnames through Proxy 打勾，Save！&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier5.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;实测&#34;&gt;实测&lt;/h3&gt;
+&lt;p&gt;经过上面一连串的设置，代理软件通过Proxifier实现按需代理基本就实现了，运行正常的情况下界面如下。早前我也尝试过使用V2rayU，但是不成功，总是显示红色字的connect error。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/proxifier6.png&#34;&gt;&lt;br&gt;
+可以继续DCA比特币了！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sam Bankman-Fried是个天才</title>
+      <link>http://localhost:1313/sbfgenius/</link>
+      <pubDate>Wed, 16 Nov 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/sbfgenius/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/sbfftx.jpeg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;sbf是怎么骗钱的&#34;&gt;SBF是怎么骗钱的？&lt;/h3&gt;
+&lt;p&gt;SBF着实功力深厚，在美国政客间游离以及在各大赛事中推广FTX，仅仅两年间建立出色的人设，很多人对他的第一印象来自他躺在办公室睡觉的照片，以至于本周FTX暴出高杠杆借贷的这个雷继而宣布破产，惊动整个加密界。&lt;/p&gt;
+&lt;p&gt;我也被骗了，我也被FTX正面的不得了的形象蒙骗，幸运的是我在FTX刚做完KYC，本想把美股的资金转出，入金到FTX，也许是市场的波动阻止了我。但周遭的一些朋友，甚至一些专业的投行的资金也都被卡在FTX了。&lt;/p&gt;
+&lt;h3 id=&#34;区块链的初衷&#34;&gt;区块链的初衷&lt;/h3&gt;
+&lt;p&gt;Satoshi在2008设计出BTC，目的是建立一个去中心化的系统，个人能够真正的拥有自己的（虚拟）资产，能够Self custody，而不被中心化的公司或机构所控制。区块链14个年头以来发展突飞猛进，而更多人冲进这个市场的原因，我相信更多是一夜暴富，这也无可厚非，因为Crypto仍然处于早期阶段，就自带暴涨暴跌的buff，坊间流传的BTC到6万，BAYC的NFT到100 eth等等，人们开始相信他们也会成为之一。&lt;/p&gt;
+&lt;h3 id=&#34;别相信任何交易所&#34;&gt;别相信任何交易所&lt;/h3&gt;
+&lt;p&gt;交易所我试过的不多，FTX原本是下一个我要使用的交易所，因为对于选择不多的大陆居民而言，能够KYC，并且入金规则看起来十分合规，可以规避掉来源不明资金避免被封号等等。然而，SBF的面目开始显露，其他各大交易所的任何一个不合理行径都会被放大检视，各CEO的AMA开始开了起来。想想好笑，如果自己的交易所行得正坐得直，又何必去开AMA解释一些原来不需要解释的东西？&lt;/p&gt;
+&lt;p&gt;交易所该用还是得用，但请一定备好冷钱包。币圈这次又一次动荡，对加密货币长远来看也是好事，最近应该相当大量的资产从各交易所转移到冷钱包当中，也导致了某L品牌的冷钱包软件出现问题暂时当机。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not your key, not your coin.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     <item>
       <title>香港和Web3 Explor. #06</title>
       <link>http://localhost:1313/posts/explor06/</link>
@@ -51,6 +165,226 @@
 &lt;p&gt;时代的一粒灰尘落到头上，成为压死骆驼的最后一根稻草。Nvidia的基本面并没有改变，产品仍然牛逼。但是大环境变了，最高端显卡被限制出口（美为了限制中国发展）；币市大萧条，前2年大量需求用于挖矿的显卡目前需求骤减；加之国外疫情逐渐放开，宅在家里的玩家对游戏显卡的需求也骤减。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>白话web3</title>
+      <link>http://localhost:1313/posts/web3/</link>
+      <pubDate>Fri, 16 Sep 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/web3/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/postbox.jpeg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;web3其实不叫web3&#34;&gt;Web3其实不叫web3&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Web3和web的关系，就是雷锋和雷峰塔的关系。&lt;br&gt;
+— 王建硕&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;搞不懂web3这个词从何而来，至今也没有一个确切的定义，或者说目前的定义都不那么准确，也许也没人在乎，因为现在还是web3（或区块链）的婴儿期，web3未来发展成什么样子，成为有实际意义的东西之后，人们才会认真的赋予他一个像样的名词吧。&lt;/p&gt;
+&lt;p&gt;Web3这个词在西方科技界（尤其是美国）早已经蔓延开来，并且在中文世界里也广为流传…行，web3就web3吧。&lt;/p&gt;
+&lt;p&gt;刚接触的人只能咬着web3这个词在区块链的世界里头乱撞，比如买卖NFT，比如炒币，比如回过头在熊市里重新学习区块链的知识。而我，也是在这阶段，把自己blog网站分类之一的“web3”更改成了“blockchain”，因为，我再也不是一个100%的web3的believer，而”加密货币“和”区块链“才是最fundamental的关键词。&lt;/p&gt;
+&lt;p&gt;Web3的数字“3”本身就具备迷惑性，当某些蹭热度的人提及web3和web2云云之时，往往潜移默化的就把人带往“3”就是”2“的下一代的方向，但，个人愚见 — 并不是的。Web3强调的是ownership，比如你可以在区块链上拥有数字资产，并且全世界都可以见证这件事。这听起来很酷（实际也很酷），但是请问，关web2屌事？&lt;/p&gt;
+&lt;p&gt;Web2时代里，掌握网络生杀大权的都是一些巨头，如果你要使用他们的服务必须得注册他们的账号等等，听起来没那么糟，因为我们都已经很习惯了；而Web3的重点是去中心化，每个用户都成为”一些巨头“的一份子。Web3里用户去拥有某一个东西，并且绝对的公开，透明，不可篡改，这绝对是有意义，然而，取决是什么信息，因为有些信息还真的就比较适合中心化的平台以达到某种目的，比如说隐私。&lt;/p&gt;
+&lt;p&gt;所以web3和web2一点都不矛盾，完全可以共存。不恰当的可以比喻成web3是web2的一个侧链，或者是平行出来的一条新的主链。&lt;/p&gt;
+&lt;p&gt;以上讨论的是数字”3“的迷惑性，而”web“这个词同样有迷惑性，正如王建硕先生所说，web和web3根本没有关系，与其用”web“，不如用”table“，因为区块链不像一个网，而更像是一个巨大的账本，巨大的表格，为全世界的人共用，公开透明，所以倒不如称为Table1比较合适。&lt;/p&gt;
+&lt;h3 id=&#34;community-community-community&#34;&gt;Community, community, community&lt;/h3&gt;
+&lt;p&gt;都说web3里community最重要，只不过可能社区的强大力量现在受限于技术或其他因素，还没有办法完全显现出来，但从目前Discord里各holder每日说GM来看，至少这也是一种社区的engagement吧。&lt;/p&gt;
+&lt;p&gt;例如NFT具有社区通证的特点，可以集结天南地北的朋友，这本身对我而言，就已经是一件有意义的事情，特别疫情期间出国旅行不方便，所以作为催化剂，促进了去中心化应用的发展；而要在社区里面engage是需要付出时间和精力的，我相信这对于大多数人都是一种“挑战”，特别对于短期的flipper而言 — 我就想快进快出，engage个屁？&lt;/p&gt;
+&lt;p&gt;前不久我在BBRC的DC里问了一个问题，希望向香港的朋友了解一下海外入境香港的隔离政策。我感觉当你握有同样的NFT，自然而然就会把对方当一伙人，并向对方提供力所能及的帮助。我开玩笑的跟同事说NFT的community和Cult邪教可能也就一线之隔，大家有着相同的信仰，喜欢着项目的小图片，相信着项目总有一天会起飞，然后称对方为Fam，洗对方脑，也洗着自己的脑。当然，这是玩笑话，在低迷的经济下，疫情的管控下，有这种发泄管道也是一件好事。&lt;/p&gt;
+&lt;p&gt;而DAO (Decentralized Autonomous Organization) 的滋味我还没体验过，community不是一个DAO，公司不是一个DAO，其他组织也不是一个DAO。在此再引用王建硕先生的一个定义“所有通过投票等方式进行区块链上的智能合约的某个函数以运行的组织称为DAO组织”。也许在未来，一起干同一件事的人互相都不认识，都凭着智能合约实现管理自动化，人不需要进行干预，并且也无法干预。对了，DAO中文翻译是中心化自治组织，Autonomous这里的理解感觉用“自动”来的恰当，而非“自治”。&lt;/p&gt;
+&lt;h3 id=&#34;区块链目前到底能干嘛&#34;&gt;区块链目前到底能干嘛&lt;/h3&gt;
+&lt;p&gt;区块链目前还真啥都干不了。&lt;/p&gt;
+&lt;p&gt;已经做出来的没什么用，有用的还做不出来。由区块链延伸出来的应用，比如NFT，比如DeFi，都可以去玩耍，但对现实生活中几乎不会产生任何影响，没有任何使用场景，毕竟后续哪条主链（以太坊，Cardano或其他）的应用会脱颖而出谁也不知道。唯独BTC的支付选项初出茅庐 — 例如购买Protonmail已经可以使用BTC。&lt;/p&gt;
+&lt;p&gt;我理解“区块链”是一个firm keyword，但“web3”还不是。区块链是一个全新的技术，但他并不解决现有世界的问题（或者说他不是主要为了解决现有世界的问题），而是在现有世界又叠加了一层，提供新的需求和创造新的价值。&lt;/p&gt;
+&lt;p&gt;所以，chain和web未来共存；crypto和现今银行FIAT系统未来共存；去中心化应用和中心化应用未来共存…相互影响，相互制约，动态平衡。&lt;/p&gt;
+&lt;h3 id=&#34;nft初体验&#34;&gt;NFT初体验&lt;/h3&gt;
+&lt;p&gt;NFT初体验暂时告一段落，自认为对NFT的认知已经到达下一个阶段，没时间又没闲钱的朋友真不建议进场，但我喜欢体验新鲜事物所以我反而庆幸被割了这么一次韭菜。总结初体验的阶段，试着计算出第一阶段的盈亏情况，发现竟然很困难，web3里除了rmb/usd的汇率换算，还涉及eth/usd的价格变动。也罢，纯粹当成学费，知道个大概即可。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/nftinvest.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;作为长期投资者，一开始我把NFT当股票对待，找到优质的项目并长持，但如此新鲜的NFT能否做这样的投资得打个问号，因为你甚至无法拉过去10年的数据来看他是否和美股/BTC一样是往上的曲线。&lt;/p&gt;
+&lt;p&gt;虽然在NFT买卖亏损，但是自认为成功的一点是从来没买到rug项目，直到割掉其他NFT时，那些项目方仍然在build，只是我没了兴趣而已。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Zoofrenz，第一个入坑的项目，不惜花了“大价钱”入金购买，不惜高gas 50u从1.0转化到2.0，继续转化出稀有属性的星空猴，有人0.4e出价我不屑一顾，直到现在0.2直接割肉…而且还得给Opensea 2.5%以及项目方的Creator Fee…进场的时候，韭菜是无法预见熊市的，我以为1个e就值3000u，我以为NFT的Gas就应该50u…&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/zoofrenz.png&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Alpaca，举着Sandbox大旗进军元宇宙，大搞GameFi，新韭菜google了一下Sandbox不明觉厉，再被鲸鱼扫了下地板，早已上头。只可惜我对游戏无感，虽然是荷兰项目，但明显台湾的市场拓展比较出色，加上管理层变动无常，我也失去了信念。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Crepto，偶然发现的一遍Mirror文章，free mint了这个NFT，更重要的是结识了技术大牛，恰巧自己（未来）有发布NFT的想法，请教了制作合约，上链等问题；同时也预见有更多的人都在Mirror这个去中心化平台进行创作，所有在Mirror的内容都存储在Arweave区块链，通过连接钱包创作，还能铸造NFT，虽然具有实验性质，但是web3可玩的地方太多了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zombieclub，9/9我躺在沙发上，想起来晚上有一个AMA和BBRC，听着听着想说是一个不错的机会和founder的engagement，虽然IRL活动办的不少了反响也不错，但仍然限制在亚洲，怎么走向欧美市场？果不其然得到仍需保密的回答。但disco.eth语气平静，为人谦逊，让我觉得他才是Zombie的核心，也期盼着能有机会再和这位NFT的OG深度交流。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/zctama.jpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;bbrc送我一件夹克&#34;&gt;BBRC送我一件夹克&lt;/h3&gt;
+&lt;p&gt;有别于meme，像素艺术，fomo文化，BBRC反而像是一股清流，以大众比较能接受的审美创作小图片，加上韩国New Balance总监Aaron的穿搭审美，风格新颖不落俗套，更适合长期的PFP，我试过用僵尸当头像在微信和供应商聊生意，那种感觉，wtf?!&lt;/p&gt;
+&lt;p&gt;谈钱就俗了，但BBRC确实也是我唯一买的NFT有盈利的项目…令人惊喜的是，久久不关注，项目方也一直在build，Discord里气氛也一直很热络，也是让我抛掉其他NFT只专注一两个NFT项目的其中一个原因，也许真的能交一些五湖四海的朋友。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcroadmap.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ivy league，Pet mint等等，有点无暇顾及，但项目方要送你一件夹克耶，马上抽出时间关注起来，可以预见肯定有delay，肯定有这或那的原因，但他们真的做到了！我也真的没有很需要一件夹克，但是我很欣喜参加到这一波浪潮，所以delay我也不在乎，选的size不合身也罢，我马上就去新上线的网站claim了一件Team Jacket。&lt;/p&gt;
+&lt;p&gt;连接钱包，点选商品，输入个人收件信息，付款信用卡。和目前的网购没什么差别，唯独结账的时候可以选择烧毁一个Merch Pass以此抵用200u的商品价格。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/bbrcjacket.png&#34;&gt;&lt;br&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/cart.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;有点香，checkout完毕，不知道衣服是从哪里发货的，估计是东南亚，运输到大陆境内运费34u，预计还会产生感人的关税。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/checkout.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;需要Burn掉一个Merch Pass的NFT，夹克Claim完毕之后，Merch Pass就在你的钱包下烧了。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/merch.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;最无聊的bitcoin&#34;&gt;最无聊的Bitcoin&lt;/h3&gt;
+&lt;p&gt;好了，以上所说都是虚的。区块链世界变化太快，每个人的认知一直不停被刷新，我在键盘上敲下的字也许一个月后我会反驳自己。非投资建议，读者随意看看。但这也正是处在婴儿时期的web3迷人的地方，有什么事情能让你在短时间一直打自己脸并着迷不已？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>伤脑筋，现在签证办理真复杂 Explor. #04</title>
+      <link>http://localhost:1313/posts/explor04/</link>
+      <pubDate>Fri, 26 Aug 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/explor04/</guid>
+      <description>&lt;h2 id=&#34;-quotes&#34;&gt;✍️ Quotes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有意愿有能力做出主动的选择，才是真正的活着。&lt;br&gt;
+— 李笑来&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;區塊鏈讓在的各種國際衝突裡面完全沒轍的人民跟社群稍微還有根稻草可以抓著。沒轍的窮國家陸續使用比特幣而不是美金當儲備變成 Network State 來吸引有資產族移民和脫離幫美國買單。或許不可串改的特性還給我們真正的歷史數據（更接近事實+ 可以追溯的新聞）；讓我們的下一代擁有獨立思考的能力。又或者在健保醫療/犯罪判決紀錄/資產擁有權上避免詐騙/吃案？”&lt;br&gt;
+— Ned (disco.eth)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一线城市的房产，很像托尔金笔下的那枚魔戒，戴上去很容易，摘下来却很难，并大概率会演变成控制我们的心魔。一个人一旦有了短期内无力偿还的债务，也就失去了跟别人说fuck you的权利。”&lt;br&gt;
+— Jarod 数字游民部落&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Freedom is not letting you do whatever you want but teaching you not to do the things you don’t wanna do.&lt;br&gt;
+— Immanuel Kant&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The worst thing to do is buy an asset when it’s in the news and sell it when it’s in the news.&lt;br&gt;
+— Balaji Srinivasan&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Network state is a social network with a moral innovation, a sense of national consciousness, a recognized founder, a capacity for collective action, an in-person level of stability, an integrated cryptocurrency, an archipelago of crowdfunded physical territories, a virtual capital and an on-chain census that proves a large enough population income and real estate footprint to attain a measure of diplomatic recognition.&lt;br&gt;
+— Balaji Srinivasan&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>市场总是比你聪明</title>
+      <link>http://localhost:1313/posts/marketissmart/</link>
+      <pubDate>Wed, 17 Aug 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/marketissmart/</guid>
+      <description>&lt;h3 id=&#34;fed加息如期而至&#34;&gt;FED加息如期而至&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;美国出台CPI指数9.1%，比预期的更高了一些。实质上已经进入了经济衰退，虽然Powell并不承认。&lt;/li&gt;
+&lt;li&gt;美联储宣布加息75个基点，而美股和币圈反而迎来一波涨幅。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;理论上，加息是为了抵抗通胀，所以美股和币圈资金入场量减少，按理应该更往下行。然而，加息动作早在预期，市场早就已经消化price in了。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/cycle.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以，千万别看着新闻再去做投资。&lt;/p&gt;
+&lt;h3 id=&#34;对贸易的影响&#34;&gt;对贸易的影响&lt;/h3&gt;
+&lt;p&gt;美联储加息之后，市场上的美元会变“少”，因此加息会使美元升值。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;RMB走弱，兑美元6.76，有利于国内外贸的出口；&lt;/li&gt;
+&lt;li&gt;然而全球经济下行，国外需求下降很多，国内工厂的订单骤减；&lt;/li&gt;
+&lt;li&gt;欧洲采购商则苦不堪言，欧元几乎达到和美元1:1了，在近几年前为首次；&lt;/li&gt;
+&lt;li&gt;欧洲采购商在寻求欧元或者离岸人民币和中国出口商进行结算的方案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注：加息是改变美元的价格，但是货币的总量是不变的；而缩表，则是改变货币的数量，例如美国也在把市场的美金抽出来，把balance sheet资产负债表缩小，进而控制住通货膨胀的失控。&lt;/p&gt;
+&lt;h3 id=&#34;以太坊的涨幅&#34;&gt;以太坊的涨幅&lt;/h3&gt;
+&lt;p&gt;ETH也像做了过山车，从4月底的3000，一路走熊去泡沫到谷底的800多，现在涨到了1600了，这也是对ETH 2.0的一个price in。然而预计在9/19的merge如果顺利完成，主要是PoW（Proof of Work) 机制向PoS（Proof of Stake）的转换，也很有可能币值反而会回落，拭目以待。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crypto investment portfolio update Aug 2022</title>
+      <link>http://localhost:1313/posts/crypto-investment-portfolio-update-aug-2022/</link>
+      <pubDate>Mon, 15 Aug 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/crypto-investment-portfolio-update-aug-2022/</guid>
+      <description>&lt;p&gt;NFT跌麻了，从一开始入场的$3100价值的eth，到谷底$800+，再到现在的$2000，以太坊还在云霄飞车；&lt;/p&gt;
+&lt;p&gt;NFT的价值和赋予每个人的意义仍然还在快速变化着。我想做的很简单，也只是用有限的资金体验这波浪潮。&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;NFT&lt;/th&gt;
+					&lt;th&gt;ETH&lt;/th&gt;
+					&lt;th&gt;Date&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;BBRC Ivy boys #6982&lt;/td&gt;
+					&lt;td&gt;0.186&lt;/td&gt;
+					&lt;td&gt;2022-06-22&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Alpacadabra #9382&lt;/td&gt;
+					&lt;td&gt;0.26&lt;/td&gt;
+					&lt;td&gt;2022-05-06&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Alpacadabra 3D #14979&lt;/td&gt;
+					&lt;td&gt;0.161&lt;/td&gt;
+					&lt;td&gt;2022-04-26&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Zoofrenz 2.0 #7007&lt;/td&gt;
+					&lt;td&gt;0.299&lt;/td&gt;
+					&lt;td&gt;2022-04-21&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;0.906&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Total&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;虽然都在关注着行情走势，但一般情况下，只用零用钱$400/月去支持自己喜欢的项目而已，目前是第三个月，将之前的金额凑个整数；&lt;/p&gt;
+&lt;p&gt;我的Ledger Nano S Plus终于在路上，实在不容易；&lt;/p&gt;
+&lt;p&gt;新增ADA项目，投资的初心不变。&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;BTC (USD value)&lt;/th&gt;
+					&lt;th&gt;ETH (USD value)&lt;/th&gt;
+					&lt;th&gt;ADA (USD value)&lt;/th&gt;
+					&lt;th&gt;Date&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;30&lt;/td&gt;
+					&lt;td&gt;70&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;2022-06-13&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;77&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;2022-06-17&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;100&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;2022-06-18&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;100&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;2022-07-01&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;200&lt;/td&gt;
+					&lt;td&gt;100&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;2022-07-12&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;373&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;150&lt;/td&gt;
+					&lt;td&gt;2022-08-15&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;880&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;170&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;150&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Total&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
       <title>市场是渣男 Explor. #02</title>
       <link>http://localhost:1313/posts/explor02/</link>
       <pubDate>Fri, 12 Aug 2022 14:08:56 +0800</pubDate>
@@ -69,6 +403,330 @@
 &lt;h4 id=&#34;别爱上你买的crypto&#34;&gt;别爱上你买的Crypto&lt;/h4&gt;
 &lt;p&gt;之前买的NFT，晚上都会做梦这个项目会to the moon；2年前因为Elon随便喊了句而买的狗狗币，也感觉他会飙升。放心，不会的。&lt;/p&gt;
 &lt;p&gt;市场是一个渣男，你要做的就是比他更渣就行了。任何加密货币（或NFT项目，只要基本面出问题了（哪怕是BTC），5分钟内就要清理干净。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>6个要素简单评估一个Project</title>
+      <link>http://localhost:1313/posts/6factors/</link>
+      <pubDate>Wed, 10 Aug 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/6factors/</guid>
+      <description>&lt;p&gt;经常有人片面的提问btc或者其他山寨币好不好，能不能投资。现在网络如此便利，结果以下6点可以简单的评估各加密货币项目的基本面，然后DYOR，相信对于要不要投资这个事情能有一个自己的判断。以下拿6个project举例，个人主观愚见，非投资建议。&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Project&lt;/th&gt;
+					&lt;th&gt;1. 解决什么问题&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bitcoin&lt;/td&gt;
+					&lt;td&gt;人与人之间Peer to Peer转账，不管在世界任何一个角落&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Ethereum&lt;/td&gt;
+					&lt;td&gt;交易的信任问题&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cardano&lt;/td&gt;
+					&lt;td&gt;各L1主链上普遍存在Gas过高，交易速度过慢，能耗过高的问题&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Polkadot&lt;/td&gt;
+					&lt;td&gt;各区块链间不能互相通信以及L1主链拓展性差&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sonala&lt;/td&gt;
+					&lt;td&gt;各L1主链上传统的吞吐量限制问题&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Apecoin&lt;/td&gt;
+					&lt;td&gt;Yuga Lab系游戏产品/服务的货币&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Project&lt;/th&gt;
+					&lt;th&gt;2. 怎么解决问题&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bitcoin&lt;/td&gt;
+					&lt;td&gt;区块链技术&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Ethereum&lt;/td&gt;
+					&lt;td&gt;通过部署智能合约，实现区块链上交易的自动化&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cardano&lt;/td&gt;
+					&lt;td&gt;应用PoS机制，高TPS，低Gas，同时又不损害安全性&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Polkadot&lt;/td&gt;
+					&lt;td&gt;打造一种网络协议，让全区块链互相通信&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sonala&lt;/td&gt;
+					&lt;td&gt;应用Proof of History机制，不需要庞大算力就可以验证一连串的交易，TPS高达65000，高拓展性，并且交易费极低&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Apecoin&lt;/td&gt;
+					&lt;td&gt;发行APE代币，用于游戏，治理，激励和Yuga系的未来计划&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Project&lt;/th&gt;
+					&lt;th&gt;3. 首脑是谁/团队&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bitcoin&lt;/td&gt;
+					&lt;td&gt;Satoshi Nakamoto 区块链创始人&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Ethereum&lt;/td&gt;
+					&lt;td&gt;Vitalik Buterin&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cardano&lt;/td&gt;
+					&lt;td&gt;Charles Hoskinson 以太坊的联合创始人之一&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Polkadot&lt;/td&gt;
+					&lt;td&gt;Gavin Wood 以太坊的联合创始人之一&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sonala&lt;/td&gt;
+					&lt;td&gt;Anatoly Yakovenko 前高通，Dropbox工程师&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Apecoin&lt;/td&gt;
+					&lt;td&gt;Yuga Lab&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Project&lt;/th&gt;
+					&lt;th&gt;4. 技术（是否安全可靠或其应用）&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bitcoin&lt;/td&gt;
+					&lt;td&gt;09年发布至今没有出现过重大安全事件，技术纯粹，基本面从没改变过&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Ethereum&lt;/td&gt;
+					&lt;td&gt;Dapp开发，Defi应用，主流NFT生态应用；一直在去中心化和安全性方面做的很好&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cardano&lt;/td&gt;
+					&lt;td&gt;17年发布至今没有错过一个block，从未断链，目前还是100% secure&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Polkadot&lt;/td&gt;
+					&lt;td&gt;区块链中的区块链，定义了平行链（Parachain）和中继链（Relaychain）&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sonala&lt;/td&gt;
+					&lt;td&gt;区块链多次断链，停止出块，稳定性差，节点超少只有700个（ETH有10000个），去中心化程度低；有Defi生态和NFT生态应用&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Apecoin&lt;/td&gt;
+					&lt;td&gt;ERC20格式，由Horizon Lab协助开发，目前应用于NFT（以太坊上）的头部项目&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Project&lt;/th&gt;
+					&lt;th&gt;5. 市值 (2022-09-10) USD&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bitcoin&lt;/td&gt;
+					&lt;td&gt;445B&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Ethereum&lt;/td&gt;
+					&lt;td&gt;210B&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cardano&lt;/td&gt;
+					&lt;td&gt;18B&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Polkadot&lt;/td&gt;
+					&lt;td&gt;10B&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sonala&lt;/td&gt;
+					&lt;td&gt;15B&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Apecoin&lt;/td&gt;
+					&lt;td&gt;2B&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Project&lt;/th&gt;
+					&lt;th&gt;6. Roadmap 发展路线&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bitcoin&lt;/td&gt;
+					&lt;td&gt;无&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Ethereum&lt;/td&gt;
+					&lt;td&gt;2022-09-19进行merge, 分片sharding（标志eth2.0完成）在2024年中，由PoW迁移到PoS机制&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cardano&lt;/td&gt;
+					&lt;td&gt;目前在Basho主要提升网络和优化拓展性和互操作性；下一步Voltaire，链上自治&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Polkadot&lt;/td&gt;
+					&lt;td&gt;Post-launch updates&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sonala&lt;/td&gt;
+					&lt;td&gt;完整的主网即将正式发布，之前的还是Beta阶段&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Apecoin&lt;/td&gt;
+					&lt;td&gt;Yuga Lab的Metaverse&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>什么是Cardano艾达币</title>
+      <link>http://localhost:1313/posts/cardano/</link>
+      <pubDate>Fri, 05 Aug 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/cardano/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/cardano.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;区块链30&#34;&gt;区块链3.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;区块链1.0代表：比特币BTC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;解决的问题：我想给千里之外的德国的一位朋友转账100欧元帮我代购，传统方法复杂而且困难，目前可以通过公司名义在银行申请结汇欧元填一大堆申请表，几个工作日才能完成转账，并且银行收取手续费；但如果使用BTC，只需要用网络，输入对方钱包地址即可通过闪电网络，几分钟完成转账。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;区块链2.0代表：以太坊ETH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;解决的问题：交易往往需要很多条件，比如德国朋友完成代购我才肯给他转账，比如公司买卖是否需要定金？多少定金？是否分批发货等等？这个时候就需要合约，而在区块链世界中，即智能合约Smart contract，通过部署编程语言，实现买卖的自动化。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;区块链3.0代表：Cardano&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;解决的问题：2.0的主链（如ETH）很难扩展到成千上万的用户，并且有TPS每秒交易量不够高（15tps）以及网络拥堵造成Gas fee高等问题；Cardono通过三个方面，从scalability可拓展性，interoperability可操作性和sustainability可持续性解决这些问题。&lt;/p&gt;
+&lt;h3 id=&#34;cardano的创立&#34;&gt;Cardano的创立&lt;/h3&gt;
+&lt;p&gt;创始人Charles Hoskinson，在2013年读了Vitalik（ETH创始人）的文章后觉得他超屌然后决定帮助他一起创建区块链这个未来科技。以太坊在2015年首次发布。&lt;/p&gt;
+&lt;p&gt;然后，双方在以太坊运营上出现分歧，V神认为应该无盈利模式而Hoskinson觉得应该按公司模式运营，所以Hoskinson走人了自己创立了Cardano，并在2017年发布了Cardano。&lt;/p&gt;
+&lt;p&gt;发行的代币是ADA艾达币，总量450亿个，目前流通大概340亿个。拥有三个组织，一个Cardano Foundation，一个IOG（前IOHK），一个日本的Emurgo。&lt;/p&gt;
+&lt;h3 id=&#34;cardano的三大支柱&#34;&gt;Cardano的三大支柱&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Scalability可拓展性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;运用Ouroboro为共识机制，是一种PoS（Proof of Stake)协议，而ETH和BTC是采用PoW机制（ETH2.0会从PoW转为PoS）；&lt;/p&gt;
+&lt;p&gt;目前Cardano的TPS（Transaction Per Second）是250tps，而BTC是4.6tps，ETH是15tps，SOL是65000tps，未来Cardano会上升到1 million tps；&lt;/p&gt;
+&lt;p&gt;Cardano网络会选举出一些节点Slot在纪元Epoch上，这些Slot有产生区块的权利。Ouroboro可处理无上限条Epoch链，每条Epoch上的Slot，就像是BTC区块链上挖矿一样，但是来的更便宜以及消化更低的算力；&lt;/p&gt;
+&lt;p&gt;1 Epoch= 5天，21,000 slots, 1 slot= 20s。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Interoperability可操作性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;区块链和传统金融之间存在三个问题，元数据Metadata，归属问题Attribution，合规性Compliance；&lt;/p&gt;
+&lt;p&gt;在web2，一些平台如twitter和FB，如果你发推，则在FB平台并不能看到信息，各平台项目独立，而在web3，Cardano可以通过侧链互通，即你在“区块链twitter”发推，则在“区块链FB”上也能看到推文；&lt;/p&gt;
+&lt;p&gt;Crypto是区块链密码和凭证的工厂，他提供了信任之网web of trust，让我们不需要像web2那样再去需要账号和密码；&lt;/p&gt;
+&lt;p&gt;由于数据过于庞大，很多时候大多数人并不是获取全部信息，Cardano运用修剪（Purning），订阅（Subscription）和压缩（Compression）等技术，使得每个用户大体上都只需要保存他们需要的一个块（Chunk）的数据。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Sustainability可持续性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;两方面，如何做支付以及如何技术持续发展；&lt;/p&gt;
+&lt;p&gt;Cardano也在探索加密货币是机器能够自主学习，能够自动识别一些钱包信息等。&lt;/p&gt;
+&lt;p&gt;关于Roadmap，团队目前在Basho的拓展阶段，最后一个阶段是Voltaire — 链上自治，让网络成为一个自我维持的系统。&lt;/p&gt;
+&lt;h3 id=&#34;cardano的非洲计划&#34;&gt;Cardano的非洲计划&lt;/h3&gt;
+&lt;p&gt;Cardano在帮助埃塞尔比亚政府完善他们的教育系统，比如储存超过500w学生的数据，提供防串改记录，学生成绩验证，增加监控的功能和最安全的方法取得奖学金等；&lt;/p&gt;
+&lt;p&gt;在非洲提供更安全，更快，费用更低的转账服务和技术（挑战中心化机构；&lt;/p&gt;
+&lt;p&gt;帮助非洲本地开发者开发项目；&lt;/p&gt;
+&lt;p&gt;帮助非洲小额贷款更安全更可靠，财务系统更有效率的运作；&lt;/p&gt;
+&lt;p&gt;帮助非洲医疗机构更好的传输健康数据；&lt;/p&gt;
+&lt;p&gt;帮助非洲本地的制造业。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3 months I still don’t get my cold wallet and still counting</title>
+      <link>http://localhost:1313/posts/3-months-i-still-dont-get-my-cold-wallet-and-still-counting/</link>
+      <pubDate>Fri, 29 Jul 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/3-months-i-still-dont-get-my-cold-wallet-and-still-counting/</guid>
+      <description>&lt;p&gt;What a journey for my cold wallet.&lt;/p&gt;
+&lt;p&gt;Decided to play the game so why not to get a cold wallet for my NFTs and cryptos? Two major manufacturers in the markets are Trezor and Ledger.&lt;/p&gt;
+&lt;p&gt;May 6, I placed an order on Ledger’s site, with RMB 1251, for Ledger X. They said it is gonna take around 1 month to China Mainland.&lt;/p&gt;
+&lt;p&gt;June 17, I had to pay a few hundred RMB tariff to get my Ledger customs clearance. Then it proceeded with EMS shipping to my place and it turnt out crap packing and obviously someone opened it up. Maybe during the process, Customs guys checked that up… anyway, how can you use it if it was “used”? That is the whole point of a cold wallet, a security drive for your digital asset.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web3 investment portfolio update</title>
+      <link>http://localhost:1313/posts/web3-investment-portfolio-update/</link>
+      <pubDate>Tue, 19 Jul 2022 14:08:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/web3-investment-portfolio-update/</guid>
+      <description>&lt;p&gt;It was hype, I was hooked. I got in NFT world. No regret, but just experiment and most importantly, exploring Web3 (kind of).&lt;/p&gt;
+&lt;p&gt;Documenting and sharing what I bought for this.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;NFT&lt;/th&gt;
+					&lt;th&gt;ETH&lt;/th&gt;
+					&lt;th&gt;Date&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;BBRC Ivy boys #6982&lt;/td&gt;
+					&lt;td&gt;0.186&lt;/td&gt;
+					&lt;td&gt;2022-06-22&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Alpacadabra #9382&lt;/td&gt;
+					&lt;td&gt;0.26&lt;/td&gt;
+					&lt;td&gt;2022-05-06&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Alpacadabra 3D #14979&lt;/td&gt;
+					&lt;td&gt;0.161&lt;/td&gt;
+					&lt;td&gt;2022-04-26&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Zoofrenz 2.0 #7007&lt;/td&gt;
+					&lt;td&gt;0.299&lt;/td&gt;
+					&lt;td&gt;2022-04-21&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;0.906&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Remarks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ETH value was like 3100 USD end of April (holy shit);&lt;/li&gt;
+&lt;li&gt;Gas fee was not calculated in above chart;&lt;/li&gt;
+&lt;li&gt;Other stupid purchases were not listed in above chart, which is not considered as building projects.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;CPI statistics showed that the inflation rate in US days ago was 9.1%, still high, one of the reasons that I decided to DCA (dollar cost averaging) on BTC and ETH. A little pocket money USD 300 per month to start, I shoot that every 15th, ratio on BTC and ETH depends, but they have to go.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

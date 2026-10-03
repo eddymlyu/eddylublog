@@ -6,6 +6,20 @@ draft: false
 
 
 
+### Update 2026-10-04
+
+You need to articulate your value clearly.
+
+
+The first video I made was so cringe.
+
+I thought that was something i can do, so I just gotta confirm the suspicion and give it a shot.
+
+
+He just stood in front of the camera and began to regurgitate the script while the crew started video filming. 反复偷瞄
+
+
+
 ### Update 2026-02-07
 
 

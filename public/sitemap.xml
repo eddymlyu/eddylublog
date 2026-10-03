@@ -35,13 +35,13 @@
     <loc>http://localhost:1313/tags/%E8%87%AA%E5%AA%92%E4%BD%93/</loc>
     <lastmod>2026-08-23T23:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/wellness/</loc>
-    <lastmod>2026-07-19T09:00:00+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/book/</loc>
     <lastmod>2026-07-19T09:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/reading/</loc>
+    <lastmod>2026-07-19T09:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/wellness/</loc>
     <lastmod>2026-07-19T09:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E4%B8%AD%E5%8C%BB/</loc>
@@ -141,9 +141,6 @@
     <lastmod>2026-02-03T09:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/metabolism/</loc>
-    <lastmod>2025-12-01T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/wellness/</loc>
     <lastmod>2025-12-01T09:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E4%BB%A3%E8%B0%A2/</loc>
