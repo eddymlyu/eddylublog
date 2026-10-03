@@ -4,35 +4,39 @@ draft: false
 
 ---
 
-This is [a now page](https://nownownow.com/about), and if you have your own site, you should make one too.
+这是一个 [now](https://nownownow.com/about) 页面, 如果你也有个人网站，你也应该搞一个。
 
-👨🏻‍💻 Updated June 18th, 2023, from my home in Amoy.
+👨🏻‍💻 更新于 2026-10-03，在西安咸阳机场。
 
-## 🏠 Remodel my house
-Finally, after 7 years of marriage, I bought a new home for my family. This means a lot to me and to my family. It costs a fortune, but definitely worth it. We'd ask a designer for this interior design thing and rebuild it, which I think takes at least half a year (hopefully).
+## 内容创作
+找到了更多软硬件支持我的内容创作，更重要的是，不想放弃创作内容，当成是一个 Side project 斜杠来做。
+- 「懒洋洋的内容创作」节奏，主业太忙只是借口。按照 scripting, filming, editing, publishing 的节奏切成小任务来做，哪怕做一支视频要很久；
+- 用 Claude 做 MG 动画当 B-roll；
+- 用 Screenkite 录屏更灵动；
+- 用 iPhone 前置和 DJI Mic Mini 2 搭配 Qcam 稿件提示拍摄；
+- 学习 Seedance 2.5 生视频；
+- 搭配简易三脚架 + 补光灯 
 
-## 📚 Reading
+## 重新理解 HTML
 
-I bought like 21 books in the past few months, stacking them up on my bookshelf. Not sure if I’m addicted to reading or buying books… I consumed 4 or 5 of them already, and the one that I’m reading is Ikigai: The Japanese Secret to a Long and Happy Life.
+HTML 也许是 AI 时代的利器之一。可以用 AI 工具帮你理解囧长的文章，帮你快速生成交互式的 HTML 网站，而这些也可以反哺我的内容创作。
 
 
 
-## ✈️ Travel overseas
+## 个人网站的评论系统
 
-I’ve done 3 international travel since China reopening —— 2 in Manila, the Philippines and 1 in Sydney/Adelaide, Australia. I love intentional travel because it makes me feel good that I’m traveling with a specific purpose. It could be meeting someone or attending some events, whatever… Instead of just tourism.
+之前的 Cusdis 已经停运，在 Claude 的帮助下，评论系统换成了自己部署的 Waline。因为换了新电脑，顺便把 Obsidian 和个人网站文件夹都脱离出 iCloud，更改了同步设置。这样一来，就算电脑丢了，手机被偷，资料也都还在，稍微给他反脆弱一下。
 
-I’m planning more trips to other countries in the next half of 2023. Germany is on the list for sure.
+## 还在学习做生意
 
-## 🏋️ Training 
+以前的一位来自印度的 Mentor 说「Not everyone can do business」。生意难做，做了才知道，是真的难做。
 
-I feel like I’m kind of incapable of lifting the same weight that I could after getting Covid, let alone increasing muscle from 35 kg and reducing my body fat percentage from 19.5%.
+## 国庆西安旅行
 
-I paid for a personal trainer, and recently I hit a 100 kg squat. The pursuit of this little pain and the proper amount of dopamine really keeps me going.
+带家人来渭南，吃吃喝喝，逛逛公园，这样就挺好。
 
-## 🦷 Teeth repair
+## Mental clarify
 
-I got 3 teeth pulled out in early April —— I knew this would come sooner or later. I am just ready for it, even though it would take a lot of time (and money). I feel happy after solving a problem.
-
-More than that, it ended up repairing my other 7 upper teeth (wtf), which were in pretty awful condition. Thanks, my dentist! Guy’s really doing great work.
-
-The next step is for my 2 teeth to be implanted. I need to make a choice between a Swedish brand and a Swiss brand. Both of them are great and expensive as hell. This is an investment, isn’t it?
+- 别太把自己当回事，你只是一个普通人；
+- 事业、健康、家庭、朋友、斜杠，这 5 个炉子没办法同时点燃，放轻松，别太逼自己；
+- 别太焦虑，把眼前的日子过好就行

@@ -4,7 +4,7 @@ draft: false
 
 ---
 
-![](/img/Eddy-Clear.png)
+<img src="/img/Eddy-Clear.png" alt="Eddy" style="max-width:220px; width:100%; height:auto; border-radius:12px;">
 
 ## 👋 Hello World!
 

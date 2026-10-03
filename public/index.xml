@@ -5289,10 +5289,24 @@ Rayan 说要介绍我认识 DTI 的，或者引荐，或者帮我背书的意思
       <link>http://localhost:1313/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/now/</guid>
-      <description>&lt;p&gt;This is &lt;a href=&#34;https://nownownow.com/about&#34;&gt;a now page&lt;/a&gt;, and if you have your own site, you should make one too.&lt;/p&gt;
-&lt;p&gt;👨🏻‍💻 Updated June 18th, 2023, from my home in Amoy.&lt;/p&gt;
-&lt;h2 id=&#34;-remodel-my-house&#34;&gt;🏠 Remodel my house&lt;/h2&gt;
-&lt;p&gt;Finally, after 7 years of marriage, I bought a new home for my family. This means a lot to me and to my family. It costs a fortune, but definitely worth it. We&amp;rsquo;d ask a designer for this interior design thing and rebuild it, which I think takes at least half a year (hopefully).&lt;/p&gt;</description>
+      <description>&lt;p&gt;这是一个 &lt;a href=&#34;https://nownownow.com/about&#34;&gt;now&lt;/a&gt; 页面, 如果你也有个人网站，你也应该搞一个。&lt;/p&gt;
+&lt;p&gt;👨🏻‍💻 更新于 2026-10-03，在西安咸阳机场。&lt;/p&gt;
+&lt;h2 id=&#34;内容创作&#34;&gt;内容创作&lt;/h2&gt;
+&lt;p&gt;找到了更多软硬件支持我的内容创作，更重要的是，不想放弃创作内容，当成是一个 Side project 斜杠来做。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;「懒洋洋的内容创作」节奏，主业太忙只是借口。按照 scripting, filming, editing, publishing 的节奏切成小任务来做，哪怕做一支视频要很久；&lt;/li&gt;
+&lt;li&gt;用 Claude 做 MG 动画当 B-roll；&lt;/li&gt;
+&lt;li&gt;用 Screenkite 录屏更灵动；&lt;/li&gt;
+&lt;li&gt;用 iPhone 前置和 DJI Mic Mini 2 搭配 Qcam 稿件提示拍摄；&lt;/li&gt;
+&lt;li&gt;学习 Seedance 2.5 生视频；&lt;/li&gt;
+&lt;li&gt;搭配简易三脚架 + 补光灯&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;重新理解-html&#34;&gt;重新理解 HTML&lt;/h2&gt;
+&lt;p&gt;HTML 也许是 AI 时代的利器之一。可以用 AI 工具帮你理解囧长的文章，帮你快速生成交互式的 HTML 网站，而这些也可以反哺我的内容创作。&lt;/p&gt;
+&lt;h2 id=&#34;个人网站的评论系统&#34;&gt;个人网站的评论系统&lt;/h2&gt;
+&lt;p&gt;之前的 Cusdis 已经停运，在 Claude 的帮助下，评论系统换成了自己部署的 Waline。因为换了新电脑，顺便把 Obsidian 和个人网站文件夹都脱离出 iCloud，更改了同步设置。这样一来，就算电脑丢了，手机被偷，资料也都还在，稍微给他反脆弱一下。&lt;/p&gt;
+&lt;h2 id=&#34;还在学习做生意&#34;&gt;还在学习做生意&lt;/h2&gt;
+&lt;p&gt;以前的一位来自印度的 Mentor 说「Not everyone can do business」。生意难做，做了才知道，是真的难做。&lt;/p&gt;</description>
     </item>
     <item>
       <title>什么时候可以左转 ⬅️</title>
@@ -5344,7 +5358,7 @@ Rayan 说要介绍我认识 DTI 的，或者引荐，或者帮我背书的意思
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/Eddy-Clear.png&#34;&gt;&lt;/p&gt;
+      <description>&lt;img src=&#34;http://localhost:1313/img/Eddy-Clear.png&#34; alt=&#34;Eddy&#34; style=&#34;max-width:220px; width:100%; height:auto; border-radius:12px;&#34;&gt;
 &lt;h2 id=&#34;-hello-world&#34;&gt;👋 Hello World!&lt;/h2&gt;
 &lt;p&gt;不知道是什么把你带到这个网站？&lt;/p&gt;
 &lt;h3 id=&#34;为什么要开设个人网站吃太饱&#34;&gt;为什么要开设个人网站，吃太饱？&lt;/h3&gt;

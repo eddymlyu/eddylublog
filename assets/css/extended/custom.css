@@ -1,0 +1,4 @@
+/* 全站中文字体改为 PMingLiU / 新細明體，其他系统按相近的 Ming/Song 体做回退 */
+body {
+  font-family: "PMingLiU", "新細明體", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+}

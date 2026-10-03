@@ -1,14 +1,5 @@
 {{- define "main" }}
 
-<style>
-body {
-  font-family: -apple-system, BlinkMacSystemFont,
-               "PingFang SC", "Hiragino Sans GB",
-               "Microsoft YaHei", Arial, sans-serif;
-}
-</style>
-
-
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -68,6 +59,7 @@ body {
           el: '#waline',
           serverURL: 'https://edcomments.vercel.app',
           lang: 'zh-CN',
+          dark: 'html[data-theme="dark"]',
         });
       </script>
     </div>
