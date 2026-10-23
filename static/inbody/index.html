@@ -1,0 +1,215 @@
+<title>Eddy 的体成分六年</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;800&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: 一份体检报告式的单栏长页。结论在前，小图矩阵在中，原始数据在后。 */
+:root{
+  --paper:#f6f7f9; --card:#ffffff; --ink:#1b2230; --ink-2:#4f5869; --ink-3:#8790a0;
+  --rule:#dfe3ea; --band:#e6efe9; --band-ink:#4d7a5f;
+  --accent:#8f1d3b; --accent-soft:#f5e6ea; --warn:#b5651d; --warn-soft:#fbf0e4;
+  --display:"Noto Serif SC","Songti SC",serif;
+  --body:"Noto Sans SC","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#12151b; --card:#1a1f27; --ink:#e7eaf0; --ink-2:#aab2c0; --ink-3:#717a8a;
+  --rule:#2b313c; --band:#1d2b24; --band-ink:#8cc2a0;
+  --accent:#e0698a; --accent-soft:#3a1f28; --warn:#e3a35f; --warn-soft:#33281b; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#12151b; --card:#1a1f27; --ink:#e7eaf0; --ink-2:#aab2c0; --ink-3:#717a8a;
+  --rule:#2b313c; --band:#1d2b24; --band-ink:#8cc2a0;
+  --accent:#e0698a; --accent-soft:#3a1f28; --warn:#e3a35f; --warn-soft:#33281b; color-scheme:dark;}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;
+  padding-block:40px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.3}
+h1{font-size:clamp(30px,5vw,44px);font-weight:800}
+h2{font-size:24px;font-weight:600}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.lede{font-size:18px;color:var(--ink-2);max-width:40em;margin:0}
+header{display:flex;flex-direction:column;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:28px}
+.meta{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+section{display:flex;flex-direction:column;gap:18px}
+p{margin:0;max-width:42em}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.v{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;gap:6px}
+.v b{font-size:16px}
+.v .num{font-family:var(--mono);font-size:13px;color:var(--ink-3)}
+.v.hot{border-color:var(--accent);background:var(--accent-soft)}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:1px 8px;border-radius:99px;width:max-content}
+.tag.flat{background:var(--rule);color:var(--ink-2)}
+.tag.red{background:var(--accent);color:var(--card)}
+.tag.ok{background:var(--band);color:var(--band-ink)}
+.key{display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-2);align-items:center}
+.key span{display:inline-flex;gap:6px;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:14px}
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px 16px 8px;position:relative}
+.chart h3{margin:0;font-size:15px;font-weight:700;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.chart h3 small{font-weight:400;color:var(--ink-3);font-family:var(--mono);font-size:12px}
+.chart .note{font-size:13px;color:var(--ink-2);margin:4px 0 0}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:12px;font-family:var(--mono);
+  padding:6px 9px;border-radius:4px;white-space:nowrap;transform:translate(-50%,-110%);line-height:1.5}
+.tip[hidden]{display:none}
+.focus{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.f{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.f .what{font-family:var(--display);font-weight:600;font-size:17px}
+.f .what em{display:block;font-style:normal;font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:500;margin-top:4px}
+.f ul{margin:6px 0 0;padding-left:1.2em;color:var(--ink-2)}
+@media (max-width:560px){.f{grid-template-columns:1fr;gap:6px}}
+.ignore{background:var(--warn-soft);border-radius:6px;padding:16px 20px;font-size:14px;color:var(--ink-2)}
+.ignore b{color:var(--warn)}
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--card)}
+thead th{font-weight:500;color:var(--ink-3);font-family:var(--mono);font-size:12px}
+td.hi{color:var(--accent);font-weight:700}
+td{font-family:var(--mono)}
+td:first-child{font-family:var(--body)}
+.small{font-size:13px;color:var(--ink-3)}
+.seg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">InBody · 2020.06 – 2026.10 · 9 次测量</div>
+  <h1>六年，体成分几乎没动</h1>
+  <p class="lede">你的感觉是对的：体脂率、骨骼肌、体重六年都在同一个小区间里打转。好消息是从 32 岁到 37 岁也没有退步；真正需要处理的问题只有一个，就是肚子上的脂肪。</p>
+  <div class="meta">身高 180cm · 数据来源 Obsidian「InBody 记录」报告截图 · 整理于 2026-10-23</div>
+</header>
+
+<section>
+  <h2>一句话判断每项指标</h2>
+  <div class="verdict">
+    <div class="v"><span class="tag flat">原地踏步</span><b>体脂率 19–21%</b><span class="num">9 次全部落在 19.1%–20.9%</span><span>一直卡在"正常"上沿，有 3 次被判为轻度肥胖。这是"没长进"最直接的证据。</span></div>
+    <div class="v"><span class="tag flat">原地踏步</span><b>骨骼肌 33–35 kg</b><span class="num">InBody270 上 34.2–36.0，今天 33.1</span><span>没涨，也没明显掉。2020.08 的 36.0 偏高，可能和当天饮水有关，不宜当成"巅峰"。</span></div>
+    <div class="v hot"><span class="tag red">一直超标</span><b>躯干脂肪 7.4–8.5 kg</b><span class="num">每次都是标准的 168%–186%</span><span>四肢脂肪都正常，多出来的脂肪几乎全在腹部。这是健康风险最大的一项，也是最该改的。</span></div>
+    <div class="v hot"><span class="tag red">卡在上限</span><b>腰臀比 0.89–0.93</b><span class="num">正常范围 0.80–0.90</span><span>和躯干脂肪是同一件事的两个读数。</span></div>
+    <div class="v"><span class="tag ok">稳定</span><b>内脏脂肪等级 5–6</b><span class="num">InBody 正常 &lt;10；今天的 9 来自另一台设备</span><span>InBody 上一直正常。今天的设备标准不同，读到上限，值得用同一台 InBody 复测确认。</span></div>
+    <div class="v"><span class="tag ok">良好</span><b>肌肉左右、上下均衡</b><span class="num">左右差 &lt;4%</span><span>没有短板，不需要专门补哪一侧。</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>趋势图</h2>
+  <div class="key">
+    <span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="var(--ink)"/></svg>InBody270（主要参考）</span>
+    <span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="var(--card)" stroke="var(--ink)" stroke-width="2"/></svg>InBody230</span>
+    <span><svg width="14" height="14"><path d="M7 1 L13 7 L7 13 L1 7Z" fill="var(--accent)"/></svg>2026 新设备（不完全可比）</span>
+    <span><svg width="18" height="10"><rect width="18" height="10" fill="var(--band)"/></svg>正常范围</span>
+  </div>
+  <div class="grid" id="charts"></div>
+  <p class="small">横轴按真实时间排布。2023.08 到 2026.10 之间三年没有测量，中间的虚线只是连接，不代表那段时间的实际变化。不同设备之间有系统误差，看趋势时以圆点（InBody270）为准。</p>
+</section>
+
+<section>
+  <h2>节段肌肉：没有短板</h2>
+  <div class="seg">
+    <div class="v"><b>上肢 左 / 右</b><span class="num">2023.08：3.54 / 3.42 kg · 今天：3.6 / 3.5 kg</span><span>标准的 99%–103%，左右差约 3%。</span></div>
+    <div class="v"><b>下肢 左 / 右</b><span class="num">2023.08：9.59 / 9.54 kg · 今天：9.5 / 9.5 kg</span><span>一直在标准的 100% 左右，几乎完全对称。</span></div>
+    <div class="v"><b>躯干</b><span class="num">2023.08：27.6 kg · 今天：27.8 kg</span><span>正常。躯干的问题在脂肪，不在肌肉。</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>接下来该盯什么</h2>
+  <p>你的目标是健康，不是练大块头。按这个目标，优先级应该是先减腹部脂肪，再慢慢加一点肌肉。以下目标是我按你的数据推算的合理区间，不是医学处方。</p>
+  <div class="focus">
+    <div class="f"><div class="what">1. 腹部脂肪<em>目标 体脂率 16% · 腰臀比 &lt;0.88</em></div>
+      <div>大约要减 3 kg 脂肪（14.4 → 11.5 kg 左右），体重落到 71–72 kg，同时肌肉不掉。
+        <ul><li>每天热量缺口 300–500 kcal 就够，不需要节食。你的基础代谢约 1670 kcal，日常消耗约 2400–2700 kcal。</li>
+        <li>先看酒、夜宵、含糖饮料这三项，它们对腹部脂肪影响最大。</li>
+        <li>日常步数比偶尔的高强度更重要，每天 8000 步以上。</li></ul></div></div>
+    <div class="f"><div class="what">2. 骨骼肌<em>目标 +1–2 kg，到 35 kg 左右</em></div>
+      <div>六年持平说明现在的训练量只够维持。要往上走，需要"渐进超负荷"。
+        <ul><li>每周 2–3 次全身力量训练（深蹲、硬拉或髋铰链、推、拉），每次 45 分钟足够。</li>
+        <li>记录每个动作的重量和次数，每 1–2 周加一点。没有记录，通常就是在原地踏步。</li>
+        <li>蛋白质每天约 120 g（每公斤体重 1.6 g），分到三餐。</li></ul></div></div>
+    <div class="f"><div class="what">3. 测量方法<em>让数据真正能比较</em></div>
+      <div>现在的数据波动有一部分来自测量条件不一致。
+        <ul><li>固定用同一台 InBody270，早上空腹、排便后、运动前测。</li>
+        <li>每 8–12 周测一次。三年空档太长，看不出什么在起作用。</li>
+        <li>每周自己量一次腰围（肚脐高度），这是最便宜也最灵敏的指标。</li></ul></div></div>
+    <div class="f"><div class="what">4. 体成分之外<em>健康的另一半</em></div>
+      <div>腹部脂肪多，往往先体现在血液指标上。建议在年度体检里留意血压、空腹血糖、糖化血红蛋白和血脂（尤其甘油三酯），和体成分一起看。</div></div>
+  </div>
+  <div class="ignore"><b>可以不用在意的数字：</b>InBody 评分（一直 73–79）、身体年龄、健壮指数、"建议增肌 3.7 kg"。这些是机器按公式算的，不直接对应健康。另外报告上年龄一直写 33 岁，是机器里登记的资料没更新。</div>
+</section>
+
+<section>
+  <h2>全部原始数据</h2>
+  <div class="tbl"><table id="raw"></table></div>
+  <p class="small">红色为超出正常范围的读数。2026.10 的数据来自另一台设备（报告样式不同），内脏脂肪和节段脂肪的算法与 InBody 不同。</p>
+</section>
+</div>
+
+<script>
+const D=[
+ {d:"2020-06-27",dev:"230",w:71.5,smm:32.4,bf:14.4,pbf:20.1,vfl:5,whr:.89,bmr:1604,ffm:57.1,tf:7.4,score:73},
+ {d:"2020-08-26",dev:"270",w:78.1,smm:36.0,bf:14.9,pbf:19.1,vfl:6,whr:.91,bmr:1735,ffm:63.2,tf:8.0,score:79},
+ {d:"2020-09-26",dev:"230",w:72.8,smm:33.2,bf:14.1,pbf:19.3,vfl:6,whr:.93,bmr:1639,ffm:58.7,tf:7.5,score:75},
+ {d:"2021-06-19",dev:"270",w:76.6,smm:34.4,bf:16.0,pbf:20.9,vfl:6,whr:.89,bmr:1679,ffm:60.6,tf:8.4,score:75},
+ {d:"2021-07-28",dev:"270",w:77.0,smm:34.8,bf:15.9,pbf:20.7,vfl:6,whr:.89,bmr:1689,ffm:61.1,tf:8.4,score:75},
+ {d:"2022-11-14",dev:"270",w:74.9,smm:34.3,bf:14.4,pbf:19.2,vfl:6,whr:.91,bmr:1677,ffm:60.5,tf:7.7,score:76},
+ {d:"2023-04-11",dev:"270",w:73.9,smm:33.7,bf:14.5,pbf:19.7,vfl:6,whr:.89,bmr:1652,ffm:59.4,tf:7.6,score:75},
+ {d:"2023-08-02",dev:"270",w:75.4,smm:34.2,bf:15.3,pbf:20.3,vfl:6,whr:.93,bmr:1668,ffm:60.1,tf:8.2,score:75},
+ {d:"2026-10-23",dev:"new",w:74.4,smm:33.1,bf:14.4,pbf:19.4,vfl:9,whr:.90,bmr:1666,ffm:60.0,tf:8.5,score:null}
+];
+const C=[
+ {k:"pbf",t:"体脂率",u:"%",band:[10,20],y:[14,23],ticks:[15,18,20,22],target:16,fmt:1,note:"正常上限 20%。虚线是建议目标 16%。"},
+ {k:"smm",t:"骨骼肌",u:"kg",band:[30.6,37.4],y:[30,38],ticks:[30,32,34,36,38],target:35,fmt:1,note:"正常范围 30.6–37.4 kg，你在中间偏下。虚线是建议目标 35 kg。"},
+ {k:"tf",t:"躯干脂肪",u:"kg",band:[3.8,7.6],y:[3,9.5],ticks:[4,6,8],fmt:1,note:"每一次都超出正常范围，这是最需要改的一项。"},
+ {k:"whr",t:"腰臀比",u:"",band:[.80,.90],y:[.78,.96],ticks:[.80,.85,.90,.95],fmt:2,note:"正常 0.80–0.90，一直贴着上限。"},
+ {k:"w",t:"体重",u:"kg",band:[64.2,78.4],y:[64,80],ticks:[65,70,75,80],fmt:1,note:"体重本身正常。BMI 在 22–24 之间。"},
+ {k:"vfl",t:"内脏脂肪等级",u:"",band:[1,9],y:[0,12],ticks:[0,3,6,9,12],fmt:0,note:"InBody 上一直 5–6。2026 的 9 来自不同设备，算法不同。"}
+];
+const t0=Date.parse("2020-05-01"),t1=Date.parse("2026-12-31");
+const W=440,H=200,L=40,R=12,T=14,B=26;
+const xs=d=>L+(Date.parse(d)-t0)/(t1-t0)*(W-L-R);
+const host=document.getElementById("charts");
+const ns="http://www.w3.org/2000/svg";
+function el(n,a,p){const e=document.createElementNS(ns,n);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e}
+C.forEach(c=>{
+  const box=document.createElement("div");box.className="chart";
+  box.innerHTML=`<h3>${c.t}<small>${c.u?"单位 "+c.u:""}</small></h3>`;
+  const ys=v=>T+(c.y[1]-v)/(c.y[1]-c.y[0])*(H-T-B);
+  const s=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":c.t+"趋势"},box);
+  const b0=Math.max(c.band[0],c.y[0]),b1=Math.min(c.band[1],c.y[1]);
+  el("rect",{x:L,y:ys(b1),width:W-L-R,height:ys(b0)-ys(b1),fill:"var(--band)"},s);
+  c.ticks.forEach(v=>{el("line",{x1:L,x2:W-R,y1:ys(v),y2:ys(v),stroke:"var(--rule)","stroke-width":1},s);
+    const tx=el("text",{x:L-6,y:ys(v)+4,"text-anchor":"end","font-size":11,fill:"var(--ink-3)","font-family":"IBM Plex Mono,monospace"},s);tx.textContent=v.toFixed(c.fmt)});
+  [2021,2022,2023,2024,2025,2026].forEach(yr=>{const x=xs(yr+"-01-01");
+    el("line",{x1:x,x2:x,y1:H-B,y2:H-B+4,stroke:"var(--ink-3)"},s);
+    const tx=el("text",{x:x,y:H-6,"text-anchor":"middle","font-size":11,fill:"var(--ink-3)","font-family":"IBM Plex Mono,monospace"},s);tx.textContent=yr});
+  el("line",{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:"var(--ink-3)"},s);
+  if(c.target){el("line",{x1:L,x2:W-R,y1:ys(c.target),y2:ys(c.target),stroke:"var(--band-ink)","stroke-width":1.5,"stroke-dasharray":"5 4"},s)}
+  const pts=D.map(r=>[xs(r.d),ys(r[c.k])]);
+  el("path",{d:"M"+pts.slice(0,8).map(p=>p.join(",")).join("L"),fill:"none",stroke:"var(--ink-2)","stroke-width":2,"stroke-linejoin":"round"},s);
+  el("path",{d:`M${pts[7]}L${pts[8]}`,fill:"none",stroke:"var(--ink-3)","stroke-width":1.5,"stroke-dasharray":"3 4"},s);
+  const tip=document.createElement("div");tip.className="tip";tip.hidden=true;box.appendChild(tip);
+  D.forEach((r,i)=>{const [x,y]=pts[i];let m;
+    if(r.dev==="270")m=el("circle",{cx:x,cy:y,r:4.5,fill:"var(--ink)",stroke:"var(--card)","stroke-width":2},s);
+    else if(r.dev==="230")m=el("rect",{x:x-4,y:y-4,width:8,height:8,fill:"var(--card)",stroke:"var(--ink)","stroke-width":2},s);
+    else m=el("path",{d:`M${x} ${y-6}L${x+6} ${y}L${x} ${y+6}L${x-6} ${y}Z`,fill:"var(--accent)",stroke:"var(--card)","stroke-width":1.5},s);
+    const hit=el("circle",{cx:x,cy:y,r:12,fill:"transparent",tabindex:0},s);
+    const show=()=>{const bb=s.getBoundingClientRect(),pb=box.getBoundingClientRect(),k=bb.width/W;tip.textContent=`${r.d} · ${r[c.k].toFixed(c.fmt)}${c.u}`;
+      tip.style.left=(x*k+bb.left-pb.left)+"px";tip.style.top=(y*k+bb.top-pb.top)+"px";tip.hidden=false};
+    hit.addEventListener("mouseenter",show);hit.addEventListener("focus",show);
+    hit.addEventListener("mouseleave",()=>tip.hidden=true);hit.addEventListener("blur",()=>tip.hidden=true);
+  });
+  const lr=D[8],lx=pts[8];
+  const lab=el("text",{x:lx[0]-10,y:lx[1]-10,"text-anchor":"end","font-size":12,"font-weight":700,fill:"var(--ink)","font-family":"IBM Plex Mono,monospace"},s);lab.textContent=lr[c.k].toFixed(c.fmt);
+  const n=document.createElement("p");n.className="note";n.textContent=c.note;box.appendChild(n);
+  host.appendChild(box);
+});
+const rows=[["设备",r=>r.dev==="new"?"新设备":"InBody"+r.dev],["体重 kg",r=>r.w.toFixed(1)],["骨骼肌 kg",r=>r.smm.toFixed(1)],
+ ["去脂体重 kg",r=>r.ffm.toFixed(1)],["体脂肪 kg",r=>r.bf.toFixed(1)],["体脂率 %",r=>r.pbf.toFixed(1),r=>r.pbf>20],
+ ["躯干脂肪 kg",r=>r.tf.toFixed(1),()=>true],["腰臀比",r=>r.whr.toFixed(2),r=>r.whr>.90],["内脏脂肪等级",r=>r.vfl],
+ ["基础代谢 kcal",r=>r.bmr],["InBody 评分",r=>r.score??"—"]];
+let h="<thead><tr><th>指标</th>"+D.map(r=>`<th>${r.d.replace(/-/g,".")}</th>`).join("")+"</tr></thead><tbody>";
+rows.forEach(([n,f,hi])=>{h+=`<tr><td>${n}</td>`+D.map(r=>`<td class="${hi&&hi(r)?"hi":""}">${f(r)}</td>`).join("")+"</tr>"});
+document.getElementById("raw").innerHTML=h+"</tbody>";
+</script>
